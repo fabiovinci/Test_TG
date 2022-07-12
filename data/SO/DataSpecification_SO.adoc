@@ -49,6 +49,8 @@ image:./media/image3.png[image,width=93,height=93] **INSPIRE** - *Infrastructure
 |*Coverage* |Project duration
 |===
 
+//Add page break support for PDF export
+<<<
 [discrete]
 = *Foreword*
 [discrete]
@@ -77,6 +79,7 @@ In order to distinguish the INSPIRE spatial data themes from the spatial object 
 
 Neither the European Commission nor any person acting on behalf of the Commission is responsible for the use which might be made of this publication.
 
+<<<
 [discrete]
 = *Interoperability of Spatial Data Sets and Services – General Executive Summary*
 
@@ -111,6 +114,7 @@ By listing a number of requirements and making the necessary recommendations, th
 
 In addition to providing a basis for the interoperability of spatial data in INSPIRE, the data specification development framework and the thematic data specifications can be reused in other environments at local, regional, national and global level contributing to improvements in the coherence and interoperability of data in spatial data infrastructures.
 
+<<<
 [discrete]
 = *_Soil_ – Executive Summary*
 
@@ -136,6 +140,7 @@ The data specification is based, as far as possible, on existing standards. Apar
 
 To enhance semantic interoperability the use of the soil classification scheme WRB (World Reference Base for Soil Resources) and the FAO horizon notation scheme as primary classification systems are proposed. The use of other currently used (local, regional, national) classification systems is also provided for.
 
+<<<
 [discrete]
 = *Acknowledgements*
 
@@ -155,13 +160,12 @@ Institute for Environment and Sustainability
 Unit H06: Digital Earth and Reference Data
 _http://inspire.ec.europa.eu/index.cfm/pageid/2_
 
-//Add page break support for PDF export
 <<<
-
 [discrete]
 = Table of Contents
 toc::[]
 
+<<<
 :sectnums:
 
 == Scope
@@ -463,6 +467,7 @@ Specifically, for the theme _Soil_, the following terms are defined:
 |XML |EXtensible Markup Language
 |===
 
+<<<
 === How the Technical Guidelines map to the Implementing Rules
 
 The schematic diagram in Figure 4 gives an overview of the relationships between the INSPIRE legal acts (the INSPIRE Directive and Implementing Rules) and the INSPIRE Technical Guidelines. The INSPIRE Directive and Implementing Rules include legally binding requirements that describe, usually on an abstract level, _what_ Member States must implement.
@@ -518,6 +523,7 @@ NOTE The implementation of recommendations is not mandatory. Compliance with the
 
 Annex A includes the abstract test suite for checking conformance with the requirements included in these Technical Guidelines and the corresponding parts of the Implementing Rules (Commission Regulation (EU) No 1089/2010).
 
+<<<
 == Specification scopes
 
 This data specification does not distinguish different specification scopes, but just considers one general scope.
@@ -531,6 +537,7 @@ http://inspire.ec.europa.eu/tg/so/3.0
 
 NOTE ISO 19131 suggests further identification information to be included in this section, e.g. the title, abstract or spatial representation type. The proposed items are already described in the document metadata, executive summary, overview description (section 2) and descriptions of the application schemas (section 5). In order to avoid redundancy, they are not repeated here.
 
+<<<
 == Data content and structure
 
 === Application schemas – Overview 
@@ -3499,6 +3506,7 @@ The externally governed code lists included in this application schema are speci
 
 NOTE All the externally managed code lists and their values are presented in the Annex C of this document
 
+<<<
 == Reference systems, units of measure and grids
 
 === Default reference systems, units of measure and grid
@@ -3709,6 +3717,7 @@ For the unambiguous referencing and identification of a grid cell, the cell code
 
 There are no theme-specific requirements or recommendations on reference systems and grids.
 
+<<<
 == Data quality
 
 This chapter includes a description of the data quality elements and sub-elements as well as the corresponding data quality measures that should be used to evaluate and document data quality for data sets related to the spatial data theme _Soil_ (section 7.1).
@@ -3865,6 +3874,7 @@ No minimum data quality requirements are defined for the spatial data theme _Soi
 
 No minimum data quality recommendations are defined for the spatial data theme _Soil_.
 
+<<<
 == Dataset-level metadata
 
 This section specifies dataset-level metadata elements, which should be used for documenting metadata for a complete dataset or dataset series.
@@ -4603,6 +4613,7 @@ NOTE The DQ_Result type should be DQ_DescriptiveResult and in the statement (68.
 |Example XML encoding |
 |===
 
+<<<
 == Delivery
 
 === Updates
@@ -4775,10 +4786,12 @@ The recommended coverage encodings for SoilThemeCoverage, SoilThemeDescribtedCov
 
 The encoding of coverage components in GMLJP2 within a JPEG 2000 file should conform to the rules specified in the Guidelines for the encoding of spatial data [DS-D2.7]
 
+<<<
 == Data Capture
 
 There is no specific guidance required with respect to data capture.
 
+<<<
 == Portrayal
 
 This clause defines the rules for layers and styles to be used for portrayal of the spatial object types defined for this theme. Portrayal is regulated in Article 14 of the IRs.
@@ -5021,7 +5034,7 @@ There is one colour defined for each of the 32 WRB Reference Soil Groups (RSG):
 |*Minimum & maximum scales* |No scale limits
 |===
 
-
+<<<
 :sectnums!:
 == Bibliography
 
