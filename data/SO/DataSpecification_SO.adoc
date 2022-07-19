@@ -5875,69 +5875,26 @@ _Eurostat to citizen_
 * _Legislation (see above)_
 * _Web site (see above)_
 * _Memorandum of Understanding (not public)_
-
 |*External reference* |_See web site_
-a|
+2+|
 *Information Source Input*
-
 _Data that allow the application of the approved model for the computation of the sub-indicators and the main indicator_
-
-|
 |*Description* |
 |*Thematic scope* |_Soil, land cover/use, climate, geomorphology_
 |*Base dataset(s)* a|
 _To compute the indicators, the following information is needed:_
 
-* {blank}
-
-====
-_climatic data (preferably with fine time-resolution): rainfall (as erosivity factor); temperature (sometimes)_
-====
-* {blank}
-
-====
-_soil texture (e.g. as %clay, %silt, %sand) and possibly also soil structure and permeability (e.g. as class values indicated in the USDA Soil Survey Manual 1951 (depending on the formulas used)) ,OM (e.g. as volume %)). It all depends on the formula's used; there are many._
-====
-* {blank}
-
-====
-_soil texture (e.g. as %clay, %silt, %sand) and possibly also soil structure and permeability (e.g. as class values indicated in the USDA Soil Survey Manual 1951 (depending on the formulas used)) ,OM (e.g. as volume %)). It all depends on the formula's used; there are many._
-====
-* {blank}
-
-====
-_geomorphology (slope, slope length)_
-====
-* {blank}
-
-====
-_landcover data_
-====
+* _climatic data (preferably with fine time-resolution): rainfall (as erosivity factor); temperature (sometimes)_
+* _soil texture (e.g. as %clay, %silt, %sand) and possibly also soil structure and permeability (e.g. as class values indicated in the USDA Soil Survey Manual 1951 (depending on the formulas used)) ,OM (e.g. as volume %)). It all depends on the formula's used; there are many._
+* _landcover data_
 
 _As vector maps or as rasters (100m)_
 
 |*Data provider(s)* a|
-* {blank}
-
-====
-_climatic data should come from the national weather services;_
-====
-* {blank}
-
-====
-_soil data from the national organizations holding the soil data_
-====
-* {blank}
-
-====
-_geomorphology could come from SRTM or better._
-====
-* {blank}
-
-====
-_CORINE at 100m for Landcover data_
-====
-
+* _climatic data should come from the national weather services;_
+* _soil data from the national organizations holding the soil data_
+* _geomorphology could come from SRTM or better._
+* _CORINE at 100m for Landcover data_
 |*Scale, resolution* |_Preferably at a resolution of 100m_
 |*Documentation* |_March 2011: the proposed model will be finished and commented by Member States; then, the full documentation on the model will be ready._
 |*External reference* |_none_
