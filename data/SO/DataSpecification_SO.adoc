@@ -5860,22 +5860,16 @@ P = support practice factor
 
 |*Information provider(s)* |_Member State local and national organizations_
 |*Information processors(s)/Brokers* |_Member State authorities responsible for the computation of the index_
-a|
+a2+|
 *Information Source Output*
-
 _From Member States: Maps at NUTS-x level or raster format that show the distribution and value of the indicator._
-
 _From Eurostat: Maps integrating all Member State indicator maps._
-
-|
 |*Description* |
 |*Thematic scope* |_Soil_
 |*Base datasets* |_Base datasets are maps at NUTS-x level or rasters, that show the indicator_
 |*Data provider* a|
 _Member States to Eurostat;_
-
 _Eurostat to citizen_
-
 |*Scale, resolution* |_NUTS-x level; in order to come to NUTS level aggregation, one can envisage various scales (e.g. 1:250,000) and resolutions (e.g. 1 km)_
 |*Documentation* a|
 * _Legislation (see above)_
