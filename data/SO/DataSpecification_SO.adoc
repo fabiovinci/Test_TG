@@ -5860,7 +5860,7 @@ P = support practice factor
 
 |*Information provider(s)* |_Member State local and national organizations_
 |*Information processors(s)/Brokers* |_Member State authorities responsible for the computation of the index_
-a2+|
+2+|
 *Information Source Output*
 _From Member States: Maps at NUTS-x level or raster format that show the distribution and value of the indicator._
 _From Eurostat: Maps integrating all Member State indicator maps._
