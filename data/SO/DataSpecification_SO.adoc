@@ -5844,13 +5844,13 @@ P = support practice factor
 * _Eurostat has the legal mandate to collect data from the Member States_
 
 |*Pre-condition* |_Availability of data that is required for computation of the indicators_
-2+|*Flow of Events - Basic Path* |
+2+|*Flow of Events - Basic Path*
 |*Step 1* |_Member State collects the data that are needed to compute the soil erosion indicator_
 |*Step 2* |_Member State computes indicator_
 |*Step 3* |_Member State sends indicator to Eurostat_
 |*Step 4* |_Eurostat verifies and validates the data; Eurostat creates European indicator map_
 |*Post-condition* |_Not applicable_
-2+|*Actors* |
+2+|*Actors*
 |*End-users* a|
 * _Member State_
 * _European Institutions_
