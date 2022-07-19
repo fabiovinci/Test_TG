@@ -6107,56 +6107,16 @@ Each _SoilDerivedObject_ carries a geometry (could be a point or a polygon) and 
 
 For the considered soil input data: name, unit of measure and value would be:
 
-* {blank}
-
-====
-soil_type, no unit of measure, qualitative value (character string)
-====
-* {blank}
-
-====
-available_water_capacity, percentage, numeric value or parameterRange
-====
-* {blank}
-
-====
-rooting_depth, percentage, numeric value or parameterRange
-====
-* {blank}
-
-====
-depth_to_impermeable layer, percentage, numeric value or parameterRange
-====
-* {blank}
-
-====
-soil_texture_clay, percentage, numeric value or parameterRange
-====
-* {blank}
-
-====
-soil_texture_silt, percentage, numeric value or parameterRange
-====
-* {blank}
-
-====
-soil_texture_sand, percentage, numeric value or parameterRange
-====
-* {blank}
-
-====
-water_regime, no unit of measure, qualitative value (character string)
-====
-* {blank}
-
-====
-soil_organic_matter, percentage, numeric value or parameterRange
-====
-* {blank}
-
-====
-soil_organic_carbon, percentage, numeric value or parameterRange
-====
+* soil_type, no unit of measure, qualitative value (character string)
+* available_water_capacity, percentage, numeric value or parameterRange
+* rooting_depth, percentage, numeric value or parameterRange
+* depth_to_impermeable layer, percentage, numeric value or parameterRange
+* soil_texture_clay, percentage, numeric value or parameterRange
+* soil_texture_silt, percentage, numeric value or parameterRange
+* soil_texture_sand, percentage, numeric value or parameterRange
+* water_regime, no unit of measure, qualitative value (character string)
+* soil_organic_matter, percentage, numeric value or parameterRange
+* soil_organic_carbon, percentage, numeric value or parameterRange
 
 Note that in order to give the name of the parameter as a value from the _SoilDerivedObjectParameterNameValue_ codelist, the codelist should be extended by the user.
 
@@ -6192,7 +6152,7 @@ NOTE these parts of this scheme are still under testing and development – see 
 
 [width="100%",cols="9%,20%,20%,15%,6%,5%,5%,5%,5%,5%,5%"]
 |===
-|*No.* |*Input data* |*field (code) in SGDBE* |*Input attributes* |*Directly required for evaluation** | | | | | |
+|*No.* |*Input data* |*field (code) in SGDBE* |*Input attributes* 6+|*Directly required for evaluation**
 | | | | |1 |2 |3 |4a |4b |4c |4d
 |1 |Topsoil textural class |TEXT_SRF_DOM |- | | | |** | |** |
 |2 |Subsoil textural class |TEXT_SUB_DOM |- | | | |** | | |
