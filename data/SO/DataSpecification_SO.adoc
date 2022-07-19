@@ -5837,20 +5837,20 @@ P = support practice factor
 |*Priority* |_High_
 |*Description* |_Member States will need to provide soil erosion data to Eurostat, according to the RUSLE model_
 |*Legal foundation(s)* a|
-* image::./media/image15.png[image,width=19,height=16]_Council conclusions (2006)_
-* image::./media/image15.png[image,width=19,height=16]_Commission Communication (2006)_
-* image::./media/image15.png[image,width=19,height=16]_Commission Communication (2001)_
-* image::./media/image15.png[image,width=19,height=16]_Commission Communication (2000)_
+* _Council conclusions (2006)_
+* _Commission Communication (2006)_
+* _Commission Communication (2001)_
+* _Commission Communication (2000)_
 * _Eurostat has the legal mandate to collect data from the Member States_
 
 |*Pre-condition* |_Availability of data that is required for computation of the indicators_
-|*Flow of Events - Basic Path* |
+2+|*Flow of Events - Basic Path* |
 |*Step 1* |_Member State collects the data that are needed to compute the soil erosion indicator_
 |*Step 2* |_Member State computes indicator_
 |*Step 3* |_Member State sends indicator to Eurostat_
 |*Step 4* |_Eurostat verifies and validates the data; Eurostat creates European indicator map_
 |*Post-condition* |_Not applicable_
-|*Actors* |
+2+|*Actors* |
 |*End-users* a|
 * _Member State_
 * _European Institutions_
