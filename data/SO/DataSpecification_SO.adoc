@@ -5886,6 +5886,7 @@ _To compute the indicators, the following information is needed:_
 
 * _climatic data (preferably with fine time-resolution): rainfall (as erosivity factor); temperature (sometimes)_
 * _soil texture (e.g. as %clay, %silt, %sand) and possibly also soil structure and permeability (e.g. as class values indicated in the USDA Soil Survey Manual 1951 (depending on the formulas used)) ,OM (e.g. as volume %)). It all depends on the formula's used; there are many._
+* _geomorphology (slope, slope length)_
 * _landcover data_
 
 _As vector maps or as rasters (100m)_
@@ -5996,25 +5997,25 @@ The main indicator is 'agri-environmental soil quality index', derived from four
 
 [width="100%",cols="22%,78%"]
 |===
-|*Use Case Description* |
+2+|*Use Case Description*
 |*Name* |_Agri-Environmental Indicator Soil Quality_
 |*Priority* |_High_
 |*Description* |_Member States will need to provide soil quality data to Eurostat, according to the model which is currently under development_
 |*Legal foundation(s)* a|
-* image::./media/image15.png[image,width=19,height=16]_Council conclusions (2006)_
-* image::./media/image15.png[image,width=19,height=16]_Commission Communication (2006)_
-* image::./media/image15.png[image,width=19,height=16]_Commission Communication (2001)_
-* image::./media/image15.png[image,width=19,height=16]_Commission Communication (2000)_
+* _Council conclusions (2006)_
+* _Commission Communication (2006)_
+* _Commission Communication (2001)_
+* _Commission Communication (2000)_
 * _Eurostat has the legal mandate to collect data from the Member States_
 
 |*Pre-condition* |_Availability of data that is required for computation of the indicators_
-|*Flow of Events - Basic Path* |
+2+|*Flow of Events - Basic Path*
 |*Step 1* |_Member State collects the data that are needed to compute the soil quality indicator_
 |*Step 2* |_Member State computes sub-indicator and main indicator_
 |*Step 3* |_Member State sends sub-indicator and indicator to Eurostat_
 |*Step 4* |_Eurostat verifies and validates the data; Eurostat creates European indicator map_
 |*Post-condition* |_Not applicable_
-|*Actors* |
+2+|*Actors*
 |*End-users* a|
 * _Member State_
 * _European Institutions_
@@ -6024,25 +6025,19 @@ The main indicator is 'agri-environmental soil quality index', derived from four
 
 |*Information provider(s)* |_Member State local and national organizations_
 |*Information processors(s)/Brokers* |_Member State authorities responsible for the computation of the index_
-a|
+2+|
 *Information Source Output*
-
 _From Member States: Maps at NUTS-x level that show the distribution and value of the indicator._
-
 _From Eurostat: Maps integrating all Member State indicator maps._
-
-|
 |*Description* |
 |*Thematic scope* |_Soil_
 |*Base datasets* a|
 _Base datasets are maps at NUTS-x level or rasters that show_
-
 * _main indicator_
 * _sub-indicators_
 
 |*Data provider* a|
 _Member States to Eurostat;_
-
 _Eurostat to citizen_
 
 |*Scale, resolution* |_NUTS-x level; in order to come to NUTS level aggregation, one can envisage various scales (e.g. 1:250,000) and resolutions (e.g. 1 km)_
@@ -6052,12 +6047,9 @@ _Eurostat to citizen_
 * _Memorandum of Understanding (not public)_
 
 |*External reference* |_See web site_
-a|
+2+|
 *Information Source Input*
-
 _Data that allow the application of the approved model for the computation of the sub-indicators and the main indicator_
-
-|
 |*Description* |
 |*Thematic scope* |_soil, climate data, land cover/ land use_
 |*Base dataset(s)* a|
