@@ -7175,75 +7175,61 @@ Soilscapes is not intended as a means for supporting detailed assessments, such 
 
 *Detailed structured description of the Use Case*
 
-[width="100%",cols="26%,16%,58%"]
+[width="100%",cols="36%,64%"]
 |===
-|*Use Case Description* | |
-|*Name* |_Soilscapes Viewer_ |
-|*Priority* |_Low_ |
+2+|*Use Case Description*
+|*Name* |_Soilscapes Viewer_
+|*Priority* |_Low_
 |*Description* a|
 _The WebMapping tool allows non-expert users to access_
-
 _simplified soil's information_
-
-|
 |*Legal foundation(s)* a|
-====
 _none_
-====
-
-|
 |*Pre-condition* a|
 _The thematic information and educational material are_
-
 _available._
-
-|
-|*Flow of Events - Basic Path* | |
-|*Step 1* | |_The user access to the webpage._
-|*Step 2* | |_The user accepts the Cranfield's terms and conditions._
-|*Step 3* | |_The user selects an area of interest by zooming or by selecting a postcode._
-|*Step 4* | |_The user identifies one of the 27 Soilscapes units on a specified location._
-|*Post-condition* | a|
+2+^|*Flow of Events - Basic Path*
+|*Step 1* |_The user access to the webpage._
+|*Step 2* |_The user accepts the Cranfield's terms and conditions._
+|*Step 3* |_The user selects an area of interest by zooming or by selecting a postcode._
+|*Step 4* |_The user identifies one of the 27 Soilscapes units on a specified location._
+|*Post-condition* a|
 _The system provides information about drainage, fertility,_
-
 _texture, etc. for the specified location_
-
-|*Actors* | |
-|*End-users* | |_General public_
-|*Information provider(s)* | |_NSRI Cranfield University_
-|*Information processors(s)/Brokers* | |_None (automatic interpretation of database)_
+2+^|*Actors*
+|*End-users* |_General public_
+|*Information provider(s)* |_NSRI Cranfield University_
+|*Information processors(s)/Brokers* |_None (automatic interpretation of database)_
 2+^|*Information Source Output* |
-|*Description* | |_Web based soil map and information_
-|*Thematic scope* | |_Soil characteristics_
-|*Base datasets* | |_Interpreted map of the Soilscapes dataset_
-|*Data provider* | |_NSRI Cranfield University_
-|*Scale, resolution* | |_Maps derived from Soilscapes dataset at 1:250,000_
-|*Documentation* | a|
+|*Description* |_Web based soil map and information_
+|*Thematic scope* |_Soil characteristics_
+|*Base datasets* |_Interpreted map of the Soilscapes dataset_
+|*Data provider* |_NSRI Cranfield University_
+|*Scale, resolution* |_Maps derived from Soilscapes dataset at 1:250,000_
+|*Documentation* a|
 _on website_
-
 http://www.landis.org.uk/services/soilscapes.cfm
 
-|*External reference* | |_See web site_
-2+^|*Information Source Input* |
-|*Description* | |_In essence, there is only one dataset that serves as input to the Soilscapes Viewer: the Soilscapes dataset_
-|*Thematic scope* | |_Soil (generalized data)_
-|*Base dataset(s)* | |_Soilscapes dataset at 1:250,000_
-|*Data provider(s)* | |_NSRI Cranfield University_
-|*Scale, resolution* | |_Scale is 1:250,000_
-|*Documentation* | a|
+|*External reference* |_See web site_
+2+^|*Information Source Input*
+|*Description* |_In essence, there is only one dataset that serves as input to the Soilscapes Viewer: the Soilscapes dataset_
+|*Thematic scope* |_Soil (generalized data)_
+|*Base dataset(s)* |_Soilscapes dataset at 1:250,000_
+|*Data provider(s)* |_NSRI Cranfield University_
+|*Scale, resolution* |_Scale is 1:250,000_
+|*Documentation* a|
 _on website_
-
 http://www.landis.org.uk/services/soilscapes.cfm
 
-|*External reference* | |_See web site_
+|*External reference* |_See web site_
 |===
 
 *Mapping of this Use Case with the INSPIRE soil model of DS version 3.0*
 
 This Use Case is not detailed enough in order to make a one-to-one mapping between the INSPIRE model and the described input- and output data.
 
-=== 
-Establishment Less Favoured Areas (France)
+<<<
+=== Establishment Less Favoured Areas (France)
 
 *Test of biophysical criteria for determining Less Favoured Areas in France*
 
@@ -7263,7 +7249,7 @@ In France, the test of the biophysical criteria listed in the Communication was 
 |*Description* |The aim is to test the biophysical criteria proposed by the Commission, especially feasibility of the zoning considering available data in France
 |*Legal foundation(s)* |revision of the LFA zoning
 |*Pre-condition* |
-|*Flow of Events - Basic Path* |
+2+^|*Flow of Events - Basic Path*
 |*Step 1* a|
 Calculation of the different criteria for each STU (derived soil profile). The criteria are:
 
@@ -7280,7 +7266,7 @@ The Table 3 below details the attributes of the soil DB used for estimating the 
 |*Step 5* |
 |*Post-condition* |
 | |
-|*Actors* |
+2+^|*Actors*
 |*End-users* a|
 * Ministry of agriculture
 * European Commission
@@ -7757,13 +7743,13 @@ From experience in the Netherlands it is recommended to add after the technical 
 |*Description* |System to provide information on historical landfills and sites of historical contamination, including potentially contaminated sites, surveys completed and in progress, confirmed contaminated sites, cleaning and protection measures. The full data structure is not available. The information if a property is on the list is public but does not confirm actual risks.
 |*Legal foundation(s)* |National regulations for property transfer of real estates.
 |*Pre-condition* |Measurements and observations on soil and both ground/ surface water.
-|*Flow of Events - Basic Path* |
+2+^|*Flow of Events - Basic Path*
 |*Step 1* |Record land register identification number
 |*Step 2* |Record potential historical contamination connected with these land register identification numbers
 |*Step 3* |Record soil surveys connected with these land register identification numbers
 |*Step 4* |Record cleaning and protection measures connected with these land register identification numbers.
 | |
-|*Actors* |
+2+^|*Actors*
 |*End-users* a|
 * National and local authorities, Ministry of the environment
 * Real estate brokers
@@ -7903,7 +7889,7 @@ RIVM-report 734301029 Bouwstenen Leiddraad Grondwaterbescherming (Components for
 |*Description* |Polluted sites are one of the threats to drinking water provision. When threshold levels in water from pumping stations is approached the GWD demands that measures are taken to counteract the trend. To provide for this the recognition of close by polluted sites gives a point of departure to act.
 |*Legal foundation(s)* |EU Directive on the protection of groundwater against pollution and detoriation (2006 118/EC), National regulations for Ground water protection zones for drinking water.
 |*Pre-condition* |Inventory of polluted sites and knowledge on the pollution profiles of those sites. Measurements on water from pumping water stations.
-|*Flow of Events - Basic Path* |
+2+^|*Flow of Events - Basic Path*
 |*Step 1* |Inventory and characterisation of polluting activities in past and present
 |*Step 2* |Locate sites where polluting activities took place
 |*Step 3* |Compare expected pollutants with found pollutants from drinking water wells to recognise adverse contribution of polluted sites on water quality
@@ -7911,7 +7897,7 @@ RIVM-report 734301029 Bouwstenen Leiddraad Grondwaterbescherming (Components for
 | |
 |*Post-condition* |Improved soil and ground water quality and protection of drinking water quality
 | |
-|*Actors* |
+2+^|*Actors*
 |*End-users* a|
 * Authorities EU-level --. GWD;
 * National : Drinking water companies Min of Agriculture, Water, Environment; regional water authorities
@@ -8135,7 +8121,7 @@ _(except for the book by Swartjes these reports and the atlas can be downloaded 
 |*Step 4* |Integration of the results obtained in step 1 to 3
 |*Post-condition* |Ecological risk level has been determined on a site-specific level
 | |
-|*Actors* |
+2+^|*Actors*
 |*End-users* a|
 * Local Authorities: municipalities, provinces
 * Land owners
@@ -8410,13 +8396,13 @@ Each local authority on soil quality (provinces and municipalities) has a geogra
 
 |*Legal foundation(s)* |National regulations for property transfer of real estates.
 |*Pre-condition* |Measurements and observations on soil and ground and surface water.
-|*Flow of Events - Basic Path* |
+2+^|*Flow of Events - Basic Path*
 |*Step 1* |Record geographical information of location
 |*Step 2* |Record the soil investigations and remedation actions on and near the site.
 |*Step 3* |Record the presence of used fuel tanks on or near the site.
 |*Step 4* |Present if available the historical activities on the site.
 | |
-|*Actors* |
+2+^|*Actors*
 |*End-users* a|
 * Provinces
 * Cities
@@ -8543,13 +8529,13 @@ Due to the complexity of deriving soil related data a lot of stakeholders with d
 |*Description* |_Member States provide soil related monitoring data to characterize soil state, soil quality and soil development in order to describe the influence of anthropogenic activities on soils_
 |*Legal foundation(s)* |_legislations of the member states and improve the legislation of the member states, improve the European soil strategy, environmental reporting of the member states (e.g. Kyoto reporting – soil carbon state) and environmental reporting of the European authorities (e.g. SOER)_
 |*Pre-condition* |_field samples have to be taken in systematic time steps and with repetitious accuracy as well as in analytics_
-|*Flow of Events - Basic Path* |
+2+^|*Flow of Events - Basic Path*
 |*Step 1* |_member states collect and store the harmonised raw data_
 |*Step 2* |_member states make further assessment with the raw data_
 |*Step 3* |_member states give a report on aggregated data, interpreted data and specific questions_
 |*Step 4* |_member states make the results available_
 |*Post-condition* |_stakeholder and interest groups can use the results (not raw data) for further investigations, reporting and policy development_
-|*Actors* |
+2+^|*Actors*
 |*End-users* a|
 * _Member States_
 * _European institutions_
