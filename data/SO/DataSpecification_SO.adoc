@@ -6719,6 +6719,7 @@ _IMPORTANT NOTE this mapping still needs to be checked if it matches the latest 
 |Persistent agricultural problems |soilDerivedObject
 |===
 
+<<<
 === _MARS project_
 
 *Yield forecasting within the MARS project*
@@ -6746,28 +6747,27 @@ image::./media/image23.png[image,width=553,height=605, align=center]
 
 [width="100%",cols="24%,76%",]
 |===
-|*Use Case Description* |
+2+|*Use Case Description*
 |*Name* |Crop Growth Monitoring System
 |*Priority* |high
 |*Description* |CGMS provides the European Commission (DG Agriculture) with objective, timely and quantitative yield forecasts at regional and national scale.
 |*Legal foundation(s)* |no legal base but is part of activities of the DG Agriculture around the CAP
 |*Pre-condition* |
-|*Flow of Events - Basic Path* |
+2+|*Flow of Events - Basic Path*
 |*Step 1* |Gathering of meteorological data, quality control of the data and interpolation on a 50 km by 50 km grid
 |*Step 2* |determination of the parameters of the crop model: soils, crops and definition of simulation units
 |*Step 3* |crop simulation using data from step 1 and 2 with the crop model (three crop models are used following the crops)
 |*Step 4* |analysis of historical statistical yield data and correction of the indicators of crop simulation to define yield forecast
 |*Step 5* |realisation of maps and bulletins for end-users
 |*Post-condition* |
-| |
-|*Actors* |
+2+|*Actors*
 |*End-users* a|
 * DG Agriculture
-*  any third parties for some data and tools that are freely downloadable
+* + any third parties for some data and tools that are freely downloadable
 
 |*Information provider(s)* |Meteorology authorities, ESBN for the soil DB
 |*Information processors(s)/Brokers* |JRC
-|*Information Source Input* |
+2+|*Information Source Input*
 |*Description* a|
 * meteorological daily data: rainfall, temperature, global radiation, wind speed, etc.
 * Soil information issued from SGDBE
@@ -6777,15 +6777,12 @@ image::./media/image23.png[image,width=553,height=605, align=center]
 |*Thematic scope* |Soil, Agricultural Facilities, administrative units
 |*Base datasets* a|
 * Soil map:
-
 The soil data are used in the system in two ways:
 
-* estimation of soil parameters for the crop model: for each STU of SGDBE there is estimation of depth of the soil, water retention at saturation, field capacity and wilting point using PTF. This needs the derived soil profile with its FAO soil name, parent material, depth to textural change, depth of an obstacle to roots, agricultural limitations, topsoil and subsoil texture.
-
-* definition of simulation units: this needs:
+** estimation of soil parameters for the crop model: for each STU of SGDBE there is estimation of depth of the soil, water retention at saturation, field capacity and wilting point using PTF. This needs the derived soil profile with its FAO soil name, parent material, depth to textural change, depth of an obstacle to roots, agricultural limitations, topsoil and subsoil texture.
+** definition of simulation units: this needs:
 
 (1) soil body area and soil body (with list of derived soil profiles and percentage of area) to overlay with administrative units and meteorological grid
-
 (2) derived soil profile with its FAO soil name and agricultural limitations, depth of an obstacle to roots, depth to impermeable layer, texture, water regime to define crop suitability. If the unit is estimated to be unsuitable for a given crop, then the unit is not used for crop simulation.
 
 * meteorological data: used as input for crop simulation and to determine climate suitability for crops
