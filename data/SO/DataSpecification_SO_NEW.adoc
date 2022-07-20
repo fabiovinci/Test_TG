@@ -4665,9 +4665,8 @@ Coverage data encoded in standalone JPEG 2000 files shall comply with the OGC st
 
 TG Requirement 8 implies that all the encoding rules presented in GMLJP2 shall be strictly followed for including GML within JPEG 2000 data files correctly. For the sake of harmonization, the encoding rules adopted for the multipart message encoding should also apply to the GMLJP2 encoding.
 
-===
-The encoding of coverage components in GMLJP2 within a JPEG 2000 file should conform to the rules specified in the Guidelines for the encoding of spatial data [DS-D2.7].optional encoding for the coverage part of the application schema Soil
-===
+[.text-center]
+*The encoding of coverage components in GMLJP2 within a JPEG 2000 file should conform to the rules specified in the Guidelines for the encoding of spatial data [DS-D2.7].optional encoding for the coverage part of the application schema Soil*
 
 For _Soil_ Theme and associated _Soil_ Theme Descriptive sspatial object types that provide the possibility to exchange soil thematic maps information as coverages the following encodings are recommended:
 
