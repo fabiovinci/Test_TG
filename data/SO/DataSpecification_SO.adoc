@@ -7444,7 +7444,6 @@ Examples of comparable systems in the EU are
 *General Overview of data in the system*
 
 a) *_potentially contaminated sites register (in land register)_*
-
 Overview of data on potentially contaminated sites in the system
 * land register identification number
 * description of the potential assumed deposits
