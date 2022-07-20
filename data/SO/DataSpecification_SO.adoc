@@ -6152,7 +6152,7 @@ NOTE these parts of this scheme are still under testing and development – see 
 
 [width="100%",cols="9%,20%,20%,15%,6%,5%,5%,5%,5%,5%,5%"]
 |===
-.2+|*No.* .2+|*Input data* .2+|*field (code) in SGDBE* .2+|*Input attributes* 6+|*Directly required for evaluation**
+.2+|*No.* .2+|*Input data* .2+|*field (code) in SGDBE* .2+|*Input attributes* 7+|*Directly required for evaluation**
 |1 |2 |3 |4a |4b |4c |4d
 |1 |Topsoil textural class |TEXT_SRF_DOM |- | | | |+ | |* |
 |2 |Subsoil textural class |TEXT_SUB_DOM |- | | | |** | | |
