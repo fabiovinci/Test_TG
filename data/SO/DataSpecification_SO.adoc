@@ -6252,28 +6252,27 @@ DR
 ** 4d carbon pool
 ====
 
+<<<
 === _Progress in management of Contaminated sites (CSI 015) indicator_
 
 *Narrative explanation of the use case*
 
-For many years, the EEA has been active in the development of indicators in relation to 'contaminated sites'. The term 'contaminated site' refers to a well-delimited area where the presence of soil contamination has been confirmed. After many meetings and discussions with representatives from Member States, one possible indicator was defined and agreed upon: "Progress in management of contaminated sites (CSI 015)". Although it is related to soil, the indicator does not require soil data as such.
+For many years, the EEA has been active in the development of indicators in relation to 'contaminated sites'. The term 'contaminated site' refers to a well-delimited area where the presence of *soil contamination* has been confirmed. After many meetings and discussions with representatives from Member States, one possible indicator was defined and agreed upon: "Progress in management of contaminated sites (CSI 015)". Although it is related to soil, the indicator does not require soil data as such.
 
 More details can be found on:
-
 http://www.eea.europa.eu/data-and-maps/indicators/progress-in-management-of-contaminated-sites
 
 In 2008, the responsibility for data collection related to this indicator from Member States, passed from EEA to JRC.
 
 *Detailed structured description of the Use Case*
-
 For the TWG _Soil_, the EEA Indicator CSI015 "Progress in the Management of Contaminated Sites" was investigated as a candidate for a Use Case.
-
 As this indicator does not use actual contaminated sites data, but only statistical data in association with the number and status of contaminated site and with the progress in cleaning-up contaminated sites in a country, the TWG decided not to retain it in the list of suitable Use Cases.
 
 *Mapping of this Use Case with the INSPIRE soil model of DS3.0*
 
 This Use Case does not use actual contaminated sites data, therefore can not be mapped to the INSPIRE soil model version 3.0
 
+<<<
 === _Land Irrigation Suitability for Navarre (Spain)_
 
 This Use Case explains the system followed in Navarre (Spain) for establishing the land irrigation suitability maps at a scale of 1:25.000.
@@ -6302,10 +6301,10 @@ _Soil_ cartographic units are reclassified according to the parameters above men
 
 The "Land irrigation suitability map" is made at a scale of 1:25.000, therefore, and depending on the case, for further and more detailed information, additional works should be carried out.
 
-image::./media/image16.png[image,width=660,height=729]image::./media/image17.png[image,width=660,height=729]image::./media/image18.png[image,width=660,height=729, align=center]
+image::./media/image16.png[image,width=660,height=729,align=center]
 
 [.text-center]
-Figure 1: Reclassification of Soil Cartographic Units according to soil parameters, topography and drainage.
+*Figure 1: Reclassification of Soil Cartographic Units according to soil parameters, topography and drainage.*
 
 image::./media/image22.png[image,width=616,height=458, align=center]
 
