@@ -6483,48 +6483,18 @@ Electromagnetic sensors' readings are influenced by the physical and chemical pr
 *Flow of Events – Basic Path*
 |*Step 1* a|
 Use of soil maps to characterize the high variability of soil physical-chemical properties at regional level, to identify soil-types and to stratify the territory.
-
 Use the soil cartographic units (SCU) to direct the soil salinity survey with EMISS (SCU incorporate taxonomic, geomorphic and geologic soil information).
-
 |*Step 2* a|
 Selection of some of the most susceptible SCU for presenting salinity problems (according to geographic position, geologic materials, etc) for EMISS prospection and calibration.
-
 Prospection of soil cartographic units (SCU) with EMISS when soil water content is close to field capacity (a few days after some rains or irrigation events).
-
 |*Step 3* a|
 Calibration of the sensor (EMISS) to convert the apparent soil electrical conductivity (ECa) into ECe values.
-
-* {blank}
-
-====
-Selection of a reduced number of sampling points at each SCU, covering the full range of EMISS readings
-====
-* {blank}
-
-====
-Soil sampling at different depths increments
-====
-* {blank}
-
-====
-Soil analysis: Soil parameters to be analyzed in laboratory:
-====
-
-* {blank}
-
-====
-Electrical conductivity of the soil saturation extract (ECe)
-====
-* {blank}
-
-====
-Soil water content during prospection (%)
-====
-* {blank}
-
-====
-Soil texture (soil saturation percentage, SP)
-====
+* Selection of a reduced number of sampling points at each SCU, covering the full range of EMISS readings
+* Soil sampling at different depths increments
+* Soil analysis: Soil parameters to be analyzed in laboratory:
+** Electrical conductivity of the soil saturation extract (ECe)
+** Soil water content during prospection (%)
+** Soil texture (soil saturation percentage, SP)
 
 |*Step 4* a|
 Obtaining calibration equations at each selected SCU for assigning soil salinity phases to the EMISS readings:
