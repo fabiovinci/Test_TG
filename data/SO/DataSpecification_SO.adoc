@@ -7518,12 +7518,9 @@ Overview of data on contaminated sites in the system:
 ** repository
 ** agriculture
 ** housing zone
-====
-
 * calendar date (adoption in atlas)
 * status of pollution management (classification in Austria)
 * calendar date (status classification)
-
 * complete and detailed description (measurement data: soil-air, soil, groundwater) of the site and all kinds of relevant information can be added in an extra file for download; also a detailed site map and risk assessment information
 
 image::./media/image28.png[image,width=531,height=368, align=center]
@@ -7532,7 +7529,6 @@ image::./media/image28.png[image,width=531,height=368, align=center]
 *Figure 7: Delineation of contaminated sites in Austria.*
 
 Discussion:
-
 The kind of contaminated site can be related to polluting activity and land use.
 
 Status of investigation is not included, probably because sites are added only after formal decision or on the basis of a detailed investigation. A longer list of pollutants should be expected.
