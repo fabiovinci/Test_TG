@@ -7243,7 +7243,7 @@ In France, the test of the biophysical criteria listed in the Communication was 
 
 [width="100%",cols="24%,76%",]
 |===
-|*Use Case Description* |
+2+^|*Use Case Description*
 |*Name* |Test of biophysical criteria for determining Less Favoured Areas in France
 |*Priority* |high
 |*Description* |The aim is to test the biophysical criteria proposed by the Commission, especially feasibility of the zoning considering available data in France
@@ -7265,7 +7265,6 @@ The Table 3 below details the attributes of the soil DB used for estimating the 
 |*Step 4* |calculation of the area of the municipalities constrained by each criteria
 |*Step 5* |
 |*Post-condition* |
-| |
 2+^|*Actors*
 |*End-users* a|
 * Ministry of agriculture
@@ -7280,12 +7279,9 @@ The Table 3 below details the attributes of the soil DB used for estimating the 
 |*Thematic scope* |Soil
 |*Base datasets* a|
 * Soil survey DB (see Table 3):
-
-* derived soil profile (STU)  attributes
-
-* soil horizons  attributes
-
-* Soil bodies (SMU  list of STUs and percentage of area)
+** derived soil profile (STU)  attributes
+** soil horizons  attributes
+** Soil bodies (SMU  list of STUs and percentage of area)
 
 |*Data provider* |Inra
 |*Scale, resolution* |1:250 000
@@ -7306,7 +7302,7 @@ The Table 3 below details the attributes of the soil DB used for estimating the 
 |===
 
 [.text-center]
-Table 3: list of soil criteria proposed by the Commission and list of attributes used in the Soil DB to calculate them:
+*Table 3: list of soil criteria proposed by the Commission and list of attributes used in the Soil DB to calculate them:*
 
 [align=center,width="100%",cols="14%,25%,61%"]
 |===
@@ -7369,7 +7365,7 @@ sodicity of the horizon
 
 _IMPORTANT NOTE this mapping still needs to be checked if it matches the latest version of the soil data model, as described in this document._
 
-Input dataset: soil DB at 1:250,000 scale for each Department (they have all the same structure)
+*Input dataset:* soil DB at 1:250,000 scale for each Department (they have all the same structure)
 
 [width="100%",cols="50%,50%"]
 |===
@@ -7409,8 +7405,8 @@ NB: As it is modal values, the sum of fractions can be different from 100%. Ofte
 |soil constraint |soilDerivedObject:soilDerivedObjectParameter (extension)
 |===
 
-=== 
-Contaminated Land Register Austria
+<<<
+=== Contaminated Land Register Austria
 
 *Introduction*
 
@@ -7433,13 +7429,9 @@ The report VERDACHTSFLÄCHENKATASTER UND ALTLASTENATLAS (Granzin, Valtl, Umweltb
 The website mentions currently 58 000 registered sites, 2000 potential contaminated sites to be investigated in more detail to decide on the need of remediation and 152 contaminated sites yet known to be cleaned or protected, The state of remediation is: about 100 sites with remediation in progress and 100 sites with completed remediation.
 
 The data in the system can be dived in:
-
 a) Potential contaminated sites register (in land register)
-
 b) Surveys (after confirmed suspicion)
-
 c) Contaminated sites atlas of Austria
-
 d) Cleaning and protection measures
 
 *Comparable systems*
@@ -7454,76 +7446,26 @@ Examples of comparable systems in the EU are
 a) *_potentially contaminated sites register (in land register)_*
 
 Overview of data on potentially contaminated sites in the system
-
 * land register identification number
 * description of the potential assumed deposits
-
-* {blank}
-
-====
-excavation material
-====
-* {blank}
-
-====
-demolition waste
-====
-* {blank}
-
-====
-garbage
-====
-* {blank}
-
-====
-industrial waste
-====
-* {blank}
-
-====
-hazardous waste
-====
-
-====
-Description of the industrial and commercial activities
-====
-
-* 12 different branches
-
+** excavation material
+**demolition waste
+**garbage
+**industrial waste
+**hazardous waste
+* description of the industrial and commercial activities
+** 12 different branches
 * description of the natural environment
 * description of the vulnerable environment
-
-* {blank}
-
-====
-groundwater
-====
-* {blank}
-
-====
-air
-====
-* {blank}
-
-====
-surface water
-====
-* {blank}
-
-====
-soil
-====
-
+** groundwater
+** air
+** surface water
+** soil
 * description of the administrative data (calendar date of adoption)
-
-* {blank}
-
-====
-classification in risk areas (four classes)
+** classification in risk areas (four classes)
 ====
 
 Discussion:
-
 It is a point of discussion to have potentially contaminated sites included in any EU Regulations and inventories. When doing so a general guideline for comparability is essential. But as the polluting activities may differ from country to country this can be expected to be difficult. The inventory can be broad or narrow. As an example: in the Netherlands the choice was made for an extensive list of potentially contaminated sites. After ongoing investigations many categories were skipped because for those categories there appeared to be very little sequence in soil investigations leading to the need of cleaning or protection.
 
 The type of deposits seems to be a good indicator, but may also be part of a description of the polluting activities.
@@ -7537,35 +7479,15 @@ This item coincides with the possible contaminated soil site and all related att
 *_b) Surveys (after confirmed suspicion)_*
 
 Overview of data in the system:
-
 a) first survey
-
-* {blank}
-
-====
-completed
-====
-* {blank}
-
-====
-in progress
-====
-
+** completed
+** in progress
 b) detailed survey
+** completed
+** in progress
 
-* {blank}
-
-====
-completed
-====
-* {blank}
-
-====
-in progress
-====
 
 Discussion:
-
 Dates of survey seem not to be included as well as final conclusions.
 
 The tiered approach may help to prevent a large investigation expenditure on sites of less importance.
@@ -7737,7 +7659,7 @@ From experience in the Netherlands it is recommended to add after the technical 
 
 [width="100%",cols="22%,78%"]
 |===
-|*Use Case Description* |
+2+^|*Use Case Description*
 |*Name* |Contaminated land register Austria
 |*Priority* |High
 |*Description* |System to provide information on historical landfills and sites of historical contamination, including potentially contaminated sites, surveys completed and in progress, confirmed contaminated sites, cleaning and protection measures. The full data structure is not available. The information if a property is on the list is public but does not confirm actual risks.
@@ -7883,7 +7805,7 @@ RIVM-report 734301029 Bouwstenen Leiddraad Grondwaterbescherming (Components for
 
 [width="100%",cols="26%,74%"]
 |===
-|*Use Case Description* |
+2+^|*Use Case Description*
 |*Name* |Recognition of polluted sites as cause of pollution of drinking water wells
 |*Priority* |Medium
 |*Description* |Polluted sites are one of the threats to drinking water provision. When threshold levels in water from pumping stations is approached the GWD demands that measures are taken to counteract the trend. To provide for this the recognition of close by polluted sites gives a point of departure to act.
@@ -8103,7 +8025,7 @@ _(except for the book by Swartjes these reports and the atlas can be downloaded 
 
 [width="100%",cols="26%,74%"]
 |===
-|*Use Case Description* |
+2+^|*Use Case Description*
 |*Name* |Ecological risk of soil contamination
 |*Priority* |Medium
 |*Description* |MS-PAF method for the foundation of the ecological part of the generic intervention value and the Triad-method: using 'Weight of Evidence' of three research fields (chemistry, toxicology, ecology) to make site-specific evaluations of the ecological risk of soil contamination
@@ -8386,7 +8308,7 @@ Standard list of substances for environmental investigations to soil and sedimen
 
 [width="100%",cols="23%,77%"]
 |===
-|*Use Case Description* |
+2+^|*Use Case Description*
 |*Name* |Contamination in relation with sale of properties
 |*Priority* |Medium
 |*Description* a|
@@ -8523,7 +8445,7 @@ Due to the complexity of deriving soil related data a lot of stakeholders with d
 
 [width="100%",cols="22%,78%"]
 |===
-|*Use Case Description* |
+2+^|*Use Case Description*
 |*Name* |_Soil monitoring in Europe._
 |*Priority* |_High_
 |*Description* |_Member States provide soil related monitoring data to characterize soil state, soil quality and soil development in order to describe the influence of anthropogenic activities on soils_
