@@ -6451,30 +6451,23 @@ This use case shows three examples included in this research project.
 
 [width="100%",cols="22%,78%"]
 |===
-|*Use Case Description* |
+2+|*Use Case Description*
 |*Name* |Methodologies for soil salinity surveillance in the middle Ebro basin (Spain): Development and validation of methodologies based on territorial information systems (remote sensing, GIS, and electromagnetic sensing systems) for identification, prospection and surveillance of salt-affected areas in the middle Ebro basin (Spain) using information derived from soil maps as ground truth.
 |*Priority* |High
 |*Description* a|
 This use case shows three examples of usage of soil map information for the objective of researching methodologies for soil salinity prospection and its spatial-temporal surveillance:
-
 [arabic, start=1]
 . Using soil map information (soil taxonomic and geomorphic units) for stratifying the territory for ultimately directing the regional soil salinity survey and calibration with electromagnetic induction sensing systems (EMISS).
-
 [arabic, start=2]
 . Using soil map information (soil salinity map at regional scale) as ground truth for validating a GIS methodology for identification of areas susceptible for salt-accumulation (primary salinization) from (1) information derived from Digital Terrain Models (DTM) and (2) additional layers of information which can influence soil salinity.
-
 [arabic, start=3]
 . Using soil map information (soil salinity map at regional scale, and detailed soil salinity maps obtained with EMISS) as ground truth for validating a methodology based on remote sensing for (i) identifying and mapping persistent problematic areas from the agricultural point of view and (ii) optimizing the selection of areas for soil salinity prospection and/or monitoring.
-
 |*Legal Foundation* a|
 No legal base (yet). The Soil Framework Directive is not approved. However, the European Soil Thematic Strategy for Soil Protection already recommends the development of information like this.
-
 Commission Communication of 22 September 2006 entitled "European Thematic Strategy for Soil Protection" [COM (2006) 231 final - Not published in the Official Journal].
-
 Proposal for a European Parliament and Council Directive of 22 September 2006 setting out a framework for soil protection and amending Council Directive 2004/35/EC.
-
 |*Pre-condition* |Soil Framework Directive has to be approved by the EU.
-|*Actors* |
+2+|*Actors*
 |*End-users* |Governmental bodies and public institutions at regional and/or national level, soil researchers, farmers, collective irrigation organisations, etc.
 |*Information provider(s)* |Government of Navarra, Tracasa, Government of Aragón, Centro de Investigación y Tecnología Agroalimentaria de Aragón (CITA)
 |*Information processors(s)/Brokers* |Tracasa, CITA-Aragón
@@ -6482,18 +6475,13 @@ Proposal for a European Parliament and Council Directive of 22 September 2006 se
 
 [width="100%",cols="22%,78%",]
 |===
-a|
+2+|
 *Example 1:*
-
 Using soil map information for stratifying the territory for directing the regional soil salinity survey and calibration with electromagnetic induction sensing systems (EMISS)
-
 This work was done as a pilot study for a very few selected soil cartographic units, in a small study area
-
 Electromagnetic sensors' readings are influenced by the physical and chemical properties of soils. A way for tackling the high variability of those properties is stratifying EMISS prospection and soil sampling as a function of soil-types.
 
 *Flow of Events – Basic Path*
-
-|
 |*Step 1* a|
 Use of soil maps to characterize the high variability of soil physical-chemical properties at regional level, to identify soil-types and to stratify the territory.
 
