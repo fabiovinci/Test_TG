@@ -6499,7 +6499,6 @@ Calibration of the sensor (EMISS) to convert the apparent soil electrical conduc
 
 |*Step 4* a|
 Obtaining calibration equations at each selected SCU for assigning soil salinity phases to the EMISS readings:
-
 Four soil salinity classes can be established according to the maximum ECe measured in the soil profiles:
 
 * Non-saline zones (NS, ECe 4 < dS m^-1^)
@@ -6509,7 +6508,7 @@ Four soil salinity classes can be established according to the maximum ECe measu
 
 |*Step 5* |Assigning soil salinity phases to EMISS readings for selected SCU: EMISS readings (ECa) must be converted into soil salinity classes according to the calibration equation and to the threshold ECa values equivalent to ECe values of 4, 8 and 16 dS m^-1^.
 |*Post-condition* |
-|*Information source Input : Soil maps at 1:25.000* |
+2+|*Information source Input : Soil maps at 1:25.000*
 |*Description* |The map contains soil information for the pilot areas at a scale of 1:25.000.
 |*Dataset(s)* a|
 Information employed:
@@ -6523,7 +6522,7 @@ Information employed:
 |*Delivery* |n/a
 |*Documentation* |Public. Soil maps (VisorSITNA viewer) and reports (in paper and/or CD, available at the Government of Navarra and Tracasa).
 |*External reference* |n/a
-|*Information source Output: Map of salt-affected areas* |
+2+|*Information source Output: Map of salt-affected areas*
 |*Description* |The map has information about soil salinity phases
 |*Dataset(s)* |Map of salt-affected areas and its related database.
 |*Data provider* |Government of Navarra, Tracasa,
@@ -6533,7 +6532,7 @@ Information employed:
 |*Delivery* |n/a
 |*Documentation* |n/a
 |*External reference* |n/a
-|*Information source Output: Sensor calibration equations* |
+2+|*Information source Output: Sensor calibration equations*
 |*Description* |Calibration equations for the studied soil cartographic units (SCU)
 |*Dataset(s)* |
 |*Geographic scope* |Local, one for each SCU.
@@ -6543,33 +6542,26 @@ Information employed:
 |*Delivery* |n/a
 |*Documentation* |n/a
 |*External reference* |n/a
-| |
 |===
 
 [width="100%",cols="22%,78%",]
 |===
-a|
-*Example 2:*
-
+2+^|*Example 2:*
 Using soil map information as ground truth for validating a GIS methodology for identification of areas susceptible for salt-accumulation (primary salinization)
 
 *Flow of Events – Basic Path*
-
-|
 |*Step 1* |Selection of pilot study areas
 |*Step 2* |Obtaining several layers/maps from digital elevation model: slope, curvature, plan curvature, wetness index, etc
 |*Step 3* |Intersection of several information in a GIS project for the pilot areas: information derived from DTM (slope, curvature, plan curvature, wetness index, etc), geomorphologic units, parental material,
 |*Step 4* |Validation of the methodology based on GIS by employing soil map information (soil salinity maps) as ground truth.
 |*Post-condition* |
-|*Information source Input : Soil map at 1:25.000* |
+2+|*Information source Input : Soil map at 1:25.000*
 |*Description* |The map contains soil information of the pilot areas at a scale of 1:25.000.
 |*Dataset(s)* a|
 Information employed:
 
 - Soil salinity map derived from the soil map
-
 - Soil geomorphologic units derived from the soil map
-
 - Parental material (aluvial material, etc) derived from the soil map
 
 |*Data provider* |Government of Navarra, Tracasa.
@@ -6579,7 +6571,7 @@ Information employed:
 |*Delivery* |n/a
 |*Documentation* |Public. Soil maps (VisorSITNA viewer) and reports (in paper and/or CD, available at the Government of Navarra and Tracasa).
 |*External reference* |n/a
-|*Information source Input: Digital Terrain Model (DTM)* |
+2+|*Information source Input: Digital Terrain Model (DTM)*
 |*Description* |DTM of 5x5 m
 |*Dataset(s)* |Maps derived from DTM: maps of slope, curvature, profile curvature, plain curvature, wetness index etc., 25m x 25m
 |*Data provider* |Tracasa.
@@ -6588,10 +6580,9 @@ Information employed:
 |*Scale, resolution* |DTM (5m x 5m), maps derived from DTM (25 x 25m)
 |*Delivery* |n/a
 |*Documentation* |
-|*Information source Output: Map of risk for presenting salinity accumulation (primary salinization)* |
+2+|*Information source Output: Map of risk for presenting salinity accumulation (primary salinization)*
 |*Description* a|
 Maps with two classes (low and medium/high) of risk for presenting salt accumulation (primary salinization).
-
 This information could be used to help reducing areas that do not need to be prospected/monitored for soil salinity. These maps, complemented with other maps or information (e.g. derived from remote sensing), could be used for optimizing areas for salinity prospection and monitoring.
 
 |*Dataset(s)* |Map of risk for presenting salinity accumulation and its related database.
@@ -6602,7 +6593,7 @@ This information could be used to help reducing areas that do not need to be pro
 |*Delivery* |n/a
 |*Documentation* |n/a
 |*External reference* |n/a
-|*Information source Output: Methodology for assessing the risk for soil salinity accumulation (primary salinization)* |
+2+|*Information source Output: Methodology for assessing the risk for soil salinity accumulation (primary salinization)*
 |*Description* |GIS based methodology to be used for complementing other methodologies, such as remote sensing, in order to optimize the selection of areas for soil salinity prospection and/or monitoring.
 |*Dataset(s)* |
 |*Geographic scope* |
@@ -6616,49 +6607,26 @@ This information could be used to help reducing areas that do not need to be pro
 
 [width="100%",cols="22%,78%",]
 |===
-a|
-*Example 3:*
-
+2+^|*Example 3:*
 Using soil map information as ground truth for validating a methodology based on remote sensing for (i) identifying and mapping problematic areas from the agricultural point of view and (ii) optimizing the selection of areas for soil salinity prospection and/or monitoring.
-
 Localizing by remote sensing areas with persistent agricultural problems (over several years) can help to discriminate salt-affected areas as well as to optimize the selection of areas for soil salinity prospection and/or monitoring.
 
 *Flow of Events – Basic Path*
-
-|
 |*Step 1* |Selection of pilot areas for the study.
 |*Step 2* |Calculation of NDVI from Landsat images for the pilot areas over the time.
 |*Step 3* a|
 Identification of persistently problematic areas from the agricultural point of view, using the NDVI information.
-
 Repetition of the methodology for several years and analysis of the persistence of the problems: Identification of areas with persistent low productivity over the years.
-
 |*Step 4* |Validation of the methodology based on remote sensing by employing soil map information (soil salinity map derived from soil maps at regional scale, and detailed soil salinity maps obtained with EMISS) as ground truth.
 |*Post-condition* |
-|*Information source Input : Soil maps at 1:25.000* |
+2+|*Information source Input : Soil maps at 1:25.000*
 |*Description* |The map contains information about the salt-affected areas in the pilot areas at a scale of 1:25.000.
 |*Dataset(s)* a|
 The map of the salt-affected areas has information about four soil salinity classes established from the maximum electrical conductivity of the soil saturation extract (ECe, dS/m) measured in the soil profiles: The four soil salinity classes are:
-
-* {blank}
-
-====
-Non-saline zones (NS, ECe 4 < dS m^-1^)
-====
-* {blank}
-
-====
-Slightly saline zones (SS, 4 ≤ ECe ≤ 8 dS m^-1^)
-====
-* {blank}
-
-====
-Moderately saline zones (MS, 8 < CEe < 16 dS m^-1^)
-====
-* {blank}
-
-====
-Strongly saline zones (StS, ECe ≥ 16 dS m^-1^)
+* Non-saline zones (NS, ECe 4 < dS m^-1^)
+* Slightly saline zones (SS, 4 ≤ ECe ≤ 8 dS m^-1^)
+* Moderately saline zones (MS, 8 < CEe < 16 dS m^-1^)
+* Strongly saline zones (StS, ECe ≥ 16 dS m^-1^)
 ====
 
 |*Data provider* |Government of Navarra, Tracasa, Government of Aragón, Centro de Investigación y Tecnología Agroalimentaria de Aragón (CITA).
@@ -6668,28 +6636,15 @@ Strongly saline zones (StS, ECe ≥ 16 dS m^-1^)
 |*Delivery* |n/a
 |*Documentation* a|
 Navarra: Public. Soil maps (VisorSITNA viewer) and reports (in paper and/or CD, available at the Government of Navarra and Tracasa).
-
 Aragón: Reports (in paper and/or CD), available at the Government of Aragón and CITA
 
 |*External reference* |n/a
-|*Information source Input: Other maps* |
+2+|*Information source Input: Other maps*
 |*Description* |
 |*Dataset(s)* a|
-* {blank}
-
-====
-Cadastre 1:5.000
-====
-* {blank}
-
-====
-SIGPAC (Land cover) 1:5.000
-====
-* {blank}
-
-====
-Maps of soil crops established from remote sensing (Landsat, at resolution of 30m x 30m), declarations of farmers and inspections in the field.
-====
+* Cadastre 1:5.000
+* SIGPAC (Land cover) 1:5.000
+* Maps of soil crops established from remote sensing (Landsat, at resolution of 30m x 30m), declarations of farmers and inspections in the field.
 
 |*Data provider* |Government of Navarra, Tracasa, Government of Aragón, CITA
 |*Geographic scope* |Pilot areas in Navarra and Aragon (Spain)
@@ -6698,13 +6653,11 @@ Maps of soil crops established from remote sensing (Landsat, at resolution of 30
 |*Delivery* |n/a
 |*Documentation* a|
 In Navarra, the land cover map and the cadastre are available at IDENA (_http://idena.navarra.es_) and in the _VisorSITNA_ viewer.
-
 In Aragón: Sistema de Información Territorial de Aragón (SITAR; _http://sitar.aragon.es/_); Centro de Documentación e Información Territorial de Aragón, Government of Aragón,
 
-|*Information source Input: Remote sensing images* |
+2+|*Information source Input: Remote sensing images*
 |*Description* a|
 Landsat images for different dates within a year.
-
 The same information (Landsat images for different dates within a year) for several years.
 
 |*Dataset(s)* |
@@ -6715,7 +6668,7 @@ The same information (Landsat images for different dates within a year) for seve
 |*Delivery* |n/a
 |*Documentation* |n/a
 |*External reference* |n/a
-|*Information source Output: Maps of areas with persistent agricultural problems (low productivity)* |
+2+|*Information source Output: Maps of areas with persistent agricultural problems (low productivity)*
 |*Description* |Raster maps (25 m x 25m) of areas that have persistent problems from the agricultural point of view (low productivity), which can be seen as areas with possible problems of soil salinity. These maps, combined with other information, could be used for optimizing areas for salinity prospection and monitoring.
 |*Dataset(s)* |
 |*Geographic scope* |Pilot study areas in Navarra and Aragón (Spain)
@@ -6725,7 +6678,7 @@ The same information (Landsat images for different dates within a year) for seve
 |*Delivery* |n/a
 |*Documentation* |n/a
 |*External reference* |n/a
-|*Information source Output: Methodology for identifying salt-affected areas* |
+2+|*Information source Output: Methodology for identifying salt-affected areas*
 |*Description* |Methodology based on spectral indices derived from remote sensing and combined with GIS technology for identifying salt-affected or potentially salt-affected areas, using information derived from the soil maps for their validation.
 |*Dataset(s)* |
 |*Geographic scope* |Pilot study areas in Navarra and Aragón (Spain)
@@ -6735,7 +6688,6 @@ The same information (Landsat images for different dates within a year) for seve
 |*Delivery* |n/a
 |*Documentation* |n/a
 |*External reference* |n/a
-| |
 |===
 
 *Mapping of the soil dataset with the INSPIRE Soil model of DS version 3.0.*
