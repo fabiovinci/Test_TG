@@ -4457,7 +4457,8 @@ Lines 7-9 from ISO/DIS 19157
 8. DQ_EvaluationMethod (C.2.1.4.)
 9. DQ_Result (C2.1.5.)
 
-|Implementing instructions a|39. nameOfMeasure
+|Implementing instructions a|
+39{empty}. nameOfMeasure
 
 NOTE This should be the name as defined in Chapter 7.
 
