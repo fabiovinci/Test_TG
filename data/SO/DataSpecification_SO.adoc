@@ -7738,7 +7738,6 @@ After a first generic approach a discussion may raise on the need of remediation
 [arabic, start=3]
 . Ecology: field observations (condition and variation of soil organisms, plants, trees).
 
-====
 image::./media/image29.png[image,width=136,height=138, align=center]
 
 [.text-center]
