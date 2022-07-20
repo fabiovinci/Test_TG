@@ -3964,15 +3964,19 @@ When documenting conformance with this data specification or one of the conforma
 
 EXAMPLE 1: The XML snippets below show how to fill the _Specification_ sub-element for documenting conformance with the whole data specification on Addresses v3.0.1.
 
+[source,xml,subs="+quotes"]
+----
 <gmd:DQ_ConformanceResult>
 	<gmd:specification href="http://inspire.ec.europa.eu/conformanceClass/ad/3.0.1/tg" />
 	<gmd:explanation> (...) </gmd:explanation>
 	<gmd:pass> (...) </gmd:pass>
 </gmd:DQ_ConformanceResult>
-
+----
 
 or (using a citation):
 
+[source,xml,subs="+quotes"]
+----
 <gmd:DQ_ConformanceResult>
 	<gmd:specification>
 		<gmd:CI_Citation>
@@ -3993,7 +3997,7 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">p
 	<gmd:explanation> (...) </gmd:explanation>
 	<gmd:pass> (...) </gmd:pass>
 </gmd:DQ_ConformanceResult>
-
+----
 
 EXAMPLE 2: The XML snippets below show how to fill the _Specification_ sub-element for documenting conformance with the CRS conformance class of the data specification on Addresses v3.0.1.
 
@@ -4172,8 +4176,8 @@ NOTE More specific instructions, in particular on pre-defined values for filling
 |Implementing instructions |
 |Example a|
 referenceSystemIdentifier:
- code: ETRS_89
- codeSpace: INSPIRE RS registry
+* code: ETRS_89
+* codeSpace: INSPIRE RS registry
 
 |Example XML encoding a|
 [source,xml,subs="+quotes"]
@@ -4200,7 +4204,7 @@ referenceSystemIdentifier:
 
 [width="100%",cols="33%,67%"]
 |===
-|Metadata element name |*Temporal Reference System*
+|*Metadata element name* |*Temporal Reference System*
 |Definition |Description of the temporal reference systems used in the dataset.
 |ISO 19115 number and name |13. referenceSystemInfo
 |ISO/TS 19139 path |referenceSystemInfo
@@ -4215,40 +4219,27 @@ NOTE More specific instructions, in particular on pre-defined values for filling
 |Implementing instructions |
 |Example a|
 referenceSystemIdentifier:
-
-code: GregorianCalendar
-
-codeSpace: INSPIRE RS registry
+* code: GregorianCalendar
+* codeSpace: INSPIRE RS registry
 
 |Example XML encoding a|
+[source,xml,subs="+quotes"]
+----
 <gmd:referenceSystemInfo>
-
-<gmd:MD_ReferenceSystem>
-
-<gmd:referenceSystemIdentifier>
-
-<gmd:RS_Identifier>
-
-<gmd:code>
-
-<gco:CharacterString>GregorianCalendar </gco:CharacterString>
-
-</gmd:code>
-
-<gmd:codeSpace>
-
-<gco:CharacterString>INSPIRE RS registry</gco:CharacterString>
-
-</gmd:codeSpace>
-
-</gmd:RS_Identifier>
-
-</gmd:referenceSystemIdentifier>
-
-</gmd:MD_ReferenceSystem>
-
+		<gmd:MD_ReferenceSystem>
+			<gmd:referenceSystemIdentifier>
+				<gmd:RS_Identifier>
+					<gmd:code>
+						<gco:CharacterString>ETRS89 </gco:CharacterString>
+					</gmd:code>
+					<gmd:codeSpace>
+						<gco:CharacterString>INSPIRE RS registry</gco:CharacterString>
+					</gmd:codeSpace>
+				</gmd:RS_Identifier>
+			</gmd:referenceSystemIdentifier>
+		</gmd:MD_ReferenceSystem>
 </gmd:referenceSystemInfo>
-
+----
 |Comments |
 |===
 
@@ -4256,7 +4247,7 @@ codeSpace: INSPIRE RS registry
 
 [width="100%",cols="33%,67%"]
 |===
-|Metadata element name |*Encoding*
+|*Metadata element name* |*Encoding*
 |Definition |Description of the computer language construct that specifies the representation of data objects in a record, file, message, storage device or transmission channel
 |ISO 19115 number and name |271. distributionFormat
 |ISO/TS 19139 path |distributionInfo/MD_Distribution/distributionFormat
@@ -4267,34 +4258,24 @@ codeSpace: INSPIRE RS registry
 |Implementing instructions |
 |Example a|
 name: <Application schema nameGML application schema
-
 version: version 3.0
-
 specification: D2.8.III.3 Data Specification on Soil – Technical Guidelines
 
 |Example XML encoding a|
+[source,xml,subs="+quotes"]
+----
 <gmd:MD_Format>
-
-<gmd:name>
-
-<gco:CharacterString>SomeApplicationSchema GML application schema</gco:CharacterString>
-
-</gmd:name>
-
-<gmd:version>
-
-<gco:CharacterString>3.0</gco:CharacterString>
-
-</gmd:version>
-
-<gmd:specification>
-
-<gco:CharacterString>D2.8.III.3 Data Specification on Soil – Technical Guidelines</gco:CharacterString>
-
-</gmd:specification>
-
+	<gmd:name>
+		<gco:CharacterString>SomeApplicationSchema GML application schema</gco:CharacterString>
+	</gmd:name>
+	<gmd:version>
+		<gco:CharacterString>3.0</gco:CharacterString>
+	</gmd:version>
+	<gmd:specification>
+		<gco:CharacterString>D2.8.III.3 Data Specification on Soil – Technical Guidelines</gco:CharacterString>
+	</gmd:specification>
 </gmd:MD_Format>
-
+----
 |Comments |
 |===
 
@@ -4302,7 +4283,7 @@ specification: D2.8.III.3 Data Specification on Soil – Technical Guidelines
 
 [width="100%",cols="33%,67%"]
 |===
-|Metadata element name |*Character Encoding*
+|*Metadata element name* |*Character Encoding*
 |Definition |The character encoding used in the data set.
 |ISO 19115 number and name |
 |ISO/TS 19139 path |
@@ -4313,11 +4294,12 @@ specification: D2.8.III.3 Data Specification on Soil – Technical Guidelines
 |Implementing instructions |
 |Example |-
 |Example XML encoding a|
+[source,xml,subs="+quotes"]
+----
 <gmd:characterSet>
-
-<gmd:MD_CharacterSetCode codeListValue="8859part2" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CharacterSetCode">8859-2</gmd:MD_CharacterSetCode>
-
+	<gmd:MD_CharacterSetCode codeListValue="8859part2" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CharacterSetCode">8859-2</gmd:MD_CharacterSetCode>
 </gmd:characterSet>
+----
 
 |Comments |
 |===
@@ -4326,7 +4308,7 @@ specification: D2.8.III.3 Data Specification on Soil – Technical Guidelines
 
 [width="100%",cols="33%,67%"]
 |===
-|Metadata element name |*Spatial representation type*
+|*Metadata element name* |*Spatial representation type*
 |Definition |The method used to spatially represent geographic information.
 |ISO 19115 number and name |37. spatialRepresentationType
 |ISO/TS 19139 path |
@@ -4387,7 +4369,7 @@ For implementing the metadata elements included in this section using ISO 19115,
 
 [width="100%",cols="33%,67%"]
 |===
-|Metadata element name |*Maintenance information*
+|*Metadata element name* |*Maintenance information*
 |Definition |Information about the scope and frequency of updating
 |ISO 19115 number and name |30. resourceMaintenance
 |ISO/TS 19139 path |identificationInfo/MD_Identification/resourceMaintenance
@@ -4473,7 +4455,7 @@ NOTE In the level element of DQ_Scope, the value featureType is used to denote s
 
 [width="100%",cols="36%,64%"]
 |===
-|Metadata element name |*See chapter 7*
+|*Metadata element name* |*See chapter 7*
 |Definition |See chapter 7
 |ISO/DIS 19157 number and name |3. report
 |ISO/TS 19139 path |dataQualityInfo/*/report
@@ -4516,7 +4498,7 @@ NOTE The DQ_Result type should be DQ_QuantitativeResult and the value(s) represe
 
 [width="100%",cols="36%,64%"]
 |===
-|Metadata element name |*See chapter 7*
+|*Metadata element name* |*See chapter 7*
 |Definition |See chapter 7
 |ISO/DIS 19157 number and name |3. report
 |ISO/TS 19139 path |dataQualityInfo/*/report
