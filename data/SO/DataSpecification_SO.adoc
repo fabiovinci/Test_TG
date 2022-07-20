@@ -6781,7 +6781,6 @@ The soil data are used in the system in two ways:
 
 ** estimation of soil parameters for the crop model: for each STU of SGDBE there is estimation of depth of the soil, water retention at saturation, field capacity and wilting point using PTF. This needs the derived soil profile with its FAO soil name, parent material, depth to textural change, depth of an obstacle to roots, agricultural limitations, topsoil and subsoil texture.
 ** definition of simulation units: this needs:
-
 (1) soil body area and soil body (with list of derived soil profiles and percentage of area) to overlay with administrative units and meteorological grid
 (2) derived soil profile with its FAO soil name and agricultural limitations, depth of an obstacle to roots, depth to impermeable layer, texture, water regime to define crop suitability. If the unit is estimated to be unsuitable for a given crop, then the unit is not used for crop simulation.
 
