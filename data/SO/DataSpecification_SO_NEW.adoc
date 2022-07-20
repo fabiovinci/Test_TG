@@ -164,6 +164,7 @@ toc::[]
 
 :sectnums:
 
+<<<
 == Scope
 
 This document specifies a harmonised data specification for the spatial data theme _Soil_ as defined in Annex III of the INSPIRE Directive.
@@ -518,6 +519,7 @@ NOTE The implementation of recommendations is not mandatory. Compliance with the
 
 Annex A includes the abstract test suite for checking conformance with the requirements included in these Technical Guidelines and the corresponding parts of the Implementing Rules (Commission Regulation (EU) No 1089/2010).
 
+<<<
 == Specification scopes
 
 This data specification does not distinguish different specification scopes, but just considers one general scope.
@@ -531,6 +533,7 @@ http://inspire.ec.europa.eu/tg/so/3.0
 
 NOTE ISO 19131 suggests further identification information to be included in this section, e.g. the title, abstract or spatial representation type. The proposed items are already described in the document metadata, executive summary, overview description (section 2) and descriptions of the application schemas (section 5). In order to avoid redundancy, they are not repeated here.
 
+<<<
 == Data content and structure
 
 === Application schemas – Overview 
@@ -3499,6 +3502,7 @@ The externally governed code lists included in this application schema are speci
 
 NOTE All the externally managed code lists and their values are presented in the Annex C of this document
 
+<<<
 == Reference systems, units of measure and grids
 
 === Default reference systems, units of measure and grid
@@ -3709,6 +3713,7 @@ For the unambiguous referencing and identification of a grid cell, the cell code
 
 There are no theme-specific requirements or recommendations on reference systems and grids.
 
+<<<
 == Data quality
 
 This chapter includes a description of the data quality elements and sub-elements as well as the corresponding data quality measures that should be used to evaluate and document data quality for data sets related to the spatial data theme _Soil_ (section 7.1).
@@ -3854,6 +3859,7 @@ No minimum data quality requirements are defined for the spatial data theme _Soi
 
 No minimum data quality recommendations are defined for the spatial data theme _Soil_.
 
+<<<
 == Dataset-level metadata
 
 This section specifies dataset-level metadata elements, which should be used for documenting metadata for a complete dataset or dataset series.
@@ -4462,17 +4468,17 @@ Lines 7-9 from ISO/DIS 19157
 
 NOTE This should be the name as defined in Chapter 7.
 
-42. evaluationMethodType
+42{empty}. evaluationMethodType
 
-43. evaluationMethodDescription
+43{empty}. evaluationMethodDescription
 
 NOTE If the reported data quality results are derived or aggregated (i.e. the scope levels for evaluation and reporting are different), the derivation or aggregation should also be specified using this property.
 
-46. dateTime
+46{empty}. dateTime
 
 NOTE This should be data or range of dates on which the data quality measure was applied.
 
-63. DQ_QuantitativeResult / 64. value
+63{empty}. DQ_QuantitativeResult / 64. value
 
 NOTE The DQ_Result type should be DQ_QuantitativeResult and the value(s) represent(s) the application of the data quality measure (39.) using the specified evaluation method (42-43.)
 
@@ -4493,11 +4499,10 @@ NOTE The DQ_Result type should be DQ_QuantitativeResult and the value(s) represe
 |Data type (and ISO/DIS 19157 no.) |Corresponding DQ_xxx subelement from ISO/DIS 19157, e.g. 12. DQ_CompletenessCommission
 |Domain a|
 Line 9 from ISO/DIS 19157
-
-9. DQ_Result (C2.1.5.)
+9{empty}. DQ_Result (C2.1.5.)
 
 |Implementing instructions a|
-67. DQ_DescripitveResult / 68. statement
+67{empty}. DQ_DescripitveResult / 68{empty}. statement
 
 NOTE The DQ_Result type should be DQ_DescriptiveResult and in the statement (68.) the evaluation of the selected DQ sub-element should be expressed in a narrative way.
 
@@ -4505,6 +4510,7 @@ NOTE The DQ_Result type should be DQ_DescriptiveResult and in the statement (68.
 |Example XML encoding |
 |===
 
+<<<
 == Delivery
 
 === Updates
@@ -4600,11 +4606,8 @@ NOTE 2 The obligation to use only the allowed code list values specified for att
 *Name: Soil GML Application Schema*
 
 Version: version 3.0,
-
 Specification: D2.8.III.3 Data Specification on _Soil_ – Technical Guidelines
-
 Character set: UTF-8
-
 The xml schema document is available from _http://inspire.ec.europa.eu/schemas/so/3.0/Soil.xsd_
 
 ==== Recommended Encoding(s)
@@ -4663,7 +4666,7 @@ Coverage data encoded in standalone JPEG 2000 files shall comply with the OGC st
 
 TG Requirement 8 implies that all the encoding rules presented in GMLJP2 shall be strictly followed for including GML within JPEG 2000 data files correctly. For the sake of harmonization, the encoding rules adopted for the multipart message encoding should also apply to the GMLJP2 encoding.
 
-==== The encoding of coverage components in GMLJP2 within a JPEG 2000 file should conform to the rules specified in the Guidelines for the encoding of spatial data [DS-D2.7].optional encoding for the coverage part of the application schema Soil
+===== The encoding of coverage components in GMLJP2 within a JPEG 2000 file should conform to the rules specified in the Guidelines for the encoding of spatial data [DS-D2.7].optional encoding for the coverage part of the application schema Soil
 
 For _Soil_ Theme and associated _Soil_ Theme Descriptive sspatial object types that provide the possibility to exchange soil thematic maps information as coverages the following encodings are recommended:
 
@@ -4677,10 +4680,12 @@ The recommended coverage encodings for SoilThemeCoverage, SoilThemeDescribtedCov
 
 The encoding of coverage components in GMLJP2 within a JPEG 2000 file should conform to the rules specified in the Guidelines for the encoding of spatial data [DS-D2.7]
 
+<<<
 == Data Capture
 
 There is no specific guidance required with respect to data capture.
 
+<<<
 == Portrayal
 
 This clause defines the rules for layers and styles to be used for portrayal of the spatial object types defined for this theme. Portrayal is regulated in Article 14 of the IRs.
@@ -4693,15 +4698,11 @@ _Article 14_
 *Portrayal*
 
 1. For the portrayal of spatial data sets using a view network service as specified in Commission Regulation No 976/2009 (footnote:[OJ L 274, 20.10.2009, p. 9.]), the following shall be available:
-
 (a) the layers specified in Annex II for the theme or themes the data set is related to;
-
 (b) for each layer at least a default portrayal style, with as a minimum an associated title and a unique identifier.
 
 2. For each layer, Annex II defines the following:
-
 (a) a human readable title of the layer to be used for display in user interface;
-
 (b) the spatial object type(s), or sub-set thereof, that constitute(s) the content of the layer.
 
 ====
