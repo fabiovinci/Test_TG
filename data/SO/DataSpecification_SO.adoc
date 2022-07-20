@@ -6489,6 +6489,7 @@ Selection of some of the most susceptible SCU for presenting salinity problems (
 Prospection of soil cartographic units (SCU) with EMISS when soil water content is close to field capacity (a few days after some rains or irrigation events).
 |*Step 3* a|
 Calibration of the sensor (EMISS) to convert the apparent soil electrical conductivity (ECa) into ECe values.
+
 * Selection of a reduced number of sampling points at each SCU, covering the full range of EMISS readings
 * Soil sampling at different depths increments
 * Soil analysis: Soil parameters to be analyzed in laboratory:
