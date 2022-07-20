@@ -3717,21 +3717,10 @@ It may also define requirements or recommendations about the targeted data quali
 
 In particular, the data quality elements, sub-elements and measures specified in section 7.1 should be used for
 
-* {blank}
+* evaluating and documenting data quality properties and constraints of spatial objects, where such properties or constraints are defined as part of the application schema(s) (see section 5);
+* evaluating and documenting data quality metadata elements of spatial data sets (see section 8); and/or
+* specifying requirements or recommendations about the targeted data quality results applicable for data sets related to the spatial data theme _Soil_ (see sections 7.2 and 7.3).
 
-====
-evaluating and documenting data quality properties and constraints of spatial objects, where such properties or constraints are defined as part of the application schema(s) (see section 5);
-====
-* {blank}
-
-====
-evaluating and documenting data quality metadata elements of spatial data sets (see section 8); and/or
-====
-* {blank}
-
-====
-specifying requirements or recommendations about the targeted data quality results applicable for data sets related to the spatial data theme _Soil_ (see sections 7.2 and 7.3).
-====
 
 The descriptions of the elements and measures are based on Annex D of ISO/DIS 19157 Geographic information – Data quality.
 
