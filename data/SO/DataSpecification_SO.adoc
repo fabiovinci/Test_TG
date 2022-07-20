@@ -7488,105 +7488,36 @@ Overview of data in the system:
 
 Discussion:
 Dates of survey seem not to be included as well as final conclusions.
-
 The tiered approach may help to prevent a large investigation expenditure on sites of less importance.
-
 The quality standards of the investigations are important because of the high costs of cleaning. Is the investigation sufficient in relation to cleaning and protection measures (including sufficient data on the size of the contaminated area, pollutants, pollutant levels and soil types) or only sufficient to know it is contamination or not.
-
 This item coincides with the investigation state in the model on soil contamination of the TGW Soil.
 
 [loweralpha, start=3]
-*_contaminated sites atlas - Austria_*
-
+. *_contaminated sites atlas - Austria_*
 Overview of data on contaminated sites in the system:
-
 * name
 * land register identification number
 * kind of contaminated site ("old deposit, old-site")
 * kind of deposits
-
-* garbage
-* urban repository
-* commercial repository
-** {blank}
-
-====
-description of the industrial and commercial activities
-====
-** {blank}
-
-====
-pollutants
-====
-*** {blank}
-
-====
-CKW
-====
-*** {blank}
-
-====
-petroleum
-====
-*** {blank}
-
-====
-heavy metals
-====
-*** {blank}
-
-====
-PAK
-====
-*** {blank}
-
-====
-other
-====
-*** {blank}
-
-====
-Phenol
-====
-*** {blank}
-
-====
-BTEX
-====
-*** {blank}
-
-====
-Cyanide
-====
-** {blank}
-
-====
-current use
-====
-*** {blank}
-
-====
-industrial area
-====
-*** {blank}
-
-====
-brownfield
-====
-*** {blank}
-
-====
-repository
-====
-*** {blank}
-
-====
-agriculture
-====
-*** {blank}
-
-====
-housing zone
+** garbage
+** urban repository
+** commercial repository
+* description of the industrial and commercial activities
+* pollutants
+** CKW
+** petroleum
+** heavy metals
+** PAK
+** other
+** Phenol
+** BTEX
+** Cyanide
+* current use
+** industrial area
+** brownfield
+** repository
+** agriculture
+** housing zone
 ====
 
 * calendar date (adoption in atlas)
