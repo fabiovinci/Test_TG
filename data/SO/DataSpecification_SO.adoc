@@ -6433,7 +6433,6 @@ _IMPORTANT NOTE this mapping still needs to be checked if it matches the latest 
 === _Development of methodologies for soil salinity surveillance in the middle Ebro basin_
 
 [text-center]
-
 Subtitle: Development and validation of methodologies based on territorial information systems (remote sensing, GIS, and electromagnetic sensing systems) for identification, prospection and surveillance of salt-affected areas in the middle Ebro basin using information derived from soil maps as ground truth.
 
 The European Commission proposed a framework and common objectives to prevent soil degradation, preserve soil functions and remediate degraded soil (European Thematic Strategy for Soil Protectionfootnote:[Commission Communication of 22 September 2006 entitled "European Thematic Strategy for Soil Protection (ETSSP)" [COM(2006) 231 final - Not published in the Official Journal].] (ETSSP). Under this proposal, risk areas and polluted sites must be identified and provision should be made to remediate degraded soil.
