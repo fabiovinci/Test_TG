@@ -3955,11 +3955,11 @@ NOTE Currently no minimum data quality requirements are included in the IRs. The
 *Recomendation 16*
 
 When documenting conformance with this data specification or one of the conformance classes defined in the Abstract Test Suite, the _Specification_ sub-element should be given using the http URI identifier of the conformance class or using a citation including the following elements:
+
 * title: "INSPIRE Data Specification on _Soil_ – Draft Guidelines – <name of the conformance class>"
 * date:
 ** dateType: publication
 ** date: 2013-01-24
-
 ====
 
 EXAMPLE 1: The XML snippets below show how to fill the _Specification_ sub-element for documenting conformance with the whole data specification on Addresses v3.0.1.
