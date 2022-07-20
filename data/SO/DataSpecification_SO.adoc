@@ -3726,19 +3726,13 @@ It may also define requirements or recommendations about the targeted data quali
 
 In particular, the data quality elements, sub-elements and measures specified in section 7.1 should be used for
 
-* {blank}
-
-====
+* 
 evaluating and documenting data quality properties and constraints of spatial objects, where such properties or constraints are defined as part of the application schema(s) (see section 5);
 ====
-* {blank}
-
-====
+* 
 evaluating and documenting data quality metadata elements of spatial data sets (see section 8); and/or
 ====
-* {blank}
-
-====
+* 
 specifying requirements or recommendations about the targeted data quality results applicable for data sets related to the spatial data theme _Soil_ (see sections 7.2 and 7.3).
 ====
 
@@ -4475,19 +4469,13 @@ This is a complex type (lines 143-148 from ISO 19115).
 
 At least the following elements should be used (the multiplicity according to ISO 19115 is shown in parentheses):
 
-* {blank}
-
-====
+* 
 maintenanceAndUpdateFrequency [1]: frequency with which changes and additions are made to the resource after the initial resource is completed / domain value: MD_MaintenanceFrequencyCode:
 ====
-* {blank}
-
-====
+* 
 updateScope [0..*]: scope of data to which maintenance is applied / domain value: MD_ScopeCode
 ====
-* {blank}
-
-====
+* 
 maintenanceNote [0..*]: information regarding specific requirements for maintaining the resource / domain value: free text
 ====
 
@@ -7530,59 +7518,26 @@ image::./media/image28.png[image,width=531,height=368, align=center]
 
 Discussion:
 The kind of contaminated site can be related to polluting activity and land use.
-
 Status of investigation is not included, probably because sites are added only after formal decision or on the basis of a detailed investigation. A longer list of pollutants should be expected.
-
 Beside current land use also planned land use is of importance for the value of actions in relation to protection and cleaning. A classification of land use in relation to risks is recommended.
-
 This item coincides with the feature contaminated soil site in the model on soil contamination of the TGW Soil.
 
 [loweralpha, start=4]
-*_Cleaning and protection measures_*
-
+. *_Cleaning and protection measures_*
 Overview of data on cleaning and protection measures in the system:
 
-* {blank}
-
-====
-cleaning planned
-====
-* {blank}
-
-====
-protection planned
-====
-* {blank}
-
-====
-cleaning in progress
-====
-* {blank}
-
-====
-protection in progress
-====
-* {blank}
-
-====
-cleaning completed
-====
-* {blank}
-
-====
-protection completed
-====
-
+* cleaning planned
+* protection planned
+* cleaning in progress
+* protection in progress
+* cleaning completed
+* protection completed
 * complete and detailed description of the site and all kinds of relevant information can be added in an extra file for download
 
 Discussion:
-
 The addition planned dates should be more informative.
-
 If protection measures are taken (against risks or dispersion while leaving pollution largely on the site) it is important to know if and how the need of maintenance is covered and when cleaning it is important to know if the cleaning is complete (for a certain level of pollution and performed in both soil in the unsaturated and saturated zones).
-
 This item coincides with the measure stage and the measure taken type in the model on soil contamination of the TGW Soil.
-
 From experience in the Netherlands it is recommended to add after the technical completion: a last step of organisational completion, going into the evaluation of the work (answering questions like: were the quality of cleaning and the plan for aftercare sufficient? Is the plan for aftercare financially covered and are the connected contracts arranged?)
 
 [width="100%",cols="22%,78%"]
@@ -7598,7 +7553,6 @@ From experience in the Netherlands it is recommended to add after the technical 
 |*Step 2* |Record potential historical contamination connected with these land register identification numbers
 |*Step 3* |Record soil surveys connected with these land register identification numbers
 |*Step 4* |Record cleaning and protection measures connected with these land register identification numbers.
-| |
 2+^|*Actors*
 |*End-users* a|
 * National and local authorities, Ministry of the environment
@@ -7607,15 +7561,7 @@ From experience in the Netherlands it is recommended to add after the technical 
 
 |*Information provider(s)* |Local authorities
 |*Information processors(s)* |Ministry of the environment
-| |
-a|
-*Information Source Input*
-
-_<list what the outcome of the use case will be. If more_
-
-_information sources are produced list each source separately>_
-
-|
+2+^|*Information Source Input*
 |*Description* a|
 * Historical activities with potential pollution
 * Surveys, cleaning and protection measures
@@ -7631,20 +7577,12 @@ _information sources are produced list each source separately>_
 |*Scale, resolution* |Regional (50 m^2^ and up)
 |*Documentation* |Report Verdachtsflächenkataster und Altlastenatlas (Granzin, Vatl, Umweltbundesamt Wien, 2010)
 |*External reference* |
-a|
-*Information Source Output*
-
-_<list what the input of the use case will be. If more_
-
-_information sources are needed list each source separately>_
-
-|
+2+^|*Information Source Output*
 |*Description* |Atlas of contaminated sites in Austria, Public information if a land register identification number is included in the register of historical pollution.
 |*Thematic scope* |Soil contamination status
 |*Base dataset(s)* a|
 * Previous soil investigations
 * Historical activities
-
 * Cleaning and protection measures taken
 
 |*Data provider(s)* |Land register, ministry of the environment
@@ -7661,7 +7599,7 @@ Input dataset: national and local authorities provide and collect historical dat
 
 [width="100%",cols="50%,50%"]
 |===
-|Soil attributes |Corresponding objects in the INSPIRE soil model
+|*Soil attributes* |*Corresponding objects in the INSPIRE soil model*
 |1) potential contaminated sites register |_PossiblyContaminatedSoilSite (feature type)_
 |a) extend of the area, point location |_SoilSite: geometry_
 |b) land register identification number |_PossiblyContaminatedSoilSite: localName_
@@ -7714,8 +7652,8 @@ _linked to ObservableProperty, PhenomenonTypeValue and UnitOfMeasure which is pa
 
 |===
 
-=== 
-Risk for drinking water wells by contamination
+<<<
+=== Risk for drinking water wells by contamination
 
 Soil and groundwater pollution may have many sources: industry, constructions, business areas, direct discharges in the soil, landfills, underground infrastructure like sewers, oil tanks, transport pipes, traffic, building activities, agricultural dispersion of manure, fertilizer and pesticides. The processes involved are calamities, intentional dispersion (pesticides, deicing salts), corrosion, wear, leakage, leaching and atmospheric deposition. For current activities soil protection measures like liquid proof floors, of process measures (closed systems) are or can be incorporated in permits for the activities. There is however a burden of historical soil contamination, consisting of diffuse polluted or contaminated areas and of more localized sites.
 
@@ -7754,33 +7692,18 @@ RIVM-report 734301029 Bouwstenen Leiddraad Grondwaterbescherming (Components for
 
 |*Information provider(s)* |Municipalities, provinces
 |*Information processors(s)/Brokers* |Private and public data collection companies, Laboratories, consultancy companies
-a|
-*Information Source Input*
-
-<list what the outcome of the use case will be. If more
-
-information sources are produced list each source separately>
-
-|
+2+^|*Information Source Input*
 |*Description* |Early warning system connecting data of soil pollution with data of drinking water wells
 |*Thematic scope* |Protection of drinking water provision from soil pollution
 |*Base datasets* a|
 * REWAB (composition of water from extraction wells)
-
 LDB Netherlands Inventory of polluted sites
 
 |*Data provider* |Provinces, municipalities, drinking water companies
 |*Scale, resolution* |Regional
 |*Documentation* |RIVM report 734301029/2007
 |*External reference* |
-a|
-*Information Source Output*
-
-<list what the input of the use case will be. If more
-
-information sources are needed list each source separately>
-
-|
+2+^|*Information Source Output*
 |*Description* |Selection of drinking water well art risk from soil pollution
 |*Thematic scope* |Protection of drinking water provision from soil pollution
 |*Base dataset(s)* a|
@@ -7889,8 +7812,8 @@ a|
 
 |===
 
-=== 
-Ecological risk of soil contamination
+<<<
+=== Ecological risk of soil contamination
 
 In soil genesis the bio-weathering of rocks (breakdown by mosses, lichens, fungi, bacteria and plant roots growing on the surface of the rock) is one of the significant mechanisms, beside the physical weathering by wind, water and temperature changes (JRC 2010, p.38). Biological processes in the soil contribute to structure of the soil by the formation of a top layer, with its essential organic matter content, fertility and water storage capacity. The top layer is the contact plane of the soil with living people.
 
@@ -7959,18 +7882,17 @@ _(except for the book by Swartjes these reports and the atlas can be downloaded 
 |*Description* |MS-PAF method for the foundation of the ecological part of the generic intervention value and the Triad-method: using 'Weight of Evidence' of three research fields (chemistry, toxicology, ecology) to make site-specific evaluations of the ecological risk of soil contamination
 |*Legal foundation(s)* |Ministerial Circular letter on soil remediation (2006, revised 2008, 2009), connected to the Dutch law on soil protection
 |*Pre-condition* |MS-PAF: knowledge of levels of biodiversity and decision on general goal (e.g. protection of 50% of the species). Triad methode: site with contaminated soil for which ecological effects are expected but the knowledge of the effects is considered as insufficient to decide on the need of soil cleaning/management measures.
-|*Flow of Events - Basic Path (MS-PAF method)* |
+2+^|*Flow of Events - Basic Path (MS-PAF method)*
 |*Step 1* |General knowledge of the sensitivity of soil organisms for contaminants.
 |*Step 2* |Chemical analyses of soil
 |*Step 3* |Integration of the results obtained in step 1 and 2
 |*Post-condition* |Ecological risk level has been determined on a generic level
-|*Flow of Events - Basic Path (Triad method)* |
+2+^|*Flow of Events - Basic Path (Triad method)*
 |*Step 1* |Chemical analyses of soil
 |*Step 2* |Toxicology tests (bioassays)
 |*Step 3* |Field observations (soil organisms, plants, trees)
 |*Step 4* |Integration of the results obtained in step 1 to 3
 |*Post-condition* |Ecological risk level has been determined on a site-specific level
-| |
 2+^|*Actors*
 |*End-users* a|
 * Local Authorities: municipalities, provinces
@@ -8079,8 +8001,8 @@ a|
 
 |===
 
-=== 
-Contamination in relation to property
+<<<
+=== Contamination in relation to property
 
 The law in the Netherlands demands that with property transfer of real estates a report on the soil quality is generated. According to the law the seller has a duty of giving information and the purchaser has a research duty. This generates questions by private citizens and real estate brokers to local authorities about the know pollution status of sites.
 
@@ -8090,56 +8012,29 @@ General information can be found free on www.bodemloket.nl. On payment some muni
 
 A report provided for the transaction contains information about the following aspects:
 
-* {blank}
-
-====
-General properties of the site like address, cadastral number, area and geographical information.
-====
-* {blank}
-
-====
-All available information on the location based on historical surveys.
-====
-* {blank}
-
-====
-Soil investigations, underground fuel tanks and data concerning activities from companies on the site.
-====
-* {blank}
-
-====
-Environmental quality of the direct surroundings of the site. This part gives information about all soil-related activities in a range of 25 meters around the research location.
-====
-* {blank}
-
-====
-General information about the used terminology and an explanation at the information on environment quality.
-====
+* General properties of the site like address, cadastral number, area and geographical information.
+* All available information on the location based on historical surveys.
+* Soil investigations, underground fuel tanks and data concerning activities from companies on the site.
+* Environmental quality of the direct surroundings of the site. This part gives information about all soil-related activities in a range of 25 meters around the research location.
+* General information about the used terminology and an explanation at the information on environment quality.
 
 *An example of a report on soil pollution for real estate brokers*
 
 *A. Data about the site BW0033370*
-
 _A1. Overview historical soil threatening activities_
-
 At this moment no historical soil threatening activities has been reported.
 
 _A2. Overview investigated sites_
-
 There are no soil investigations conducted.
 
 _A3. Overview present underground fuel tanks_
-
 There are no underground fuel tanks present.
 
 *B. Data in a range of 25 meters around the site BW0033370*
-
 _B1. Overview historical soil threatening activities_
-
 At this moment no historical soil threatening activities have been reported.
 
 _B2. Overview investigated sites_
-
 _Site 'KAT Kennemer Air Treatment' (fictional)_
 
 [width="100%",cols="38%,18%,22%,22%"]
@@ -8261,14 +8156,8 @@ Each local authority on soil quality (provinces and municipalities) has a geogra
 
 |*Information provider(s)* |Provinces, regional and local government
 |*Information processors(s)* |Private and public data collection companies, Laboratories, consultancy companies
-a|
-*Information Source Input*
+2+^|*Information Source Input*
 
-<list what the outcome of the use case will be. If more
-
-information sources are produced list each source separately>
-
-|
 |*Description* a|
 * Previous soil investigations
 * Historical activities
@@ -8295,8 +8184,7 @@ Ministerial Circular letter on soil remediation (2006, revised 2008, 2009), conn
 Standard list of substances for environmental investigations to soil and sediments, as declared on may 30, 2008. A production of SIKB, NEN and Bodem, related to the Dutch investigation standards NEN 5740 and NVN 5720.
 
 |*External reference* |
-a|
-*Information Source Output*
+2+^|*Information Source Output*
 
 <list what the input of the use case will be. If more
 
@@ -8396,8 +8284,7 @@ Due to the complexity of deriving soil related data a lot of stakeholders with d
 
 |*Information provider(s)* |_Member States_
 |*Information processors(s)/Brokers* |_Member States authorities responsible for providing nationwide aggregated and interpreted data_
-a|
-*Information Source Output*
+2+^|*Information Source Output*
 
 * _Reports on the state and change of state of soils_
 * _Point Maps that provide the aggregated measurements an values from the monitoring sites_
@@ -8429,8 +8316,7 @@ a|
 * _Member states legislation_
 
 |*External reference* |_Member States authorities web sites_
-a|
-*Information Source Input*
+2+^|*Information Source Input*
 
 _Member States monitoring raw data from different authorities at different time steps._
 
