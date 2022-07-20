@@ -7940,11 +7940,11 @@ _Site 'KAT Kennemer Air Treatment' (fictional)_
 
 [width="100%",cols="38%,18%,22%,22%"]
 |===
-|The research location has been registered under the name: | |KAT Kennemer Air treatment (AA037503491) |
-|The location has been registered under the address: | |Koninginnestraat 131 |
-|On the basis of the available information the status of the location is: | |Seriously polluted, not urgent to remediate |
-|On the location the next formal decision has been given | |Seriously polluted, not urgent to remediate |
-|On the basis of the available information the location has got next follow up status:: | |Sufficiently investigated and, no follow up necessary |
+2+|The research location has been registered under the name: 2+|KAT Kennemer Air treatment (AA037503491)
+2+|The location has been registered under the address: 2+|Koninginnestraat 131
+2+|On the basis of the available information the status of the location is: 2+|Seriously polluted, not urgent to remediate
+2+|On the location the next formal decision has been given 2+|Seriously polluted, not urgent to remediate
+2+|On the basis of the available information the location has got next follow up status:: 2+|Sufficiently investigated and, no follow up necessary
 |Type of investigation |Date research |Result research with regard to law of soil protection |
 | | |Ground |Groundwater
 |Remediation evaluation |- |Unknown |Unknown
@@ -7971,13 +7971,13 @@ _Tank location TB037500154_
 
 [width="99%",cols="15%,16%,15%,14%,12%,28%"]
 |===
-|The tank location is known under the name: | | | | |TB037500154
-|The tank location is registered on the following address: | | | | |Breestraat 210
-|Soil pollution | | | | |
-|On the location the following underground fuel tanks are present | | | | |
+5+|The tank location is known under the name: |TB037500154
+5+|The tank location is registered on the following address: |Breestraat 210
+5+|Soil pollution |
+5+|On the location the following underground fuel tanks are present |
 |Volume(l) |Description |Remediated |Date of remediation |Kiwa registration |Remediation method
 | |Domestic fuel oil |No | | |
-|Remarks: not in use | | | | |
+6+|Remarks: not in use
 |===
 
 *Parameters measured in an investigation to soil pollution*
@@ -8086,12 +8086,6 @@ Standard list of substances for environmental investigations to soil and sedimen
 
 |*External reference* |
 2+^|*Information Source Output*
-
-<list what the input of the use case will be. If more
-
-information sources are needed list each source separately>
-
-|
 |*Description* |Output will represent , usually in a report with a map where restriction zones and limitations are present
 |*Thematic scope* |Soil status
 |*Base dataset(s)* a|
