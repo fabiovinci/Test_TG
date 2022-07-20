@@ -7910,43 +7910,28 @@ Local authorities on soil quality are the provinces and a selection of the large
 General information can be found free on www.bodemloket.nl. On payment some municipalities have more detailed reports available on request, generally on request of real estate brokers. Commercial parties may provide reports on general environmental data for a location, including soil information.
 
 A report provided for the transaction contains information about the following aspects:
-
-* 
-General properties of the site like address, cadastral number, area and geographical information.
-====
-* 
-All available information on the location based on historical surveys.
-====
-* 
-Soil investigations, underground fuel tanks and data concerning activities from companies on the site.
-====
-* 
-Environmental quality of the direct surroundings of the site. This part gives information about all soil-related activities in a range of 25 meters around the research location.
-====
-* 
-General information about the used terminology and an explanation at the information on environment quality.
-====
+* General properties of the site like address, cadastral number, area and geographical information.
+* All available information on the location based on historical surveys.
+* Soil investigations, underground fuel tanks and data concerning activities from companies on the site.
+* Environmental quality of the direct surroundings of the site. This part gives information about all soil-related activities in a range of 25 meters around the research location.
+* General information about the used terminology and an explanation at the information on environment quality.
 
 *An example of a report on soil pollution for real estate brokers*
 
 *A. Data about the site BW0033370*
 
 _A1. Overview historical soil threatening activities_
-
 At this moment no historical soil threatening activities has been reported.
 
 _A2. Overview investigated sites_
-
 There are no soil investigations conducted.
 
 _A3. Overview present underground fuel tanks_
-
 There are no underground fuel tanks present.
 
 *B. Data in a range of 25 meters around the site BW0033370*
 
 _B1. Overview historical soil threatening activities_
-
 At this moment no historical soil threatening activities have been reported.
 
 _B2. Overview investigated sites_
