@@ -6475,7 +6475,7 @@ Proposal for a European Parliament and Council Directive of 22 September 2006 se
 
 [width="100%",cols="22%,78%",]
 |===
-2+|
+2+^|
 *Example 1:*
 Using soil map information for stratifying the territory for directing the regional soil salinity survey and calibration with electromagnetic induction sensing systems (EMISS)
 This work was done as a pilot study for a very few selected soil cartographic units, in a small study area
