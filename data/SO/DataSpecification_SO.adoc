@@ -7477,7 +7477,7 @@ In the Netherlands a much more extensive list is used, consisting of several hun
 This item coincides with the possible contaminated soil site and all related attributes in the model on soil contamination of the TGW Soil.
 
 [loweralpha, start=2]
-*_Surveys (after confirmed suspicion)_*
+. *_Surveys (after confirmed suspicion)_*
 Overview of data in the system:
 * first survey
 ** completed
