@@ -6154,133 +6154,92 @@ NOTE these parts of this scheme are still under testing and development – see 
 |===
 .2+|*No.* .2+|*Input data* .2+|*field (code) in SGDBE* .2+|*Input attributes* 7+|*Directly required for evaluation**
 |1 |2 |3 |4a |4b |4c |4d
-|1 |Topsoil textural class |TEXT_SRF_DOM |- | | | |+ | |* |
-|2 |Subsoil textural class |TEXT_SUB_DOM |- | | | |** | | |
-|3 |Dominant land use |USE_DOM |- | | | | | | |**
+|1 |Topsoil textural class |TEXT_SRF_DOM |- | | | |+ | |+ |
+|2 |Subsoil textural class |TEXT_SUB_DOM |- | | | |+ | | |
+|3 |Dominant land use |USE_DOM |- | | | | | | |+
 |4 |Dominant parent material |PAR_MAT_DOM |- | | | | | | |
-|5 |Soil code (subunit level) FAO (1985) |FAO85 |- |** |** | |** | | |
-|6 |Soil code (subunit level) WRB (1998) |WRB98 |- | | | |** | | |
+|5 |Soil code (subunit level) FAO (1985) |FAO85 |- |+ |+ | |+ | | |
+|6 |Soil code (subunit level) WRB (1998) |WRB98 |- | | | |+ | | |
 |7 |Dominant limitation to agricultural use |AGLIM1 |- | | | | | | |
-|8 |Depth class of impermeable layer |IL |- |** | | | | | |
+|8 |Depth class of impermeable layer |IL |- |+ | | | | | |
 |9 |Maximum rooting depth of soil profile |ROO |- | | | | | | |
 |10 |Dominant annual average soil water regime |WR | | | | | | | |
 |11 |Accumulated mean precipitation |PREC_AV |? | | | | | | |
-|12 |pH |PH a|
-?
-
-?
-
-| | | | | |** |
+|12 |pH |PH |? | | | | | |+ |
 |13 |Accumulated mean temperature |ATC |From MARS dataset | | | | | | |
-|14 |Regrouped climatic areas |CLIM_AR |From BGR (Bodenregionenkarte der EU) |** | | | | | |
-|15 |Elevation above see level |ELE |? |** | | | | | |
-|16 |Slope class |- |SRTM based DEM |** | | | | | |
-|17 |Slope aspect |- |SRTM based DEM |** | | | | | |
+|14 |Regrouped climatic areas |CLIM_AR |From BGR (Bodenregionenkarte der EU) |+ | | | | | |
+|15 |Elevation above see level |ELE |? |+ | | | | | |
+|16 |Slope class |- |SRTM based DEM |+ | | | | | |
+|17 |Slope aspect |- |SRTM based DEM |+ | | | | | |
 |18 |Phase a|
 PHASE
-
 = AGLIM1
-
 a|
 AGLIM1 =
-
 2, 3, 4, 5, 6, 7, or 8
-
 | | | | | | |
 |19 |Depth to rock |DR a|
 FAO85
-
 PAR_MAT_DOM
-
 PHASE
-
 | | | | | | |
 |20 |Topsoil structure |STR_TOP a|
 USE_DOM
-
 FAO85
-
 | | | | | | |
 |21 |Topsoil packing density |PD_TOP a|
 STR_TOP
-
 TEXT_SRF_DOM
-
 USE_DOM
-
 | | | | | | |
 |22 |Soil Profile differentiation |DIFF |FAO85 | | | | | | |
 |23 |Profile mineralogy |MIN |FAO85 | | | | | | |
 |24 |Topsoil mineralogy |MIN_TOP a|
 FAO85
-
 MIN
-
-| | | |** | | |
+| | | |+ | | |
 |25 |Subsoil mineralogy |MIN_SUB a|
 FAO85
-
 MIN
-
-| | | |** | | |
+| | | |+ | | |
 |26 |Topsoil organic carbon content (0-25cm) |OC_TOP a|
 FAO85
-
 TEXT_SRF_DOM
-
 USE_DOM
-
 ATC
-
-| | | |** | |** |
+| | | |+ | |+ |
 |27 |Topsoil cation exchange capacity |CEC_TOP a|
 DIFF
-
 MIN
-
 OC_TOP
-
 TEXT_SRF_DOM
-
-| | | |** |** | |
+| | | |+ |+ | |
 |28 |Subsoil cation exchange capacity |CEC_SUB a|
 MIN_SUB
-
 TEXT_SUB_DOM
-
-| | | |** | | |
+| | | |+ | | |
 |29 |Soil Hydrologic Group |HYDGRP a|
 IL
-
 TEXT_SRF_DOM
-
 TEXT_SUB_DOM
-
-|** | | | | | |
+|+ | | | | | |
 |30 |Topsoil available water capacity |AWC_TOP a|
 TEXT_SRF_DOM
-
 PD_TOP
-
-|** | | | | | |
+|+ | | | | | |
 |31 |Topsoil easily available water capacity |EAWC_TOP a|
 TEXT_SRF_DOM
-
 PD_TOP
-
 | | | | | | |
 |32 |Subsoil available water capacity |AWC_SUB a|
 TEXT_SRF_DOM
-
 PD_TOP
-
 DR
-
 | | | | | | |
 |33 |Productivity of soil |PROD_PSQ | | | | | | | |
 |===
 
-* The indicated property is used for the calculation of the following functions:
+\* The indicated property is used for the calculation of the following functions:
 
 ====
 1 Productivity index (under testing and validation)
