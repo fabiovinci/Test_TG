@@ -7200,7 +7200,7 @@ _texture, etc. for the specified location_
 |*End-users* |_General public_
 |*Information provider(s)* |_NSRI Cranfield University_
 |*Information processors(s)/Brokers* |_None (automatic interpretation of database)_
-2+^|*Information Source Output* |
+2+^|*Information Source Output*
 |*Description* |_Web based soil map and information_
 |*Thematic scope* |_Soil characteristics_
 |*Base datasets* |_Interpreted map of the Soilscapes dataset_
