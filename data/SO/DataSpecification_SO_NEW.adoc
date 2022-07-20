@@ -3965,110 +3965,67 @@ When documenting conformance with this data specification or one of the conforma
 EXAMPLE 1: The XML snippets below show how to fill the _Specification_ sub-element for documenting conformance with the whole data specification on Addresses v3.0.1.
 
 <gmd:DQ_ConformanceResult>
-
-*<gmd:specification href="http://inspire.ec.europa.eu/conformanceClass/ad/3.0.1/tg" />*
-
-<gmd:explanation(...) </gmd:explanation>
-
-<gmd:pass(...) </gmd:pass>
-
+	<gmd:specification href="http://inspire.ec.europa.eu/conformanceClass/ad/3.0.1/tg" />
+	<gmd:explanation> (...) </gmd:explanation>
+	<gmd:pass> (...) </gmd:pass>
 </gmd:DQ_ConformanceResult>
+
 
 or (using a citation):
 
 <gmd:DQ_ConformanceResult>
-
-*<gmd:specification>*
-
-<gmd:CI_Citation>
-
-*<gmd:title>*
-
-*<gco:CharacterString>INSPIRE Data Specification on Soil – Draft Guidelines</gco:CharacterString>*
-
-*</gmd:title>*
-
-<gmd:date>
-
-<gmd:date>
-
-*<gco:Date>2013-01-24</gco:Date>*
-
-</gmd:date>
-
-<gmd:dateType>
-
-*<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resou*
-
-*rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>*
-
-</gmd:dateType>
-
-</gmd:date>
-
-</gmd:CI_Citation>
-
-*</gmd:specification>*
-
-<gmd:explanation(...) </gmd:explanation>
-
-<gmd:pass(...) </gmd:pass>
-
+	<gmd:specification>
+		<gmd:CI_Citation>
+			<gmd:title>
+				<gco:CharacterString>INSPIRE Data Specification on Soil – Draft Guidelines</gco:CharacterString>
+			</gmd:title>
+			<gmd:date>
+				<gmd:date>
+					<gco:Date>2013-01-24</gco:Date>
+				</gmd:date>
+				<gmd:dateType>
+					<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resou
+rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+				</gmd:dateType>
+			</gmd:date>
+		</gmd:CI_Citation>
+	</gmd:specification>
+	<gmd:explanation> (...) </gmd:explanation>
+	<gmd:pass> (...) </gmd:pass>
 </gmd:DQ_ConformanceResult>
+
 
 EXAMPLE 2: The XML snippets below show how to fill the _Specification_ sub-element for documenting conformance with the CRS conformance class of the data specification on Addresses v3.0.1.
 
 <gmd:DQ_ConformanceResult>
-
-*<gmd:specification href="http://inspire.ec.europa.eu/conformanceClass/ad/3.0.1/crs" />*
-
-<gmd:explanation(...) </gmd:explanation>
-
-<gmd:pass(...) </gmd:pass>
-
+	<gmd:specification href="http://inspire.ec.europa.eu/conformanceClass/ad/3.0.1/crs" />
+	<gmd:explanation> (...) </gmd:explanation>
+	<gmd:pass> (...) </gmd:pass>
 </gmd:DQ_ConformanceResult>
 
 or (using a citation):
 
 <gmd:DQ_ConformanceResult>
-
-*<gmd:specification>*
-
-<gmd:CI_Citation>
-
-*<gmd:title>*
-
-*<gco:CharacterString>INSPIRE Data Specification on Soil – Draft Guidelines – CRS</gco:CharacterString>*
-
-*</gmd:title>*
-
-<gmd:date>
-
-<gmd:date>
-
-*<gco:Date>2013-01-24</gco:Date>*
-
-</gmd:date>
-
-<gmd:dateType>
-
-*<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resou*
-
-*rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>*
-
-</gmd:dateType>
-
-</gmd:date>
-
-</gmd:CI_Citation>
-
-*</gmd:specification>*
-
-<gmd:explanation(...) </gmd:explanation>
-
-<gmd:pass(...) </gmd:pass>
-
+	<gmd:specification>
+		<gmd:CI_Citation>
+			<gmd:title>
+				<gco:CharacterString>INSPIRE Data Specification on Soil – Draft Guidelines – CRS</gco:CharacterString>
+			</gmd:title>
+			<gmd:date>
+				<gmd:date>
+					<gco:Date>2013-01-24</gco:Date>
+				</gmd:date>
+				<gmd:dateType>
+					<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resou
+rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+				</gmd:dateType>
+			</gmd:date>
+		</gmd:CI_Citation>
+	</gmd:specification>
+	<gmd:explanation> (...) </gmd:explanation>
+	<gmd:pass> (...) </gmd:pass>
 </gmd:DQ_ConformanceResult>
+
 
 ==== Lineage
 
@@ -4195,7 +4152,7 @@ NOTE While this not explicitly required by any of the INSPIRE Implementing Rules
 
 [width="100%",cols="33%,67%"]
 |===
-|Metadata element name |*Coordinate Reference System*
+|*Metadata element name* |*Coordinate Reference System*
 |Definition |Description of the coordinate reference system used in the dataset.
 |ISO 19115 number and name |13. referenceSystemInfo
 |ISO/TS 19139 path |referenceSystemInfo
@@ -4210,38 +4167,23 @@ NOTE More specific instructions, in particular on pre-defined values for filling
 |Implementing instructions |
 |Example a|
 referenceSystemIdentifier:
-
-code: ETRS_89
-
-codeSpace: INSPIRE RS registry
+ code: ETRS_89
+ codeSpace: INSPIRE RS registry
 
 |Example XML encoding a|
 <gmd:referenceSystemInfo>
-
-<gmd:MD_ReferenceSystem>
-
-<gmd:referenceSystemIdentifier>
-
-<gmd:RS_Identifier>
-
-<gmd:code>
-
-<gco:CharacterString>ETRS89 </gco:CharacterString>
-
-</gmd:code>
-
-<gmd:codeSpace>
-
-<gco:CharacterString>INSPIRE RS registry</gco:CharacterString>
-
-</gmd:codeSpace>
-
-</gmd:RS_Identifier>
-
-</gmd:referenceSystemIdentifier>
-
-</gmd:MD_ReferenceSystem>
-
+		<gmd:MD_ReferenceSystem>
+			<gmd:referenceSystemIdentifier>
+				<gmd:RS_Identifier>
+					<gmd:code>
+						<gco:CharacterString>ETRS89 </gco:CharacterString>
+					</gmd:code>
+					<gmd:codeSpace>
+						<gco:CharacterString>INSPIRE RS registry</gco:CharacterString>
+					</gmd:codeSpace>
+				</gmd:RS_Identifier>
+			</gmd:referenceSystemIdentifier>
+		</gmd:MD_ReferenceSystem>
 </gmd:referenceSystemInfo>
 
 |Comments |
