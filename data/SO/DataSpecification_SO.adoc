@@ -7899,9 +7899,9 @@ a|
 - InvestigationStateValue
 
 - MeasureTakenType
-
 |===
 
+<<<
 === Contamination in relation to property
 
 The law in the Netherlands demands that with property transfer of real estates a report on the soil quality is generated. According to the law the seller has a duty of giving information and the purchaser has a research duty. This generates questions by private citizens and real estate brokers to local authorities about the know pollution status of sites.
