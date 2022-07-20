@@ -6792,46 +6792,31 @@ The soil data are used in the system in two ways:
 
 |*Data provider* a|
 Soil: ESBN
-
 Yield: Eurostat
-
 Meteo: Meteorological authorities
-
 |*Scale, resolution* |Europe
 |*Documentation* a|
 * web site
 * reports
-
-|*External reference* a|
-* {blank}
-
-|*Information Source Output* |
+|*External reference* |
+2+|*Information Source Output*
 |*Description* a|
 meteorological maps for alarm
-
 crop maps
-
 yield estimates (maps and tables: publication of a periodic bulletin)
-
 |*Thematic scope* a|
 Agricultural Facilities
-
 Climate
-
 |*Base dataset(s)* a|
 * interpolated daily meteorological data
 * crop yield estimate
 * several outputs from the model
-
 |*Data provider(s)* |JRC
 |*Scale, resolution* |Europe
 |*Documentation* a|
 web site of Mars project
-
 bulletins
-
 reports
-
 |*External reference* |
 |===
 
@@ -6884,6 +6869,7 @@ profileElementParameter (extension)
 |STU attributes: crop suitability |derivedSoilProfile:soilProfileParameter (extension)
 |===
 
+<<<
 === _Restrictions for agricultural use based on mineral, the N-, and P-saturation in the soil and (shallow) ground water_
 
 For agricultural use of land it is important to know, based on soil classification and soil analysis, what limitations do exist based on the leaching of N and P into the ground water. In the WFD there are thresholds indicating the maximum values allowed. Secondly it is important to know the vulnerability for contamination of the ground water by minerals (N,P) due to agricultural practices in relation to the soil present at that location.
@@ -6914,7 +6900,7 @@ Leaching is determined for nitrate by the pF, the ground water table and the amo
 
 [width="100%",cols="22%,78%"]
 |===
-|*Use Case Description* |
+2+|*Use Case Description*
 |*Name* |Restrictions for agriculture use based on the N- and P-saturation in the soil and (shallow) ground water
 |*Priority* |medium
 |*Description* a|
@@ -6924,29 +6910,21 @@ _Note: similar use case can be defined for other applicants (crop protection che
 
 |*Legal foundation(s)* |WFD, Nature2000, National regulations for Ground water protection zones for drinking water.
 |*Pre-condition* |Measurements and observations on soil and ground and surface water (monitoring programme for the WFD)
-|*Flow of Events - Basic Path* |
+2+|*Flow of Events - Basic Path*
 |*Step 1* |Determine Soil type and absorption capacity for minerals (analysis results based on soil properties)
 |*Step 2* |Compute the mineral usage, saturation and loss (Model)
 |*Step 3* |Represent the model results usual in a map
 |*Step 4 (potential)* |Use results in EU/National protect areas for Nature (compare monitoring programme)
 |*Step 5* |Use results for licensing agricultural use and enforcing legal regulations in NP use.(e.g. in NL the Sand, Peat and Clay map)
 |*Post-condition* |Improved soil and ground water quality and sustainable use of agricultural resources
-|*Actors* |
+2+|*Actors*
 |*End-users* a|
 * Authorities EU-level --. JRC; national Min of Agriculture, Water, Environment; regional water authorities
 * Farmers
 * Nature conservation bodies
-
 |*Information provider(s)* |Public, Soil Bureau, Water Authorities
 |*Information processors(s)/Brokers* |Private and public data collection companies, Laboratories, consultancy companies
-a|
-*Information Source Input*
-
-<list what the input of the use case will be. If more
-
-information sources are produced list each source separately>
-
-|
+2+^|*Information Source Input*
 |*Description* a|
 * Soil information on Soiltype, Mineral composition, pH Organic Matter, Groundwater levels as an example see annex "table 6" for the detailed soil input data for the Nutrient model ANIMO
 * Fertilizer practices (historic and current)*
@@ -6962,13 +6940,9 @@ information sources are produced list each source separately>
 
 |*Data provider* a|
 Soil bureaus
-
 Water authorities
-
 Environmental agencies
-
 WFD monitoring authorities
-
 |*Scale, resolution* |Regional (10.000 and up)
 |*Documentation* a|
 * WFD (water quality only)
@@ -6977,14 +6951,7 @@ WFD monitoring authorities
 |*External reference* a|
 * Dutch reference for producing the Sand, Clay Peat map (LNV-loket)
 
-a|
-*Information Source Output*
-
-<list what the output of the use case will be. If more
-
-information sources are needed list each source separately>
-
-|
+2+^|*Information Source Output*
 |*Description* |Output will represent , usually in a map where restriction zones and limitations are present
 |*Thematic scope* |hydrology (Soil, Agricultural Facilities)
 |*Base dataset(s)* a|
@@ -6997,15 +6964,10 @@ information sources are needed list each source separately>
 |*External reference* |(LNV-loket)
 |===
 
-*) The danger of leaching is very much related to historic land use (farmers spreading too much fertilizer/manure) and soil type characteristics. Consequences of historic land use show in the results of the farmer samples (used for fertilizing advices). These elements can not available in central databases. So you are fully dependent on:
+{empty}* The danger of leaching is very much related to historic land use (farmers spreading too much fertilizer/manure) and soil type characteristics. Consequences of historic land use show in the results of the farmer samples (used for fertilizing advices). These elements can not available in central databases. So you are fully dependent on:
 
-[arabic, start=1]
 . Statistical data on the use of fertilizers/manure in a region.
-
-[arabic, start=2]
 . soil data (soil map with underlying soil type characteristics)
-
-[arabic, start=3]
 . results from regional water monitoring systems showing excesses in the concentrations of NP
 
 image::./media/image24.png[image,width=554,height=787, align=center]
