@@ -6313,35 +6313,27 @@ image::./media/image22.png[image,width=616,height=458, align=center]
 
 [width="100%",cols="21%,79%"]
 |===
-|*Use Case Description* |
+2+|*Use Case Description*
 |*Name* |Land irrigation suitability in Navarre (Spain).
 |*Priority* |Medium
 |*Description* a|
 Land irrigation suitability maps in Navarre (1:25.000) are elaborated following the methodology proposed by the USBR (Unites States Bureau of Reclamation), but adapted to the specific conditions of Navarre (Spain). The objective is to classify the land according to soil properties, topography, drainage and land cover. From the reclassification of this information and its intersection in GIS land irrigation suitability maps are obtained.
-
 These maps are elaborated employing a suite of applications specifically designed for that purpose (Geobide) and are finally published in a viewer.
-
 |*Legal Foundation* |No legal base.
 |*Pre-condition* |None.
-|*Actors* |
+2+|*Actors*
 |*End-users* |Governmental bodies and public institutions, farmers, collective irrigation organisations...
 |*Information provider(s)* |Tracasa, Government of Navarre.
 |*Information processors(s)/Brokers* |Tracasa, Government of Navarre.
-|*Flow of Events – Basic Path* |
+2+|*Flow of Events – Basic Path*
 |*Step 1* |A soil map of a certain area is elaborated: field work, photointerpretation and map edition processes are made.
 |*Step 2* a|
 The soil mapping units (SMU) are reclassified according to soil, topography and drainage properties.
-
 *Soil*: effective depth and texture, carbonate content, stoniness, sodicity and salinity, in the superficial horizon and/or control section (the most limiting factor between both the superficial horizon and control section is the one taken into account).
-
 *Topography*: slope.
-
 *Drainage*: ground water table depth and impermeable layer depth.
-
 The methodology used for this reclassification is an adaptation for Navarre based on the one proposed by the USBR.
-
 This reclassification is automatically done by an own application, which takes into account, from all the surveys done in each Soil Cartographic Unit for a studied area, all these parameters above mentioned.
-
 |*Step 3* |A slope map based on the DTM25 is elaborated according to 7 range values.
 |*Step 4* |The reclassified soil map and slope map are intersected in GIS using the application Geobide.
 |*Step 5* |The land cover map is reclassified according to 3 uses: forestry, arable land and non-productive land.
@@ -6349,38 +6341,28 @@ This reclassification is automatically done by an own application, which takes i
 |*Step 7* |The land irrigation suitability classes and subclasses' map is obtained. Its mapping units contain information about their limiting factor (soil, topography and/or drainage).
 |*Step 8* a|
 After getting into groups the previous subclasses into classes, the land irrigation suitability classes' map is obtained. The legend of this product is the following one (no information on the limiting factor is reflected):
-
 *Class 1*: Arable lands, suitable for irrigated farming, without use limitations.
-
 *Class 2*: Arable lands, suitable for irrigated farming, with slight limitations.
-
 *Class 3*: Arable lands, suitable for irrigated farming, with moderate limitations.
-
 *Class 4*: Arable lands, suitable for a fixed irrigated farming and employing special irrigation systems, with high limitations.
-
 *Class 5*: A class that requires special reports to establish whether it is suitable or not for irrigation.
-
 *Class 6*: Arable lands, non-suitable for irrigated farming or non-arable lands.
-
 *Class IU*: Non-productive lands.
-
 |*Step 9* |These 2 maps are published in the VisorSITNA viewer (this viewer is available for governmental bodies and public institutions).
-|*Information source Input : Soil map of Navarre* |
+2+|*Information source Input : Soil map of Navarre*
 |*Description* |The map contains soil information of the municipalities of Navarre (1:25.000) (whole region not mapped yet).
 |*Dataset(s)* a|
 The soil map of Navarre and its related soil data base are needed to obtain land irrigation maps. Specifically, the following parameters of the soil data base are used:
-
 * Texture in the superficial horizon (simplification of the texture triangle: % clay, % silt and % sand)
 * Effective depth (cm)
 * Mean carbonate content (%), coarse fragment content (%), sodicity (SAR) and electric conductivity of the soil saturate extract (dS/m), in the superficial horizon and/or control section.
-
 |*Data provider* |Tracasa, Government of Navarre.
 |*Geographic scope* |Regional (Navarre, Spain).
 |*Thematic scope* |Soil
 |*Scale, resolution* |Polygonal data source, at a scale of 1:25.000.
 |*Delivery* |n/a
 |*Documentation* |Public. Soil maps (VisorSITNA viewer) and reports (in paper and/or CD, available at the Government of Navarre and Tracasa).
-|*Information source Input: Land cover map of Navarre* |
+2+|*Information source Input: Land cover map of Navarre*
 |*Description* |This land cover map covers the whole region of Navarre (Spain) at a scale of 1:25.000.
 |*Dataset(s)* |Land cover map of Navarre and its related database.
 |*Data provider* |Tracasa, Government of Navarre.
@@ -6389,7 +6371,7 @@ The soil map of Navarre and its related soil data base are needed to obtain land
 |*Scale, resolution* |Polygonal data source, at a scale of 1:25.000.
 |*Delivery* |n/a
 |*Documentation* |The land cover map is available at IDENA (_http://idena.navarra.es_) and in the VisorSITNA viewer.
-|*Information source Input: DTM25 of Spain* |
+2+|*Information source Input: DTM25 of Spain*
 |*Description* |The Digital Terrain Model based on a grid of 25 m covers the whole national territory of Spain and it's obtained from the National Topographic Map 1:25.000 (MTN25).
 |*Dataset(s)* |DTM25
 |*Data provider* |Instituto Geográfico Nacional (IGN).
@@ -6398,7 +6380,7 @@ The soil map of Navarre and its related soil data base are needed to obtain land
 |*Scale, resolution* |Raster data source, with a resolution of 25 metres.
 |*Delivery* |n/a
 |*Documentation* |n/a
-|*Information source Output: Land irrigation suitability classes' and subclasses' map* |
+2+|*Information source Output: Land irrigation suitability classes' and subclasses' map*
 |*Description* |The map classifies the land in up to 16 different subclasses and specifies whether the limitation to set up an irrigation project is related to the soil itself, drainage or topography.
 |*Dataset(s)* |Land irrigation classes and subclasses' map 1:25.000 and its related dataset.
 |*Data provider* |Tracasa, Government of Navarre.
@@ -6407,7 +6389,7 @@ The soil map of Navarre and its related soil data base are needed to obtain land
 |*Scale, resolution* |Polygonal data source, at a scale of 1:25.000
 |*Delivery* |n/a
 |*Documentation* |Public. Land irrigation maps (VisorSITNA viewer) and reports (in paper and/or CD, available at the Government of Navarre and Tracasa).
-|*Information source Output: Land irrigation suitability classes' map* |
+2+|*Information source Output: Land irrigation suitability classes' map*
 |*Description* |This map classifies the terrain in up to 7 different irrigation suitability classes, but it doesn't specify the limitations of each class.
 |*Dataset(s)* |Land irrigation suitability classes' map (1:25.000) and its related data base.
 |*Data provider* |Tracasa, Government of Navarre.
@@ -6416,7 +6398,6 @@ The soil map of Navarre and its related soil data base are needed to obtain land
 |*Scale, resolution* |Polygonal data source, at a scale of 1:25.000.
 |*Delivery* |n/a
 |*Documentation* |Public. Land irrigation maps (VisorSITNA viewer) and reports (in paper and/or CD, available at the Government of Navarre and Tracasa).
-| |
 |===
 
 *Mapping of the soil dataset with the INSPIRE Soil model of DS3.0*
