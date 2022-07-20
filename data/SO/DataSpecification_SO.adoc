@@ -49,6 +49,7 @@ image:./media/image3.png[image,width=93,height=93] **INSPIRE** - *Infrastructure
 |*Coverage* |Project duration
 |===
 
+<<<
 [discrete]
 = *Foreword*
 [discrete]
@@ -77,6 +78,7 @@ In order to distinguish the INSPIRE spatial data themes from the spatial object 
 
 Neither the European Commission nor any person acting on behalf of the Commission is responsible for the use which might be made of this publication.
 
+<<<
 [discrete]
 = *Interoperability of Spatial Data Sets and Services – General Executive Summary*
 
@@ -111,6 +113,7 @@ By listing a number of requirements and making the necessary recommendations, th
 
 In addition to providing a basis for the interoperability of spatial data in INSPIRE, the data specification development framework and the thematic data specifications can be reused in other environments at local, regional, national and global level contributing to improvements in the coherence and interoperability of data in spatial data infrastructures.
 
+<<<
 [discrete]
 = *_Soil_ – Executive Summary*
 
@@ -136,6 +139,7 @@ The data specification is based, as far as possible, on existing standards. Apar
 
 To enhance semantic interoperability the use of the soil classification scheme WRB (World Reference Base for Soil Resources) and the FAO horizon notation scheme as primary classification systems are proposed. The use of other currently used (local, regional, national) classification systems is also provided for.
 
+<<<
 [discrete]
 = *Acknowledgements*
 
@@ -157,7 +161,6 @@ _http://inspire.ec.europa.eu/index.cfm/pageid/2_
 
 //Add page break support for PDF export
 <<<
-
 [discrete]
 = Table of Contents
 toc::[]
@@ -464,6 +467,7 @@ Specifically, for the theme _Soil_, the following terms are defined:
 |XML |EXtensible Markup Language
 |===
 
+<<<
 === How the Technical Guidelines map to the Implementing Rules
 
 The schematic diagram in Figure 4 gives an overview of the relationships between the INSPIRE legal acts (the INSPIRE Directive and Implementing Rules) and the INSPIRE Technical Guidelines. The INSPIRE Directive and Implementing Rules include legally binding requirements that describe, usually on an abstract level, _what_ Member States must implement.
@@ -7737,8 +7741,7 @@ After a first generic approach a discussion may raise on the need of remediation
 ====
 image::./media/image29.png[image,width=136,height=138, align=center]
 
-[.text-center]====
-
+[.text-center]
 *Figure 8: Schematic presentation of the Triad*
 
 The basis of the Triad method is to compare results from a polluted site with the results from a non-polluted site with similar soil characteristics. An alternative is to compare the observations of soil organisms with available data on soil organisms obtained from numerous soil samples taken throughout The Netherlands and collected in the RIVM Soil biology –database (in preparation to go online, see also Rutgers, Mulder, Schouten, 2008 for characterizing reference situations).
