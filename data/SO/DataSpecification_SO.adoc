@@ -6978,6 +6978,7 @@ image::./media/image25.png[image,width=554,height=688, align=center]
 [.text-center]
 _IMPORTANT NOTE it still needs to be checked if the elements in this Use Case match the latest version of the soil data model, as described in this document._
 
+<<<
 === Calculation threshold trace elements
 
 *Estimation of regional trace elements threshold for anomalous values detection in France*
@@ -6986,9 +6987,7 @@ To determine if a site is polluted or not with trace elements, it is needed to c
 
 In France, the ministry of environment is in charge of polluted sites. It asks Inra to calculate threshold values using the data from the French soil monitoring network. The threshold values are estimated for 0-30 cm and for 30-50 cm layers on a 16 km by 16 km grid for the following trace elements: Cd total  extractible, Co total, Cr total, Cu total  extractible, Mo total, Ni total  extractible, Pb total  extractible, Th total, Zn total  extractible. For each point of the grid, the estimation is based on the measured values of the 10 neighbouring points within a distance of 50 km for 0-30 cm and 30-50 cm respectively, and the calculation of the third quartile  3x(interquartile range).
 
-The
-
-Figure *5* below shows an example from the web site giving the Cd total threshold for 0-30 cm.
+The Figure *5* below shows an example from the web site giving the Cd total threshold for 0-30 cm.
 
 image::./media/image26.png[image,width=553,height=332, align=center]
 
@@ -6997,13 +6996,13 @@ image::./media/image26.png[image,width=553,height=332, align=center]
 
 [width="100%",cols="24%,76%",]
 |===
-|*Use Case Description* |
+2+|*Use Case Description*
 |*Name* |regional trace elements threshold for anomalous values detection
 |*Priority* |high
 |*Description* |The aim is to furnish to public, values of reference at regional level for trace elements in topsoil and subsoil
 |*Legal foundation(s)* |no legal base but is part of activities around polluted sites legislation
 |*Pre-condition* |
-|*Flow of Events - Basic Path* |
+2+|*Flow of Events - Basic Path*
 |*Step 1* |Determining for each trace element and for 0-30 cm and 30-50 cm layers respectively, the list of 10 neighbouring points within 50 km having analytical values for each point of the grid.
 |*Step 2* |calculation of statistical data (third quartile  3x(interquartile range)) at each point of the grid. No calculation is made if there is less than 10 points available.
 |*Step 3* |
@@ -7011,7 +7010,7 @@ image::./media/image26.png[image,width=553,height=332, align=center]
 |*Step 5* |
 |*Post-condition* |
 | |
-|*Actors* |
+2+|*Actors*
 |*End-users* a|
 * Public authorities
 * societies dealing with polluted sites
@@ -7019,19 +7018,16 @@ image::./media/image26.png[image,width=553,height=332, align=center]
 
 |*Information provider(s)* |GIS Sol (Inra is in charge of collecting and storing the data for the GIS Sol)
 |*Information processors(s)/Brokers* |Inra
-|*Information Source Input* |
+2+^|*Information Source Input*
 |*Description* a|
 * soil monitoring network RMQS
 
 |*Thematic scope* |Soil
 |*Base datasets* a|
 * soil monitoring network RMQS DB:
-
-* soil profile
-
-* observation location
-
-* for 0-30 cm layer and 30-50 cm layer the analytical value for each trace element.
+** soil profile
+** observation location
+** for 0-30 cm layer and 30-50 cm layer the analytical value for each trace element.
 
 |*Data provider* |Inra
 |*Scale, resolution* |France, 16 km x 16 km
@@ -7040,9 +7036,8 @@ image::./media/image26.png[image,width=553,height=332, align=center]
 * article on the methodology
 
 |*External reference* a|
-* {blank}
 
-|*Information Source Output* |
+2+^|*Information Source Output*
 |*Description* |threshold value for trace element per grid cell for 0-30 cm and 30-50 cm
 |*Thematic scope* |soil
 |*Base dataset(s)* a|
@@ -7158,8 +7153,8 @@ soilDerivedObjectDescriptiveParameter: 30-50 cm
 
 |===
 
-=== 
-Use of Soil Scape Viewer
+<<<
+=== Use of Soil Scape Viewer
 
 *Narrative explanation of the use case*
 
@@ -7217,7 +7212,7 @@ _texture, etc. for the specified location_
 |*End-users* | |_General public_
 |*Information provider(s)* | |_NSRI Cranfield University_
 |*Information processors(s)/Brokers* | |_None (automatic interpretation of database)_
-|*Information Source Output* | |
+2+^|*Information Source Output* |
 |*Description* | |_Web based soil map and information_
 |*Thematic scope* | |_Soil characteristics_
 |*Base datasets* | |_Interpreted map of the Soilscapes dataset_
@@ -7229,7 +7224,7 @@ _on website_
 http://www.landis.org.uk/services/soilscapes.cfm
 
 |*External reference* | |_See web site_
-|*Information Source Input* | |
+2+^|*Information Source Input* |
 |*Description* | |_In essence, there is only one dataset that serves as input to the Soilscapes Viewer: the Soilscapes dataset_
 |*Thematic scope* | |_Soil (generalized data)_
 |*Base dataset(s)* | |_Soilscapes dataset at 1:250,000_
@@ -7292,7 +7287,7 @@ The Table 3 below details the attributes of the soil DB used for estimating the 
 
 |*Information provider(s)* |GIS Sol (Inra is in charge of collecting and storing the data for the GIS Sol)
 |*Information processors(s)/Brokers* |Inra
-|*Information Source Input* |
+2+^|*Information Source Input*
 |*Description* a|
 * soil survey data base at the "Departement" level
 
@@ -7314,7 +7309,7 @@ The Table 3 below details the attributes of the soil DB used for estimating the 
 |*External reference* a|
 * {blank}
 
-|*Information Source Output* |
+2+^|*Information Source Output*
 |*Description* |zoning of municipalities having a certain area constrained for each criteria
 |*Thematic scope* |soil
 |*Base dataset(s)* |list of municipalities with the area constrained for each criteria  maps
@@ -8147,7 +8142,7 @@ _(except for the book by Swartjes these reports and the atlas can be downloaded 
 
 |*Information provider(s)* |Consultancy companies, laboratories, chemists, biologists
 |*Information processors(s)/Brokers* |Laboratories, consultancy companies
-|*Information Source Input* |
+2+^|*Information Source Input*
 |*Description* a|
 * Chemical analyses from soil and water
 
@@ -8182,7 +8177,7 @@ JRC 2010,
 Standard list of substances for environmental investigations to soil and sediments, as declared on may 30, 2008. A production of SIKB, NEN and Bodem, related to the Dutch investigation standards NEN 5740 and NVN 5720.
 
 |*External reference* |
-|*Information Source Output* |
+2+^|*Information Source Output*
 |*Description* |Ecological risk assessment of soil contamination
 |*Thematic scope* |Decision to take action on a site with soil contamination
 |*Base dataset(s)* |ETOX (USA and Netherlands)- for sensitivity of soil organisms to soil contamination and SOIL Biology for comparison with normal levels for non-polluted sites
