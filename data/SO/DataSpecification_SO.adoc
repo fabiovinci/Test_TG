@@ -7449,10 +7449,10 @@ Overview of data on potentially contaminated sites in the system
 * land register identification number
 * description of the potential assumed deposits
 ** excavation material
-**demolition waste
-**garbage
-**industrial waste
-**hazardous waste
+** demolition waste
+** garbage
+** industrial waste
+** hazardous waste
 * description of the industrial and commercial activities
 ** 12 different branches
 * description of the natural environment
@@ -7463,7 +7463,7 @@ Overview of data on potentially contaminated sites in the system
 ** soil
 * description of the administrative data (calendar date of adoption)
 ** classification in risk areas (four classes)
-====
+
 
 Discussion:
 It is a point of discussion to have potentially contaminated sites included in any EU Regulations and inventories. When doing so a general guideline for comparability is essential. But as the polluting activities may differ from country to country this can be expected to be difficult. The inventory can be broad or narrow. As an example: in the Netherlands the choice was made for an extensive list of potentially contaminated sites. After ongoing investigations many categories were skipped because for those categories there appeared to be very little sequence in soil investigations leading to the need of cleaning or protection.
@@ -7476,16 +7476,15 @@ In the Netherlands a much more extensive list is used, consisting of several hun
 
 This item coincides with the possible contaminated soil site and all related attributes in the model on soil contamination of the TGW Soil.
 
-*_b) Surveys (after confirmed suspicion)_*
-
+[loweralpha, start=2]
+*_Surveys (after confirmed suspicion)_*
 Overview of data in the system:
-a) first survey
+* first survey
 ** completed
 ** in progress
-b) detailed survey
+* detailed survey
 ** completed
 ** in progress
-
 
 Discussion:
 Dates of survey seem not to be included as well as final conclusions.
@@ -7496,7 +7495,8 @@ The quality standards of the investigations are important because of the high co
 
 This item coincides with the investigation state in the model on soil contamination of the TGW Soil.
 
-*_c) contaminated sites atlas - Austria_*
+[loweralpha, start=3]
+*_contaminated sites atlas - Austria_*
 
 Overview of data on contaminated sites in the system:
 
@@ -7610,7 +7610,8 @@ Beside current land use also planned land use is of importance for the value of 
 
 This item coincides with the feature contaminated soil site in the model on soil contamination of the TGW Soil.
 
-*_d) Cleaning and protection measures_*
+[loweralpha, start=4]
+*_Cleaning and protection measures_*
 
 Overview of data on cleaning and protection measures in the system:
 
