@@ -3997,6 +3997,7 @@ rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">p
 
 EXAMPLE 2: The XML snippets below show how to fill the _Specification_ sub-element for documenting conformance with the CRS conformance class of the data specification on Addresses v3.0.1.
 
+[source,xml,indent=2,subs="+quotes"]
 <gmd:DQ_ConformanceResult>
 	<gmd:specification href="http://inspire.ec.europa.eu/conformanceClass/ad/3.0.1/crs" />
 	<gmd:explanation> (...) </gmd:explanation>
@@ -4005,6 +4006,7 @@ EXAMPLE 2: The XML snippets below show how to fill the _Specification_ sub-eleme
 
 or (using a citation):
 
+[source,xml,indent=2,subs="+quotes"]
 <gmd:DQ_ConformanceResult>
 	<gmd:specification>
 		<gmd:CI_Citation>
@@ -4171,6 +4173,7 @@ referenceSystemIdentifier:
  codeSpace: INSPIRE RS registry
 
 |Example XML encoding a|
+[source,xml,indent=2,subs="+quotes"]
 <gmd:referenceSystemInfo>
 		<gmd:MD_ReferenceSystem>
 			<gmd:referenceSystemIdentifier>
