@@ -8317,8 +8317,8 @@ _linked to ObservableProperty, PhenomenonTypeValue and UnitOfMeasure which is pa
 |===
 
 <<<
-[.text-center]
 [appendix]
+[.text-center]
 == Code list values (normative) 
 
 [discrete]
