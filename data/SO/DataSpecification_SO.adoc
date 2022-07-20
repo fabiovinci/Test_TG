@@ -8138,6 +8138,7 @@ Output dataset Bodemloket (Soil counter) /report to prospective property buyer
 
 Equal to input set
 
+<<<
 === State of soil in Europe
 
 Internationally and nationally focus is on the change of state of soils (e.g. EUR 25186 EN, 2012). This information is used in the debate around different environmental, agricultural and climate related themes. For the characterization of the soil state and the soil development there is a need for a systematic soil monitoring approach. Most of the member states practice a nationwide monitoring network: Austria, Belgium, Bulgaria, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Lithuania, Latvia, Malta, Northern Ireland, Netherlands, Poland, Portugal, Romania, Scotland, Slovenia, Slovakia, Spain, Sweden, UK (ENVASSO, 2008).
@@ -8185,7 +8186,6 @@ Due to the complexity of deriving soil related data a lot of stakeholders with d
 * _Point Maps that provide the aggregated measurements an values from the monitoring sites_
 * _Maps on an appropriate national level or raster format that show the state and the development of soil related interpreted data._
 
-|
 |*Description* |
 |*Thematic scope* |_soil, climate, land cover/use_
 |*Base datasets* a|
