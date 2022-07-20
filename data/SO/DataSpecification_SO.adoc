@@ -8317,11 +8317,12 @@ _linked to ObservableProperty, PhenomenonTypeValue and UnitOfMeasure which is pa
 |===
 
 <<<
+[.text-center]
 [appendix]
 == Code list values (normative) 
 
 [discrete]
-== *INSPIRE Application Schema 'Soil'*
+=== *INSPIRE Application Schema 'Soil'*
 
 [width="100%",cols="100%"]
 |===
