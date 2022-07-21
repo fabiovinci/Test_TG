@@ -13247,9 +13247,7 @@ a|
 *Orientation*
 
 Soil pollution is one of the recognized soil threats in the EU Soil Thematic Strategy and may have effects on human health, land development potential, drinking water resources and this may lead to economic stagnation of areas. Also a healthy soil is important for climate regulation, water management and agricultural economy. The value to collect information on the extent of soil pollution and other soil threats is that it may help to define and facilitate measures to promote human health, drinking water protection, environmental protection, food safety. Not the least, its gives insight into the additional financial risks of pollution for future land development, building activities and infrastructural works.
-
 The UML data model for soil has provisions to include the results of soil investigations into physical and chemical parameters, the latter including potentially contaminants. The example of an extension of the UML data model described here is meant to give the opportunity to include the formal conclusions and management results on contaminated sites. As procedures and threshold values of contaminants may differ for each member state an approach on headlines is followed.
-
 The UML-model on contaminated sites demonstrates the extensibility of the UML data model for soil and the connection with other products of the Inspire thematic working groups. It aims to get an overview of the most important activities regarding (local) soil and groundwater contamination in the member states without interfering with regulations and planning in each member state. Being an example of the use and extendibility of the soil model it has no implication of obligations for the Member States.
 
 *Introduction*
@@ -13271,55 +13269,41 @@ image::./media/image32.png[image,width=648,height=400, align=center]
 image::./media/image33.png[image,width=655,height=397, align=center]
 
 [.text-center]
-Figure 10: Overview of the items inside the data model and the items which are purposely left out of the data model.
+*Figure 10: Overview of the items inside the data model and the items which are purposely left out of the data model.*
 
 The model does not go into details of the investigations, only into the endpoints: the main decisions made on basis of the investigations and similarly for site management the model goes into main phases and main results of site management.
-
 The intention is to focus is on the data of contaminated sites (soil and/or groundwater) and not on possibly/potentially contaminated sites. A site is considered possibly/potentially contaminated here as long as the investigations and decisions of the appointed authorities have not led to a verdict 'contaminated' or otherwise (see Figure 10). Which sites are to be included in 'possibly contaminated sites' to start with the investigations depends of the level of suspicion of the site and the ambitions, rules etcetera of the appointed authorities. General considerations may be to include a site if experience has learned that the possible contaminating activity has usually a high follow up in necessary measures and also to include sites urging for investigation after confirmed civil complaints or resulting from known calamities. No obligating rule is implied and which sites to include here is up to the member states or it's appointed local authorities. The information which sites are in investigation should give insight in the approach of a member state in an earlier stage than after completion of the often long trajectories of investigation and management procedures.
 
 *Generalized site investigation and site management procedures*
 
 Generally a site is considered contaminated if chemical parameters have values above threshold values in a sufficiently large area. The threshold values indicate that an exposure level can be expected that may lead to risks for humans or have adverse effects on ecosystem services or resources on and around the site. The level of these risks depends on land use, the presence of objects at risk, the probability of exposure and dispersion routes. The threshold values are based on a generalized (generic) exposure and dispersion modeling and effect estimations, but they may, in specific situations, be overruled by outcomes of further investigations.
-
 Some contaminants, e.g. metals may be present on a natural background level. Also diffuse manmade contamination in low levels may contribute to a background level. Generally the background level is not considered to give adverse effects or it is not feasible to take other actions on it than considering restrictions in land use planning.
-
 The investigations on a possibly contaminated site may involve the contaminant identification, levels and distribution in soil, groundwater, surface water, sediments, plants, animals, humans. Generally a tiered investigation procedure is followed, initially to confirm or deny a suspicion of serious contamination in soil and groundwater (the preliminary investigation). A resulting confirmation will justify a larger investigation effort (the main site investigation) to assess levels of contamination and the size of the contaminated area. A tiered investigation procedure is not essential for the data model, but still it will often be applied and it can be handled in headlines as shown in Figure 11. Details of investigations like exposure, dispersion, contamination of produce, ecological effects, physical and biological processes in the soil may play a role but are as such not a part of the data to be explicitly included in this model.
-
 For each step in the tiered procedure screening values specific for this step can be applicable. After assessment of the hazard (the presence of contamination, its level and the size of the area), the investigation is focused on the assessment of the risk, the dispersion and the effectiveness of possible measures.
-
 The remediation and site management may involve temporary protection and restriction measures, cleaning or partial cleaning (of the contamination sources or of kernels with high contamination levels) over longer or shorter periods, change of land use, or isolation or immobilization of the contaminants and may include aftercare. Aftercare may consist of maintenance of physical provisions and land use restrictions or monitoring of contamination levels and dispersion rates of the contaminants.
 
 image::./media/image34.png[image,width=594,height=366, align=center]
 
 [.text-center]
-Figure 11: Tiered approach on headlines of the investigation and management of sites with possibly contaminated soil and/or groundwater. Starting on the top and going down following procedures for investigations and management.
+*Figure 11: Tiered approach on headlines of the investigation and management of sites with possibly contaminated soil and/or groundwater. Starting on the top and going down following procedures for investigations and management.*
 
 Figure 11 gives an overview of the generalized procedure. Each investigation may lead to the conclusion that the site is not contaminated and no further investigation is needed or to the conclusion that a further investigation is needed. Generally the decision that a site is contaminated falls after the final verdict on the contamination levels and the size of the contaminated area in the main site investigation.
-
 In a national set procedure an indicated investigation may involve several steps. The main dividing lines proposed here for investigation stages are (1) the historical investigation into knowledge from administration and archives (into types of activities and processes, periods, known calamities, spills, former complaints, type and volume of chemicals used), or for calamities an administrative investigation into the amounts of chemicals involved (2) the preliminary soil investigation to confirm that contamination is present in substantial levels and a more expensive main site investigation is advised or necessary and finally (3) the main site investigation. The characteristic of the main site investigation is that it gives the necessary information on the site contamination on which the appointed authority including other considerations can give the verdict that the site is contaminated or not, and consequently prioritize and plan site management. The type of measures to be taken are elaborated in (4) the 'investigation into measures and planning'.
 
 *Restrictions of the model*
 
 The approach of the model is to include local contamination of soil and groundwater (excluding soils permanently under water); to concentrate mainly on local contamination and not diffuse contamination. Another restriction is to concentrate mainly on soil and groundwater pollution on a site and not on the complete soil water system in which parts of the site may consist of surface waters and underwater soil or may consist of controlled dump sites or other special areas (e.g. of archeological value). Border areas are indicated but not elaborated here.
-
 Regarding the complexity the envisioned organizational setup to facilitate the tackling of soil contamination here is (1) a national law defining investigation procedures and general threshold values, (2) regional additional rules in relation to planning and background values and (3) local implementation of risk and dispersion assessments in relation to land development and soil quality ambitions. The organization of responsibilities between national, local and regional authorities in a member state is not decisive for the use of the data model. Instead it can be adopted by the data model.
-
 Each site in Figure 11 may be considered 'possibly contaminated' (or 'potentially contaminated') as long as it is not concluded that the site is not contaminated and no further investigation is needed. It is finally considered 'contaminated' after confirmation in a main site investigation or after a verdict by the appointed local authority based on the results of the main site investigation. Figuratively speaking the 'possibly contaminated sites' lay directly behind the gate through which "sites to be investigated" enter. It is up to the regulations and planning of the member states which sites will enter.
-
 The 'possibly contaminated sites' may also contain the results of an inventory of possibly contaminating activities. The decision on the feasibility and depth of such an inventory is actually left to the member states or its local or regional authorities. It should be considered that it can be performed on various levels considering e.g. ambitions, economic situation and budget available, political pressure and the pressure of land development and building activities. An effort to make a complete inventory of possibly contaminating sites may give insight into the extent of the problem, but when done too thoroughly may also lead to the checking of large numbers of sites finally resulting in small percentages of sites considered to be seriously contaminated. Focusing first on known sites with soil pollution problems and sites with high suspicion may be more feasible and help to get the information on the site on the time when needed and not as possibly expired data. This means generally that a long term continuous effort will be needed, but beside the costs also this effort will yield benefits in terms of welfare and economic progress like a more healthy living environment, improved food and drinking water safety, useable groundwater to be extracted for industrial uses with the aim of human consumption, sustainable resources management and canceling out economic stagnation caused by land unfit for intended use because of soil pollution (especially in urban areas).
-
 It is proposed not to focus on 'possibly contaminated sites' but consider contaminated sites (after the main site investigation) as the main component of a data collection, including all sites in subsequent management phases including aftercare. It is advised to generally keep sites once found to be contaminated in the system, especially when the problem is partially solved, with consequences like aftercare and use restrictions. The preservation of information may also prevent repetition of investigations.
 
 *Short description of the model*
 
 The main entities in the model are a 'possibly contaminated site' and a 'contaminated site' (see *Figure 12*). A possibly contaminated site may have several reasons to be introduced among which are the confirmed presence of hazardous waste, former or existing activities on the site with an experienced high possibility of soil or groundwater contamination. In the case of ongoing activities prevention of further contamination is a first point of action, but here only covered as a border subject not facilitated fully in this data model. Code lists for possibly contaminating activities, waste types and chemical parameters are included but can be complemented and are not setting any obligations for investigation or site management from the side of the EU. They may facilitate in keeping the overview of causes and facilitate local planning of the efforts. In the cooperation between member states these data may help to analyze for which type of sites experience is built up in a member state or which types of sites are lacking. The stage of investigation gives insight in the level of conformation of assumptions in the tiered investigations.
-
 The site identification and geometry is a property inherited from the soil site in the 'Soil' model (in the main text) and from the Inspire 'Geology' data model for groundwater.
-
 A confirmed contaminated site is more legally embedded (than a 'possibly contaminated site'). Its status is connected to the applicable law and appointed national, regional or local authority or authorities. The pollutant level and extent (affected surface size and depth) is set in the main site investigation and other parameters may be involved in further assessment. Several risk assessment stages are possible, involving risk types and possible risk receptors related to the land use. Land use is connected in this data model to the Inspire data model 'Land use'. The current level of protection obtained on the site is recorded in 'measures taken' and 'stage of measures'. The measures may involve land use restrictions as elaborated in the Inspire data model 'Area management / restriction / regulation zones and reporting units'.
-
 The reasons to investigate and manage a site are the hazards and risks as specified within the member state, considering international rules and knowledge when applicable. The trigger to start investigations may follow procedures specified within the member state and does not follow directly from EU regulations (except for the control of major-accident hazards as defined in the Seveso II Directive and its extensions).
-
 In this example: the trigger to investigate the justification and application may be up to the member states. It may be informative for policy makers to know which triggers are dominant and as it is compliant to the rules of the member states generally there is no reason to keep it back. The information is included in the model as an option with a generalized and extendable code list.
 
 image::./media/image35.png[image,width=491,height=340, align=center]
@@ -13335,9 +13319,7 @@ image::./media/image36.png[image,width=355,height=94, align=center]
 A further check of interoperability and flexibility of the proposed data model by mapping of the data systems of member states and of the EEA data collection system is recommended.
 
 The data may carry civil, criminal and financial liabilities. In agreeing with public availability of data in the Århus agreement the local authorities / member states should balance the protection of citizens to risk versus the liabilities in this subject. Both sides may have connected economic and political value. If public availability has valid juridical barriers it should be possible to keep data delivery back if not in conflict with the Århus agreement. In this conflict probably the juridical boundaries should be determined by jurisdiction in each member state.
-
 Some subjects are not included in the model and it is recommended that these should get attention in further developments, being: prevention of the continuation of polluting effects of activities; diffuse pollution in soil and groundwater; the assessment of ecological / biological quality of the soil (use of parameters from ENVASSO) and ecological services of the soil; integration in management of soil and water systems; area management and combined approach of sites.
-
 As soil pollution may have implications for a large field of economic activities the management of contaminated sites and brown fields may have wider implications in fields for which the TWG Soil has no expertise available. Figure 13 gives a wider overview of related management issues to consider several of these issues will be integrated in management related to other themes, making use of soil pollution data. It is recommended to make a further check of the connection of soil pollution with other INSPIRE themes. The current data model is restricted and mainly aiming to record the status of contaminated sites to foster public health and safe and sustainable land development.
 
 image::./media/image37.png[image,width=625,height=421, align=center]
@@ -13346,15 +13328,10 @@ image::./media/image37.png[image,width=625,height=421, align=center]
 image::./media/image38.png[image,width=368,height=143, align=center]
 
 [.text-center]
-Figure 13: Possible tasks in management of soil pollution, with (in grey) the main management issues in which these tasks may be integrated. This is an illustration of the wider fields of risk management on soil pollution and not part of the proposed data model.
+*Figure 13: Possible tasks in management of soil pollution, with (in grey) the main management issues in which these tasks may be integrated. This is an illustration of the wider fields of risk management on soil pollution and not part of the proposed data model.*
 
-[arabic, start=1]
-. {blank}
-
-=== 
-Feature catalogue
-[arabic, start=1]
-.. {blank}
+<<<
+=== Feature catalogue
 
 ==== Feature catalogue metadata
 
