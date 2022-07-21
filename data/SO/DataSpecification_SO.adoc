@@ -8608,7 +8608,7 @@ a|
 !===
 !Name: !soil derived object parameter name value
 !Definition: !list of soil related properties that can be derived from soil and other data. The allowed values for this code list comprise a number of pre-defined values and narrower values defined by data providers. This code list is hierarchical.
-!Description: !
+!Description: ! Basically these parameters can be divided in several major groups like: Chemical parameters, Physical parameters, Biological parameters.
 !Extensibility: !narrower
 !Identifier: !http://inspire.ec.europa.eu/codelist/SoilDerivedObjectParameterNameValue
 !Values: !The allowed values for this code list comprise the values specified in the table below and narrower values defined by data providers.
@@ -13239,11 +13239,8 @@ a|
 
 |===
 
-[upperalpha, start=3]
-. (informative) 
-Soil Data Model Extensions
-[arabic, start=1]
-.. {blank}
+[appendix]
+== Soil Data Model Extensions (informative) 
 
 === Soil Contamination
 
