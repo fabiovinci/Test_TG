@@ -31,7 +31,7 @@ image:./media/image3.png[image,width=93,height=93] **INSPIRE** - *Infrastructure
 = D2.8.III.3 INSPIRE Data Specification on Soil – Draft Guidelines
 
 // Document properties
-// :title: D2.8.III.3 INSPIRE Data Specification on Soil – Draft Guidelines
+:title: D2.8.III.3 INSPIRE Data Specification on Soil – Draft Guidelines
 :creator: INSPIRE Thematic Working Group Soil
 :revdate: 2013-12-10
 :keywords: INSPIRE Data Specification for the spatial data theme Soil
