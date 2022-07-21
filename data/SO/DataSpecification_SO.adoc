@@ -13331,9 +13331,9 @@ image::./media/image38.png[image,width=368,height=143, align=center]
 *Figure 13: Possible tasks in management of soil pollution, with (in grey) the main management issues in which these tasks may be integrated. This is an illustration of the wider fields of risk management on soil pollution and not part of the proposed data model.*
 
 <<<
-=== Feature catalogue
+==== Feature catalogue
 
-==== Feature catalogue metadata
+===== Feature catalogue metadata
 
 [width="100%",cols="34%,66%"]
 |===
