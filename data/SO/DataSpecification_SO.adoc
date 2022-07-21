@@ -13368,9 +13368,9 @@ image::./media/image38.png[image,width=368,height=143, align=center]
 |WasteTypeValue |SoilContamination |«codelist»
 |===
 
-==== Spatial object types
+===== Spatial object types
 
-===== ContaminatedSoilSite
+ContaminatedSoilSite
 
 [width="100%",cols="100%"]
 |===
