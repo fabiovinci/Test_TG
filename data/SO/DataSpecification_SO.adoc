@@ -16621,7 +16621,6 @@ a|
 
 |===
 
-[appendix]
 === Soil Organic Carbon Content provision
 
 ==== INTRODUCTION 
