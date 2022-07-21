@@ -23,13 +23,6 @@
 
 :appendix-caption: Annex
 
-image::./media/image2.jpeg[image,width=131,height=90,align=center]
-
-image:./media/image3.png[image,width=93,height=93] **INSPIRE** - *Infrastructure for Spatial Information in Europe*
-
-[discrete]
-= D2.8.III.3 INSPIRE Data Specification on Soil – Draft Guidelines
-
 // Document properties
 :title: D2.8.III.3 INSPIRE Data Specification on Soil – Draft Guidelines
 :creator: INSPIRE Thematic Working Group Soil
@@ -41,6 +34,13 @@ image:./media/image3.png[image,width=93,height=93] **INSPIRE** - *Infrastructure
 :copyright: Public
 :revremark: 
 :lang: en
+
+image::./media/image2.jpeg[image,width=131,height=90,align=center]
+
+image:./media/image3.png[image,width=93,height=93] **INSPIRE** - *Infrastructure for Spatial Information in Europe*
+
+[discrete]
+= D2.8.III.3 INSPIRE Data Specification on Soil – Draft Guidelines
 
 [width="100%",cols="17%,83%",]
 |===
