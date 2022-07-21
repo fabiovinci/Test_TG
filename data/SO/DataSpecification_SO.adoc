@@ -16621,13 +16621,8 @@ a|
 
 |===
 
-[arabic, start=1]
-. {blank}
-
-=== 
-Soil Organic Carbon Content provision
-[arabic, start=1]
-.. {blank}
+[appendix]
+=== Soil Organic Carbon Content provision
 
 ==== INTRODUCTION 
 
@@ -17094,4 +17089,4 @@ a|
 | layerType: topsoil
 |===
 
-Figure 14 – Implementation of INSPIRE. Objects involved in the use case: soil organic carbon content estimation on a regional scale (note that some data types are represented in short).
+*Figure 14 – Implementation of INSPIRE. Objects involved in the use case: soil organic carbon content estimation on a regional scale (note that some data types are represented in short).*
