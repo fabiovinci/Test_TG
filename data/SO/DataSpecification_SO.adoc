@@ -24,7 +24,7 @@
 :appendix-caption: Annex
 
 // Document properties
-:doctype-book:
+:title-page:
 :title: D2.8.III.3 INSPIRE Data Specification on _Soil_ – Draft Guidelines
 :creator: INSPIRE Thematic Working Group _Soil_
 :revdate: 2013-12-10
