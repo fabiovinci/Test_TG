@@ -24,7 +24,7 @@
 :appendix-caption: Annex
 
 // Document properties
-:title: D2.8.III.3 INSPIRE Data Specification on _Soil_ – Draft Guidelines
+:doctitle: D2.8.III.3 INSPIRE Data Specification on _Soil_ – Draft Guidelines
 :creator: INSPIRE Thematic Working Group _Soil_
 :revdate: 2013-12-10
 :keywords: INSPIRE Data Specification for the spatial data theme _Soil_
@@ -44,7 +44,7 @@ image:./media/image3.png[image,width=93,height=93] **INSPIRE** - *Infrastructure
 
 [width="100%",cols="17%,83%",]
 |===
-|*Title* |{title}
+|*Title* |{doctitle}
 |*Creator* |{creator}
 |*Date* |{revdate}
 |*Subject* |{keywords}
