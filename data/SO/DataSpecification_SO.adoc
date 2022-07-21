@@ -13494,7 +13494,7 @@ a|
 
 |===
 
-====== GroundwaterProfile
+GroundwaterProfile
 
 [width="100%",cols="100%"]
 |===
@@ -13543,7 +13543,7 @@ a|
 
 |===
 
-====== PossiblyContaminatedSoilSite
+PossiblyContaminatedSoilSite
 
 [width="100%",cols="100%"]
 |===
@@ -13650,9 +13650,9 @@ a|
 
 |===
 
-==== Data types
+===== Data types
 
-===== ContaminatingActivitiesValue
+ContaminatingActivitiesValue
 
 [width="100%",cols="100%"]
 |===
@@ -13690,7 +13690,7 @@ a|
 
 |===
 
-===== ContaminatingActivityType
+ContaminatingActivityType
 
 [width="100%",cols="100%"]
 |===
@@ -13740,7 +13740,7 @@ a|
 
 |===
 
-===== InvestigatedChemicalParameterType
+InvestigatedChemicalParameterType
 
 [width="100%",cols="100%"]
 |===
@@ -13804,7 +13804,7 @@ a|
 
 |===
 
-===== MeasureTakenType
+MeasureTakenType
 
 [width="100%",cols="100%"]
 |===
@@ -13843,9 +13843,9 @@ a|
 
 |===
 
-==== Code lists
+===== Code lists
 
-===== ContaminatingActivityPresenceValue
+ContaminatingActivityPresenceValue
 
 [width="100%",cols="100%"]
 |===
@@ -13863,7 +13863,7 @@ a|
 
 |===
 
-===== InvestigationStateValue
+InvestigationStateValue
 
 [width="100%",cols="100%"]
 |===
@@ -13881,7 +13881,7 @@ a|
 
 |===
 
-===== InvestigationTriggerValue
+InvestigationTriggerValue
 
 [width="100%",cols="100%"]
 |===
@@ -13899,7 +13899,7 @@ a|
 
 |===
 
-===== MeasureTakenStageValue
+MeasureTakenStageValue
 
 [width="100%",cols="100%"]
 |===
@@ -13917,7 +13917,7 @@ a|
 
 |===
 
-===== MeasureTakenStatusValue
+MeasureTakenStatusValue
 
 [width="100%",cols="100%"]
 |===
@@ -13935,7 +13935,7 @@ a|
 
 |===
 
-===== MeasureTakenValue
+MeasureTakenValue
 
 [width="100%",cols="100%"]
 |===
@@ -13953,7 +13953,7 @@ a|
 
 |===
 
-===== NaceIndustrialActivityValue
+NaceIndustrialActivityValue
 
 [width="100%",cols="100%"]
 |===
@@ -13970,7 +13970,7 @@ a|
 
 |===
 
-===== OtherContaminatingActivityValue
+OtherContaminatingActivityValue
 
 [width="100%",cols="100%"]
 |===
@@ -13988,7 +13988,7 @@ a|
 
 |===
 
-===== RiskAssessmentStageValue
+RiskAssessmentStageValue
 
 [width="100%",cols="100%"]
 |===
@@ -14006,7 +14006,7 @@ a|
 
 |===
 
-===== RiskReceptorValue
+RiskReceptorValue
 
 [width="100%",cols="100%"]
 |===
@@ -14024,7 +14024,7 @@ a|
 
 |===
 
-===== RiskTypeValue
+RiskTypeValue
 
 [width="100%",cols="100%"]
 |===
@@ -14042,7 +14042,7 @@ a|
 
 |===
 
-===== SoilContaminationSpecialisedZoneTypeCode
+SoilContaminationSpecialisedZoneTypeCode
 
 [width="100%",cols="100%"]
 |===
@@ -14060,7 +14060,7 @@ a|
 
 |===
 
-===== WasteTypeValue
+WasteTypeValue
 
 [width="100%",cols="100%"]
 |===
@@ -14078,11 +14078,11 @@ a|
 
 |===
 
-==== Imported types (informative)
+===== Imported types (informative)
 
 This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.
 
-===== CharacterString
+CharacterString
 
 [width="100%",cols="100%"]
 |===
@@ -14096,7 +14096,7 @@ a|
 
 |===
 
-===== ExistingLandUseObject
+ExistingLandUseObject
 
 [width="100%",cols="100%"]
 |===
@@ -14111,7 +14111,7 @@ a|
 
 |===
 
-===== GM_Point
+GM_Point
 
 [width="100%",cols="100%"]
 |===
@@ -14125,7 +14125,7 @@ a|
 
 |===
 
-===== ManagementRestrictionOrRegulationZone
+ManagementRestrictionOrRegulationZone
 
 [width="100%",cols="100%"]
 |===
@@ -14140,7 +14140,7 @@ a|
 
 |===
 
-===== ObservableProperty
+ObservableProperty
 
 [width="100%",cols="100%"]
 |===
@@ -14156,7 +14156,7 @@ a|
 
 |===
 
-===== ObservedSoilProfile
+ObservedSoilProfile
 
 [width="100%",cols="100%"]
 |===
@@ -14187,7 +14187,7 @@ a|
 
 |===
 
-====== SoilParameterValueType
+SoilParameterValueType
 
 [width="100%",cols="100%"]
 |===
@@ -14200,7 +14200,7 @@ a|
 
 |===
 
-====== SoilSite
+SoilSite
 
 [width="100%",cols="100%"]
 |===
@@ -14235,8 +14235,7 @@ SOURCE GS Soil, modified
 
 |===
 
-[[soilsiteparameternamevalue]]
-====== SoilSiteParameterNameValue
+SoilSiteParameterNameValue
 
 [width="100%",cols="100%"]
 |===
@@ -14252,7 +14251,7 @@ a|
 
 |===
 
-====== ZoningElement
+ZoningElement
 
 [width="100%",cols="100%"]
 |===
@@ -14268,8 +14267,8 @@ a|
 
 |===
 
-=== 
-SoilContamination - Code Lists
+<<<
+==== SoilContamination - Code Lists
 
 *INSPIRE Application Schema 'SoilContamination'*
 
