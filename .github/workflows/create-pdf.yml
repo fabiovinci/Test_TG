@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: AsciiDoc to PDF Converter
+name: AsciiDoc to PDF/HTML Converter
 
 # Controls when the workflow will run
 on:

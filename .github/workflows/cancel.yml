@@ -1,4 +1,4 @@
-name: Cancel older on AsciiDoc to PDF Converter
+name: Cancel older on AsciiDoc to PDF/HTML Converter
 on:
   workflow_run:
     workflows: ["AsciiDoc to PDF Converter"]
