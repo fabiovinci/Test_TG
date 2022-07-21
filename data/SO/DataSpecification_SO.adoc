@@ -3053,7 +3053,7 @@ a|
 !===
 !  !Name: !profile element parameter name value
 !  !Definition: !list of properties that can be observed to characterize the profile element. The allowed values for this code list comprise a number of pre-defined values and narrower values defined by data providers. This code list is hierarchical.
-!  !Description: !
+!  !Description: ! Basically these parameters can be divided in several major groups like: Chemical parameters, Physical parameters, Biological parameters
 !  !Extensibility: !narrower
 !  !Identifier: !http://inspire.ec.europa.eu/codelist/ProfileElementParameterNameValue
 !  !Values: !The allowed values for this code list comprise the values specified in Annex _C_ and narrower values defined by data providers.
@@ -8461,7 +8461,7 @@ a|
 !===
 !Name: !profile element parameter name value
 !Definition: !list of properties that can be observed to characterize the profile element. The allowed values for this code list comprise a number of pre-defined values and narrower values defined by data providers. This code list is hierarchical.
-!Description: !
+!Description: ! Basically these parameters can be divided in several major groups like: Chemical parameters, Physical parameters, Biological parameters
 !Extensibility: !narrower
 !Identifier: !http://inspire.ec.europa.eu/codelist/ProfileElementParameterNameValue
 !Values: !The allowed values for this code list comprise the values specified in the table below and narrower values defined by data providers.
