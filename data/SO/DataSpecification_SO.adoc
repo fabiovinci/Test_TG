@@ -16680,15 +16680,17 @@ The _SoilThemeCoverage_ is associated to a _SoilDerivedObject_, which is a colle
 
 a|
 + geometry: GM_Polygon (the coordinates of the polygon)
-[source,indent=1]
+[indent=1]
 Top 1762921.12
 Left 4494306.445
 Right 4818606.445
 Bottom 1386021.12
 Datum D_ETRS_1989
 
-+ inspireId: - to be generated 
++ inspireId: - to be generated
+[indent=1]
    ++ soilDerivedObjectParameter: SoilDerivedObjectParameterType
+   [indent=2]
 		+	soilDerivedObjectParameterDescription: ObservableProperty
 			+	basePhenomenon: organic carbon content
 			+	UnitOfMeasure: dag/kg
