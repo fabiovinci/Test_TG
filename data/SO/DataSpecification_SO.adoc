@@ -16681,13 +16681,11 @@ The _SoilThemeCoverage_ is associated to a _SoilDerivedObject_, which is a colle
 a|
 + geometry: GM_Polygon (the coordinates of the polygon)
 [source,indent=1]
-====
 Top 1762921.12
 Left 4494306.445
 Right 4818606.445
 Bottom 1386021.12
 Datum D_ETRS_1989
-====
 
 + inspireId: - to be generated 
    ++ soilDerivedObjectParameter: SoilDerivedObjectParameterType
