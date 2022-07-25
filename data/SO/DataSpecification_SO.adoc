@@ -16654,27 +16654,18 @@ The map of the regional soil organic carbon content is a _SoilThemeCoverage_ rec
 
 [width="100%",cols="100%"]
 |===
-a|
+^|
 «feature type»
-
 *SoilThemeCoverage*
-
 a|
- soilThemeName: map of the soil organic carbon content in the topsoil of the region Sicily
-
- domainExtent: EX_VerticalExtent 1
-
++ soilThemeName: map of the soil organic carbon content in the topsoil of the region Sicily
++ domainExtent: EX_VerticalExtent 1
  beginLifespanVersion: 2011
-
  endLifespanVersion:
-
  validTimeFrom: 1959
-
  validTimeTo: 2009
-
-a|
+^|
 *Constraints*
-
 Values can range from 0 to 100 dag/kg
 
 |===
