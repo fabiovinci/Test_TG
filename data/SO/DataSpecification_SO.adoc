@@ -13239,6 +13239,7 @@ a|
 
 |===
 
+<<<
 [appendix]
 == Soil Data Model Extensions (informative) 
 
@@ -16886,7 +16887,7 @@ a|
 |===
 
 [.text-center]
-image::./media/image39.png[image,width=1174,height=1561, align=center]
+image::./media/image39.png[image,width=974,height=1261, align=center]
 
 [.text-center]
 *Figure 14 – Implementation of INSPIRE. Objects involved in the use case: soil organic carbon content estimation on a regional scale (note that some data types are represented in short).*
