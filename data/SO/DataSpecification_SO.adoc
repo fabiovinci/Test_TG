@@ -16787,36 +16787,29 @@ The _ProfileElement_ considered in this use case is a _SoilLayer_.
 
 a|
 [source,indent=0]
- inspireId: (to be generated)
-
- profileElementDepthRange:
-
-* upperValue: 0
-* lowerValue: 30
-* UnitOfMeasure: cm
-
-*  profileElementParameter:
-** ProfileElementParameterType
-** profileElementParameterDescription: ObservableProperty
-*** basePhenomenon: organic carbon content
-*** UnitOfMeasure: dag/kg
-** profileElementParameterValue SoilParameterValueType:
-*** numericValue: 30
-
- beginLifespanVersion: 2008
-
- endLifespanVersion: 2009
-
++ inspireId: (to be generated)
++ profileElementDepthRange:
+		+ upperValue: 0
+		+ lowerValue: 30
+		+ UnitOfMeasure: cm
+	++ profileElementParameter:
+		+ ProfileElementParameterType
+		+ profileElementParameterDescription: ObservableProperty
+			+ basePhenomenon: organic carbon content
+			+ UnitOfMeasure: dag/kg
+		+ profileElementParameterValue SoilParameterValueType:
+			+ numericValue: 30
++ beginLifespanVersion: 2008
++ endLifespanVersion: 2009
 |===
 
 [width="100%",cols="100%"]
 |===
-a|
+^|
 «feature type»
-
 *SoilLayer*
 
-| layerType: topsoil
+| + layerType: topsoil
 |===
 
 (voidable properties not listed)
@@ -16825,9 +16818,8 @@ a|
 
 [width="100%",cols="100%"]
 |===
-a|
+^|
 «codeList»
-
 *SoilDerivedObjectParameterNameValue*
 
 a|
@@ -16838,9 +16830,8 @@ a|
 
 [width="100%",cols="100%"]
 |===
-a|
+^|
 «codeList»
-
 *WRBReferenceSoilGroupValue*
 
 a|
@@ -16850,9 +16841,8 @@ a|
 
 [width="100%",cols="100%"]
 |===
-a|
+^|
 «codeList»
-
 *WRBQualifierValue*
 
 a|
@@ -16863,9 +16853,8 @@ a|
 
 [width="100%",cols="100%"]
 |===
-a|
+^|
 «codeList»
-
 *WRBQualifierPlaceValue*
 
 a|
@@ -16876,9 +16865,8 @@ a|
 
 [width="100%",cols="100%"]
 |===
-a|
+^|
 «codeList»
-
 *LayerTypeValue*
 
 a|
@@ -16888,160 +16876,17 @@ a|
 
 [width="100%",cols="100%"]
 |===
-a|
+^|
 «codeList»
-
 *ProfileElementParameterNameValue*
 
 a|
 * chemical parameter
 * organic carbon content
-
 |===
 
-[width="100%",cols="100%"]
-|===
-a|
-«feature type»
+[.text-center]
+image::./media/image39.png[image,width=368,height=143, align=center]
 
-*SoilThemeCoverage*
-
-a|
- soilThemeName: map of the soil organic carbon content in the topsoil of the region Sicily
-
- domainExtent: EX_VerticalExtent 1
-
- beginLifespanVersion: 2011
-
- endLifespanVersion: not available
-
- validTimeFrom: 1959
-
- validTimeTo: 2009
-
-a|
-*Constraints*
-
-Values can range from 0 to 100 dag/kg
-
-|===
-
-[width="100%",cols="100%"]
-|===
-a|
-«feature type»
-
-*SoilDerivedObject*
-
-a|
- geometry: GM_Polygon
-
- inspireId: 0
-
- soilDerivedObjectParameter: not available
-
- soilDerivedObjectDescriptiveParameter: validTimeFrom: 1959
-
-|===
-
-[width="100%",cols="100%"]
-|===
-a|
-«feature type»
-
-*SoilBody*
-
-a|
- geometry: GM_Multisurface
-
- inspireId: 0
-
- soilBodyLabel: WDSSOEOSE1108E
-
- beginLifespanVersion: 2010
-
- endLifespanVersion: not available
-
-|===
-
-isDescribedBy 1..*
-
-[width="100%",cols="100%"]
-|===
-|*DerivedProfilePresenceinSoilBody*
-a|
- derivedProfilePercentageRange:
-
-DSP 59.9ARCA1.1: 69-69%
-
-DSP 59.9PHCA1.1: 31-31%
-
-|===
-
-[width="100%",cols="100%"]
-|===
-|*DerivedSoilProfile*
-|
-|===
-
-[width="100%",cols="100%"]
-|===
-a|
-«feature type»
-
-*SoilProfile*
-
-a|
- inspireId: 0
-
- WRBSoilName: Haplic Arenosols (Calcaric)
-
- otherSoilName: Typic Xeropsamment
-
- localidentifier: DSP 59.9ARCA1.1
-
- validFrom: 2008
-
- validTo: 2009
-
- beginLifespanVersion: 2010
-
- endLifespanVersion: not available
-
-|===
-
-1 isPartOf
-
-isDescribedBy 1..*
-
-[width="100%",cols="100%"]
-|===
-a|
-«feature type»
-
-*ProfileElement*
-
-a|
- inspireId: 0
-
- profileElementDepthRange: 0-30 cm
-
- profileElementParameter: organic carbon content
-
- beginLifespanVersion: 2008
-
- endLifespanVersion: 2009
-
-|===
-
-[width="100%",cols="100%"]
-|===
-a|
-«feature type»
-
-*SoilLayer*
-
-| layerType: topsoil
-|===
-
+[.text-center]
 *Figure 14 – Implementation of INSPIRE. Objects involved in the use case: soil organic carbon content estimation on a regional scale (note that some data types are represented in short).*
