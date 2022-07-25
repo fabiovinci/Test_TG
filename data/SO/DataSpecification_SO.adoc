@@ -393,7 +393,7 @@ ISO 19156: 2011. Geographic Information – Observation and Measurements
 
 ISO DIS 28258 Soil Quality – Digital Exchange of Soil-Related data
 
-\NOTE: The ISO DIS 28258 draft standard has been developed in parallel with this data specification on soil. It has a wider scope, but the models mutually influenced each other. In conclusion, as far as both models cover the same real world objects, central terms and definitions in and for the data models are near enough to be mappable into each other.
+{empty}NOTE: The ISO DIS 28258 draft standard has been developed in parallel with this data specification on soil. It has a wider scope, but the models mutually influenced each other. In conclusion, as far as both models cover the same real world objects, central terms and definitions in and for the data models are near enough to be mappable into each other.
 
 === Terms and definitions
 
