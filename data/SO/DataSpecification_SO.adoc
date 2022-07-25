@@ -16688,12 +16688,16 @@ Bottom 1386021.12
 Datum D_ETRS_1989
 
 + inspireId: - to be generated
+
 [source,indent=1]
-   ++ soilDerivedObjectParameter: SoilDerivedObjectParameterType
+++ soilDerivedObjectParameter: SoilDerivedObjectParameterType
+   
 [source,indent=2]
-		+	soilDerivedObjectParameterDescription: ObservableProperty
-			+	basePhenomenon: organic carbon content
-			+	UnitOfMeasure: dag/kg
++ soilDerivedObjectParameterDescription: ObservableProperty
+
+[source,indent=3]
++ basePhenomenon: organic carbon content
++ UnitOfMeasure: dag/kg
 		+	soilDerivedObjectParameterValue: 
 			+	numericValue: 25
 + soilDerivedObjectDescriptiveParameter: weighted averages of measured values
