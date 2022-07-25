@@ -1167,6 +1167,7 @@ image::./media/image14.jpeg[image,width=617,height=828, align=center]
 [.text-center]
 *Figure 11 -  UML class diagram: Overview of the SOIL relation with O&M classes*
 
+<<<
 ==== Feature catalogue
 
 *Feature catalogue metadata*
