@@ -16694,40 +16694,28 @@ a|
 		+ soilDerivedObjectParameterValue: 
 			+	numericValue: 25
 + soilDerivedObjectDescriptiveParameter: weighted averages of measured values
-
 |===
 
 The _SoilDerivedObject_ "map of the soil organic carbon content in the topsoil of the region Sicily" is based on a set of _SoilBody_ features__.__ Each _SoilBody_ is described as follows:
 
 [width="100%",cols="100%"]
 |===
-a|
+^|
 «feature type»
-
 *SoilBody*
 
 a|
- geometry: GM_Multisurface (the coordinates of all the polygons of the same value)
-
-====
-Top 1528310.23
-
-Left 4775841.59
-
-Right 4776423.06
-
-Bottom 1526631.62
-
-Datum D_ETRS_1989
-====
-
- inspireId: - to be generated
-
- soilBodyLabel: WDSSOEOSE1108E
-
- beginLifespanVersion: 2010
-
- endLifespanVersion: -
+[source,indent=0]
++ geometry: GM_Multisurface (the coordinates of all the polygons of the same value)
+	Top 1528310.23
+	Left 4775841.59
+	Right 4776423.06
+	Bottom 1526631.62
+	Datum D_ETRS_1989
++ inspireId: - to be generated
++ soilBodyLabel: WDSSOEOSE1108E
++ beginLifespanVersion: 2010
++ endLifespanVersion: -
 
 |===
 
@@ -16737,12 +16725,10 @@ The presence of one or more kinds of soils (DerivedSoilProfiles, hereinafter DSP
 
 [width="100%",cols="100%"]
 |===
-|*DerivedProfilePresenceinSoilBody*
+^|*DerivedProfilePresenceinSoilBody*
 a|
- derivedProfilePercentageRange:
-
++ derivedProfilePercentageRange:
 DSP 59.9ARCA1.1: 69-69%
-
 DSP 59.9PHCA1.1: 31-31%
 
 |===
@@ -16751,52 +16737,41 @@ The code of DSP makes reference to the WRB system and the codes of soil regions 
 
 [width="100%",cols="100%"]
 |===
-a|
+^|
 «feature type»
-
 *SoilProfile*
 
 a|
- inspireId: (to be generated)
-
- WRBSoilName:
-
-* WRBSoilNameType
-
-* WRBQualifierGroup : WRBQualifierGroupType
-** qualifierPlace: prefix
-** qualifierPosition: 1
-** WRBqualifier: Haplic
-** WRBspecifier: -
-* WRBQualifierGroup : WRBQualifierGroupType
-** qualifierPlace: suffix
-** qualifierPosition: 1
-** WRBqualifier: Calcaric
-** WRBspecifier: -
-* WRBReferenceSoilGroup: Arenosol
-* isOriginalClassification: true
-
- otherSoilName:
-
-* soilName: Typic Xeropsamment
-* soilClassificationScheme: DocumentCitation
-** Name: Carta suoli Sicilia: _convenzione con la Regione Sicilia per la realizzazione della Carta dei Suoli a scala 1:250,000 nell'ambito del programma interregionale "Agricoltura e Qualità"._
-** shortName: Carta suoli Sicilia
-** date: 2011
-** link: _http://www.sias.regione.sicilia.it/_
-* isOriginalClassification: true
-
- localidentifier: DSP 59.9ARCA1.1
-
- soilProfileParameter: -
-
- validFrom: 2008
-
- validTo: 2009
-
- beginLifespanVersion: 2010
-
- endLifespanVersion: -
+[source,indent=0]
++ inspireId: (to be generated)
++ WRBSoilName:
+	+ WRBSoilNameType
+		+ WRBQualifierGroup : WRBQualifierGroupType
+			+ qualifierPlace: prefix
+			+ qualifierPosition: 1
+			+ WRBqualifier: Haplic
+			+ WRBspecifier: -
+		+ WRBQualifierGroup : WRBQualifierGroupType
+			+ qualifierPlace: suffix
+			+ qualifierPosition: 1
+			+ WRBqualifier: Calcaric
+			+ WRBspecifier: -
+		+ WRBReferenceSoilGroup: Arenosol
+		+ isOriginalClassification: true
++ otherSoilName:
+	+ soilName: Typic Xeropsamment
+	+ soilClassificationScheme: DocumentCitation
+		+ Name: Carta suoli Sicilia: _convenzione con la Regione Sicilia per la realizzazione della Carta dei Suoli a scala 1:250,000 nell'ambito del programma interregionale "Agricoltura e Qualità"._
+		+ shortName: Carta suoli Sicilia
+		+ date: 2011
+		+ link: _http://www.sias.regione.sicilia.it/_
+	+ isOriginalClassification: true
++ localidentifier: DSP 59.9ARCA1.1
++ soilProfileParameter: -
++ validFrom: 2008
++ validTo: 2009
++ beginLifespanVersion: 2010
++ endLifespanVersion: -
 
 |===
 
@@ -16806,12 +16781,12 @@ The _ProfileElement_ considered in this use case is a _SoilLayer_.
 
 [width="100%",cols="100%"]
 |===
-a|
+^|
 «feature type»
-
 *ProfileElement*
 
 a|
+[source,indent=0]
  inspireId: (to be generated)
 
  profileElementDepthRange:
