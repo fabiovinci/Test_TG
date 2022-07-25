@@ -16660,10 +16660,10 @@ The map of the regional soil organic carbon content is a _SoilThemeCoverage_ rec
 a|
 + soilThemeName: map of the soil organic carbon content in the topsoil of the region Sicily
 + domainExtent: EX_VerticalExtent 1
- beginLifespanVersion: 2011
- endLifespanVersion:
- validTimeFrom: 1959
- validTimeTo: 2009
++ beginLifespanVersion: 2011
++ endLifespanVersion:
++ validTimeFrom: 1959
++ validTimeTo: 2009
 ^|
 *Constraints*
 Values can range from 0 to 100 dag/kg
@@ -16674,36 +16674,29 @@ The _SoilThemeCoverage_ is associated to a _SoilDerivedObject_, which is a colle
 
 [width="100%",cols="100%"]
 |===
-a|
+^|
 «feature type»
-
 *SoilDerivedObject*
 
 a|
- geometry: GM_Polygon (the coordinates of the polygon)
++ geometry: GM_Polygon (the coordinates of the polygon)
 
 ====
 Top 1762921.12
-
 Left 4494306.445
-
 Right 4818606.445
-
 Bottom 1386021.12
-
 Datum D_ETRS_1989
 ====
 
- inspireId: - to be generated
-
-*  soilDerivedObjectParameter: SoilDerivedObjectParameterType
-** soilDerivedObjectParameterDescription: ObservableProperty
-*** basePhenomenon: organic carbon content
-*** UnitOfMeasure: dag/kg
-** soilDerivedObjectParameterValue:
-*** numericValue: 25
-
- soilDerivedObjectDescriptiveParameter: weighted averages of measured values
++ inspireId: - to be generated 
+   ++ soilDerivedObjectParameter: SoilDerivedObjectParameterType
+		+	soilDerivedObjectParameterDescription: ObservableProperty
+			+	basePhenomenon: organic carbon content
+			+	UnitOfMeasure: dag/kg
+		+	soilDerivedObjectParameterValue: 
+			+	numericValue: 25
++ soilDerivedObjectDescriptiveParameter: weighted averages of measured values
 
 |===
 
