@@ -987,14 +987,15 @@ In addition, some themes make reference to the types TimeValuePair and Timeserie
 
 Where possible, only these coverage types (or a subtype thereof) are used in INSPIRE application schemas.
 
-image::./media/image8.png[image,width=222,height=207] image::./media/image9.png[image,width=309,height=209, align=center]
+image::./media/image8.png[image,width=560,height=253, align=center]
 
 [.text-center]
-(Source: ISO 19136:2007) (Source: GML 3.3.0)
+*Figure 5 – Examples of a rectified grid (left) and a referenceable grid (right)*
 
-Figure 5 – Examples of a rectified grid (left) and a referenceable grid (right)
+image::./media/image9.png[image,width=427,height=254, align=center]
 
-Figure 6 – Example of a time series
+[.text-center]
+*Figure 6 – Example of a time series*
 
 === Application schema SOIL
 
