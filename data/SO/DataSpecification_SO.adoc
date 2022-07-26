@@ -1,10 +1,10 @@
 // Admonition icons:
 // IR Requirement
-:important-caption: ❗
+:important-caption: 📕
 // TG Requirement
-:tip-caption: 💡
+:tip-caption: 📒
 // Recommendation
-:note-caption: ℹ️
+:note-caption: 📘
 
 // TOC placement using macro (manual)
 :toc: macro
