@@ -1,10 +1,10 @@
 // Admonition icons:
 // IR Requirement
-:important-caption: 📕
+:important-caption: :heavy_exclamation_mark:
 // TG Requirement
-:tip-caption: 📒
+:tip-caption: :bulb:
 // Recommendation
-:note-caption: 📘
+:note-caption: :information_source:
 
 // TOC placement using macro (manual)
 :toc: macro
