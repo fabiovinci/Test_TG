@@ -232,7 +232,7 @@ The following use cases are identified and described in Annex B:
 
 To show the relevance of known European legislation related to soil, the Use Cases were cross-checked with the legislation at hand; where there is a common interest or overlap on data used, it is indicated in the following table:
 
-image::./media/table_page_12.png[image,width=401,height=470, align=center]
+image::./media/table_page_12.png[image,width=802,height=943, align=center]
 
 NOTE none of the directives is considered as a use case in itself.
 
