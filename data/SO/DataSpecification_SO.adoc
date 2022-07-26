@@ -232,29 +232,7 @@ The following use cases are identified and described in Annex B:
 
 To show the relevance of known European legislation related to soil, the Use Cases were cross-checked with the legislation at hand; where there is a common interest or overlap on data used, it is indicated in the following table:
 
-[width="99%",cols="55%,2%,2%,2%,2%,2%,2%,6%,2%,2%,3%,3%,3%,2%,2%,2%,2%,2%,2%,2%"]
-|===
-|*_Use Cases_* |*_Agri-Environmental Indicators_*: |-    Use Case Environmental Indicator Soil Erosion |-    Use Case Environmental Indicator Soil Quality |-    Use Case Environmental Indicator Contaminated Sites |*_Thematic maps_* |-    Land irrigation suitability in Navarra (Spain) |-    Development of methodologies for soil salinity surveillance in the middle Ebro basin (Spain) |-    yield forecasting within the MARS project |-    Restrictions for N and P in agriculture |-    Calculation threshold trace elements |-    Use of Soil Scape Viewer |-    Establishment Less Favoured Areas (France) |*_Contaminated sites_* |-    Contaminated Land Register Austria |-    Use Case drinking water and soil contamination |-    Use Case Ecology and contamination |-    Use Case Property and contamination |*_Soil Monitoring_* |-    Use Case state of soil in Europe
-|*_Directives_* | | | | | | | | | | | | | | | | | | |
-|CAP. Council regulation (EC) No 1782/2003 of 29 September 2003 establishing common rules for direct support schemes under the common agricultural policy. | | | | | |● | | | | | |● | | | | | | |
-|Council Directive 91/676/EEC of 12 December 1991 concerning the protection of waters against pollution caused by nitrates form agricultural sources. | | | | | | | | |● | | | | | | | | | |
-|Directive 200/60/EC of the European Parliament and of the council of 23 October 2000 establishing a framework for Community action in the field of water policy. | | | | | | | | |● |● | | | | |● | | | |
-|Directive 2009/28/EC of the European Parliament and of the Council. Energy from renewable resources. | | | | | | | | | | | |● | | | | | | |
-|Directive 86/278/EC of the European Parliament and of the Council. Sewage Sludge Directive. | | | | | | | | | |● | | | | | | | | |
-|Directive 1999/31/EC of the European Parliament and of the Council of 26 April 1999 on the landfill and waste. | | | | | | | | | | | | | |● |● |● | | |
-a|
-Still under discussion: Less Favoured Areas (LFA) Intermediate areas. This regulation is aimed at better targeting of natural handicap payments COM (2009) 161.
-
-(regulation not adopted yet)
-
-| | | | | | | | | | | |● | | | | | | |
-a|
-Proposed Soil framework Directive
-
-(state of the proposal is pending)
-
-| | | | | | |● | | | | | | |● |● |● |● | |
-|===
+image::./media/table_page_12.png[image,width=401,height=470, align=center]
 
 NOTE none of the directives is considered as a use case in itself.
 
