@@ -12,6 +12,13 @@
 :toc:
 :toc-placement!:
 
+
+ifdef::env-github[:outfilesuffix: .adoc]
+
+ifndef::env-github[]
+:toc: left
+endif::[]
+
 // Empty TOC title (the title is in the document)
 :toc-title:
 
