@@ -9,13 +9,10 @@
 // TOC placement using macro (manual)
 //:toc: macro
 
-:toc:
-:toc-placement!:
+:toc: macro
+//:toc-placement!:
 
-
-ifdef::env-github[:outfilesuffix: .adoc]
-
-ifndef::env-github[]
+ifdef::env-browser[]
 :toc: left
 endif::[]
 
