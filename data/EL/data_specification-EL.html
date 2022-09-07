@@ -444,7 +444,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><span class="image"><img src="media\image2.jpeg" alt="image" width="93" height="93"></span></p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="media\image3.png" alt="image" width="100" height="100"></span> INSPIRE Infrastructure for Spatial Information in Europe</p>
+<p><span class="image"><img src="media\image3.png" alt="image" width="100" height="100"></span> <strong>INSPIRE</strong> - <strong>Infrastructure for Spatial Information in Europe</strong></p>
 </div>
 <h1 id="_d2_8_ii_1_data_specification_on_elevation_technical_guidelines" class="discrete">D2.8.II.1 Data Specification on <em>Elevation</em> – Technical Guidelines</h1>
 <table class="tableblock frame-all grid-all stretch">
@@ -515,8 +515,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </tr>
 </tbody>
 </table>
-<h1 id="_foreword" class="discrete"><strong>Foreword</strong></h1>
-<h1 id="_how_to_read_the_document" class="discrete"><strong>How to read the document?</strong></h1>
+<div style="page-break-after: always;"></div>
+<h2 id="_foreword" class="discrete"><strong>Foreword</strong></h2>
+<h2 id="_how_to_read_the_document" class="discrete"><strong>How to read the document?</strong></h2>
 <div class="paragraph">
 <p>This document describes the <em>"INSPIRE data specification on Elevation – Technical Guidelines"</em> version 3.0 as developed by the Thematic Working Group (TWG) <em>Elevation</em> using both natural and a conceptual schema language.</p>
 </div>
@@ -554,10 +555,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p>Neither the European Commission nor any person acting on behalf of the Commission is responsible for the use which might be made of this publication.</p>
 </div>
-<div class="paragraph">
-<p><strong>Interoperability of Spatial Data Sets and Services –<br>
-General Executive Summary</strong></p>
-</div>
+<div style="page-break-after: always;"></div>
+<h2 id="_interoperability_of_spatial_data_sets_and_services_general_executive_summary" class="discrete"><strong>Interoperability of Spatial Data Sets and Services – General Executive Summary</strong></h2>
 <div class="paragraph">
 <p>The challenges regarding the lack of availability, quality, organisation, accessibility, and sharing of spatial information are common to a large number of policies and activities and are experienced across the various levels of public authority in Europe. In order to solve these problems it is necessary to take measures of coordination between the users and providers of spatial information. The Directive 2007/2/EC of the European Parliament and of the Council adopted on 14 March 2007 aims at establishing an Infrastructure for Spatial Information in the European Community (INSPIRE) for environmental policies, or policies and activities that have an impact on the environment.</p>
 </div>
@@ -616,9 +615,8 @@ General Executive Summary</strong></p>
 <div class="paragraph">
 <p>In addition to providing a basis for the interoperability of spatial data in INSPIRE, the data specification development framework and the thematic data specifications can be reused in other environments at local, regional, national and global level contributing to improvements in the coherence and interoperability of data in spatial data infrastructures.</p>
 </div>
-<div class="paragraph">
-<p><strong>Elevation – Executive Summary</strong></p>
-</div>
+<div style="page-break-after: always;"></div>
+<h2 id="_elevation_executive_summary" class="discrete"><strong>Elevation – Executive Summary</strong></h2>
 <div class="paragraph">
 <p>The <em>Elevation</em> of a terrain surface, whether land based or bathymetric in nature, is one of the most important descriptors of the Earth&#8217;s morphology. Recognising the specific role that elevation may play in engineering and spatial analysis, the related data theme has been included in Annex II of INSPIRE. The <em>Elevation</em> data theme includes digital elevation models for land, ice and ocean surfaces both for terrestrial elevation and bathymetry, as well as shorelines.</p>
 </div>
@@ -652,9 +650,8 @@ General Executive Summary</strong></p>
 <div class="paragraph">
 <p>The main value of the INSPIRE <em>Elevation data</em> specification stands in the conceptually homogenous approaches to land elevation and bathymetry, as well as in the integrated presentation of different spatial representation forms. This is expected to underpin the exchange of all datasets in use in an interoperable way.</p>
 </div>
-<div class="paragraph">
-<p><strong>Acknowledgements</strong></p>
-</div>
+<div style="page-break-after: always;"></div>
+<h2 id="_acknowledgements" class="discrete"><strong>Acknowledgements</strong></h2>
 <div class="paragraph">
 <p>Many individuals and organisations have contributed to the development of these Guidelines.</p>
 </div>
@@ -668,10 +665,8 @@ General Executive Summary</strong></p>
 <p>Other contributors to the INSPIRE data specifications are the Drafting Team Data Specifications, the JRC data specifications team and the INSPIRE stakeholders - Spatial Data Interested Communities (SDICs) or Legally Mandated Organisations (LMOs).</p>
 </div>
 <div class="paragraph">
-<p><strong>Contact information</strong></p>
-</div>
-<div class="paragraph">
-<p>Vanda Nunes de Lima<br>
+<p><strong>Contact information</strong><br>
+Vanda Nunes de Lima<br>
 European Commission Joint Research Centre<br>
 Institute for Environment and Sustainability<br>
 Unit H06: Digital Earth and Reference Data<br>
@@ -685,200 +680,330 @@ Fax: 39-0332-7866325<br>
 <a href="http://ec.europa.eu/dgs/jrc/" class="bare">http://ec.europa.eu/dgs/jrc/</a><br>
 <a href="http://inspire.jrc.ec.europa.eu/" class="bare">http://inspire.jrc.ec.europa.eu/</a></p>
 </div>
-<div class="paragraph">
-<p><strong>Table of contents</strong></p>
-</div>
-<div class="paragraph">
-<p>1	Scope	1<br>
-2	Overview	1<br>
-2.1	Name	1<br>
-2.2	Informal description	1<br>
-2.3	Normative References	4<br>
-2.4	Terms and definitions	5<br>
-2.5	Symbols and abbreviations	8<br>
-2.6	How the Technical Guidance maps to the Implementing Rules	10<br>
-2.6.1	Requirements	10<br>
-2.6.2	Recommendations	11<br>
-2.6.3	Conformance	11<br>
-3	Specification scopes	11<br>
-4	Identification information	11<br>
-5	Data content and structure	12<br>
-5.1	Application schemas – Overview	12<br>
-5.1.1	Application schemas included in the IRs	12<br>
-5.2	Basic notions	13<br>
-5.2.1	Notation	13<br>
-5.2.2	Voidable characteristics	14<br>
-5.2.3	Enumerations	15<br>
-5.2.4	Code lists	16<br>
-5.2.5	Consistency between spatial data sets	19<br>
-5.2.6	Identifier management	19<br>
-5.2.7	Geometry representation	20<br>
-5.2.8	Temporality representation	20<br>
-5.2.9	Coverages	21<br>
-5.3	Application schema Elevation	23<br>
-5.3.1	Description	23<br>
-5.4	Application schema ElevationBaseTypes	31<br>
-5.4.1	Description	31<br>
-5.4.2	Feature catalogue	31<br>
-5.5	Application schema ElevationGridCoverage	33<br>
-5.5.1	Description	33<br>
-5.5.2	Feature catalogue	45<br>
-5.6	Application schema ElevationVectorElements	49<br>
-5.6.1	Description	49<br>
-5.6.2	Feature catalogue	52<br>
-5.6.3	Externally governed code lists	61<br>
-5.7	Application schema ElevationTIN	63<br>
-5.7.1	Description	63<br>
-5.7.2	Feature catalogue	66<br>
-6	Reference systems, units of measure and grids	69<br>
-6.1	Default reference systems, units of measure and grid	69<br>
-6.1.1	Coordinate reference systems	69<br>
-6.1.2	Temporal reference system	72<br>
-6.1.3	Units of measure	73<br>
-6.1.4	Grids	73<br>
-6.2	Theme-specific requirements and recommendations	74<br>
-6.2.1	Coordinate reference systems	74<br>
-6.2.2	Grids	81<br>
-7	Data quality	84<br>
-7.1	Data quality elements	84<br>
-7.1.1	Completeness – Commission	85<br>
-7.1.2	Completeness – Omission	86<br>
-7.1.3	Logical consistency – Conceptual consistency	86<br>
-7.1.4	Logical consistency – Domain consistency	87<br>
-7.1.5	Logical Consistency – Format consistency	87<br>
-7.1.6	Logical Consistency – Topological consistency	88<br>
-7.1.7	Positional accuracy – Absolute or external accuracy	91<br>
-7.1.8	Positional accuracy – Gridded data position accuracy	92<br>
-7.2	Minimum data quality requirements	93<br>
-7.3	Recommendation on data quality	94<br>
-8	Dataset-level metadata	95<br>
-8.1	Metadata elements defined in INSPIRE Metadata Regulation	95<br>
-8.1.1	Conformity	96<br>
-8.1.2	Lineage	99<br>
-8.1.3	Temporal reference	99<br>
-8.2	Metadata elements for interoperability	100<br>
-8.2.1	Coordinate Reference System	101<br>
-8.2.2	Temporal Reference System	101<br>
-8.2.3	Encoding	102<br>
-8.2.4	Character Encoding	103<br>
-8.2.5	Spatial representation type	103<br>
-8.2.6	Data Quality – Logical Consistency – Topological Consistency	104<br>
-8.3	Recommended theme-specific metadata elements	104<br>
-8.3.1	Maintenance Information	105<br>
-8.3.2	Metadata elements for reporting data quality	105<br>
-8.3.3	Spatial representation information	107<br>
-8.3.4	Supplemental information	107<br>
-8.3.5	Process step	108<br>
-8.3.6	Data source	109<br>
-8.3.7	Browse graphic information	110<br>
-8.3.8	Digital transfer options information	110<br>
-9	Delivery	111<br>
-9.1	Updates	111<br>
-9.2	Delivery medium	111<br>
-9.3	Options for delivering coverage data	112<br>
-9.4	Encodings	113<br>
-9.4.1	Default Encoding(s)	113<br>
-9.4.2	Recommended Encoding(s)	117<br>
-10	Data Capture	117<br>
-10.1	Elevation - Coverages (Grids)	117<br>
-10.1.1	Grid spacing	117<br>
-10.2	Elevation - Vector elements	118<br>
-10.2.1	Generic consistency rules	118<br>
-10.2.2	Density of Elevation data	118<br>
-10.3	Elevation - TIN	120<br>
-10.4	Bathymetry-specific objects	120<br>
-11	Portrayal	121<br>
-11.1	Layers to be provided by INSPIRE view services	122<br>
-11.1.1	Layers organisation	122<br>
-11.2	Styles required to be supported by INSPIRE view services	122<br>
-11.2.1	Styles for the layer EL.BreakLine	122<br>
-11.2.2	Styles for the layer EL.ContourLine	123<br>
-11.2.3	Styles for the layer EL.IsolatedArea	124<br>
-11.2.4	Styles for the layer EL.SpotElevation	125<br>
-11.2.5	Styles for the layer EL.VoidArea	127<br>
-11.2.6	Styles for the layer EL.GridCoverage	128<br>
-11.2.7	Styles for the layer EL.TIN	129<br>
-11.2.8	Examples	130<br>
-11.3	Styles recommended to be supported by INSPIRE view services	133<br>
-11.3.1	Styles for the layer EL.ContourLine	133<br>
-11.3.2	Examples	136<br>
-Bibliography	137<br>
-Annex A (normative) Abstract Test Suite	139<br>
-A.1	Application Schema Conformance Class	142<br>
-A.1.1	Schema element denomination test	142<br>
-A.1.2	Value type test	142<br>
-A.1.3	Value test	142<br>
-A.1.4	Attributes/associations completeness test	143<br>
-A.1.5	Abstract spatial object test	143<br>
-A.1.6	Constraints test	144<br>
-A.1.7	Geometry representation test	144<br>
-A.2	Reference Systems Conformance Class	144<br>
-A.2.1	Datum test	144<br>
-A.2.2	Coordinate reference system test	145<br>
-A.2.3	Vertical Coordinate Reference System exclusiveness test	145<br>
-A.2.4	Grid test	145<br>
-A.2.5	View service coordinate reference system test	146<br>
-A.2.6	Temporal reference system test	146<br>
-A.2.7	Units of measurements test	146<br>
-A.3	Data Consistency Conformance Class	146<br>
-A.3.1	Unique identifier persistency test	147<br>
-A.3.2	Version consistency test	147<br>
-A.3.3	Life cycle time sequence test	147<br>
-A.3.4	Update frequency test	147<br>
-A.3.5	Grid aggregation test	148<br>
-A.3.6	Contour line test	148<br>
-A.3.7	Break line test	148<br>
-A.3.8	Isolated area test	148<br>
-A.3.9	Stop line test	149<br>
-A.4	Metadata IR Conformance Class	149<br>
-A.4.1	Metadata for interoperability test	149<br>
-A.4.2	Metadata completeness test	149<br>
-A.5	Information Accessibility Conformance Class	150<br>
-A.5.1	Code list publication test	150<br>
-A.5.2	CRS publication test	150<br>
-A.5.3	CRS identification test	150<br>
-A.5.4	Grid identification test	150<br>
-A.6	Data Delivery Conformance Class	151<br>
-A.6.1	Encoding compliance test	151<br>
-A.6.2	Minimum data delivery test	151<br>
-A.7	Portrayal Conformance Class	151<br>
-A.7.1	Layer designation test	151<br>
-A.2	Part 2 : Conformity with the technical guideline (TG) Requirements	152<br>
-A.8.1	Multiplicity test	152<br>
-A.8.2	CRS http URI test	152<br>
-A.8.3	Metadata encoding schema validation test	152<br>
-A.8.4	Metadata occurrence test	152<br>
-A.8.5	Metadata consistency test	153<br>
-A.8.6	Encoding schema validation test	153<br>
-A.8.7	Coverage multipart representation test	153<br>
-A.8.8	Coverage domain consistency test	153<br>
-A.8.9	TIFF conformity test	154<br>
-A.8.10	TIFF data structure test	154<br>
-A.8.11	TIFF range coding test	154<br>
-A.8.12	TIFF range compression test	154<br>
-A.8.13	TIFF grid coordinate system test	155<br>
-A.8.14	Style test	155<br>
-Annex B (informative) Use-Cases	156<br>
-B.1	Documented high-level use cases	156<br>
-B.1.1	Flood mapping	156<br>
-B.1.2	Orthoimagery production	159<br>
-B.1.3	Elevation mapping	164<br>
-B.1.4	Maintenance of fairways	166<br>
-B.2	Additional applications	167<br>
-Annex C (normative) Code list values	168<br>
-Annex D (informative) Pan-European Geographic Grid for gridded Elevation data	170<br>
-D.1	Introduction	170<br>
-D.2	Zoned Geographic Grid for gridded Elevation data	171<br>
-Annex E (informative) Examples on how to use ChartDatum data type	177<br>
-E.1	Description of the sea floor	177<br>
-E.2	Description of the floor of an inland standing water body	178<br>
-E.3	Description of the bed of a navigable river	178<br>
-Annex E (normative) Encoding rules for TIFF	179<br>
-E.1	Introduction	179<br>
-E.2	TIFF format	179<br>
-E.2.1	Format overview	179<br>
-E.2.2	INSPIRE TIFF profile for grid coverage data	179<br>
-E.2.3	Mapping between TIFF and GML data structures	182</p>
+<div style="page-break-after: always;"></div>
+<h1 id="_table_of_contents" class="discrete">Table of Contents</h1>
+<div id="toc" class="toc">
+<div id="toctitle" class="title"></div>
+<ul class="sectlevel1">
+<li><a href="#_scope">1. Scope</a></li>
+<li><a href="#_overview">2. Overview</a>
+<ul class="sectlevel2">
+<li><a href="#_name">2.1. Name</a></li>
+<li><a href="#_informal_description">2.2. Informal description</a></li>
+<li><a href="#_normative_references">2.3. Normative References</a></li>
+<li><a href="#_terms_and_definitions">2.4. Terms and definitions</a></li>
+<li><a href="#_how_the_technical_guidance_maps_to_the_implementing_rules">2.5. How the Technical Guidance maps to the Implementing Rules</a>
+<ul class="sectlevel3">
+<li><a href="#_requirements">2.5.1. Requirements</a></li>
+<li><a href="#_recommendations">2.5.2. Recommendations</a></li>
+<li><a href="#_conformance">2.5.3. Conformance</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_specification_scopes">3. Specification scopes</a></li>
+<li><a href="#_identification_information">4. Identification information</a></li>
+<li><a href="#_data_content_and_structure">5. Data content and structure</a>
+<ul class="sectlevel2">
+<li><a href="#_application_schemas_overview">5.1. Application schemas – Overview</a>
+<ul class="sectlevel3">
+<li><a href="#_application_schemas_included_in_the_irs">5.1.1. Application schemas included in the IRs</a></li>
+</ul>
+</li>
+<li><a href="#_basic_notions">5.2. Basic notions</a>
+<ul class="sectlevel3">
+<li><a href="#_notation">5.2.1. Notation</a></li>
+<li><a href="#_voidable_characteristics">5.2.2. Voidable characteristics</a></li>
+<li><a href="#_enumerations">5.2.3. Enumerations</a></li>
+<li><a href="#_code_lists">5.2.4. Code lists</a></li>
+<li><a href="#_consistency_between_spatial_data_sets">5.2.5. Consistency between spatial data sets</a></li>
+<li><a href="#_identifier_management">5.2.6. Identifier management</a></li>
+<li><a href="#_geometry_representation">5.2.7. Geometry representation</a></li>
+<li><a href="#_temporality_representation">5.2.8. Temporality representation</a></li>
+<li><a href="#_coverages">5.2.9. Coverages</a></li>
+</ul>
+</li>
+<li><a href="#_application_schema_elevation">5.3. Application schema Elevation</a>
+<ul class="sectlevel3">
+<li><a href="#_description">5.3.1. Description</a></li>
+</ul>
+</li>
+<li><a href="#_application_schema_elevationbasetypes">5.4. Application schema <em>ElevationBaseTypes</em></a>
+<ul class="sectlevel3">
+<li><a href="#_description_2">5.4.1. Description</a></li>
+<li><a href="#_feature_catalogue">5.4.2. Feature catalogue</a></li>
+</ul>
+</li>
+<li><a href="#_application_schema_elevationgridcoverage">5.5. Application schema ElevationGridCoverage</a>
+<ul class="sectlevel3">
+<li><a href="#_description_3">5.5.1. Description</a></li>
+<li><a href="#_feature_catalogue_2">5.5.2. Feature catalogue</a></li>
+</ul>
+</li>
+<li><a href="#_application_schema_elevationvectorelements">5.6. Application schema <em>ElevationVectorElements</em></a>
+<ul class="sectlevel3">
+<li><a href="#_description_4">5.6.1. Description</a></li>
+<li><a href="#_feature_catalogue_3">5.6.2. Feature catalogue</a></li>
+<li><a href="#_externally_governed_code_lists">5.6.3. Externally governed code lists</a></li>
+</ul>
+</li>
+<li><a href="#_application_schema_elevationtin">5.7. Application schema <em>ElevationTIN</em></a>
+<ul class="sectlevel3">
+<li><a href="#_description_5">5.7.1. Description</a></li>
+<li><a href="#_feature_catalogue_4">5.7.2. Feature catalogue</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_reference_systems_units_of_measure_and_grids">6. Reference systems, units of measure and grids</a>
+<ul class="sectlevel2">
+<li><a href="#_default_reference_systems_units_of_measure_and_grid">6.1. Default reference systems, units of measure and grid</a>
+<ul class="sectlevel3">
+<li><a href="#_coordinate_reference_systems">6.1.1. Coordinate reference systems</a></li>
+<li><a href="#_temporal_reference_system">6.1.2. Temporal reference system</a></li>
+<li><a href="#_units_of_measure">6.1.3. Units of measure</a></li>
+<li><a href="#_grids">6.1.4. Grids</a></li>
+</ul>
+</li>
+<li><a href="#_theme_specific_requirements_and_recommendations">6.2. Theme-specific requirements and recommendations</a>
+<ul class="sectlevel3">
+<li><a href="#_coordinate_reference_systems_3">6.2.1. Coordinate reference systems</a></li>
+<li><a href="#_grids_2">6.2.2. Grids</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_data_quality">7. Data quality</a>
+<ul class="sectlevel2">
+<li><a href="#_data_quality_elements">7.1. Data quality elements</a>
+<ul class="sectlevel3">
+<li><a href="#_completeness_commission">7.1.1. Completeness – Commission</a></li>
+<li><a href="#_completeness_omission">7.1.2. Completeness – Omission</a></li>
+<li><a href="#_logical_consistency_conceptual_consistency">7.1.3. Logical consistency – Conceptual consistency</a></li>
+<li><a href="#_logical_consistency_domain_consistency">7.1.4. Logical consistency – Domain consistency</a></li>
+<li><a href="#_logical_consistency_format_consistency">7.1.5. Logical Consistency – Format consistency</a></li>
+<li><a href="#_logical_consistency_topological_consistency">7.1.6. Logical Consistency – Topological consistency</a></li>
+<li><a href="#_positional_accuracy_absolute_or_external_accuracy">7.1.7. Positional accuracy – Absolute or external accuracy</a></li>
+<li><a href="#_positional_accuracy_gridded_data_position_accuracy">7.1.8. Positional accuracy – Gridded data position accuracy</a></li>
+</ul>
+</li>
+<li><a href="#_minimum_data_quality_requirements">7.2. Minimum data quality requirements</a></li>
+<li><a href="#_recommendation_on_data_quality">7.3. Recommendation on data quality</a></li>
+</ul>
+</li>
+<li><a href="#_dataset_level_metadata">8. Dataset-level metadata</a>
+<ul class="sectlevel2">
+<li><a href="#_metadata_elements_defined_in_inspire_metadata_regulation">8.1. Metadata elements defined in INSPIRE Metadata Regulation</a>
+<ul class="sectlevel3">
+<li><a href="#_conformity">8.1.1. Conformity</a></li>
+<li><a href="#_lineage">8.1.2. Lineage</a></li>
+<li><a href="#_temporal_reference">8.1.3. Temporal reference</a></li>
+</ul>
+</li>
+<li><a href="#_metadata_elements_for_interoperability">8.2. Metadata elements for interoperability</a>
+<ul class="sectlevel3">
+<li><a href="#_coordinate_reference_system">8.2.1. Coordinate Reference System</a></li>
+<li><a href="#_temporal_reference_system_2">8.2.2. Temporal Reference System</a></li>
+<li><a href="#_encoding">8.2.3. Encoding</a></li>
+<li><a href="#_character_encoding">8.2.4. Character Encoding</a></li>
+<li><a href="#_spatial_representation_type">8.2.5. Spatial representation type</a></li>
+<li><a href="#_data_quality_logical_consistency_topological_consistency">8.2.6. Data Quality – Logical Consistency – Topological Consistency</a></li>
+</ul>
+</li>
+<li><a href="#_recommended_theme_specific_metadata_elements">8.3. Recommended theme-specific metadata elements</a>
+<ul class="sectlevel3">
+<li><a href="#_maintenance_information">8.3.1. Maintenance Information</a></li>
+<li><a href="#_metadata_elements_for_reporting_data_quality">8.3.2. Metadata elements for reporting data quality</a></li>
+<li><a href="#_spatial_representation_information">8.3.3. Spatial representation information</a></li>
+<li><a href="#_supplemental_information">8.3.4. Supplemental information</a></li>
+<li><a href="#_process_step">8.3.5. Process step</a></li>
+<li><a href="#_data_source">8.3.6. Data source</a></li>
+<li><a href="#_browse_graphic_information">8.3.7. Browse graphic information</a></li>
+<li><a href="#_digital_transfer_options_information">8.3.8. Digital transfer options information</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_delivery">9. Delivery</a>
+<ul class="sectlevel2">
+<li><a href="#_updates">9.1. Updates</a></li>
+<li><a href="#_delivery_medium">9.2. Delivery medium</a></li>
+<li><a href="#_options_for_delivering_coverage_data">9.3. Options for delivering coverage data</a></li>
+<li><a href="#_encodings">9.4. Encodings</a>
+<ul class="sectlevel3">
+<li><a href="#_default_encodings">9.4.1. Default Encoding(s)</a></li>
+<li><a href="#_recommended_encodings">9.4.2. Recommended Encoding(s)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_data_capture">10. Data Capture</a>
+<ul class="sectlevel2">
+<li><a href="#_elevation_coverages_grids">10.1. Elevation - Coverages (Grids)</a>
+<ul class="sectlevel3">
+<li><a href="#_grid_spacing">10.1.1. Grid spacing</a></li>
+</ul>
+</li>
+<li><a href="#_elevation_vector_elements">10.2. Elevation - Vector elements</a>
+<ul class="sectlevel3">
+<li><a href="#_generic_consistency_rules">10.2.1. Generic consistency rules</a></li>
+<li><a href="#_density_of_elevation_data">10.2.2. Density of Elevation data</a></li>
+</ul>
+</li>
+<li><a href="#_elevation_tin">10.3. Elevation - TIN</a></li>
+<li><a href="#_bathymetry_specific_objects">10.4. Bathymetry-specific objects</a></li>
+</ul>
+</li>
+<li><a href="#_portrayal">11. Portrayal</a>
+<ul class="sectlevel2">
+<li><a href="#_layers_to_be_provided_by_inspire_view_services">11.1. Layers to be provided by INSPIRE view services</a>
+<ul class="sectlevel3">
+<li><a href="#_layers_organisation">11.1.1. Layers organisation</a></li>
+</ul>
+</li>
+<li><a href="#_styles_required_to_be_supported_by_inspire_view_services">11.2. Styles required to be supported by INSPIRE view services</a>
+<ul class="sectlevel3">
+<li><a href="#_styles_for_the_layer_el_breakline">11.2.1. Styles for the layer EL.BreakLine</a></li>
+<li><a href="#_styles_for_the_layer_el_contourline">11.2.2. Styles for the layer EL.ContourLine</a></li>
+<li><a href="#_styles_for_the_layer_el_isolatedarea">11.2.3. Styles for the layer EL.IsolatedArea</a></li>
+<li><a href="#_styles_for_the_layer_el_spotelevation">11.2.4. Styles for the layer EL.SpotElevation</a></li>
+<li><a href="#_styles_for_the_layer_el_voidarea">11.2.5. Styles for the layer EL.VoidArea</a></li>
+<li><a href="#_styles_for_the_layer_el_gridcoverage">11.2.6. Styles for the layer EL.GridCoverage</a></li>
+<li><a href="#_styles_for_the_layer_el_tin">11.2.7. Styles for the layer EL.TIN</a></li>
+<li><a href="#_examples">11.2.8. Examples</a></li>
+</ul>
+</li>
+<li><a href="#_styles_recommended_to_be_supported_by_inspire_view_services">11.3. Styles recommended to be supported by INSPIRE view services</a>
+<ul class="sectlevel3">
+<li><a href="#_styles_for_the_layer_el_contourline_2">11.3.1. Styles for the layer EL.ContourLine</a></li>
+<li><a href="#_examples_2">11.3.2. Examples</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_bibliography">Bibliography</a>
+<ul class="sectlevel1">
+<li><a href="#_normative_abstract_test_suite">Annex A: (normative) - Abstract Test Suite</a>
+<ul class="sectlevel2">
+<li><a href="#_part_1_normative">Part 1 (normative)</a></li>
+<li><a href="#_application_schema_conformance_class">Application Schema Conformance Class</a>
+<ul class="sectlevel3">
+<li><a href="#_schema_element_denomination_test">Schema element denomination test</a></li>
+<li><a href="#_value_type_test">Value type test</a></li>
+<li><a href="#_value_test">Value test</a></li>
+<li><a href="#_attributesassociations_completeness_test">Attributes/associations completeness test</a></li>
+<li><a href="#_abstract_spatial_object_test">Abstract spatial object test</a></li>
+<li><a href="#_constraints_test">Constraints test</a></li>
+<li><a href="#_geometry_representation_test">Geometry representation test</a></li>
+</ul>
+</li>
+<li><a href="#_reference_systems_conformance_class">Reference Systems Conformance Class</a>
+<ul class="sectlevel3">
+<li><a href="#_datum_test">Datum test</a></li>
+<li><a href="#_coordinate_reference_system_test">Coordinate reference system test</a></li>
+<li><a href="#_vertical_coordinate_reference_system_exclusiveness_test">Vertical Coordinate Reference System exclusiveness test</a></li>
+<li><a href="#_grid_test">Grid test</a></li>
+<li><a href="#_view_service_coordinate_reference_system_test">View service coordinate reference system test</a></li>
+<li><a href="#_temporal_reference_system_test">Temporal reference system test</a></li>
+<li><a href="#_units_of_measurements_test">Units of measurements test</a></li>
+</ul>
+</li>
+<li><a href="#_data_consistency_conformance_class">Data Consistency Conformance Class</a>
+<ul class="sectlevel3">
+<li><a href="#_unique_identifier_persistency_test">Unique identifier persistency test</a></li>
+<li><a href="#_version_consistency_test">Version consistency test</a></li>
+<li><a href="#_life_cycle_time_sequence_test">Life cycle time sequence test</a></li>
+<li><a href="#_update_frequency_test">Update frequency test</a></li>
+<li><a href="#_grid_aggregation_test">Grid aggregation test</a></li>
+<li><a href="#_contour_line_test">Contour line test</a></li>
+<li><a href="#_break_line_test">Break line test</a></li>
+<li><a href="#_isolated_area_test">Isolated area test</a></li>
+<li><a href="#_stop_line_test">Stop line test</a></li>
+</ul>
+</li>
+<li><a href="#_metadata_ir_conformance_class">Metadata IR Conformance Class</a>
+<ul class="sectlevel3">
+<li><a href="#_metadata_for_interoperability_test">Metadata for interoperability test</a></li>
+<li><a href="#_metadata_completeness_test">Metadata completeness test</a></li>
+</ul>
+</li>
+<li><a href="#_information_accessibility_conformance_class">Information Accessibility Conformance Class</a>
+<ul class="sectlevel3">
+<li><a href="#_code_list_publication_test">Code list publication test</a></li>
+<li><a href="#_crs_publication_test">CRS publication test</a></li>
+<li><a href="#_crs_identification_test">CRS identification test</a></li>
+<li><a href="#_grid_identification_test">Grid identification test</a></li>
+</ul>
+</li>
+<li><a href="#_data_delivery_conformance_class">Data Delivery Conformance Class</a>
+<ul class="sectlevel3">
+<li><a href="#_encoding_compliance_test">Encoding compliance test</a></li>
+<li><a href="#_minimum_data_delivery_test">Minimum data delivery test</a></li>
+</ul>
+</li>
+<li><a href="#_portrayal_conformance_class">Portrayal Conformance Class</a>
+<ul class="sectlevel3">
+<li><a href="#_layer_designation_test">Layer designation test</a></li>
+</ul>
+</li>
+<li><a href="#_part_2_conformity_with_the_technical_guideline_tg_requirements">Part 2 : Conformity with the technical guideline (TG) Requirements</a>
+<ul class="sectlevel3">
+<li><a href="#_multiplicity_test">Multiplicity test</a></li>
+<li><a href="#_crs_http_uri_test">CRS http URI test</a></li>
+<li><a href="#_metadata_encoding_schema_validation_test">Metadata encoding schema validation test</a></li>
+<li><a href="#_metadata_occurrence_test">Metadata occurrence test</a></li>
+<li><a href="#_metadata_consistency_test">Metadata consistency test</a></li>
+<li><a href="#_encoding_schema_validation_test">Encoding schema validation test</a></li>
+<li><a href="#_coverage_multipart_representation_test">Coverage multipart representation test</a></li>
+<li><a href="#_coverage_domain_consistency_test">Coverage domain consistency test</a></li>
+<li><a href="#_tiff_conformity_test">TIFF conformity test</a></li>
+<li><a href="#_tiff_data_structure_test">TIFF data structure test</a></li>
+<li><a href="#_tiff_range_coding_test">TIFF range coding test</a></li>
+<li><a href="#_tiff_range_compression_test">TIFF range compression test</a></li>
+<li><a href="#_tiff_grid_coordinate_system_test">TIFF grid coordinate system test</a></li>
+<li><a href="#_style_test">Style test</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#_informative_use_cases">Annex B: (informative) - Use-Cases</a>
+<ul class="sectlevel2">
+<li><a href="#_documented_high_level_use_cases">Documented high-level use cases</a>
+<ul class="sectlevel3">
+<li><a href="#_flood_mapping">Flood mapping</a></li>
+<li><a href="#_orthoimagery_production">Orthoimagery production</a></li>
+<li><a href="#_elevation_mapping">Elevation mapping</a></li>
+<li><a href="#_maintenance_of_fairways">Maintenance of fairways</a></li>
+</ul>
+</li>
+<li><a href="#_additional_applications">Additional applications</a></li>
+</ul>
+</li>
+<li><a href="#_normative_code_list_values">Annex C: (normative) - Code list values</a></li>
+<li><a href="#_informative_pan_european_geographic_grid_for_gridded_elevation_data">Annex D: (informative) - Pan-European Geographic Grid for gridded <em>Elevation</em> data</a>
+<ul class="sectlevel2">
+<li><a href="#_introduction">Introduction</a></li>
+<li><a href="#_zoned_geographic_grid_for_gridded_elevation_data">Zoned Geographic Grid for gridded <em>Elevation</em> data</a></li>
+</ul>
+</li>
+<li><a href="#">Annex E: </a>
+<ul class="sectlevel2">
+<li><a href="#_description_of_the_sea_floor">Description of the sea floor</a></li>
+<li><a href="#_description_of_the_floor_of_an_inland_standing_water_body">Description of the floor of an inland standing water body</a></li>
+<li><a href="#_description_of_the_bed_of_a_navigable_river">Description of the bed of a navigable river</a></li>
+<li><a href="#_introduction_2">Introduction</a></li>
+<li><a href="#_tiff_format">TIFF format</a>
+<ul class="sectlevel3">
+<li><a href="#_format_overview">Format overview</a></li>
+<li><a href="#_inspire_tiff_profile_for_grid_coverage_data">INSPIRE TIFF profile for grid coverage data</a></li>
+<li><a href="#_mapping_between_tiff_and_gml_data_structures">Mapping between TIFF and GML data structures</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 </div>
 <div style="page-break-after: always;"></div>
 <div class="sect1">
@@ -890,7 +1015,6 @@ E.2.3	Mapping between TIFF and GML data structures	182</p>
 <div class="paragraph">
 <p>This data specification provides the basis for the drafting of Implementing Rules according to Article 7 (1) of the INSPIRE Directive [Directive 2007/2/EC]. The entire data specification is published as implementation guidelines accompanying these Implementing Rules.</p>
 </div>
-<div style="page-break-after: always;"></div>
 </div>
 </div>
 <div class="sect1">
@@ -1432,6 +1556,7 @@ regardless of its level of detail / resolution. This is reinforced by the hetero
 </tr>
 </tbody>
 </table>
+<div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
 <h3 id="_how_the_technical_guidance_maps_to_the_implementing_rules">2.5. How the Technical Guidance maps to the Implementing Rules</h3>
