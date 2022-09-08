@@ -25,7 +25,7 @@
 
 image::./media/image2.jpeg[image,width=93,height=93,align=center]
 
-image:./media/image3.png[image,width=100,height=100,align=center] **INSPIRE** - *Infrastructure for Spatial Information in Europe*
+image::./media/image3.png[image,width=100,height=100] **INSPIRE** - *Infrastructure for Spatial Information in Europe*
 
 
 [discrete]
@@ -538,7 +538,7 @@ The schematic diagram in Figure 1 gives an overview of the relationships between
 
 In contrast, the Technical Guidance documents define _how_ Member States might implement the requirements included in the INSPIRE Implementing Rules. As such, they may include non-binding technical requirements that must be satisfied if a Member State data provider chooses to conform to the Technical Guidance. Implementing this technical guidance will maximise the interoperability of INSPIRE spatial data sets.
 
-image:./media/image4.png[image]
+image::./media/image4.png[image]
 
 [.text-center]
 *Figure 1* - Relationship between INSPIRE Implementing Rules and Technical Guidance
@@ -1046,14 +1046,14 @@ In addition, some themes make reference to the types TimeValuePair and Timeserie
 
 Where possible, only these coverage types (or a subtype thereof) are used in INSPIRE application schemas.
 
-image:./media/image5.png[image] image:./media/image6.png[image]
+image::./media/image5.png[image] image::./media/image6.png[image]
 
 (Source: ISO 19136:2007) (Source: GML 3.3.0)
 
 [.text-center]
 *Figure 2* – Examples of a rectified grid (left) and a referenceable grid (right)
 
-image:./media/image7.png[image]
+image::./media/image7.png[image]
 
 [.text-center]
 *Figure 3* – Example of a time series
@@ -1072,7 +1072,7 @@ Both properties are constrained to the physical vertical dimension, measured alo
 
 The orientation of the positive axis is opposite to the Earth's gravity field in the case of the height property (upwards) and coincident to the Earth's gravity field in the case of the depth property (downwards). Hence, heights are positive above the surface taken as origin whereas depths are positive below it, as show in the next figure.
 
-image:./media/image8.png[image, align=center]
+image::./media/image8.png[image, align=center]
 
 [.text-center]
 *Figure 4* – Measuring of elevation properties.
@@ -1094,22 +1094,22 @@ Describing the depth property for the following geographical elements is in the 
 * the bed of navigable rivers – as exemplified in Figure 8 below.
 
 
-image:./media/image9.png[image, align=center]
+image::./media/image9.png[image, align=center]
 
 [.text-center]
 *Figure 5* – Example: Description of land elevation.
 
-image:./media/image10.png[image]
+image::./media/image10.png[image]
 
 [.text-center]
 *Figure 6* – Example: Description of the sea floor.
 
-image:./media/image11.png[image]
+image::./media/image11.png[image]
 
 [.text-center]
 *Figure 7* – Example: Description of the floor of an inland standing water body.
 
-image:./media/image12.png[image]
+image::./media/image12.png[image]
 
 [.text-center]
 *Figure 8* – Example: Description of the bed of a navigable river.
@@ -1121,7 +1121,7 @@ Land-elevation and bathymetry data may be combined in the same data set using di
 
 This specification supports the description of this kind of model in terms of a single elevation property (either height or depth), referenced only to one vertical reference.
 
-image:./media/image13.png[image, align=center]
+image::./media/image13.png[image, align=center]
 
 [.text-center]
 *Figure 9* – Example: Description of an integrated land-sea model.
@@ -1137,7 +1137,7 @@ NOTE The pure concepts of DTM and DSM are used here. In practice, real data may 
 
 The term Digital Elevation Model (DEM) covers both visions above mentioned.
 
-image:./media/image14.png[image, align=center]
+image::./media/image14.png[image, align=center]
 
 [.text-center]
 *Figure 10* – Digital elevation models (DEM): Difference between DTM and DSM
@@ -1219,7 +1219,7 @@ An exception to this rule are local chart datums aimed at referencing depths whe
 
 This section explains the structure of the _Elevation_ model, which is composed of four application schemas (packages) as illustrated in Figure 11:
 
-image:./media/image15.png[image, align=center]
+image::./media/image15.png[image, align=center]
 
 [.text-center]
 *Figure 11* – UML class diagram: Overview of the application schemas of Elevation
@@ -1257,7 +1257,7 @@ _ElevationGridCoverage_, _ElevationVectorElements_ and _ElevationTIN_ applicatio
 
 Figure 12 shows the dependencies between the four _Elevation_ packages and other external packages from where they import classes (Generic Conceptual Model [DS-D2.5], ISO standards, application schemas defined for other INSPIRE themes).
 
-image:./media/image16.png[image, align=center]
+image::./media/image16.png[image, align=center]
 
 [.text-center]
 *Figure 12* – Package dependencies: Application schemas of Elevation
@@ -1268,7 +1268,7 @@ image:./media/image16.png[image, align=center]
 
 ===== Narrative description and UML overview
 
-image:./media/image17.png[image, align=center]
+image::./media/image17.png[image, align=center]
 
 [.text-center]
 *Figure 13* – UML class diagram: Overview of the _ElevationBaseTypes_ application schema
@@ -1377,7 +1377,7 @@ The attribute values of an elevation grid coverage are arranged using the geomet
 
 A grid coordinate system is defined by means of the origin and the axes of the grid. Grid coordinates are measured along the axis away from the origin.
 
-image:./media/image18.png[image, align=center]
+image::./media/image18.png[image, align=center]
 
 [.text-center]
 *Figure 14* - Example of rectified quadrilateral grid
@@ -1422,7 +1422,7 @@ This mechanism is fully recursive so that an elevation coverage can itself be a 
 
 ===== UML Overview
 
-image:./media/image19.jpeg[image]
+image::./media/image19.jpeg[image]
 
 [.text-center]
 *Figure 17* – UML class diagram: Overview of the _ElevationGridCoverage_ application schema
@@ -1435,7 +1435,7 @@ The regular grid is one of the most extended formats for elevation models, which
 
 The _ElevationGridCoverage_ spatial object type is the core element of the _ElevationGridCoverage_ application schema. It specializes the imported type _RectifiedGridCoverage_ which is specified in the common coverage model of the Generic Conceptual Model [DS-D2.5] - _Coverages (Domain and Range)_ application schema, shown in the next figure.
 
-image:./media/image20.jpeg[image]
+image::./media/image20.jpeg[image]
 
 [.text-center]
 *Figure 18* – UML class diagram: GCM - _Coverages (Domain and Range)_
@@ -1925,7 +1925,7 @@ NOTE This type can be used for both discrete and continuous coverages.
 
 ===== Narrative description and UML Overview
 
-image:./media/image21.jpeg[image]
+image::./media/image21.jpeg[image]
 
 [.text-center]
 *Figure 20* – UML class diagram: Overview of the ElevationVectorElements application schema
@@ -2583,7 +2583,7 @@ _http://inspire.ec.europa.eu/codeList/SpotElevationClassValue/_
 
 ===== Narrative description and UML Overview
 
-image:./media/image22.jpeg[image]
+image::./media/image22.jpeg[image]
 
 [.text-center]
 *Figure 21* – UML class diagram: Overview of the ElevationTIN application schema
@@ -3198,7 +3198,7 @@ As shown in the next figure, the identification of a vertical CRS is carried out
 
 In any case, the units of measure shall be always expressed using SI units, as stated in Section 6.1.3.
 
-image:./media/image23.png[image, align=center]
+image::./media/image23.png[image, align=center]
 
 [.text-center]
 *Figure 22* – UML class diagram: Overview of the SC_CRS classes [ISO 19111:2007]
@@ -3221,7 +3221,7 @@ For this type of elevation data _SC_CRS_ classes are directly associated to the 
 
 As far as grid coverage data is concerned, _SC_CRS_ classes are directly associated to the _CV_Coverage_ type, from which the _ElevationGridCoverage_ class defined in this specification is indirectly generalized (see UML diagram of the _ElevationGridCoverage_ application schema in Section 5.5.1.2). This is implemented through the _Coordinate Reference System_ association established between the _CV_Coverage_ type and _SC_CRS_, as shown in Figure 23 [ISO 19123:2005]. The multiplicity of the CRS role in the _Coordinate Reference System_ association is one, so only one CRS can be associated to the grid coverage (valid for both domain and range).
 
-image:./media/image24.png[image, align=center]
+image::./media/image24.png[image, align=center]
 
 [.text-center]
 *Figure 23* – UML class diagram: Overview of the CV_Coverage class [ISO 19123:2005]
@@ -3236,7 +3236,7 @@ As mentioned in Section 6.2.1.4.1, local chart datums for referencing the depth 
 
 This prevents data providers to register depth vertical CRS which are just used at local level and at the same time facilitates an approximate conversion of depths to heights in these cases. Users shall be aware if this approximation may be accepted depending on their final purposes.
 
-image:./media/image25.png[image, align=center]
+image::./media/image25.png[image, align=center]
 
 [.text-center]
 *Figure 24* – UML class: ChartDatum data type (ElevationVectorElements app. schema)
@@ -3301,7 +3301,7 @@ Grid points of a RectifiedGridCoverage shall coincide with the centres of cells 
 
 ====
 
-image:./media/image26.jpeg[image]
+image::./media/image26.jpeg[image]
 
 [.text-center]
 *Figure 25* – Example: Detail showing the alignment of Elevation grid coverages to a geographic grid
@@ -3908,7 +3908,7 @@ The true values of the observed coordinates _X_ and _Y_ are known as _x~t~_ and 
 
 From this the estimator
 
-image:./media/image27.png[image, align=center]
+image::./media/image27.png[image, align=center]
 
 yields to the linear root mean square error of planimetry RMSEP = _σ_
 
@@ -3952,7 +3952,7 @@ Absolute or external accuracy of the vertical component of vector objects within
 |Description a|
 The true value of an observable _Z_ is known as __z__~t~ _._ From this, the estimator:
 
-image:./media/image28.png[image, align=center]
+image::./media/image28.png[image, align=center]
 
 yields to the linear root mean square error RMSE = _σ~z~_.
 
@@ -4004,7 +4004,7 @@ The true values of the observed coordinates _X_ and _Y_ are known as _x~t~_ and 
 
 From this the estimator
 
-image:./media/image27.emf[image]
+image::./media/image27.emf[image]
 
 yields to the linear root mean square error of planimetry RMSEP = _σ_
 
@@ -6166,31 +6166,31 @@ NOTE Use of a common style for elevation grid coverages may introduce problems w
 
 ==== Examples 
 
-image:./media/image29.jpeg[image]
+image::./media/image29.jpeg[image]
 
 [.text-center]
 *Figure 26* – Default Styles for Contour Line, Break Line and Height Spot Elevation (Scale: 1:3 000)
 
-image:./media/image30.jpeg[image]
+image::./media/image30.jpeg[image]
 
 [.text-center]
 *Figure 27* – Default Styles for Depth Contour Line, Depth Spot Elevation (Scale: 1:3 000)
 
-image:./media/image31.jpeg[image]
+image::./media/image31.jpeg[image]
 
 [.text-center]
 *Figure 28* – Default Styles for Void Area and Isolated Area (Scale: 1:300 000)
 
 In the figure above, the Grid Coverage style is used as background and transparency has been used for Isolated Area in order to show the gridded data contained inside its area.
 
-image:./media/image32.jpeg[image]
+image::./media/image32.jpeg[image]
 
 [.text-center]
 *Figure 29* – Default Styles for Void Area and Isolated Area (Scale: 1:300 000)
 
 In the figure above, the Grid Coverage style is not used as background.
 
-image:./media/image33.jpeg[image]
+image::./media/image33.jpeg[image]
 
 [.text-center]
 *Figure 30* – Default Style for Grid Coverage (Scale: 1:2 000 000) - Hungary
@@ -6352,7 +6352,7 @@ image:./media/image33.jpeg[image]
 
 ==== Examples 
 
-image:./media/image34.jpeg[image]
+image::./media/image34.jpeg[image]
 
 [.text-center]
 *Figure 31* – Usage of Other Well-Defined Styles on Contour Lines (Scale: 1:3 000)
@@ -8111,21 +8111,21 @@ This annex includes example figures which help in understanding the use of the _
 
 === Description of the sea floor
 
-image:./media/image35.png[image, align=center]
+image::./media/image35.png[image, align=center]
 
 [.text-center]
 *Figure 32* – Example: Description of the sea floor.
 
 === Description of the floor of an inland standing water body
 
-image:./media/image36.png[image, align=center]
+image::./media/image36.png[image, align=center]
 
 [.text-center]
 *Figure 33* – Example: Description of the floor of an inland standing water body.
 
 === Description of the bed of a navigable river
 
-image:./media/image37.png[image, align=center]
+image::./media/image37.png[image, align=center]
 
 [.text-center]
 *Figure 34* – Example: Description of the bed of a navigable river.
@@ -8222,7 +8222,7 @@ Baseline TIFF supports only one type of orientation for grid coverages, that is,
 The origin of the grid coordinate system shall be the upper left corner of the grid coverage. The axis 'row' and 'column' shall be oriented downward and to the right.
 ====
 
-image:./media/image38.png[image]
+image::./media/image38.png[image]
 
 [.text-center]
 *Figure 35*. referenced grid as defined by Baseline TIFF
