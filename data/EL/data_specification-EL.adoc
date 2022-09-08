@@ -440,94 +440,95 @@ Feature (spatial object) with all geometric attributes described piecewise by st
 
 === Symbols and abbreviations
 
+[width="100%",cols="14%,86%"]
 |===
-|ASCII American Standard Code for Information Interchange
+|ASCII |American Standard Code for Information Interchange
 
-|ATS Abstract Test Suite
+|ATS |Abstract Test Suite
 
-|CRS Coordinate Reference System
+|CRS |Coordinate Reference System
 
-|DEM Digital Elevation Model
+|DEM |Digital Elevation Model
 
-|DSM Digital Surface Model
+|DSM |Digital Surface Model
 
-|DTM Digital Terrain Model
+|DTM |Digital Terrain Model
 
-|EC European Commission
+|EC |European Commission
 
-|EEA European Environmental Agency
+|EEA |European Environmental Agency
 
-|EL _Elevation_.
+|EL |_Elevation_.
 
-|EPSG European Petroleum Survey Group
+|EPSG |European Petroleum Survey Group
 
-|ETRS89 European Terrestrial Reference System 1989
+|ETRS89 |European Terrestrial Reference System 1989
 
-|ETRS89-LAEA Lambert Azimuthal Equal Area
+|ETRS89-LAEA |Lambert Azimuthal Equal Area
 
-|EVRS European Vertical Reference System
+|EVRS |European Vertical Reference System
 
-|GCM Generic Conceptual Model
+|GCM |Generic Conceptual Model
 
-|GeoTIFF Geographic Tagged Image File Format
+|GeoTIFF |Geographic Tagged Image File Format
 
-|GML Geographic Markup Language
+|GML |Geographic Markup Language
 
-|IHO International Hydrographic Organization
+|IHO |International Hydrographic Organization
 
-|IR Implementing Rule
+|IR |Implementing Rule
 
-|ISDSS Interoperability of Spatial Data Sets and Services
+|ISDSS |Interoperability of Spatial Data Sets and Services
 
-|ISO International Organization for Standardization
+|ISO |International Organization for Standardization
 
-|ITRS International Terrestrial Reference System
+|ITRS |International Terrestrial Reference System
 
-|JPEG Joint Photographic Experts Group
+|JPEG |Joint Photographic Experts Group
 
-|LAT Lowest Astronomical Tide
+|LAT |Lowest Astronomical Tide
 
-|LAT Lowest Astronomical Tide
+|LAT |Lowest Astronomical Tide
 
-|LMO Legally Mandated Organisation
+|LMO |Legally Mandated Organisation
 
-|MSL Mean Sea Level
+|MSL |Mean Sea Level
 
-|OCL Object Constraint Language
+|OCL |Object Constraint Language
 
-|OGC Open Geospatial Consortium
+|OGC |Open Geospatial Consortium
 
-|RMSE Root Mean Square Error
+|RMSE |Root Mean Square Error
 
-|RMSEH Horizontal Root Mean Square Error
+|RMSEH |Horizontal Root Mean Square Error
 
-|RMSEP Root Mean Square Error of Planimetry
+|RMSEP |Root Mean Square Error of Planimetry
 
-|RMSEv Vertical Root Mean Square Error
+|RMSEv |Vertical Root Mean Square Error
 
-|SDIC Spatial Data Interest Community
+|SDIC |Spatial Data Interest Community
 
-|SWE Sensor Web Enablement
+|SWE |Sensor Web Enablement
 
-|TG Technical GuidanceFigure
+|TG |Technical GuidanceFigure
 
-|TIFF Tagged Image File Format
+|TIFF |Tagged Image File Format
 
-|TIN Triangulated Irregular Network
+|TIN |Triangulated Irregular Network
 
-|TWG Thematic Working Group
+|TWG |Thematic Working Group
 
-|TWG-EL Thematic Working Group Elevation
+|TWG-EL |Thematic Working Group Elevation
 
-|UML Unified Modelling Language
+|UML |Unified Modelling Language
 
-|URI Uniform Resource Identifier
+|URI |Uniform Resource Identifier
 
-|UTC Coordinated Universal Time
+|UTC |Coordinated Universal Time
 
-|WCS Web Coverage Service
+|WCS |Web Coverage Service
 
-|XML eXtensible Markup language
+|XML |eXtensible Markup language
 |===
 
 <<<
