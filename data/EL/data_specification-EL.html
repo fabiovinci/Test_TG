@@ -440,13 +440,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 </div>
 <div id="content">
-<div class="imageblock text-center">
-<div class="content">
-<img src="./media/image2.jpeg" alt="image" width="93" height="93">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image2.jpeg" alt="image" width="93" height="93"></span></p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="./media/image3.png" alt="image" width="100" height="100"></span> <strong>INSPIRE</strong> - <strong>Infrastructure for Spatial Information in Europe</strong></p>
+<p><span class="image"><img src="media\image3.png" alt="image" width="100" height="100"></span> <strong>INSPIRE</strong> - <strong>Infrastructure for Spatial Information in Europe</strong></p>
 </div>
 <h1 id="_d2_8_ii_1_data_specification_on_elevation_technical_guidelines" class="discrete">D2.8.II.1 Data Specification on <em>Elevation</em> – Technical Guidelines</h1>
 <table class="tableblock frame-all grid-all stretch">
@@ -517,7 +515,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </tr>
 </tbody>
 </table>
-<div style="page-break-after: always;"></div>
 <h2 id="_foreword" class="discrete"><strong>Foreword</strong></h2>
 <h2 id="_how_to_read_the_document" class="discrete"><strong>How to read the document?</strong></h2>
 <div class="paragraph">
@@ -667,8 +664,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Other contributors to the INSPIRE data specifications are the Drafting Team Data Specifications, the JRC data specifications team and the INSPIRE stakeholders - Spatial Data Interested Communities (SDICs) or Legally Mandated Organisations (LMOs).</p>
 </div>
 <div class="paragraph">
-<p><strong>Contact information</strong><br>
-Vanda Nunes de Lima<br>
+<p><strong>Contact information</strong></p>
+</div>
+<div class="paragraph">
+<p>Vanda Nunes de Lima<br>
 European Commission Joint Research Centre<br>
 Institute for Environment and Sustainability<br>
 Unit H06: Digital Earth and Reference Data<br>
@@ -694,11 +693,12 @@ Fax: 39-0332-7866325<br>
 <li><a href="#_informal_description">2.2. Informal description</a></li>
 <li><a href="#_normative_references">2.3. Normative References</a></li>
 <li><a href="#_terms_and_definitions">2.4. Terms and definitions</a></li>
-<li><a href="#_how_the_technical_guidance_maps_to_the_implementing_rules">2.5. How the Technical Guidance maps to the Implementing Rules</a>
+<li><a href="#_symbols_and_abbreviations">2.5. Symbols and abbreviations</a></li>
+<li><a href="#_how_the_technical_guidance_maps_to_the_implementing_rules">2.6. How the Technical Guidance maps to the Implementing Rules</a>
 <ul class="sectlevel3">
-<li><a href="#_requirements">2.5.1. Requirements</a></li>
-<li><a href="#_recommendations">2.5.2. Recommendations</a></li>
-<li><a href="#_conformance">2.5.3. Conformance</a></li>
+<li><a href="#_requirements">2.6.1. Requirements</a></li>
+<li><a href="#_recommendations">2.6.2. Recommendations</a></li>
+<li><a href="#_conformance">2.6.3. Conformance</a></li>
 </ul>
 </li>
 </ul>
@@ -988,11 +988,16 @@ Fax: 39-0332-7866325<br>
 <li><a href="#_zoned_geographic_grid_for_gridded_elevation_data">Zoned Geographic Grid for gridded <em>Elevation</em> data</a></li>
 </ul>
 </li>
-<li><a href="#">Annex E: </a>
+<li><a href="#">Annex E: </a></li>
+<li><a href="#_informative_examples_on_how_to_use_chartdatum_data_type">(informative) - Examples on how to use <em>ChartDatum</em> data type</a>
 <ul class="sectlevel2">
 <li><a href="#_description_of_the_sea_floor">Description of the sea floor</a></li>
 <li><a href="#_description_of_the_floor_of_an_inland_standing_water_body">Description of the floor of an inland standing water body</a></li>
 <li><a href="#_description_of_the_bed_of_a_navigable_river">Description of the bed of a navigable river</a></li>
+</ul>
+</li>
+<li><a href="#_normative_encoding_rules_for_tiff">(normative) - Encoding rules for TIFF</a>
+<ul class="sectlevel2">
 <li><a href="#_introduction_2">Introduction</a></li>
 <li><a href="#_tiff_format">TIFF format</a>
 <ul class="sectlevel3">
@@ -1017,6 +1022,7 @@ Fax: 39-0332-7866325<br>
 <div class="paragraph">
 <p>This data specification provides the basis for the drafting of Implementing Rules according to Article 7 (1) of the INSPIRE Directive [Directive 2007/2/EC]. The entire data specification is published as implementation guidelines accompanying these Implementing Rules.</p>
 </div>
+<div style="page-break-after: always;"></div>
 </div>
 </div>
 <div class="sect1">
@@ -1414,19 +1420,19 @@ regardless of its level of detail / resolution. This is reinforced by the hetero
 <div class="paragraph">
 <p>Feature (spatial object) with all geometric attributes described piecewise by straight line or planar interpolation between sets of points [OGC 06-103r4].</p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_symbols_and_abbreviations">2.5. Symbols and abbreviations</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 100%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Symbols and abbreviations</th>
+<th class="tableblock halign-left valign-top">ASCII American Standard Code for Information Interchange</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ASCII American Standard Code for Information Interchange</p></td>
-</tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ATS Abstract Test Suite</p></td>
 </tr>
@@ -1561,23 +1567,21 @@ regardless of its level of detail / resolution. This is reinforced by the hetero
 <div style="page-break-after: always;"></div>
 </div>
 <div class="sect2">
-<h3 id="_how_the_technical_guidance_maps_to_the_implementing_rules">2.5. How the Technical Guidance maps to the Implementing Rules</h3>
+<h3 id="_how_the_technical_guidance_maps_to_the_implementing_rules">2.6. How the Technical Guidance maps to the Implementing Rules</h3>
 <div class="paragraph">
 <p>The schematic diagram in Figure 1 gives an overview of the relationships between the INSPIRE legal acts (the INSPIRE Directive and Implementing Rules) and the INSPIRE Technical Guidance document. The INSPIRE Directive and Implementing Rules include legally binding requirements that describe, usually on an abstract level, <em>what</em> Member States must implement.</p>
 </div>
 <div class="paragraph">
 <p>In contrast, the Technical Guidance documents define <em>how</em> Member States might implement the requirements included in the INSPIRE Implementing Rules. As such, they may include non-binding technical requirements that must be satisfied if a Member State data provider chooses to conform to the Technical Guidance. Implementing this technical guidance will maximise the interoperability of INSPIRE spatial data sets.</p>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="./media/image4.png" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image4.png" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 1</strong> - Relationship between INSPIRE Implementing Rules and Technical Guidance</p>
 </div>
 <div class="sect3">
-<h4 id="_requirements">2.5.1. Requirements</h4>
+<h4 id="_requirements">2.6.1. Requirements</h4>
 <div class="paragraph">
 <p>The purpose of this Technical Guidance (Data specifications on <em>Elevation</em>) is to provide practical guidance for implementation that is guided by, and satisfies, the (legally binding) requirements included for the spatial data theme <em>Elevation</em> in the Regulation (Implementing Rules) on interoperability of spatial data sets and services. These requirements are highlighted in this document as follows:</p>
 </div>
@@ -1631,7 +1635,7 @@ regardless of its level of detail / resolution. This is reinforced by the hetero
 </div>
 </div>
 <div class="sect3">
-<h4 id="_recommendations">2.5.2. Recommendations</h4>
+<h4 id="_recommendations">2.6.2. Recommendations</h4>
 <div class="paragraph">
 <p>In addition to IR and TG requirements, this Technical Guidance may also include a number of recommendations for facilitating implementation or for further and coherent development of an interoperable infrastructure.</p>
 </div>
@@ -1654,7 +1658,7 @@ regardless of its level of detail / resolution. This is reinforced by the hetero
 </div>
 </div>
 <div class="sect3">
-<h4 id="_conformance">2.5.3. Conformance</h4>
+<h4 id="_conformance">2.6.3. Conformance</h4>
 <div class="paragraph">
 <p>Annex A includes the abstract test suite for checking conformance with the requirements included in this Technical Guidance and the corresponding parts of the Implementing Rules (Commission Regulation (EU) No 1089/2010).</p>
 </div>
@@ -2065,11 +2069,14 @@ Article 6<br>
 Article 6<br>
 <strong>Code Lists and Enumerations</strong></p>
 </div>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">1) Code lists shall be of one of the following types, as specified in the Annexes</dt>
-<dd>
-<p>a) code lists whose allowed values comprise only the values specified in this Regulation;</p>
+<div class="paragraph">
+<p>1) Code lists shall be of one of the following types, as specified in the Annexes:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>a) code lists whose allowed values comprise only the values specified in this Regulation;</pre>
+</div>
+</div>
 <div class="literalblock">
 <div class="content">
 <pre>b) code lists whose allowed values comprise the values specified in this Regulation and narrower values defined by data providers;</pre>
@@ -2084,9 +2091,6 @@ Article 6<br>
 <div class="content">
 <pre>d) code lists, whose allowed values comprise any values defined by data providers.</pre>
 </div>
-</div>
-</dd>
-</dl>
 </div>
 <div class="paragraph">
 <p>For the purposes of points (b), (c) and (d), in addition to the allowed values, data providers may use the values specified in the relevant INSPIRE Technical Guidance document available on the INSPIRE web site of the Joint Research Centre.</p>
@@ -2529,10 +2533,8 @@ NOTE Where practicable, the INSPIRE code list register could also provide http U
 <div class="paragraph">
 <p>Where possible, only these coverage types (or a subtype thereof) are used in INSPIRE application schemas.</p>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="./media/image5.png" alt="image] image::./media/image6.png[image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image5.png" alt="image"></span> <span class="image"><img src="media\image6.png" alt="image"></span></p>
 </div>
 <div class="paragraph">
 <p>(Source: ISO 19136:2007) (Source: GML 3.3.0)</p>
@@ -2540,10 +2542,8 @@ NOTE Where practicable, the INSPIRE code list register could also provide http U
 <div class="paragraph text-center">
 <p><strong>Figure 2</strong> – Examples of a rectified grid (left) and a referenceable grid (right)</p>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="./media/image7.png" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image7.png" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 3</strong> – Example of a time series</p>
@@ -2567,10 +2567,8 @@ NOTE Where practicable, the INSPIRE code list register could also provide http U
 <div class="paragraph">
 <p>The orientation of the positive axis is opposite to the Earth&#8217;s gravity field in the case of the height property (upwards) and coincident to the Earth&#8217;s gravity field in the case of the depth property (downwards). Hence, heights are positive above the surface taken as origin whereas depths are positive below it, as show in the next figure.</p>
 </div>
-<div class="imageblock text-center">
-<div class="content">
-<img src="./media/image8.png" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image8.png" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 4</strong> – Measuring of elevation properties.</p>
@@ -2606,34 +2604,26 @@ NOTE Where practicable, the INSPIRE code list register could also provide http U
 </li>
 </ul>
 </div>
-<div class="imageblock text-center">
-<div class="content">
-<img src="./media/image9.png" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image9.png" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 5</strong> – Example: Description of land elevation.</p>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="./media/image10.png" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image10.png" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 6</strong> – Example: Description of the sea floor.</p>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="./media/image11.png" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image11.png" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 7</strong> – Example: Description of the floor of an inland standing water body.</p>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="./media/image12.png" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image12.png" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 8</strong> – Example: Description of the bed of a navigable river.</p>
@@ -2647,10 +2637,8 @@ NOTE Where practicable, the INSPIRE code list register could also provide http U
 <div class="paragraph">
 <p>This specification supports the description of this kind of model in terms of a single elevation property (either height or depth), referenced only to one vertical reference.</p>
 </div>
-<div class="imageblock text-center">
-<div class="content">
-<img src="./media/image13.png" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image13.png" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 9</strong> – Example: Description of an integrated land-sea model.</p>
@@ -2677,10 +2665,8 @@ NOTE Where practicable, the INSPIRE code list register could also provide http U
 <div class="paragraph">
 <p>The term Digital Elevation Model (DEM) covers both visions above mentioned.</p>
 </div>
-<div class="imageblock text-center">
-<div class="content">
-<img src="./media/image14.png" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image14.png" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 10</strong> – Digital elevation models (DEM): Difference between DTM and DSM</p>
@@ -2817,10 +2803,8 @@ NOTE Where practicable, the INSPIRE code list register could also provide http U
 <div class="paragraph">
 <p>This section explains the structure of the <em>Elevation</em> model, which is composed of four application schemas (packages) as illustrated in Figure 11:</p>
 </div>
-<div class="imageblock text-center">
-<div class="content">
-<img src="./media/image15.png" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image15.png" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 11</strong> – UML class diagram: Overview of the application schemas of Elevation</p>
@@ -2877,10 +2861,8 @@ NOTE Where practicable, the INSPIRE code list register could also provide http U
 <div class="paragraph">
 <p>Figure 12 shows the dependencies between the four <em>Elevation</em> packages and other external packages from where they import classes (Generic Conceptual Model [DS-D2.5], ISO standards, application schemas defined for other INSPIRE themes).</p>
 </div>
-<div class="imageblock text-center">
-<div class="content">
-<img src="./media/image16.png" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image16.png" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 12</strong> – Package dependencies: Application schemas of Elevation</p>
@@ -2895,10 +2877,8 @@ NOTE Where practicable, the INSPIRE code list register could also provide http U
 <h4 id="_description_2">5.4.1. Description</h4>
 <div class="sect4">
 <h5 id="_narrative_description_and_uml_overview">5.4.1.1. Narrative description and UML overview</h5>
-<div class="imageblock text-center">
-<div class="content">
-<img src="./media/image17.png" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image17.png" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 13</strong> – UML class diagram: Overview of the <em>ElevationBaseTypes</em> application schema</p>
@@ -3128,10 +3108,8 @@ NOTE 2 For DSM surfaces in which any temporary phenomena have not been totally f
 <div class="paragraph">
 <p>A grid coordinate system is defined by means of the origin and the axes of the grid. Grid coordinates are measured along the axis away from the origin.</p>
 </div>
-<div class="imageblock text-center">
-<div class="content">
-<img src="./media/image18.png" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image18.png" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 14</strong> - Example of rectified quadrilateral grid</p>
@@ -3198,10 +3176,8 @@ NOTE 2 For DSM surfaces in which any temporary phenomena have not been totally f
 </div>
 <div class="sect4">
 <h5 id="_uml_overview">5.5.1.2. UML Overview</h5>
-<div class="imageblock">
-<div class="content">
-<img src="./media/image19.jpeg" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image19.jpeg" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 17</strong> – UML class diagram: Overview of the <em>ElevationGridCoverage</em> application schema</p>
@@ -3217,10 +3193,8 @@ NOTE 2 For DSM surfaces in which any temporary phenomena have not been totally f
 <div class="paragraph">
 <p>The <em>ElevationGridCoverage</em> spatial object type is the core element of the <em>ElevationGridCoverage</em> application schema. It specializes the imported type <em>RectifiedGridCoverage</em> which is specified in the common coverage model of the Generic Conceptual Model [DS-D2.5] - <em>Coverages (Domain and Range)</em> application schema, shown in the next figure.</p>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="./media/image20.jpeg" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image20.jpeg" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 18</strong> – UML class diagram: GCM - <em>Coverages (Domain and Range)</em></p>
@@ -4144,10 +4118,8 @@ NOTE This type can be used for both discrete and continuous coverages.</p></td>
 <h4 id="_description_4">5.6.1. Description</h4>
 <div class="sect4">
 <h5 id="_narrative_description_and_uml_overview_2">5.6.1.1. Narrative description and UML Overview</h5>
-<div class="imageblock">
-<div class="content">
-<img src="./media/image21.jpeg" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image21.jpeg" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 20</strong> – UML class diagram: Overview of the ElevationVectorElements application schema</p>
@@ -5891,10 +5863,8 @@ EXAMPLE Height, depth.</p></td>
 <h4 id="_description_5">5.7.1. Description</h4>
 <div class="sect4">
 <h5 id="_narrative_description_and_uml_overview_3">5.7.1.1. Narrative description and UML Overview</h5>
-<div class="imageblock">
-<div class="content">
-<img src="./media/image22.jpeg" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image22.jpeg" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 21</strong> – UML class diagram: Overview of the ElevationTIN application schema</p>
@@ -7184,10 +7154,8 @@ NOTE 3 The unique identifier will not change during the life-time of a spatial o
 <div class="paragraph">
 <p>In any case, the units of measure shall be always expressed using SI units, as stated in Section 6.1.3.</p>
 </div>
-<div class="imageblock text-center">
-<div class="content">
-<img src="./media/image23.png" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image23.png" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 22</strong> – UML class diagram: Overview of the SC_CRS classes [ISO 19111:2007]</p>
@@ -7219,10 +7187,8 @@ NOTE 3 The unique identifier will not change during the life-time of a spatial o
 <div class="paragraph">
 <p>As far as grid coverage data is concerned, <em>SC_CRS</em> classes are directly associated to the <em>CV_Coverage</em> type, from which the <em>ElevationGridCoverage</em> class defined in this specification is indirectly generalized (see UML diagram of the <em>ElevationGridCoverage</em> application schema in Section 5.5.1.2). This is implemented through the <em>Coordinate Reference System</em> association established between the <em>CV_Coverage</em> type and <em>SC_CRS</em>, as shown in Figure 23 [ISO 19123:2005]. The multiplicity of the CRS role in the <em>Coordinate Reference System</em> association is one, so only one CRS can be associated to the grid coverage (valid for both domain and range).</p>
 </div>
-<div class="imageblock text-center">
-<div class="content">
-<img src="./media/image24.png" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image24.png" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 23</strong> – UML class diagram: Overview of the CV_Coverage class [ISO 19123:2005]</p>
@@ -7242,10 +7208,8 @@ NOTE 3 The unique identifier will not change during the life-time of a spatial o
 <div class="paragraph">
 <p>This prevents data providers to register depth vertical CRS which are just used at local level and at the same time facilitates an approximate conversion of depths to heights in these cases. Users shall be aware if this approximation may be accepted depending on their final purposes.</p>
 </div>
-<div class="imageblock text-center">
-<div class="content">
-<img src="./media/image25.png" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image25.png" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 24</strong> – UML class: ChartDatum data type (ElevationVectorElements app. schema)</p>
@@ -7358,10 +7322,8 @@ NOTE 3 The unique identifier will not change during the life-time of a spatial o
 </tr>
 </table>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="./media/image26.jpeg" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image26.jpeg" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 25</strong> – Example: Detail showing the alignment of Elevation grid coverages to a geographic grid</p>
@@ -8749,10 +8711,8 @@ Specifically, the tolerance must be informed within the two elements, together w
 <div class="paragraph">
 <p>From this the estimator</p>
 </div>
-<div class="imageblock text-center">
-<div class="content">
-<img src="./media/image27.png" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image27.png" alt="image"></span></p>
 </div>
 <div class="paragraph">
 <p>yields to the linear root mean square error of planimetry RMSEP = <em>σ</em></p>
@@ -8857,10 +8817,8 @@ Specifically, the tolerance must be informed within the two elements, together w
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>The true value of an observable <em>Z</em> is known as <em>z</em><sub>t</sub> <em>.</em> From this, the estimator:</p>
 </div>
-<div class="imageblock text-center">
-<div class="content">
-<img src="./media/image28.png" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image28.png" alt="image"></span></p>
 </div>
 <div class="paragraph">
 <p>yields to the linear root mean square error RMSE = <em>σ<sub>z</sub></em>.</p>
@@ -8977,10 +8935,8 @@ Specifically, the tolerance must be informed within the two elements, together w
 <div class="paragraph">
 <p>From this the estimator</p>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="./media/image27.emf" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image27.emf" alt="image"></span></p>
 </div>
 <div class="paragraph">
 <p>yields to the linear root mean square error of planimetry RMSEP = <em>σ</em></p>
@@ -13205,26 +13161,20 @@ Table 9 .</p>
 </div>
 <div class="sect3">
 <h4 id="_examples">11.2.8. Examples</h4>
-<div class="imageblock">
-<div class="content">
-<img src="./media/image29.jpeg" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image29.jpeg" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 26</strong> – Default Styles for Contour Line, Break Line and Height Spot Elevation (Scale: 1:3 000)</p>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="./media/image30.jpeg" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image30.jpeg" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 27</strong> – Default Styles for Depth Contour Line, Depth Spot Elevation (Scale: 1:3 000)</p>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="./media/image31.jpeg" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image31.jpeg" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 28</strong> – Default Styles for Void Area and Isolated Area (Scale: 1:300 000)</p>
@@ -13232,10 +13182,8 @@ Table 9 .</p>
 <div class="paragraph">
 <p>In the figure above, the Grid Coverage style is used as background and transparency has been used for Isolated Area in order to show the gridded data contained inside its area.</p>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="./media/image32.jpeg" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image32.jpeg" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 29</strong> – Default Styles for Void Area and Isolated Area (Scale: 1:300 000)</p>
@@ -13243,10 +13191,8 @@ Table 9 .</p>
 <div class="paragraph">
 <p>In the figure above, the Grid Coverage style is not used as background.</p>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="./media/image33.jpeg" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image33.jpeg" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 30</strong> – Default Style for Grid Coverage (Scale: 1:2 000 000) - Hungary</p>
@@ -13473,10 +13419,8 @@ Table 9 .</p>
 </div>
 <div class="sect3">
 <h4 id="_examples_2">11.3.2. Examples</h4>
-<div class="imageblock">
-<div class="content">
-<img src="./media/image34.jpeg" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image34.jpeg" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 31</strong> – Usage of Other Well-Defined Styles on Contour Lines (Scale: 1:3 000)</p>
@@ -16940,18 +16884,19 @@ NOTE 2 This value is only applicable to spot heights, not to spot depths."</p></
 <div class="sect1">
 <h2 id="">Annex E: </h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p><strong>(informative) - Examples on how to use <em>ChartDatum</em> data type</strong></p>
+
 </div>
+</div>
+<div class="sect1">
+<h2 id="_informative_examples_on_how_to_use_chartdatum_data_type">(informative) - Examples on how to use <em>ChartDatum</em> data type</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>This annex includes example figures which help in understanding the use of the <em>ChartDatum</em> data type, defined in Section 6.2.1.4.2.</p>
 </div>
 <div class="sect2">
 <h3 id="_description_of_the_sea_floor">Description of the sea floor</h3>
-<div class="imageblock text-center">
-<div class="content">
-<img src="./media/image35.png" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image35.png" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 32</strong> – Example: Description of the sea floor.</p>
@@ -16959,10 +16904,8 @@ NOTE 2 This value is only applicable to spot heights, not to spot depths."</p></
 </div>
 <div class="sect2">
 <h3 id="_description_of_the_floor_of_an_inland_standing_water_body">Description of the floor of an inland standing water body</h3>
-<div class="imageblock text-center">
-<div class="content">
-<img src="./media/image36.png" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image36.png" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 33</strong> – Example: Description of the floor of an inland standing water body.</p>
@@ -16970,18 +16913,18 @@ NOTE 2 This value is only applicable to spot heights, not to spot depths."</p></
 </div>
 <div class="sect2">
 <h3 id="_description_of_the_bed_of_a_navigable_river">Description of the bed of a navigable river</h3>
-<div class="imageblock text-center">
-<div class="content">
-<img src="./media/image37.png" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image37.png" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 34</strong> – Example: Description of the bed of a navigable river.</p>
 </div>
-<div class="paragraph">
-<p><strong>(normative) - Encoding rules for TIFF</strong></p>
 </div>
 </div>
+</div>
+<div class="sect1">
+<h2 id="_normative_encoding_rules_for_tiff">(normative) - Encoding rules for TIFF</h2>
+<div class="sectionbody">
 <div class="sect2">
 <h3 id="_introduction_2">Introduction</h3>
 <div class="paragraph">
@@ -17147,10 +17090,8 @@ The origin of the grid coordinate system shall be the upper left corner of the g
 </tr>
 </table>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="./media/image38.png" alt="image">
-</div>
+<div class="paragraph">
+<p><span class="image"><img src="media\image38.png" alt="image"></span></p>
 </div>
 <div class="paragraph text-center">
 <p><strong>Figure 35</strong>. referenced grid as defined by Baseline TIFF</p>
