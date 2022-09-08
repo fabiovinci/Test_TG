@@ -51,7 +51,7 @@ image:./media/image3.png[image,width=100,height=100, align=center] **INSPIRE** -
 |*Coverage* |Project duration
 |===
 
-
+<<<
 [discrete]
 == *Foreword*
 [discrete]
