@@ -23,9 +23,9 @@
 
 :appendix-caption: Annex
 
-image:./media/image2.jpeg[image,width=93,height=93, align=center]
+image:./media/image2.jpeg[image,width=93,height=93,align=center]
 
-image:./media/image3.png[image,width=100,height=100, align=center] **INSPIRE** - *Infrastructure for Spatial Information in Europe*
+image:./media/image3.png[image,width=100,height=100,align=center] **INSPIRE** - *Infrastructure for Spatial Information in Europe*
 
 
 [discrete]
