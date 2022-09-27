@@ -1250,7 +1250,7 @@ This enumeration is defined in Section 5.4.2.1.2.
 
 *Types defined in the feature catalogue*
 
-[cols=","]
+[cols=",,"]
 |===
 |*Type* |*Package* |*Stereotypes*
 |===
