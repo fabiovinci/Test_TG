@@ -211,11 +211,10 @@ _"The theme includes:_
 
 ** _Digital Surface Models (DSM) specifying the three dimensional geometry of every feature on the ground, for example vegetation, buildings and bridges._
 
-
 * _Bathymetry data, e.g. a gridded sea floor model_
 
- 
-[Adapted from INSPIRE Feature Concept Dictionary]
+
+{empty} [Adapted from INSPIRE Feature Concept Dictionary]
 
 The data model incorporated in this specification is aimed at describing the three-dimensional shape of the Earth's surfaces in terms of the _Elevation_ properties, either height or depth.
 
