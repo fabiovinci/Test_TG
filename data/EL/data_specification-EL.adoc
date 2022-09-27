@@ -221,7 +221,7 @@ The data model incorporated in this specification is aimed at describing the thr
 Both properties are constrained to the physical vertical dimension, measured along the plumb lines from a well defined surface, such as a geoid or a well-defined water level.
 
 
-_Scope_
+[.underline]#Scope#
 
 Land-elevation and bathymetry are included in the scope of this specification as end-product data sets, regardless of the processes and measurements from which this information has been captured.
 
