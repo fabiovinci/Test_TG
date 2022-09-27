@@ -1962,9 +1962,9 @@ EXAMPLE The _X_ and _Y_ coordinates of the geometry define the horizontal compon
 
 If break line spatial objects are provided using 2-D geometries, it is not possible to represent the elevation information along such lines. In this case, their usefulness as input data is very limited for users.
 
-[TIP]
+[NOTE]
 ====
-*TG Requirement 10* Break line spatial objects should be always provided using 2.5-D geometries, in order to properly describe the singularities of the surface being represented
+*Recommendation 10* Break line spatial objects should be always provided using 2.5-D geometries, in order to properly describe the singularities of the surface being represented
 ====
 
 ===== Temporality representation
