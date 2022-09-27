@@ -1677,6 +1677,7 @@ NOTE There is no requirement about the acquisition time of elevation grid covera
 |===
 |Application Schema |INSPIRE Application Schema ElevationGridCoverage
 |Version number |3.0
+|===
 
 *Types defined in the feature catalogue*
 
