@@ -1307,6 +1307,7 @@ NOTE 1 For DSM surfaces describing the floor of water bodies (e.g. the sea-floor
 NOTE 2 For DSM surfaces in which any temporary phenomena have not been totally filtered and excluded, the deviations must be explained in the metadata.
 |===
 
+<<<
 ===  Application schema ElevationGridCoverage
 
 ==== Description
@@ -1330,7 +1331,7 @@ A grid coordinate system is defined by means of the origin and the axes of the g
 image::./media/image18.png[image, align=center]
 
 [.text-center]
-*Figure 14* - Example of rectified quadrilateral grid
+*Figure 14 - Example of rectified quadrilateral grid*
 
 Furthermore, the grid of an elevation coverage is geo-rectified in the sense of ISO 19123. It is related to the Earth through an affine relationship that makes a simple transformation between the grid coordinates and the coordinates in the associated Earth-based reference system. The transformation parameters are determined by the location of the grid origin, the orientation of the axis and the grid spacing in each direction within the external coordinate reference system.
 
@@ -1344,8 +1345,10 @@ Secondly, high-resolution grid DEMs covering broad territories represent large v
 
 This file-based data structure is artificial and has no real logical meaning on its own even though it is usually based on grid elements. Therefore it is addressed in the encoding part of this data specification (Section 9.3).
 
+image::./media/image18a.png[image, align=center]
+
 [.text-center]
-*Figure 15* - Various configurations of tiling scheme
+*Figure 15 - Various configurations of tiling scheme*
 
 Third, large grid DEMs can also be divided into subsets that make sense on their own as they describe logical structures (e.g. map sheets, administrative units like regions or districts, etc.). Unlike the previous case, this type of file-independent tiling is fully in the scope of the conceptual model.
 
@@ -1363,8 +1366,10 @@ A first data structure level is provided through the concept of coverage. In add
 
 For applicability, input and aggregated elevation grid coverages shall be part of the same elevation dataset.
 
+image::./media/image18b.png[image, align=center]
+
 [.text-center]
-*Figure 16* - Elevation grid coverage aggregation principle
+*Figure 16 - Elevation grid coverage aggregation principle*
 
 As shown in Figure 16 overlapping elevation coverages A B and C compose the aggregated elevation coverage D, the bounding box of which is dotted.
 
@@ -1375,7 +1380,7 @@ This mechanism is fully recursive so that an elevation coverage can itself be a 
 image::./media/image19.jpeg[image]
 
 [.text-center]
-*Figure 17* – UML class diagram: Overview of the _ElevationGridCoverage_ application schema
+*Figure 17 – UML class diagram: Overview of the _ElevationGridCoverage_ application schema*
 
 The _ElevationGridCoverage_ application schema defines the basis for the provision of elevation data as continuous coverages using a systematic tessellation based on a regular rectified quadrilateral grid to cover its domain.
 
