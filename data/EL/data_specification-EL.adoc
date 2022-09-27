@@ -1393,7 +1393,7 @@ The _ElevationGridCoverage_ spatial object type is the core element of the _Elev
 image::./media/image20.jpeg[image]
 
 [.text-center]
-*Figure 18* – UML class diagram: GCM - _Coverages (Domain and Range)_
+*Figure 18 – UML class diagram: GCM - _Coverages (Domain and Range)_*
 
 _RectifiedGridCoverage_ is itself an implementation of continuous quadrilateral grid coverages defined in ISO 19123, which establishes the basic properties of coverage structures. Thereby, the compliance with the standard is assured.
 
@@ -1468,16 +1468,21 @@ By allowing different settings, ISO 19123 leaves it up to implementers to define
 *Recommendation 8*
 
 The grid origin, which is located at grid coordinates (0, 0), should be the upper left point of the elevation coverage.
-
 ====
 
-[arabic, start=9]
-. The grid axes should be called "x" and "y", considering that x axis extends to the right and y axis extends downwards.
+[NOTE]
+====
+*Recommendation 9*
+
+The grid axes should be called "x" and "y", considering that x axis extends to the right and y axis extends downwards.
+====
 
 NOTE These recommendations are based on the most widespread convention in the case of elevation coverages.
 
+image::./media/image20a.png[image]
+
 [.text-center]
-*Figure 19* – Recommended grid coordinate system
+*Figure 19 – Recommended grid coordinate system*
 
 ====== Attribute ElevationGridCoverage::rangeSet 
 
@@ -1605,8 +1610,10 @@ However, the device of elevation grid coverage aggregation takes a similar appro
 
 Grid data shall be provided as a quadrilateral rectified Grid coverage, where the _Elevation_ values are included within the range set of the coverage.
 
-[arabic, start=2]
-. The value domain of spatial properties used in the ElevationGridCoverage package shall be restricted to the Simple Feature spatial schema as defined by EN ISO 19125-1:2004.
+[NOTE]
+====
+The value domain of spatial properties used in the ElevationGridCoverage package shall be restricted to the Simple Feature spatial schema as defined by EN ISO 19125-1:2004.
+====
 
 NOTE 1 EN ISO 19125-1:2004 restricts the spatial schema to 0, 1 and 2-dimensional geometric objects that exist in 2-dimensional coordinate space, where all curve interpolations are linear.
 
