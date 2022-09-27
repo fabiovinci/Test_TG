@@ -2605,13 +2605,12 @@ This specification recommends the use of the bilinear interpolation method to ca
 _Annex III, Section 1.7.4_
 *Theme-specific Requirements*
 
-====
-
 [arabic, start=1]
 . The property values included within a single instance of _ElevationTIN_ spatial object type (TIN model) shall be referenced to one and only one vertical coordinate reference system.
 
 [arabic, start=2]
 . Triangles intersecting a stop line shall be removed from the TIN surface, leaving holes in the surface. If coincidence occurs on surface boundary triangles, the result shall be a change of the surface boundary.
+====
 
 ===== Consistency between spatial data sets
 
