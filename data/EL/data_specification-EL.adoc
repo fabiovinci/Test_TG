@@ -3341,81 +3341,62 @@ Table 3 lists all data quality elements and sub-elements that are being used in 
 
 The measures to be used for each of the listed data quality sub-elements are defined in the following sub-sections.
 
-Table 3 – Data quality elements used in the spatial data theme _Elevation_
+*Table 3 – Data quality elements used in the spatial data theme _Elevation_*
 
 [cols=",,,,,,",]
 |===
-|*Section* a|
-*Data quality element /*
-
+.2+|*Section* .2+|*Data quality element /*
 *sub-element*
-
-|*Definition* |*Evaluation Scope* a|
-*Application to*
-
-*Spatial Representation types*
-
-| |
-| | | | |*Vector* |*Grid* |*TIN*
+.2+|*Definition* .2+|*Evaluation Scope* 3+|*Application to Spatial Representation types*
+ |*Vector* |*Grid* |*TIN*
 |7.1.1 a|
 Completeness /
-
 Commission
 
-|excess data present in the dataset, as described by the scope |dataset / dataset series | | |
+|excess data present in the dataset, as described by the scope |dataset / dataset series |* | |*
 |7.1.2 a|
 Completeness /
-
 Omission
 
-|data absent from the dataset, as described by the scope |dataset / dataset series / spatial object type | | |
-|7.1.3 |Logical consistency / Conceptual consistency |adherence to rules of the conceptual schema |spatial object / spatial object type | | |
+|data absent from the dataset, as described by the scope |dataset / dataset series / spatial object type |* |* |*
+|7.1.3 |Logical consistency / Conceptual consistency |adherence to rules of the conceptual schema |spatial object / spatial object type |* |* |*
 |7.1.4 a|
 Logical consistency /
-
 Domain consistency
 
-|adherence of values to the value domains |spatial object / spatial object type | | |
+|adherence of values to the value domains |spatial object / spatial object type |* | |*
 |7.1.5 a|
 Logical consistency /
-
 Format consistency
 
-|degree to which data is stored in accordance with the physical structure of the dataset, as described by the scope |dataset / dataset series | | |
+|degree to which data is stored in accordance with the physical structure of the dataset, as described by the scope |dataset / dataset series |* |* |*
 |7.1.6 a|
 Logical consistency /
-
 Topological consistency
 
-|correctness of the explicitly encoded topological characteristics of the dataset, as described by the scope |spatial object type / dataset / dataset series | | |
-|7.1.7 a|
+|correctness of the explicitly encoded topological characteristics of the dataset, as described by the scope |spatial object type / dataset / dataset series |* | |*
+.2+|7.1.7 .2+|
 Positional accuracy /
-
 Absolute or external accuracy
 
-|closeness of reported coordinate values to values accepted as or being true |spatial object / spatial object type / dataset series / dataset a|
+.2+|closeness of reported coordinate values to values accepted as or being true .2+|spatial object / spatial object type / dataset series / dataset a|
 Horizontal
-
 Component
 
 | a|
 Horizontal
-
-Component
-
-| | | | a|
-Vertical
-
 Component
 
 a|
 Vertical
-
 Component
 
 a|
 Vertical
+Component
 
+a|
+Vertical
 Component
 
 |7.1.8 a|
@@ -3425,9 +3406,7 @@ Gridded data position accuracy
 
 |closeness of gridded data position values to values accepted as or being true |spatial object / spatial object type / dataset series / dataset | a|
 Horizontal
-
 Component
-
 |
 |===
 
