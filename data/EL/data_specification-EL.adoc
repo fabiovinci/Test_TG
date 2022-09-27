@@ -221,7 +221,7 @@ The data model incorporated in this specification is aimed at describing the thr
 Both properties are constrained to the physical vertical dimension, measured along the plumb lines from a well defined surface, such as a geoid or a well-defined water level.
 
 
-[.underline]_Scope_
+_Scope_
 
 Land-elevation and bathymetry are included in the scope of this specification as end-product data sets, regardless of the processes and measurements from which this information has been captured.
 
@@ -269,7 +269,9 @@ A selection of relevant use cases where _Elevation_ data is needed have been ide
 
 These are documented in detail in Annex B.1 of this document. Annex B.2 includes examples of additional applications.
 
-*Definition:*
+|===
+
+|*Definition:*
 
 Digital elevation models for land, ice and ocean surface. Includes terrestrial elevation, bathymetry and shoreline. [Directive 2007/2/EC]
 
@@ -278,7 +280,9 @@ Digital elevation models for land, ice and ocean surface. Includes terrestrial e
 The _Elevation_ of a terrain surface, whether land based or bathymetric in nature described the Earth's morphology. The _Elevation_ data theme includes digital elevation models for land, ice and ocean surfaces both for terrestrial elevation and bathymetry, as well as shorelines.
 
 The main purpose of a Digital Elevation Model is to provide an elevation property with reference to a specified origin (vertical reference or datum). This property may be height (when the value is measured opposite to the gravity field of the Earth) or depth (when the value is measured in the direction of the gravity field). In line with existing technologies three spatial representation methods have been provided: grid, vector and triangulated irregular network (TIN). Regarding provision of data, the grid spatial representation type is mandatory for the description of land elevation, whereas the other ones are optional. Finally, either the grid or the vector spatial representation type is mandatory for the provision of data describing the bathymetry, whereas the other ones are optional.
+|===
 
+[.text-right]
 Entry in the INSPIRE registry: _http://inspire.ec.europa.eu/theme/el/_
 
 === Normative References
@@ -441,91 +445,48 @@ Feature (spatial object) with all geometric attributes described piecewise by st
 [width="100%",cols="14%,86%"]
 |===
 |ASCII |American Standard Code for Information Interchange
-
 |ATS |Abstract Test Suite
-
 |CRS |Coordinate Reference System
-
 |DEM |Digital Elevation Model
-
 |DSM |Digital Surface Model
-
 |DTM |Digital Terrain Model
-
 |EC |European Commission
-
 |EEA |European Environmental Agency
-
 |EL |_Elevation_.
-
 |EPSG |European Petroleum Survey Group
-
 |ETRS89 |European Terrestrial Reference System 1989
-
 |ETRS89-LAEA |Lambert Azimuthal Equal Area
-
 |EVRS |European Vertical Reference System
-
 |GCM |Generic Conceptual Model
-
 |GeoTIFF |Geographic Tagged Image File Format
-
 |GML |Geographic Markup Language
-
 |IHO |International Hydrographic Organization
-
 |IR |Implementing Rule
-
 |ISDSS |Interoperability of Spatial Data Sets and Services
-
 |ISO |International Organization for Standardization
-
 |ITRS |International Terrestrial Reference System
-
 |JPEG |Joint Photographic Experts Group
-
 |LAT |Lowest Astronomical Tide
-
 |LAT |Lowest Astronomical Tide
-
 |LMO |Legally Mandated Organisation
-
 |MSL |Mean Sea Level
-
 |OCL |Object Constraint Language
-
 |OGC |Open Geospatial Consortium
-
 |RMSE |Root Mean Square Error
-
 |RMSEH |Horizontal Root Mean Square Error
-
 |RMSEP |Root Mean Square Error of Planimetry
-
 |RMSEv |Vertical Root Mean Square Error
-
 |SDIC |Spatial Data Interest Community
-
 |SWE |Sensor Web Enablement
-
 |TG |Technical GuidanceFigure
-
 |TIFF |Tagged Image File Format
-
 |TIN |Triangulated Irregular Network
-
 |TWG |Thematic Working Group
-
 |TWG-EL |Thematic Working Group Elevation
-
 |UML |Unified Modelling Language
-
 |URI |Uniform Resource Identifier
-
 |UTC |Coordinated Universal Time
-
 |WCS |Web Coverage Service
-
 |XML |eXtensible Markup language
 |===
 
