@@ -1610,7 +1610,7 @@ However, the device of elevation grid coverage aggregation takes a similar appro
 
 Grid data shall be provided as a quadrilateral rectified Grid coverage, where the _Elevation_ values are included within the range set of the coverage.
 
-[NOTE]
+[TIP]
 ====
 *TG Requirement 2*
 The value domain of spatial properties used in the ElevationGridCoverage package shall be restricted to the Simple Feature spatial schema as defined by EN ISO 19125-1:2004.
@@ -1662,11 +1662,10 @@ _Annex III Section 1.7.2_
 
 (8) Information about the acquisition dates of data contained in elevation grid coverages shall be provided at least in one of the following ways:
 
-====
-
 (a) by providing the metadata element Temporal reference for each spatial object through the _metadata_ attribute of the spatial object type _ElevationGridCoverage_.
 
 (b) by providing the metadata element Temporal reference required by Regulation (EC) No 1205/2008 as a temporal extent.
+====
 
 NOTE There is no requirement about the acquisition time of elevation grid coverages.
 
