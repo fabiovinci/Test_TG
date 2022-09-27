@@ -2646,7 +2646,7 @@ As established by the requirement about external object identifier included in S
 
 *Feature catalogue metadata*
 
-[cols=",",options="header",]
+[cols=","]
 |===
 |Application Schema |INSPIRE Application Schema ElevationTIN
 |Version number |3.0
@@ -2858,6 +2858,7 @@ Exceptions, where other coordinate reference systems than those listed in 1.3.1,
 2. For regions outside of continental Europe, Member States may define suitable coordinate reference systems.
 
 The geodetic codes and parameters needed to describe these coordinate reference systems and to allow conversion and transformation operations shall be documented and an identifier shall be created, according to EN ISO 19111 and ISO 19127.
+====
 
 ===== Display
 
@@ -2869,6 +2870,7 @@ _Annex II, Section 1.4_
 *Coordinate Reference Systems used in the View Network Service*
 
 For the display of spatial data sets with the view network service as specified in Regulation No 976/2009, at least the coordinate reference systems for two-dimensional geodetic coordinates (latitude, longitude) shall be available.
+====
 
 ===== Identifiers for coordinate reference systems
 
@@ -2882,16 +2884,15 @@ _Annex II, Section 1.4_
 1. Coordinate reference system parameters and identifiers shall be managed in one or several common registers for coordinate reference systems.
 
 2. Only identifiers contained in a common register shall be used for referring to the coordinate reference systems listed in this Section.
-
 ====
 
 This Technical Guidance proposes to use the http URIs provided by the Open Geospatial Consortium as coordinate reference system identifiers (see identifiers for the default CRSs below). These are based on and redirect to the definition in the EPSG Geodetic Parameter Registry (_http://www.epsg-registry.org/_).
 
-[NOTE]
+[TIP]
 ====
-*IR Requirement*
-[arabic, start=3]
-. The identifiers listed in Table 2 shall be used for referring to the coordinate reference systems used in a data set.
+*TG Requirement 3*
+
+The identifiers listed in Table 2 shall be used for referring to the coordinate reference systems used in a data set.
 ====
 
 NOTE CRS identifiers may be used e.g. in:
