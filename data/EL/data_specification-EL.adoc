@@ -947,7 +947,7 @@ _Article 10_
 *Life-cycle of Spatial Objects*
 (...)
 
-3. Where the attributes beginLifespanVersion and endLifespanVersion are used, the value of endLifespanVersion shall not be before the value of beginLifespanVersion.
+{empty} 3. Where the attributes beginLifespanVersion and endLifespanVersion are used, the value of endLifespanVersion shall not be before the value of beginLifespanVersion.
 
 ====
 
@@ -993,18 +993,21 @@ In addition, some themes make reference to the types TimeValuePair and Timeserie
 
 Where possible, only these coverage types (or a subtype thereof) are used in INSPIRE application schemas.
 
-image::./media/image5.png[image] image::./media/image6.png[image]
+|====
+|image::./media/image5.png[image] |image::./media/image6.png[image]
+|====
 
 (Source: ISO 19136:2007) (Source: GML 3.3.0)
 
 [.text-center]
-*Figure 2* – Examples of a rectified grid (left) and a referenceable grid (right)
+*Figure 2 – Examples of a rectified grid (left) and a referenceable grid (right)*
 
 image::./media/image7.png[image]
 
 [.text-center]
-*Figure 3* – Example of a time series
+*Figure 3 – Example of a time series*
 
+<<<
 === Application schema Elevation
 
 ==== Description
