@@ -994,7 +994,7 @@ In addition, some themes make reference to the types TimeValuePair and Timeserie
 Where possible, only these coverage types (or a subtype thereof) are used in INSPIRE application schemas.
 
 |====
-|image::./media/image5.png[image] |image::./media/image6.png[image]
+|image::./media/image5.png[image] | image::./media/image6.png[image]
 |====
 
 (Source: ISO 19136:2007) (Source: GML 3.3.0)
