@@ -500,7 +500,7 @@ In contrast, the Technical Guidance documents define _how_ Member States might i
 image::./media/image4.png[image]
 
 [.text-center]
-*Figure 1* - Relationship between INSPIRE Implementing Rules and Technical Guidance
+*Figure 1 - Relationship between INSPIRE Implementing Rules and Technical Guidance*
 
 ==== Requirements
 
@@ -525,7 +525,6 @@ Furthermore, this Technical Guidance may propose a specific technical implementa
 
 [TIP]
 ====
-[.text-center]
 *TG Requirement X* This style is used for requirements for a specific technical solution proposed in this Technical Guidance for an IR requirement.
 ====
 
@@ -539,7 +538,6 @@ In addition to IR and TG requirements, this Technical Guidance may also include 
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation X* Recommendations are shown using this style.
 ====
 
@@ -606,7 +604,6 @@ NOTE The application schemas presented in this section contain some additional i
 
 [TIP]
 ====
-[.text-center]
 *TG Requirement X* Spatial object types and data types shall comply with the multiplicities defined for the attributes and association roles in this section.
 ====
 
@@ -697,7 +694,6 @@ For all properties defined for a spatial object, a value has to be provided – 
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 1*
 
 The reason for a void value should be provided where possible using a listed value from the VoidReasonValue code list to indicate the reason for the missing value.
@@ -778,7 +774,6 @@ The type of code list is represented in the UML model through the tagged value _
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 2*
 
 Additional values defined by data providers should not replace or redefine any value already specified in the IRs.
@@ -831,7 +826,6 @@ For code lists of type (b), (c) and (d), this data specification may propose add
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 3*
 
 Where these Technical Guidelines recommend values for a code list in addition to those specified in the IRs, these values should be used.
@@ -966,7 +960,6 @@ NOTE The requirement expressed in the IR Requirement above will be included as c
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 4*
 
 If life-cycle information is not maintained as part of the spatial data set, all spatial objects belonging to this data set should provide a void value with a reason of "unpopulated".
@@ -1143,7 +1136,6 @@ Spatial data sets describing the morphology of land elevation shall be made avai
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 5*
 
 Spatial data sets related to the theme _Elevation_ describing the morphology of land elevation should be also made available using the spatial object types and data types specified in the following application schemas: ElevationVectorElements.
@@ -1162,7 +1154,6 @@ Spatial data sets describing the morphology of bathymetry shall be made availabl
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 6*
 
 Additional and/or use case-specific information related to the theme _Elevation_ should be made available using the spatial object types and data types specified in the following application schema(s): ElevationTIN.
@@ -1447,7 +1438,6 @@ This specification does not incorporate the interpolation method as an attribute
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 7*
 
 This specification recommends the use of the bilinear interpolation method to evaluate a continuous elevation coverage at direct positions between the elements of its domain (included within its domain extent).
@@ -1470,7 +1460,6 @@ By allowing different settings, ISO 19123 leaves it up to implementers to define
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 8*
 
 The grid origin, which is located at grid coordinates (0, 0), should be the upper left point of the elevation coverage.
@@ -1962,7 +1951,6 @@ If break line spatial objects are provided using 2-D geometries, it is not possi
 
 [TIP]
 ====
-[.text-center]
 *TG Requirement 10* Break line spatial objects should be always provided using 2.5-D geometries, in order to properly describe the singularities of the surface being represented
 ====
 
@@ -2586,7 +2574,6 @@ The default value advised in this specification is _bilinear_.
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 12*
 
 This specification recommends the use of the bilinear interpolation method to calculate elevation values at direct positions included within the _ElevationTIN_ geographical extent.
@@ -2885,7 +2872,6 @@ This Technical Guidance proposes to use the http URIs provided by the Open Geosp
 
 [NOTE]
 ====
-[.text-center]
 *IR Requirement*
 [arabic, start=3]
 . The identifiers listed in Table 2 shall be used for referring to the coordinate reference systems used in a data set.
@@ -3011,7 +2997,6 @@ In light of the above mentioned requirements and the guidelines in Section 5.2.2
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 13*
 
 For pan-European global Elevation datasets the compound CRS ETRS89-GRS80/EVRS is recommended for data provision, in areas within the geographical scope of ETRS89.
@@ -3020,7 +3005,6 @@ For pan-European global Elevation datasets the compound CRS ETRS89-GRS80/EVRS is
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 14*
 
 For regional European Elevation datasets, covering specific parts of countries, the compound CRS ETRS89-TMzn/EVRS is recommended for data provision and display, in areas within the geographical scope of ETRS89.
@@ -3035,7 +3019,6 @@ In December 2008 the IAG Sub-commission EUREF handed over data and information o
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 15*
 
 The EVRF2007 realization of EVRS should be adopted as height vertical reference for pan-European geo-information in areas within the geographical scope of EVRS.
@@ -3044,7 +3027,6 @@ The EVRF2007 realization of EVRS should be adopted as height vertical reference 
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 16*
 
 The Earth Gravitational Model (EGM Version 2008) is recommended as height datum for areas that are outside the geographical scope of ETRS89.
@@ -3107,7 +3089,6 @@ This mechanism is implemented through the data type _ChartDatum_, defined in the
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 17*
 
 Where an _Elevation_ data set describes an integrated land-sea surface in coastal areas, this condition should be reported within the resource abstract metadata element.
@@ -3295,7 +3276,6 @@ The geographic grid defined in Annex D.2 (Grid_ETRS89-GRS80zn) is designed for t
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 18*
 
 Gridded data related to the _Elevation_ theme in areas within the scope of ETRS89 should be made available using geodetic coordinates based on the Zoned Geographic Grid (specified in Annex D.2). This geographic grid may be used as a geo-referencing framework for the _Elevation_ theme data sets in order to avoid interoperability problems in cross-border areas.
@@ -3317,7 +3297,6 @@ Consequently, _on-the-fly_ projection transformations are needed for view servic
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 19*
 Real time re-projection is recommended for the view services serving gridded _Elevation_ data sets aimed at satisfying global purposes and based on any grid compatible with this specification__.__
 ====
@@ -3437,7 +3416,6 @@ Component
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 20*
 
 Where it is impossible to express the evaluation of a data quality element in a quantitative way, the evaluation of the element should be expressed with a textual statement as a data quality descriptive result.
@@ -3450,7 +3428,6 @@ Descriptive result can also be used to for providing a short synthetic descripti
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 21*
 
 Commission should be evaluated and documented using Rate of excess items , as specified in the table below.
@@ -3480,7 +3457,6 @@ Commission should be evaluated and documented using Rate of excess items , as sp
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 22*
 
 Omission should be evaluated and documented using Rate of missing items as specified in the table below. Spatial object type evaluation and reporting scope is especially recommended for Contour line vector spatial objects and for _Elevation_ grid coverages.
@@ -3520,7 +3496,6 @@ The Application Schema conformance class of the Abstract Test Suite in Annex I d
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 23*
 
 For the tests on conceptual consistency, it is recommended to use the Logical consistency – Conceptual consistency data quality sub-element and the measure Non-compliance rate with respect to the rules of the conceptual schema as specified in the table below.
@@ -3552,7 +3527,6 @@ The Application Schema conformance class of the Abstract Test Suite in Annex I d
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 24*
 
 For the tests on domain consistency, it is recommended to use the Logical consistency – Domain consistency data quality sub-element and the measure Value domain non-conformance rate as specified in the table below.
@@ -3584,7 +3558,6 @@ For the tests on domain consistency, it is recommended to use the Logical consis
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 25*
 
 Format consistency should be evaluated and documented using Physical structure conflict rate as specified in the table below.
@@ -3614,7 +3587,6 @@ Format consistency should be evaluated and documented using Physical structure c
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 26*
 
 Topological consistency of vector linear spatial objects which shall be connected should be evaluated and documented using Rate of missing connections due to undershoots and Rate of missing connections due to overshoots as specified in the tables below.
@@ -3760,7 +3732,6 @@ It is derived from DQ measure 24 (ISO/DIS 19157:2012).
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 27*
 
 Topological consistency of vector linear spatial objects and the boundaries of area spatial objects should be evaluated and documented using Rate of invalid self-intersect errors and Rate of invalid self-overlap errors as specified in the tables below.
@@ -3847,7 +3818,6 @@ It is derived from DQ measure 27 (ISO/DIS 19157:2012).
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 28*
 
 Absolute or external accuracy of the horizontal component of vector objects within vector datasets and within TIN structures should be evaluated and documented using Root mean square error of planimetry as specified in the table below.
@@ -3893,7 +3863,6 @@ data set / data set series
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 29*
 
 Absolute or external accuracy of the vertical component of vector objects within vector data sets and within TIN structures and of values composing the range of grid elevation coverages, should be evaluated and documented using Root mean square error as specified in the table below.
@@ -3943,7 +3912,6 @@ This specification uses the Gridded data position accuracy data quality sub-elem
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 30*
 
 Gridded data position accuracy should be evaluated and documented using Root mean square error of planimetry as specified in the table below.
@@ -3997,7 +3965,6 @@ No minimum data quality requirements are defined for the spatial data theme _Ele
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 31*
 
 For the data quality elements listed in Table 11, all data sets related to the spatial data theme _Elevation_ should meet the specified target results.
@@ -4103,7 +4070,6 @@ Elevation data provided through INSPIRE should have the best spatial, temporal a
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 32*
 All spatial objects should be provided at the best spatial, temporal and thematic accuracy available, in order to serve relevant use-cases, like modelling of flooding events and emergency response.
 ====
@@ -4162,7 +4128,6 @@ The _Conformity_ metadata element defined in Regulation 1205/2008/EC requires to
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 33*
 
 Dataset metadata should include a statement on the overall conformance of the dataset with this data specification (i.e. conformance with all requirements).
@@ -4171,7 +4136,6 @@ Dataset metadata should include a statement on the overall conformance of the da
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 34*
 
 The _Conformity_ metadata element should be used to document conformance with this data specification (as a whole), with a specific conformance class defined in the Abstract Test Suite in Annex A and/or with another specification.
@@ -4182,7 +4146,6 @@ The _Conformity_ element includes two sub-elements, the _Specification_ (a citat
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 35*
 
 If a dataset is not yet conformant with all requirements of this data specification, it is recommended to include information on the conformance with the individual conformance classes specified in the Abstract Test Suite in Annex A.
@@ -4191,7 +4154,6 @@ If a dataset is not yet conformant with all requirements of this data specificat
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 36*
 
 If a dataset is produced or transformed according to an external specification that includes specific quality assurance procedures, the conformity with this specification should be documented using the _Conformity_ metadata element.
@@ -4200,7 +4162,6 @@ If a dataset is produced or transformed according to an external specification t
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 37*
 
 If minimum data quality recommendations are defined then the statement on the conformity with these requirements should be included using the _Conformity_ metadata element and referring to the relevant data quality conformance class in the Abstract Test Suite.
@@ -4211,7 +4172,6 @@ NOTE Currently no minimum data quality requirements are included in the IRs. The
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 38*
 
 When documenting conformance with this data specification or one of the conformance classes defined in the Abstract Test Suite, the _Specification_ sub-element should be given using the http URI identifier of the conformance class or using a citation including the following elements:
@@ -4332,7 +4292,6 @@ or (using a citation):
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 39*
 
 Following the ISO/DIS 19157 Quality principles, if a data provider has a procedure for the quality management of their spatial data sets then the appropriate data quality elements and measures defined in ISO/DIS 19157 should be used to evaluate and report (in the metadata) the results. If not, the _Lineage_ metadata element (defined in Regulation 1205/2008/EC) should be used to describe the overall quality of a spatial data set.
@@ -4345,7 +4304,6 @@ The Metadata Technical Guidelines based on EN ISO 19115 and EN ISO 19119 specifi
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 40*
 To describe the transformation steps and related source data, it is recommended to use the following sub-elements of LI_Lineage: 
  
@@ -4358,7 +4316,6 @@ NOTE 1 In order to improve the interoperability, domain templates and instructio
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 41*
 
 If LI_Source and LI_ProcessStep sub-elements of the lineage are not used (respectively) to describe the data source(s) and the INSPIRE transformation process(es) for a specific _Elevation_ data set, therefore the lineage metadata statement should at least include a brief description of the most relevant data source and an overview of such transformation process.
@@ -4382,7 +4339,6 @@ According to Regulation 1205/2008/EC, at least one of the following temporal ref
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 42*
 
 At least the date of the last revision of a spatial data set should be reported using the _Date of last revision_ metadata sub-element.
@@ -4426,7 +4382,6 @@ The following TG requirements need to be met in order to be conformant with the 
 
 [TIP]
 ====
-[.text-center]
 *TG Requirement 4*
 Metadata instance (XML) documents shall validate without error against the used ISO 19139 XML schema.
 ====
@@ -4435,21 +4390,18 @@ NOTE Section 2.1.2 of the Metadata Technical Guidelines discusses the different 
 
 [TIP]
 ====
-[.text-center]
 *TG Requirement 5*
 Metadata instance (XML) documents shall contain the elements and meet the INSPIRE multiplicity specified in the sections below.
 ====
 
 [TIP]
 ====
-[.text-center]
 *TG Requirement 6*
 The elements specified below shall be available in the specified ISO/TS 19139 path.
 ====
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 43*
 
 The metadata elements for interoperability should be made available together with the metadata elements defined in the Metadata Regulation through an INSPIRE discovery service.
@@ -4649,7 +4601,6 @@ See section 8.3.2 for instructions on how to implement metadata elements for rep
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 44*
 
 The metadata describing a spatial data set or a spatial data set series related to the theme _Elevation_ should comprise the theme-specific metadata elements specified in Table 5.
@@ -4686,7 +4637,6 @@ Table 5 – Optional theme-specific metadata elements for the theme Elevation
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 45*
 
 For implementing the metadata elements included in this section using ISO 19115, ISO/DIS 19157 and ISO/TS 19139, the instructions included in the relevant sub-sections should be followed.
@@ -4726,7 +4676,6 @@ At least the following elements should be used (the multiplicity according to IS
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 46*
 
 For reporting the results of the data quality evaluation, the data quality elements, sub-elements and (for quantitative evaluation) measures defined in chapter 7 should be used.
@@ -4735,7 +4684,6 @@ For reporting the results of the data quality evaluation, the data quality eleme
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 47*
 
 The metadata elements specified in the following sections should be used to report the results of the data quality evaluation. At least the information included in the row "Implementation instructions" should be provided.
@@ -4746,7 +4694,6 @@ The first section applies to reporting quantitative results (using the element D
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 48*
 
 If a dataset does not pass the tests of the Application schema conformance class (defined in Annex A), the results of each test should be reported using one of the options described in sections 8.3.2.1 and 8.3.2.2.
@@ -4761,7 +4708,6 @@ The scope for reporting may be different from the scope for evaluating data qual
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 49*
 
 The scope element (of type DQ_Scope) of the DQ_DataQuality subtype should be used to encode the reporting scope. 
@@ -5077,7 +5023,6 @@ The advantage of this multipart representation is that coverage constituents are
 
 [TIP]
 ====
-[.text-center]
 *TG Requirement 4*
 Coverage data encoded as multipart messages shall comply with the multipart representation conformance class defined in GML Application Schema for Coverages [OGC 09-146r2].
 ====
@@ -5128,7 +5073,6 @@ The following TG requirements need to be met in order to be conformant with GML 
 
 [TIP]
 ====
-[.text-center]
 *TG Requirement 5*
 Data instance (XML) documents shall validate without error against the provided XML schema.
 ====
@@ -5139,7 +5083,6 @@ NOTE 2 The obligation to use only the allowed code list values specified for att
 
 [TIP]
 ====
-[.text-center]
 *TG Requirement 6*
 Data related to the theme _Elevation_ shall be made available in at least the encoding(s) specified in this section for the relevant application schema(s). If more than one encoding is specified for an application schema, data shall be made available in at least one of these encodings.
 ====
@@ -5180,7 +5123,6 @@ NOTE The Geographic Tagged Image File Format (GeoTiff), associates geo-referenci
 
 [TIP]
 ====
-[.text-center]
 *TG Requirement 7*
 If the format used for encoding the coverage range also includes information about the coverage domain, this information shall be consistent with the information encoded using the GML Application Schema for Coverages.
 ====
@@ -5288,7 +5230,6 @@ Introducing encoding formats other than GML for representing coverage elements r
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 50*
 
 The encoding of coverage components in the file formats specified above should conform to the rules specified in Annex E.
@@ -5355,7 +5296,6 @@ NOTE Annex B of [DS-D2.7], version 3.3rc2, requires that the "encoding rule spec
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 51*
 
 It is recommended that also the encodings specified in this section be provided for the relevant application schemas.
@@ -5415,7 +5355,6 @@ Table 7 - Recommended grid spacing in relation to vertical accuracy (RMSE~v~)
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 52*
 
 _Elevation_ theme grid DEM models should have a grid spacing consistent with its vertical accuracy (RMSEv) and the type of terrain as proposed in Table 7.
@@ -5430,14 +5369,12 @@ Generic consistency rules set requirements / recommendations mainly aimed to con
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 53*
 Provision of _break line_ spatial objects is recommended using 2.5D modelling in order to better describe the singularities of the terrain. If this is not accomplished, these objects may be provided in 2D modelling without elevation information, since this is allowed in the _Elevation_ specification__.__
 ====
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 54*
 
 Contour line spatial objects should not self-intersect.
@@ -5526,7 +5463,6 @@ The contoue equidistance is also dependent on the vertical accuracy, taking into
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 55*
 _Elevation_ theme data sets describing the land surface should have a vertical accuracy (RMSEv) consistent with the contour line vertical interval and the type of terrain - as proposed in 
 Table 9 .
@@ -5553,7 +5489,6 @@ Bathymetry data is divided according to the IHO standards for Hydrographic Surve
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 56*
 
 Bathymetry data capture should follow the recommendations of the IHO standards for Hydrographic Surveys - Special publication No. 44 [IHO S-44].
@@ -5594,7 +5529,6 @@ NOTE The layer specification in the IRs only contains the name, a human readable
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 57*
 
 It is recommended to use the keywords specified in section 11.1 in the _Layers Metadata parameters_ of the INSPIRE View service (see Annex III, Part A, section 2.2.4 in Commission Regulation (EC) No 976/2009).
@@ -5612,7 +5546,6 @@ In section 11.3, further styles can be specified that represent examples of styl
 
 [NOTE]
 ====
-[.text-center]
 *Recommendation 58*
 
 In addition, it is recommended that, where applicable, INSPIRE view services also support the styles defined in section 11.3.
@@ -8034,7 +7967,6 @@ Table 14 – Approximate Grid_ETRS89-GRS80zn cell size on terrain in latitude at
 
 [TIP]
 ====
-[.text-center]
 *TG Requirement 9*
 
 The coordinates of the top left corner of cells of the Grid_ETRS89-GRS80zn shall be used for cell identification purposes.
@@ -8118,7 +8050,6 @@ This section lists the requirements and the constraints to be applied to the TIF
 
 [TIP]
 ====
-[.text-center]
 *TG Requirement 10*
 
 Encoding of INSPIRE Elevation data sets by using TIFF format shall conform to Baseline TIFF extended to LZW Compression.
@@ -8130,7 +8061,6 @@ TIFF files must be identified as such by network services by using a predefined 
 
 [TIP]
 ====
-[.text-center]
 *TG Requirement 11*
 A file claiming to encode coverage elements in TIFF shall receive the _image/tiff_ MIME type registered in RFC 3302.
 ====
@@ -8143,14 +8073,12 @@ Even though TIFF specifications allow describing multiple related images in a si
 
 [TIP]
 ====
-[.text-center]
 *TG Requirement 12*
 A TIFF file shall not contain more than two image file directories (IFD).
 ====
 
 [TIP]
 ====
-[.text-center]
 *TG Requirement 13*
 The first IFD shall carry the range set of the grid coverage. In the case of two IFD, the second shall be used to support a transparency mask.
 ====
@@ -8176,7 +8104,6 @@ Baseline TIFF supports only one type of orientation for grid coverages, that is,
 
 [TIP]
 ====
-[.text-center]
 *TG Requirement 14*
 The origin of the grid coordinate system shall be the upper left corner of the grid coverage. The axis 'row' and 'column' shall be oriented downward and to the right.
 ====
@@ -8198,7 +8125,6 @@ NOTE 2 Encoding multispectral images in TIFF is running the risk of losing a par
 
 [TIP]
 ====
-[.text-center]
 *TG Requirement 15*
 For gridded data (e.g. elevation data, measured data), they shall be stored as 32-bit floating points.
 ====
@@ -8207,14 +8133,12 @@ NOTE If the original data do not satisfy this requirement, they will be converte
 
 [TIP]
 ====
-[.text-center]
 *TG Requirement 16*
 In the case of multi-band images, the number of bits per component shall be the same for all the bands.
 ====
 
 [TIP]
 ====
-[.text-center]
 *TG Requirement 17*
 In the case of multi-band images, the planar configuration shall be _Chunky_ format, i.e. the bands are interleaved.
 ====
@@ -8227,7 +8151,6 @@ Data compression can be used within this profile to reduce the size of a file, p
 
 [TIP]
 ====
-[.text-center]
 *TG Requirement 18*
 The range value data shall be either uncompressed or lossless compressed with packbit or LZW compression schemes.
 ====
