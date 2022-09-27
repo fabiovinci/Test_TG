@@ -3158,7 +3158,7 @@ In any case, the units of measure shall be always expressed using SI units, as s
 image::./media/image23.png[image, align=center]
 
 [.text-center]
-*Figure 22* – UML class diagram: Overview of the SC_CRS classes [ISO 19111:2007]
+*Figure 22 – UML class diagram: Overview of the SC_CRS classes [ISO 19111:2007]*
 
 In light of the previous paragraphs describing the use of the _SC_CRS_ types, it is clear that registering of CRS is highly recommended.
 
@@ -3166,22 +3166,22 @@ In the case of local vertical datums to reference the depth property (chart datu
 
 Therefore, local chart datums constitute an exception to the general mechanism described in this section. Hence, this specification provides in the model a simple mechanism to identify the fundamental properties of such vertical datums. The main aims are to avoid registering of these vertical CRS, which are just used at local level and facilitate an approximate conversion of depths to heights.
 
-======= *Vertical CRS linkage to Elevation 2.5D vector data and TIN models*
+*Vertical CRS linkage to Elevation 2.5D vector data and TIN models*
 
 For these types of elevation data _SC_CRS_ classes are directly associated to the geometry of each spatial object. This is implemented through the _Coordinate Reference System_ association established between the abstract _GM_Object_ type and _SC_CRS_, as shown in Figure 22 [ISO 19111:2007]. _GM_Object_ is a generic class which represents any type of geometry, e.g. points (_GM_Point_), curves (_GM_Curve_) and even surfaces (_GM_Surface_). The upper multiplicity bound of the CRS role in the _Coordinate Reference System_ association is one, so only one CRS can be associated to the geometry of an spatial object.
 
-======= *Vertical CRS linkage to Elevation 2D vector data with the elevation property attribute*
+*Vertical CRS linkage to Elevation 2D vector data with the elevation property attribute*
 
 For this type of elevation data _SC_CRS_ classes are directly associated to the _DirectPosition_ data type, which is the type for _propertyValue_, the attribute which provides the elevation property value in the case of 2D vector data. This is implemented through the _Coordinate Reference System_ association established between the _DirectPosition_ data type and _SC_CRS_, as shown in Figure 22 [ISO 19111:2007]. The upper multiplicity bound of the CRS role in the _Coordinate Reference System_ association is one, so only one CRS can be associated to the geometry of an spatial object.
 
-======= *Vertical CRS linkage to Elevation grid coverages*
+*Vertical CRS linkage to Elevation grid coverages*
 
 As far as grid coverage data is concerned, _SC_CRS_ classes are directly associated to the _CV_Coverage_ type, from which the _ElevationGridCoverage_ class defined in this specification is indirectly generalized (see UML diagram of the _ElevationGridCoverage_ application schema in Section 5.5.1.2). This is implemented through the _Coordinate Reference System_ association established between the _CV_Coverage_ type and _SC_CRS_, as shown in Figure 23 [ISO 19123:2005]. The multiplicity of the CRS role in the _Coordinate Reference System_ association is one, so only one CRS can be associated to the grid coverage (valid for both domain and range).
 
 image::./media/image24.png[image, align=center]
 
 [.text-center]
-*Figure 23* – UML class diagram: Overview of the CV_Coverage class [ISO 19123:2005]
+*Figure 23 – UML class diagram: Overview of the CV_Coverage class [ISO 19123:2005]*
 
 The range of aggregated elevation coverages shall be referenced to the same vertical CRS.
 
@@ -3196,7 +3196,7 @@ This prevents data providers to register depth vertical CRS which are just used 
 image::./media/image25.png[image, align=center]
 
 [.text-center]
-*Figure 24* – UML class: ChartDatum data type (ElevationVectorElements app. schema)
+*Figure 24 – UML class: ChartDatum data type (ElevationVectorElements app. schema)*
 
 The _ChartDatum_ data type (Figure 24) is defined in Section 5.6.2.2.1 and includes the following properties:
 
@@ -3261,7 +3261,7 @@ Grid points of a RectifiedGridCoverage shall coincide with the centres of cells 
 image::./media/image26.jpeg[image]
 
 [.text-center]
-*Figure 25* – Example: Detail showing the alignment of Elevation grid coverages to a geographic grid
+*Figure 25 – Example: Detail showing the alignment of Elevation grid coverages to a geographic grid*
 
 NOTE As for the geographical grid defined in Annex D.2 of this specification (Zoned Geographic Grid), the previous alignment rule implicitly clarifies the _Elevation_ gridded data values (included in grid coverages) that belong to each zone of the geographic grid. In other words, the rule avoids duplicity of values in the borders of the geographic grid zones.
 
@@ -6078,31 +6078,31 @@ NOTE Use of a common style for elevation grid coverages may introduce problems w
 image::./media/image29.jpeg[image]
 
 [.text-center]
-*Figure 26* – Default Styles for Contour Line, Break Line and Height Spot Elevation (Scale: 1:3 000)
+*Figure 26 – Default Styles for Contour Line, Break Line and Height Spot Elevation (Scale: 1:3 000)*
 
 image::./media/image30.jpeg[image]
 
 [.text-center]
-*Figure 27* – Default Styles for Depth Contour Line, Depth Spot Elevation (Scale: 1:3 000)
+*Figure 27 – Default Styles for Depth Contour Line, Depth Spot Elevation (Scale: 1:3 000)*
 
 image::./media/image31.jpeg[image]
 
 [.text-center]
-*Figure 28* – Default Styles for Void Area and Isolated Area (Scale: 1:300 000)
+*Figure 28 – Default Styles for Void Area and Isolated Area (Scale: 1:300 000)*
 
 In the figure above, the Grid Coverage style is used as background and transparency has been used for Isolated Area in order to show the gridded data contained inside its area.
 
 image::./media/image32.jpeg[image]
 
 [.text-center]
-*Figure 29* – Default Styles for Void Area and Isolated Area (Scale: 1:300 000)
+*Figure 29 – Default Styles for Void Area and Isolated Area (Scale: 1:300 000)*
 
 In the figure above, the Grid Coverage style is not used as background.
 
 image::./media/image33.jpeg[image]
 
 [.text-center]
-*Figure 30* – Default Style for Grid Coverage (Scale: 1:2 000 000) - Hungary
+*Figure 30 – Default Style for Grid Coverage (Scale: 1:2 000 000) - Hungary*
 
 === Styles recommended to be supported by INSPIRE view services 
 
@@ -6264,7 +6264,7 @@ image::./media/image33.jpeg[image]
 image::./media/image34.jpeg[image]
 
 [.text-center]
-*Figure 31* – Usage of Other Well-Defined Styles on Contour Lines (Scale: 1:3 000)
+*Figure 31 – Usage of Other Well-Defined Styles on Contour Lines (Scale: 1:3 000)*
 
 <<<
 :sectnums!:
@@ -8022,21 +8022,21 @@ This annex includes example figures which help in understanding the use of the _
 image::./media/image35.png[image, align=center]
 
 [.text-center]
-*Figure 32* – Example: Description of the sea floor.
+*Figure 32 – Example: Description of the sea floor.*
 
 === Description of the floor of an inland standing water body
 
 image::./media/image36.png[image, align=center]
 
 [.text-center]
-*Figure 33* – Example: Description of the floor of an inland standing water body.
+*Figure 33 – Example: Description of the floor of an inland standing water body.*
 
 === Description of the bed of a navigable river
 
 image::./media/image37.png[image, align=center]
 
 [.text-center]
-*Figure 34* – Example: Description of the bed of a navigable river.
+*Figure 34 – Example: Description of the bed of a navigable river.*
 
 <<<
 [appendix]
@@ -8128,7 +8128,7 @@ The origin of the grid coordinate system shall be the upper left corner of the g
 image::./media/image38.png[image]
 
 [.text-center]
-*Figure 35*. referenced grid as defined by Baseline TIFF
+*Figure 35. referenced grid as defined by Baseline TIFF*
 
 ===== Range values
 
