@@ -2538,6 +2538,7 @@ The externally governed code lists included in this application schema are speci
 |_http://inspire.ec.europa.eu/codeList/SpotElevationClassValue/12_ |_Overlap Points_
 |===
 
+<<<
 === Application schema _ElevationTIN_
 
 ==== Description
@@ -2547,7 +2548,7 @@ The externally governed code lists included in this application schema are speci
 image::./media/image22.jpeg[image]
 
 [.text-center]
-*Figure 21* – UML class diagram: Overview of the ElevationTIN application schema
+*Figure 21 – UML class diagram: Overview of the ElevationTIN application schema*
 
 This application schema constitutes the elevation model for the TIN spatial representation type.
 
@@ -2577,8 +2578,12 @@ EXAMPLE A Delaunay triangulation, which has triangles that are optimally equiang
 
 Any triangulation method valid for TIN structures can be used, but use of Delaunay is recommended.
 
-[arabic, start=11]
-. The spatial objects carried within an _ElevationTIN_ collection may be used to obtain a triangulated surface in a subsequent process. The use of a Delaunay triangulation method is recommended, in combination with the set of break lines and stop lines included in the collection.
+[NOTE]
+====
+*Recommendation 11*
+
+The spatial objects carried within an _ElevationTIN_ collection may be used to obtain a triangulated surface in a subsequent process. The use of a Delaunay triangulation method is recommended, in combination with the set of break lines and stop lines included in the collection.
+====
 
 It is worth clarifying here that the concept of TIN coverage from ISO 19123 (i.e. 1 value assigned to each triangle) is neither useful nor applicable in the _Elevation_ theme, where 1 value needs to be assigned to each triangle vertex or control point in a the TIN (whereas in a TIN coverage only 1 value is assigned to each triangle in the TIN).
 
@@ -2591,7 +2596,6 @@ The default value advised in this specification is _bilinear_.
 *Recommendation 12*
 
 This specification recommends the use of the bilinear interpolation method to calculate elevation values at direct positions included within the _ElevationTIN_ geographical extent.
-
 ====
 
 [IMPORTANT]
