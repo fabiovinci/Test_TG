@@ -2901,7 +2901,7 @@ NOTE CRS identifiers may be used e.g. in:
 * data set and service metadata, and
 * requests to INSPIRE network services.
 
-Table 2. http URIs for the default coordinate reference systems
+*Table 2. http URIs for the default coordinate reference systems*
 
 [cols=",,",options="header",]
 |===
@@ -2959,7 +2959,7 @@ _Article 12_
 *Other Requirements & Rules*
 (...)
 
-2. All measurement values shall be expressed using SI units or non-SI units accepted for use with the International System of Units, unless specified otherwise for a specific spatial data theme or type.
+{empty} 2. All measurement values shall be expressed using SI units or non-SI units accepted for use with the International System of Units, unless specified otherwise for a specific spatial data theme or type.
 ====
 
 ==== Grids
@@ -2977,8 +2977,6 @@ Either of the grids with fixed and unambiguously defined locations defined in Se
 
 (2) For grid referencing in regions outside of continental Europe Member States may define their own grid based on a geodetic coordinate reference system compliant with ITRS and a Lambert Azimuthal Equal Area projection, following the same principles as laid down for the grid specified in Section 2.2.1. In this case, an identifier for the coordinate reference system shall be created.
 
-====
-
 *2.2 Equal Area Grid*
 
 The grid is based on the ETRS89 Lambert Azimuthal Equal Area (ETRS89-LAEA) coordinate reference system with the centre of the projection at the point 52^o^ N, 10^o^ E and false easting: x~0~ = 4321000 m, false northing: y~0~ = 3210000 m.
@@ -2994,6 +2992,7 @@ The grid orientation is south-north, west-east.
 The grid is designated as Grid_ETRS89-LAEA. For identification of an individual resolution level the cell size in metres is appended.
 
 For the unambiguous referencing and identification of a grid cell, the cell code composed of the size of the cell and the coordinates of the lower left cell corner in ETRS89-LAEA shall be used. The cell size shall be denoted in metres ("m") for cell sizes up to 100m or kilometres ("km") for cell sizes of 1000m and above. Values for northing and easting shall be divided by 10^n^, where _n_ is the number of trailing zeros in the cell size value.
+====
 
 === Theme-specific requirements and recommendations
 
