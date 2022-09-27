@@ -1884,6 +1884,7 @@ NOTE This type can be used for both discrete and continuous coverages.
 |Description: |EXAMPLE DTM and DSM.
 |===
 
+<<<
 ===  Application schema _ElevationVectorElements_
 
 ==== Description
@@ -1893,7 +1894,7 @@ NOTE This type can be used for both discrete and continuous coverages.
 image::./media/image21.jpeg[image]
 
 [.text-center]
-*Figure 20* – UML class diagram: Overview of the ElevationVectorElements application schema
+*Figure 20 – UML class diagram: Overview of the ElevationVectorElements application schema*
 
 This application schema constitutes the elevation model for the vector spatial representation type.
 
@@ -2523,22 +2524,18 @@ The externally governed code lists included in this application schema are speci
 [cols=",,,",options="header",]
 |===
 |*Code list* |*Identifiers* |*Identifier examples* |*Labels*
-|SpotElevationClassValue a|
-Append the number in the "Classification Value" column of Table 4.9 to the URI prefix
-
-_http://inspire.ec.europa.eu/codeList/SpotElevationClassValue/_
-
+.11+|SpotElevationClassValue .11+|Append the number in the "Classification Value" column of Table 4.9 to the URI prefix _http://inspire.ec.europa.eu/codeList/SpotElevationClassValue/_
 |_http://inspire.ec.europa.eu/codeList/SpotElevationClassValue/0_ |_Created, never classified_
-| | |_http://inspire.ec.europa.eu/codeList/SpotElevationClassValue/1_ |_Unclassified_
-| | |_http://inspire.ec.europa.eu/codeList/SpotElevationClassValue/2_ |_Ground_
-| | |_http://inspire.ec.europa.eu/codeList/SpotElevationClassValue/3_ |_Low Vegetation_
-| | |_http://inspire.ec.europa.eu/codeList/SpotElevationClassValue/4_ |_Medium Vegetation_
-| | |_http://inspire.ec.europa.eu/codeList/SpotElevationClassValue/5_ |_High Vegetation_
-| | |_http://inspire.ec.europa.eu/codeList/SpotElevationClassValue/6_ |_Building_
-| | |_http://inspire.ec.europa.eu/codeList/SpotElevationClassValue/7_ |_Low point (noise)_
-| | |_http://inspire.ec.europa.eu/codeList/SpotElevationClassValue/8_ |_Model Key-point (mass point)_
-| | |_http://inspire.ec.europa.eu/codeList/SpotElevationClassValue/9_ |_Water_
-| | |_http://inspire.ec.europa.eu/codeList/SpotElevationClassValue/12_ |_Overlap Points_
+|_http://inspire.ec.europa.eu/codeList/SpotElevationClassValue/1_ |_Unclassified_
+|_http://inspire.ec.europa.eu/codeList/SpotElevationClassValue/2_ |_Ground_
+|_http://inspire.ec.europa.eu/codeList/SpotElevationClassValue/3_ |_Low Vegetation_
+|_http://inspire.ec.europa.eu/codeList/SpotElevationClassValue/4_ |_Medium Vegetation_
+|_http://inspire.ec.europa.eu/codeList/SpotElevationClassValue/5_ |_High Vegetation_
+|_http://inspire.ec.europa.eu/codeList/SpotElevationClassValue/6_ |_Building_
+|_http://inspire.ec.europa.eu/codeList/SpotElevationClassValue/7_ |_Low point (noise)_
+|_http://inspire.ec.europa.eu/codeList/SpotElevationClassValue/8_ |_Model Key-point (mass point)_
+|_http://inspire.ec.europa.eu/codeList/SpotElevationClassValue/9_ |_Water_
+|_http://inspire.ec.europa.eu/codeList/SpotElevationClassValue/12_ |_Overlap Points_
 |===
 
 === Application schema _ElevationTIN_
