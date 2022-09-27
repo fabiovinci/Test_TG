@@ -666,7 +666,7 @@ NOTE Since "void" is not a concept supported by OCL, OCL constraints cannot incl
 
 In the application schemas in this section several stereotypes are used that have been defined as part of a UML profile for use in INSPIRE [DS-D2.5]. These are explained in Table 1 below.
 
-Table 1 – Stereotypes (adapted from [DS-D2.5])
+*Table 1 – Stereotypes (adapted from [DS-D2.5])*
 
 [cols=",,",]
 |===
@@ -754,15 +754,11 @@ Article 6
 1) Code lists shall be of one of the following types, as specified in the Annexes:
 
  a) code lists whose allowed values comprise only the values specified in this Regulation;
-
  b) code lists whose allowed values comprise the values specified in this Regulation and narrower values defined by data providers;
-
  c) code lists whose allowed values comprise the values specified in this Regulation and additional values at any level defined by data providers;
-
  d) code lists, whose allowed values comprise any values defined by data providers.
-
+ 
 For the purposes of points (b), (c) and (d), in addition to the allowed values, data providers may use the values specified in the relevant INSPIRE Technical Guidance document available on the INSPIRE web site of the Joint Research Centre.
-
 ====
 
 The type of code list is represented in the UML model through the tagged value _extensibility_, which can take the following values:
