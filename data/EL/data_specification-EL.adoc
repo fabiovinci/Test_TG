@@ -1612,6 +1612,7 @@ Grid data shall be provided as a quadrilateral rectified Grid coverage, where th
 
 [NOTE]
 ====
+*TG Requirement 2*
 The value domain of spatial properties used in the ElevationGridCoverage package shall be restricted to the Simple Feature spatial schema as defined by EN ISO 19125-1:2004.
 ====
 
