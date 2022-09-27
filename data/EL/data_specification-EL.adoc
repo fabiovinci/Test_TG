@@ -1021,7 +1021,7 @@ The orientation of the positive axis is opposite to the Earth's gravity field in
 image::./media/image8.png[image, align=center]
 
 [.text-center]
-*Figure 4* – Measuring of elevation properties.
+*Figure 4 – Measuring of elevation properties.*
 
 ====== Sub-themes
 
@@ -1043,22 +1043,22 @@ Describing the depth property for the following geographical elements is in the 
 image::./media/image9.png[image, align=center]
 
 [.text-center]
-*Figure 5* – Example: Description of land elevation.
+*Figure 5 – Example: Description of land elevation.*
 
 image::./media/image10.png[image]
 
 [.text-center]
-*Figure 6* – Example: Description of the sea floor.
+*Figure 6 – Example: Description of the sea floor.*
 
 image::./media/image11.png[image]
 
 [.text-center]
-*Figure 7* – Example: Description of the floor of an inland standing water body.
+*Figure 7 – Example: Description of the floor of an inland standing water body.*
 
 image::./media/image12.png[image]
 
 [.text-center]
-*Figure 8* – Example: Description of the bed of a navigable river.
+*Figure 8 – Example: Description of the bed of a navigable river.*
 
 
 _Integrated land-sea models_
@@ -1070,7 +1070,7 @@ This specification supports the description of this kind of model in terms of a 
 image::./media/image13.png[image, align=center]
 
 [.text-center]
-*Figure 9* – Example: Description of an integrated land-sea model.
+*Figure 9 – Example: Description of an integrated land-sea model.*
 
 ====== Terrain surfaces
 
@@ -1086,7 +1086,7 @@ The term Digital Elevation Model (DEM) covers both visions above mentioned.
 image::./media/image14.png[image, align=center]
 
 [.text-center]
-*Figure 10* – Digital elevation models (DEM): Difference between DTM and DSM
+*Figure 10 – Digital elevation models (DEM): Difference between DTM and DSM*
 
 ====== Dimensionality of modelling
 
@@ -1166,7 +1166,7 @@ This section explains the structure of the _Elevation_ model, which is composed 
 image::./media/image15.png[image, align=center]
 
 [.text-center]
-*Figure 11* – UML class diagram: Overview of the application schemas of Elevation
+*Figure 11 – UML class diagram: Overview of the application schemas of Elevation*
 
 * _ElevationBaseTypes_
 +
@@ -1204,8 +1204,9 @@ Figure 12 shows the dependencies between the four _Elevation_ packages and other
 image::./media/image16.png[image, align=center]
 
 [.text-center]
-*Figure 12* – Package dependencies: Application schemas of Elevation
+*Figure 12 – Package dependencies: Application schemas of Elevation*
 
+<<<
 === Application schema _ElevationBaseTypes_
 
 ==== Description
@@ -1215,7 +1216,7 @@ image::./media/image16.png[image, align=center]
 image::./media/image17.png[image, align=center]
 
 [.text-center]
-*Figure 13* – UML class diagram: Overview of the _ElevationBaseTypes_ application schema
+*Figure 13 – UML class diagram: Overview of the _ElevationBaseTypes_ application schema*
 
 The _ElevationBaseTypes_ application schema provides the basic framework for the _Elevation_ theme. Regardless of the spatial representation type used for the elevation data, it defines enumerations which are common to the other _Elevation_ application schemas: _ElevationGridCoverage_, _ElevationVectorElements_ and _ElevationTIN_.
 
@@ -1241,11 +1242,16 @@ This enumeration is defined in Section 5.4.2.1.2.
 
 *Feature catalogue metadata*
 
-[cols=",",options="header",]
+[cols=","]
 |===
 |Application Schema |INSPIRE Application Schema ElevationBaseTypes
 |Version number |3.0
-2+|*Types defined in the feature catalogue*
+|===
+
+*Types defined in the feature catalogue*
+
+[cols=","]
+|===
 |*Type* |*Package* |*Stereotypes*
 |===
 
