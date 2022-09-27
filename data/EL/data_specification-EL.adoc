@@ -1673,11 +1673,15 @@ NOTE There is no requirement about the acquisition time of elevation grid covera
 
 *Feature catalogue metadata*
 
-[cols=",",options="header",]
+[cols=","
 |===
 |Application Schema |INSPIRE Application Schema ElevationGridCoverage
 |Version number |3.0
-2+|*Types defined in the feature catalogue*
+
+*Types defined in the feature catalogue*
+
+[cols=",,"
+|===
 |*Type* |*Package* |*Stereotypes*
 |_ElevationGridCoverage_ |ElevationGridCoverage |«featureType»
 |_ElevationGridCoverageAggregation_ |ElevationGridCoverage |«dataType»
