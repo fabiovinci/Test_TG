@@ -5373,8 +5373,7 @@ As a general rule for any map scale, the normal contour vertical interval in met
 |100 m |terrain: mountainous (with slopes > 12 degrees)
 |===
 
-The contoue equidistance is also dependent on the vertical accuracy, taking into and the slope of terrain surface. When elevation interpolated from a contour map the vertical accuracy (RMSEv) should be not worse than indicated in** 
-**Table 9 .
+The contoue equidistance is also dependent on the vertical accuracy, taking into and the slope of terrain surface. When elevation interpolated from a contour map the vertical accuracy (RMSEv) should be not worse than indicated in Table 9.
 
 *Table 9 – Consistency between contour line vertical interval and vertical accuracy*
 
@@ -5459,14 +5458,16 @@ NOTE The layer specification in the IRs only contains the name, a human readable
 *Recommendation 57*
 
 It is recommended to use the keywords specified in section 11.1 in the _Layers Metadata parameters_ of the INSPIRE View service (see Annex III, Part A, section 2.2.4 in Commission Regulation (EC) No 976/2009).
-
 ====
 
 Section 11.2 specifies one style for each of these layers. It is proposed that INSPIRE view services support this style as the default style required by Article 14(1b).
 
-[arabic, start=10]
-. For each layer specified in this section, the styles defined in section 11.2 shall be available.
+[TIP]
+====
+*Requirement 8*
 
+For each layer specified in this section, the styles defined in section 11.2 shall be available.
+====
 NOTE The default style should be used for portrayal by the view network service if no user-defined style is specified in a portrayal request for a specific layer.
 
 In section 11.3, further styles can be specified that represent examples of styles typically used in a thematic domain. It is recommended that also these styles should be supported by INSPIRE view services, where applicable.
