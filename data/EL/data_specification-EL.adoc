@@ -6353,6 +6353,7 @@ a|
 !A.8.13 TIFF grid coordinate system test
 !A.8.14 Style test
 !===
+|===
 
 In order to be conformant to a conformance class, a data set has to pass *all* tests defined for that conformance class.
 
