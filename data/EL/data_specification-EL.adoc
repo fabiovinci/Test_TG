@@ -6246,7 +6246,7 @@ image::./media/image34.jpeg[image]
 == Abstract Test Suite (normative)
 
 ===
-|*Disclaimer*
+*Disclaimer*
 While this Annex refers to the Commission Regulation (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services, it does not replace the legal act or any part of it.
 ===
 
