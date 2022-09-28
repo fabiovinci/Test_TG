@@ -3797,6 +3797,7 @@ Example – Self-overlap of a contour line instance.
 image::./media/image716d.png[image, align=center]
 
 *Key*
+
 * Vertices [digitized order]
 +
 *1* Illegal overlap (kickback)
