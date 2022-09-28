@@ -5360,7 +5360,7 @@ As a general rule for any map scale, the normal contour vertical interval in met
 |10 m |terrain: flat (with slopes < 2 degrees)
 |20 m |terrain: undulating (with slopes 2 - 6 degrees)
 |20 m |terrain: hilly (with slopes 6 – 12 degrees)
-2+|40 m |terrain: mountainous (with slopes > 12 degrees)
+|40 m |terrain: mountainous (with slopes > 12 degrees)
 2+|*_Topographic map 1:200 000_* 
 |20 m |terrain: flat (with slopes < 2 degrees)
 |20 m |terrain: undulating (with slopes 2 - 6 degrees)
