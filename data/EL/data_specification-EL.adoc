@@ -6179,7 +6179,7 @@ image::./media/image34.jpeg[image]
 *Figure 31 – Usage of Other Well-Defined Styles on Contour Lines (Scale: 1:3 000)*
 
 <<<
-
+:sectnums!:
 == Bibliography
 
 [BAG V1] Open Navigation Surface - Format Specification Document - Description of Bathymetric Attributed Grid Object (BAG), Version 1.0.0, 2006-04-07 - Open Navigation Surface Working Group (ONSWG)
