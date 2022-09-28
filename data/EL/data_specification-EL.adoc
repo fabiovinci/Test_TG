@@ -4056,7 +4056,7 @@ The table contains the following information:
 * The third column specifies the multiplicity.
 * The fourth column specifies the condition, under which the given element becomes mandatory.
 
-Table 4 – Metadata for spatial datasets and spatial dataset series specified in Regulation 1205/2008/EC
+*Table 4 – Metadata for spatial datasets and spatial dataset series specified in Regulation 1205/2008/EC*
 
 [cols=",,,",]
 |===
@@ -4139,11 +4139,8 @@ NOTE Currently no minimum data quality requirements are included in the IRs. The
 When documenting conformance with this data specification or one of the conformance classes defined in the Abstract Test Suite, the _Specification_ sub-element should be given using the http URI identifier of the conformance class or using a citation including the following elements:
 
 - title: "
-
 - date:
-
 - dateType: publication
-
 - date: yyyy-mm-dd
 
 ====
@@ -4157,47 +4154,32 @@ EXAMPLE 1: The XML snippets below show how to fill the _Specification_ sub-eleme
 [source,xml]
 ----
 <gmd:DQ_ConformanceResult>
-
-*<gmd:specification href="http://inspire.ec.europa.eu/conformanceClass/ad/3.0.1/tg" />*
-
-<gmd:explanation> (...) </gmd:explanation>
-<gmd:pass> (...) </gmd:pass>
+	<gmd:specification href="http://inspire.ec.europa.eu/conformanceClass/ad/3.0.1/tg" />
+	<gmd:explanation> (...) </gmd:explanation>
+	<gmd:pass> (...) </gmd:pass>
 </gmd:DQ_ConformanceResult>
 
 or (using a citation):
 
 <gmd:DQ_ConformanceResult>
-
-*<gmd:specification>*
-
-<gmd:CI_Citation>
-
-*<gmd:title>*
-
-*<gco:CharacterString>INSPIRE Data Specification on Elevation – Technical Guidelines</gco:CharacterString>*
-
-*</gmd:title>*
-
-<gmd:date>
-<gmd:date>
-
-*<gco:Date>2013-01-21</gco:Date>*
-
-</gmd:date>
-<gmd:dateType>
-
-*<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resou*
-
-*rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>*
-
-</gmd:dateType>
-</gmd:date>
-</gmd:CI_Citation>
-
-*</gmd:specification>*
-
-<gmd:explanation> (...) </gmd:explanation>
-<gmd:pass> (...) </gmd:pass>
+	<gmd:specification>
+		<gmd:CI_Citation>
+			<gmd:title>
+				<gco:CharacterString>INSPIRE Data Specification on Elevation – Technical Guidelines</gco:CharacterString>
+			</gmd:title>
+			<gmd:date>
+				<gmd:date>
+					<gco:Date>2013-01-21</gco:Date>
+				</gmd:date>
+				<gmd:dateType>
+					<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resou
+rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+				</gmd:dateType>
+			</gmd:date>
+		</gmd:CI_Citation>
+	</gmd:specification>
+	<gmd:explanation> (...) </gmd:explanation>
+	<gmd:pass> (...) </gmd:pass>
 </gmd:DQ_ConformanceResult>
 ----
 
