@@ -7814,43 +7814,9 @@ The levels of resolution identified in Table 13 make up a hierarchical geographi
 
 Table 14 illustrates the approximate geographic grid cell size on terrain in latitude at each resolution level.
 
-Table 14 – Approximate Grid_ETRS89-GRS80zn cell size on terrain in latitude at each resolution level
+*Table 14 – Approximate Grid_ETRS89-GRS80zn cell size on terrain in latitude at each resolution level*
 
-[cols=",,",options="header",]
-|===
-|*Resolution Levels* a|
-*Cell Size in Latitude*
-
-*(Latitude Spacing)*
-
-|*Approx. Cell Size on terrain in Latitude*
-| |*(Arc seconds)* |*(Meters)*
-|*LEVEL 0* |*3600* |*120000*
-|*LEVEL 1* |*3000* |*100000*
-|*LEVEL 2* |*1800* |*60000*
-|*LEVEL 3* |*1200* |*40000*
-|*LEVEL 4* |*600* |*20000*
-|*LEVEL 5* |*300* |*10000*
-|*LEVEL 6* |*120* |*4000*
-|*LEVEL 7* |*60* |*2000*
-|*LEVEL 8* |*30* |*1000*
-|*LEVEL 9* |*15* |*500*
-|*LEVEL 10* |*5* |*166*
-|*LEVEL 11* |*3* |*100*
-|*LEVEL 12* |*1,5* |*50*
-|*LEVEL 13* |*1* |*33.33*
-|*LEVEL 14* |*0,75* |*25*
-|*LEVEL 15* |*0,5* |*16*
-|*LEVEL 16* |*0,3* |*10*
-|*LEVEL 17* |*0,15* |*5*
-|*LEVEL 18* |*0,1* |*3*
-|*LEVEL 19* |*0,075* |*2.5*
-|*LEVEL 20* |*0,03* |*1*
-|*LEVEL 21* |*0,015* |*0.5*
-|*LEVEL 22* |*0,01* |*0.33*
-|*LEVEL 23* |*0,0075* |*0.25*
-|*LEVEL 24* |*0,003* |*0.1*
-|===
+image::./media/table14.png[image, align=center]
 
 [TIP]
 ====
