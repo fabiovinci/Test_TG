@@ -7806,7 +7806,7 @@ NOTE Table 13 in this document
 
 *Table 13 - Common Grid_ETRS89-GRS80zn: Latitude spacing (resolution level) and longitude spacing for each zone*
 
-image::./media/table13.png[image,width=398,height=273, align=center]
+image::./media/table13.png[image, align=center]
 
 The table above shows the latitude spacing (each resolution level), as well as the longitude spacing obtained by applying the factor parameter to each latitudinal zone.
 
