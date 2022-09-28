@@ -3710,8 +3710,9 @@ Note: Metadata elements defined in ISO 19115.
 |Example a|
 Example – Connectivity between two consecutive contour line instances with the same height which have to be connected.
 
-*Key*
+image::./media/image716b.png[image, align=center]
 
+*Key*
 *1* Search tolerance is 3 m
 
 |Measure identifier a|
