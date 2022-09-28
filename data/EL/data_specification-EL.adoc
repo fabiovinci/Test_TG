@@ -4787,19 +4787,14 @@ This metadata element is recommended to concisely describe general properties of
 This metadata element aims to supplement the _Lineage_ metadata element defined in Regulation 1205/2008/EC with a precise description of a process or operation that has been applied to the elevation dataset.
 
 As illustration, the following processing steps may be traced here:
-
 * Data acquisition.
-
 * Data editing.
 
 [.underline]#For vector data:#
-
 ** Aero-triangulation.
-
 ** Stereo-plotting.
 
 [.underline]#For grid data:#
-
 * Grid calculation / sampling.
 
 
