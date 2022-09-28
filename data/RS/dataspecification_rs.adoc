@@ -225,7 +225,7 @@ Particularly, the following ones are adopted:
 [loweralpha, start=2]
 . Plane coordinates reference systems (map projections) adopted and recommended for different purposes, covering the requirements of the INSPIRE transformation services and view services as well.
 
-
++
 Particularly, at least the coordinate reference systems for two-dimensional geodetic coordinates (latitude, longitude) shall be available for the display of spatial data sets with the view network service (Regulation No 976/2009footnote:[OJ L 274, 20.10.2009, p. 9–18.]).
 
 
@@ -311,58 +311,35 @@ Change of coordinates, based on a one-to-one relationship, from a geodetic coord
 
 === Symbols and abbreviations
 
-CRS Coordinate Reference System
-
-EC European Commission
-
-ETRS89 European Terrestrial Reference System 1989
-
-ETRS89-EVRS Compound Coordinate Reference System ETRS89-EVRS
-
-ETRS89-LAEA Projection Lambert Azimuthal Equal Area
-
-ETRS89-LCC Projection Lambert Conformal Conic
-
-ETRS89-TMzn Projection Transverse Mercator
-
-EUREF Reference Frame Sub-commission for Europe of the IAG
-
-EVRS European Vertical Reference System
-
-GCM Generic Conceptual Model
-
-GRS80 Geodetic Reference System 1980
-
-IAG International Association of Geodesy
-
-ICAO International Civil Aviation Organisation
-
-IERS International Earth Rotation and Reference Systems Service
-
-IHO International Hydrographic Organisation
-
-ISA International Standard Atmosphere
-
-ITRF International Terrestrial Reference Frame
-
-ITRS International Terrestrial Reference System
-
-IUGG International Union of Geodesy and Geophysics
-
-JRC Joint Research Centre
-
-LAT Lowest Astronomical Tide
-
-MS Member States
-
-MSL Mean Sea Level
-
-TRS Terrestrial Reference System
-
-TWG Thematic Working Group
-
-VRF Visual Flying Rules
-
+[width="100%",cols="14%,86%"]
+|===
+|CRS |Coordinate Reference System
+|EC |European Commission
+|ETRS89 |European Terrestrial Reference System 1989
+|ETRS89-EVRS |Compound Coordinate Reference System ETRS89-EVRS
+|ETRS89-LAEA |Projection Lambert Azimuthal Equal Area
+|ETRS89-LCC |Projection Lambert Conformal Conic
+|ETRS89-TMzn |Projection Transverse Mercator
+|EUREF |Reference Frame Sub-commission for Europe of the IAG
+|EVRS |European Vertical Reference System
+|GCM |Generic Conceptual Model
+|GRS80 |Geodetic Reference System 1980
+|IAG |International Association of Geodesy
+|ICAO |International Civil Aviation Organisation
+|IERS |International Earth Rotation and Reference Systems Service
+|IHO |International Hydrographic Organisation
+|ISA |International Standard Atmosphere
+|ITRF |International Terrestrial Reference Frame
+|ITRS |International Terrestrial Reference System
+|IUGG |International Union of Geodesy and Geophysics
+|JRC |Joint Research Centre
+|LAT |Lowest Astronomical Tide
+|MS |Member States
+|MSL |Mean Sea Level
+|TRS |Terrestrial Reference System
+|TWG |Thematic Working Group
+|VRF |Visual Flying Rules
+|===
 
 === How the Technical Guidelines map to the Implementing Rules
 
