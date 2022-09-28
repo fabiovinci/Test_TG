@@ -5361,7 +5361,7 @@ As a general rule for any map scale, the normal contour vertical interval in met
 |20 m |terrain: undulating (with slopes 2 - 6 degrees)
 |20 m |terrain: hilly (with slopes 6 – 12 degrees)
 2+|40 m |terrain: mountainous (with slopes > 12 degrees)
-|*_Topographic map 1:200 000_* 
+2+|*_Topographic map 1:200 000_* 
 |20 m |terrain: flat (with slopes < 2 degrees)
 |20 m |terrain: undulating (with slopes 2 - 6 degrees)
 |40 m |terrain: hilly (with slopes 6 – 12 degrees)
@@ -5440,14 +5440,12 @@ _Article 14_
 1. For the portrayal of spatial data sets using a view network service as specified in Commission Regulation No 976/2009 (footnote:[OJ L 274, 20.10.2009, p. 9.]), the following shall be available:
 +
 (a) the layers specified in Annex II for the theme or themes the data set is related to;
-
 (b) for each layer at least a default portrayal style, with as a minimum an associated title and a unique identifier.
 
 2. For each layer, Annex II defines the following:
 
 +
 (a) a human readable title of the layer to be used for display in user interface;
-
 (b) the spatial object type(s), or sub-set thereof, that constitute(s) the content of the layer.
 
 ====
