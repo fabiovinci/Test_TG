@@ -3914,7 +3914,6 @@ Gridded data position accuracy should be evaluated and documented using Root mea
 |Definition |Radius of a circle around the given point, in which the true value lies with probability P
 |Description a|
 The true values of the observed coordinates _X_ and _Y_ are known as _x~t~_ and _y~t~ ._
-
 From this the estimator
 
 image::./media/image27.png[image]
@@ -3923,16 +3922,12 @@ yields to the linear root mean square error of planimetry RMSEP = _σ_
 
 |Evaluation scope a|
 spatial object: _ElevationGridCoverage_ /
-
 spatial object type: _ElevationGridCoverage_ /
-
 data set / data set series
 
 |Reporting scope a|
 spatial object: _ElevationGridCoverage_ /
-
 spatial object type: _ElevationGridCoverage_ /
-
 data set / data set series
 
 |Parameter |-
@@ -3947,6 +3942,7 @@ data set / data set series
 
 No minimum data quality requirements are defined for the spatial data theme _Elevation_.
 
+<<<
 === Recommendation on data quality
 
 [NOTE]
@@ -3964,41 +3960,35 @@ Table 11 – Recommended minimum data quality results for spatial data theme Ele
 |*Section* |*Data quality element and sub-element* |*Measure name(s)* |*Target result(s)* |*Condition*
 |7.1.1 a|
 Completeness /
-
 Commission
 
 |Rate of excess items |0 % |Data duplication can be checked and corrected automatically
 |7.1.2 a|
 Completeness /
-
 Omission
 
 |Rate of missing items |0 % |
 |7.1.3 |Logical consistency / Conceptual consistency |Non-compliance rate with respect to the rules of the conceptual schema |0 % |
 |7.1.4 a|
 Logical consistency /
-
 Domain consistency
 
-|Value domain non-conformance rate |0 % |Quality controls and data editing can be performed automatically
+|Value domain non-conformance rate |0 % .6+.^|Quality controls and data editing can be performed automatically
 |7.1.5 a|
 Logical consistency /
-
 Format consistency
 
-|Physical structure conflict rate |0 % |
-|7.1.6 a|
+|Physical structure conflict rate |0 %
+.4+|7.1.6 .4+|
 Logical consistency /
-
 Topological consistency
 
-|Rate of missing connections due to undershoots |0 % |
-| | |Rate of missing connections due to overshoots |0 % |
-| | |Rate of invalid self-intersect errors |0 % |
-| | |Rate of invalid self-overlap errors |0 % |
-|7.1.7 a|
+|Rate of missing connections due to undershoots |0 % 
+|Rate of missing connections due to overshoots |0 % 
+|Rate of invalid self-intersect errors |0 % 
+|Rate of invalid self-overlap errors |0 % 
+.3+|7.1.7 .3+|
 Positional accuracy /
-
 Absolute or external accuracy
 
 |Root mean square error of planimetry a|
@@ -4009,7 +3999,7 @@ _Horizontal (m):_
 Max RMSE~H~ = E / 10000
 
 |
-| | |Root mean square error a|
+|Root mean square error a|
 *Vector / TIN objects*
 
 _Vertical (m):_
@@ -4019,7 +4009,7 @@ Max RMSE~v~ = V~int~ / 6
 NOTE V~int~ can be approximated by E / 1000.
 
 |In low reliability areas (e.g. wooded areas) the maximum error can be increased by 50%
-| | |Root mean square error a|
+|Root mean square error a|
 *Grid*
 
 _Vertical (m):_
@@ -4029,7 +4019,6 @@ Max RMSE~v~ = GSD / 3
 |
 |7.1.8 a|
 Positional accuracy /
-
 Gridded data position accuracy
 
 |Root mean square error of planimetry a|
