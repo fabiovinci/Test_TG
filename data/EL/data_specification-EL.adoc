@@ -3691,11 +3691,10 @@ Defined as "_Description of the measure_".
 * 107. Result (type DQ_Result):
 +
 Defined as "_Value (or set of values) obtained from applying a data quality measure or the outcome of evaluating the obtained value (or set of values) against a specified acceptable conformance quality level_".
-+
 Specifically, the tolerance must be informed within the two elements, together with the result of the data quality measure:
-
 ** 130. specification
 ** 131. explanation
+
 +
 from DQ_Result class.
 
