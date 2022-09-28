@@ -3673,16 +3673,13 @@ spatial object type: _ContourLine_, _BreakLine /_
 data set / data set series
 
 |Parameter a|
-Name
-
+Name:
 _Connectivity tolerance_
 
-Definition
-
+Definition:
 Search distance from the end of a dangling line.
 
-Description
-
+Description:
 This parameter is specific for each data provider's dataset and must be reported as metadata in order to evaluate this data quality measure.
 
 The tolerance must be specified by the data provider using the following elements of the DQ_TopologicalConsistency metadata element for the current measure:
@@ -3697,10 +3694,9 @@ Defined as "_Value (or set of values) obtained from applying a data quality meas
 +
 Specifically, the tolerance must be informed within the two elements, together with the result of the data quality measure:
 
-
-* 130. specification
-* 131. explanation
-
+** 130. specification
+** 131. explanation
++
 from DQ_Result class.
 
 Note: Metadata elements defined in ISO 19115.
