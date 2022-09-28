@@ -3755,8 +3755,9 @@ data set / data set series
 |Example a|
 Example – Self-intersection of a contour line instance.
 
-*Key*
+image::./media/image716c.png[image, align=center]
 
+*Key*
 *1* Illegal intersection (loop)
 
 |Measure identifier a|
