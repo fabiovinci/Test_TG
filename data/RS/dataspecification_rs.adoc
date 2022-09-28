@@ -1009,7 +1009,8 @@ c) [underline]#Test Method#: Check that each instance of a spatial object type i
 
 NOTE See Section 5.4.1 of this document.
 
-*A.6 Information Accessibility Conformance Class*
+[discrete]
+=== *A.6 Information Accessibility Conformance Class*
 
 *A.6.2 CRS publication test*
 
