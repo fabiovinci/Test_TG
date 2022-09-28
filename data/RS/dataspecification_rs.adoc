@@ -1030,7 +1030,8 @@ c) [underline]#Test method#: Check whether the register with the identifiers of 
 
 NOTE Further technical information is given in section 6 of this document.
 
-*A.9 Technical Guideline Conformance Class*
+[discrete]
+=== *A.9 Technical Guideline Conformance Class*
 
 *A.9.2 CRS http URI test*
 
