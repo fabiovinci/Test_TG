@@ -749,15 +749,14 @@ These Technical Guidelines propose to use the http URIs provided by the Open Geo
 
 [TIP]
 ====
-*TG Requirement 1* The identifiers listed in Table 1 shall be used for referring to the coordinate reference systems used in a data set.
+*TG Requirement 1*
+The identifiers listed in Table 1 shall be used for referring to the coordinate reference systems used in a data set.
 ====
 
 NOTE CRS identifiers may be used e.g. in:
 
 * data encoding,
-
 * data set and service metadata, and
-
 * requests to INSPIRE network services.
 
 [.text-center]
@@ -768,81 +767,67 @@ NOTE CRS identifiers may be used e.g. in:
 |*Coordinate reference system* |*Short name* |*http URI identifier*
 a|
 3D Cartesian in ETRS89
-
 (X,Y,Z)
 
 |ETRS89-XYZ |_http://www.opengis.net/def/crs/EPSG/0/4936_
 a|
 3D geodetic in ETRS89 on GRS80
-
 (Latitude, Longitude, Ellipsoidal height)
 
 |ETRS89-GRS80h |_http://www.opengis.net/def/crs/EPSG/0/4937_
 a|
 2D geodetic in ETRS89 on GRS80
-
 (Latitude, Longitude)
 
 |ETRS89-GRS80 |_http://www.opengis.net/def/crs/EPSG/0/4258_
 a|
 2D LAEA projection in ETRS89
-
 on GRS80
-
 (Y,X)
 
 |ETRS89-LAEA |_http://www.opengis.net/def/crs/EPSG/0/3035_
 a|
 2D LCC projection in ETRS89 on GRS80
-
 (N,E)
 
 |ETRS89-LCC |_http://www.opengis.net/def/crs/EPSG/0/3034_
 a|
 2D TM projection in ETRS89 on GRS80, zone 26N (30°W to 24°W)
-
 (N,E)
 
 |ETRS89-TM26N |_http://www.opengis.net/def/crs/EPSG/0/3038_
 a|
 2D TM projection in ETRS89 on GRS80, zone 27N (24°W to 18°W)
-
 (N,E)
 
 |ETRS89-TM27N |_http://www.opengis.net/def/crs/EPSG/0/3039_
 a|
 2D TM projection in ETRS89 on GRS80, zone 28N (18°W to 12°W)
-
 (N,E)
 
 |ETRS89-TM28N |_http://www.opengis.net/def/crs/EPSG/0/3040_
 a|
 2D TM projection in ETRS89 on GRS80, zone 29N (12°W to 6°W)
-
 (N,E)
 
 |ETRS89-TM29N |_http://www.opengis.net/def/crs/EPSG/0/3041_
 a|
 2D TM projection in ETRS89 on GRS80, zone 30N (6°W to 0°)
-
 (N,E)
 
 |ETRS89-TM30N |_http://www.opengis.net/def/crs/EPSG/0/3042_
 a|
 2D TM projection in ETRS89 on GRS80, zone 31N (0° to 6°E)
-
 (N,E)
 
 |ETRS89-TM31N |_http://www.opengis.net/def/crs/EPSG/0/3043_
 a|
 2D TM projection in ETRS89 on GRS80, zone 32N (6°E to 12°E)
-
 (N,E)
 
 |ETRS89-TM32N |_http://www.opengis.net/def/crs/EPSG/0/3044_
 a|
 2D TM projection in ETRS89 on GRS80, zone 33N (12°E to 18°E)
-
 (N,E)
 
 |ETRS89-TM33N |_http://www.opengis.net/def/crs/EPSG/0/3045_
@@ -854,56 +839,47 @@ a|
 |ETRS89-TM34N |_http://www.opengis.net/def/crs/EPSG/0/3046_
 a|
 2D TM projection in ETRS89 on GRS80, zone 35N (24°E to 30°E)
-
 (N,E)
 
 |ETRS89-TM35N |_http://www.opengis.net/def/crs/EPSG/0/3047_
 a|
 2D TM projection in ETRS89 on GRS80, zone 36N (30°E to 36°E)
-
 (N,E)
 
 |ETRS89-TM36N |_http://www.opengis.net/def/crs/EPSG/0/3048_
 |2D TM projection in ETRS89 on GRS80, zone 37N (36°E to 42°E) |ETRS89-TM37N |_http://www.opengis.net/def/crs/EPSG/0/3049_
 a|
 2D TM projection in ETRS89 on GRS80, zone 38N (42°E to 48°E)
-
 (N,E)
 
 |ETRS89-TM38N |_http://www.opengis.net/def/crs/EPSG/0/3050_
 a|
 2D TM projection in ETRS89 on GRS80, zone 39N (48°E to 54°E)
-
 (N,E)
 
 |ETRS89-TM39N |_http://www.opengis.net/def/crs/EPSG/0/3051_
 a|
 Height in EVRS
-
 (H)
 
 |EVRS |_http://www.opengis.net/def/crs/EPSG/0/5730_
 a|
 Depth referred to LAT
-
 (D)
 
 |LAT |_http://www.opengis.net/def/crs/EPSG/0/5861_
 a|
 Depth referred to MSL
-
 (D)
 
 |MSL |_http://www.opengis.net/def/crs/EPSG/0/5715_
 a|
 Pressure coordinate in the free atmosphere
-
 (P)
 
 |ISA |_<http URI Identifier>_
 a|
 3D compound: 2D geodetic in ETRS89 on GRS80, and EVRS height
-
 (Latitude, Longitude, H)
 
 |ETRS89-GRS80-EVRS |_http://www.opengis.net/def/crs/EPSG/0/7409_
@@ -934,16 +910,10 @@ EXAMPLE When both ETRS89-GRS80 and EVRS the CRS used the identifier shall be ETR
 [EUR 19575 EN] Spatial Reference Systems in Europe – EUR Report 19575 EN. Proceedings of the "Spatial Reference Systems in Europe" workshop, Marne-La Vallee, 29-30 November 1999
 
 [EUR 20120 EN] Map Projections for Europe – EUR Report 20120 EN. Proceedings of the "Map Projections for Europe" workshop, Marne-La Vallee, 14-15 December 2000
-
-
 _http://www.ec-gis.org/sdi/publist/pdfs/annoni-etal2003eur.pdf_
 
-
 [EUR 21494 EN] European Reference Grids – EUR Report 21494 EN. Proceedings of the "European Reference Grids" workshop, Ispra, 27-29 October 2003
-
-
 _http://www.ec-gis.org/sdi/publist/pdfs/annoni2005eurgrids.pdf_
-
 
 [EUREF] _www.euref.eu_ or _www.euref-iag.net_ – EUREF website for information on the ETRS89 and the EVRS
 
@@ -964,16 +934,10 @@ _http://www.ec-gis.org/sdi/publist/pdfs/annoni2005eurgrids.pdf_
 [ISO 19135] EN ISO 19135:2007 Geographic information – Procedures for item registration (ISO 19135:2005)
 
 [GRIB] (GRIdded Binary) – WMO operational open data standard for multiple-dimensioned array data, exchanged daily by WMO, ICAO and IOC,
-
-
 _http://www.wmo.ch/pages/prog/www/WMOCodes/OperationalCodes.html_
 
-
 [NetCDF] (Network Common Data Form) - Data Exchange Standard of the Climate and Forecasting community,
-
-
 _http://www.unidata.ucar.edu/software/netcdf/_
-
 
 [Snyder, 1987] Map Projections – A Working Manual – Snyder, John P., Professional Paper 1395, U.S. Geological Survey, 1987
 
@@ -981,6 +945,7 @@ _http://www.unidata.ucar.edu/software/netcdf/_
 
 [WMO] _www.wmo.int_ – World Meteorological Organization
 
+<<<
 [appendix]
 == Abstract Test Suite - (normative) 
  
