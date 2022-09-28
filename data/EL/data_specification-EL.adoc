@@ -6179,7 +6179,7 @@ image::./media/image34.jpeg[image]
 *Figure 31 – Usage of Other Well-Defined Styles on Contour Lines (Scale: 1:3 000)*
 
 <<<
-:sectnums!:
+
 == Bibliography
 
 [BAG V1] Open Navigation Surface - Format Specification Document - Description of Bathymetric Attributed Grid Object (BAG), Version 1.0.0, 2006-04-07 - Open Navigation Surface Working Group (ONSWG)
@@ -6238,17 +6238,16 @@ image::./media/image34.jpeg[image]
 
 [TIFF] TIFF format specification, Revision 6.0, Final June 1992
 
-:sectnums:
-
 <<<
+:sectnums:
 
 [appendix]
 == Abstract Test Suite (normative)
 
-|====
+|===
 |*Disclaimer*
 While this Annex refers to the Commission Regulation (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services, it does not replace the legal act or any part of it.
-|====
+|===
 
 The objective of the Abstract Test Suite (ATS) included in this Annex is to help the conformance testing process. It includes a set of tests to be applied on a data set to evaluate whether it fulfils the requirements included in this data specification and the corresponding parts of Commission Regulation No 1089/2010 (implementing rule as regards interoperability of spatial datasets and services, further referred to as ISDSS Regulation). This is to help data providers in declaring the conformity of a data set to the "degree of conformity, with implementing rules adopted under Article 7(1) of Directive 2007/2/EC", which is required to be provided in the data set metadata according to Commission Regulation (EC) No 2008/1205 (the Metadata Regulation).
 
