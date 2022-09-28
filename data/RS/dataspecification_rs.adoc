@@ -350,7 +350,7 @@ In contrast, the Technical Guidelines define _how_ Member States might implement
 image::./media/image4.png[image,width=603,height=375, align=center]
 
 [.text-center]
-*Figure 1* - Relationship between INSPIRE Implementing Rules and Technical Guidelines
+*Figure 1 - Relationship between INSPIRE Implementing Rules and Technical Guidelines*
 
 
 ==== Requirements
@@ -387,7 +387,7 @@ NOTE 2 In addition to the requirements included in the Implementing Rules on int
 
 In addition to IR and TG requirements, these Technical Guidelines may also include a number of recommendations for facilitating implementation or for further and coherent development of an interoperable infrastructure.
 
-[TIP]
+[NOTE]
 ====
 *Recommendation X* Recommendations are shown using this style.
 ====
@@ -410,7 +410,6 @@ NOTE For more information on specification scopes, see [ISO 19131:2007], clause 
 == Identification information
 
 These Technical Guidelines are identified by the following URI:
-
 http://inspire.ec.europa.eu/tg/rs/3.2
 
 NOTE ISO 19131 suggests further identification information to be included in this section, e.g. the title, abstract or spatial representation type. The proposed items are already described in the document metadata, executive summary, overview description (section 2) and descriptions of the application schemas (section 5). In order to avoid redundancy, they are not repeated here.
@@ -573,22 +572,27 @@ The Transverse Mercator (ETRS89-TMzn) is identical to the Universal Transverse M
 
 [NOTE]
 ====
-*Recommendation 1* For pan-European spatial analysis and reporting, where true area representation is required, the ETRS89-LAEA is recommended
+*Recommendation 1*
+For pan-European spatial analysis and reporting, where true area representation is required, the ETRS89-LAEA is recommended
 ====
 
 [NOTE]
 ====
-*Recommendation 2* For conformal pan-European mapping at scales smaller than or equal to 1:500,000, the ETRS89-LCC is recommended
+*Recommendation 2*
+For conformal pan-European mapping at scales smaller than or equal to 1:500,000, the ETRS89-LCC is recommended
 ====
 
 [NOTE]
 ====
-*Recommendation 3* For conformal pan-European mapping at scales larger than 1:500,000, the Transverse Mercator ETRS89-TMzn is recommended
+*Recommendation 3*
+For conformal pan-European mapping at scales larger than 1:500,000, the Transverse Mercator ETRS89-TMzn is recommended
+====
 
 [NOTE]
 ====
-*Recommendation 4* It is recommended that the projections referred in section 1.3.2 of Annex II of Commission Regulation (EU) No 1089/2010) are available in INSPIRE transformation services.
-
+*Recommendation 4*
+It is recommended that the projections referred in section 1.3.2 of Annex II of Commission Regulation (EU) No 1089/2010) are available in INSPIRE transformation services.
+====
 
 Users may benefit of INSPIRE download and transformation services to get and re-project datasets according their aims. Moreover, different INSPIRE themes or applications where INSPIRE compliant data is integrated should use appropriate map projections. This is especially important when analysis is being done in large scales.
 
