@@ -3836,14 +3836,11 @@ yields to the linear root mean square error of planimetry RMSEP = _σ_
 
 |Evaluation scope a|
 spatial object: _SpotElevation, ContourLine, BreakLine_ /
-
 spatial object type: _SpotElevation, ContourLine, BreakLine_ /
-
 data set / data set series
 
 |Reporting scope a|
 spatial object type: _SpotElevation, ContourLine, BreakLine_ /
-
 data set / data set series
 
 |Parameter |-
@@ -3879,16 +3876,12 @@ yields to the linear root mean square error RMSE = _σ~z~_.
 
 |Evaluation scope a|
 spatial object: _SpotElevation, ContourLine, BreakLine_ /
-
 spatial object type: _SpotElevation, ContourLine, BreakLine, ElevationGridCoverage_ /
-
 data set / data set series
 
 |Reporting scope a|
 spatial object: _ElevationGridCoverage_ /
-
 spatial object type: _SpotElevation, ContourLine, BreakLine, ElevationGridCoverage_ /
-
 data set / data set series
 
 |Parameter |-
@@ -3924,7 +3917,7 @@ The true values of the observed coordinates _X_ and _Y_ are known as _x~t~_ and 
 
 From this the estimator
 
-image::./media/image27.emf[image]
+image::./media/image27.png[image]
 
 yields to the linear root mean square error of planimetry RMSEP = _σ_
 
