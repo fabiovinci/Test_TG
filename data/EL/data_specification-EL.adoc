@@ -5072,83 +5072,84 @@ EXAMPLE The following is a complete RectifiedGridCoverage instance (taken from [
 ----
 <?xml version="1.0" encoding="UTF-8" ?> 
 <gmlcov:RectifiedGridCoverage 
-xmlns="http://www.w3.org/2001/XMLSchema" 
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xmlns:xlink="http://www.w3.org/1999/xlink" 
-xmlns:gmlcov="http://www.opengis.net/gmlcov/1.0**"** 
-xmlns:gml="http://www.opengis.net/gml/3.2**"** 
-xsi:schemaLocation= 
-"http://www.opengis.net/gmlcov/1.0 http://schemas.opengis.net/gmlcov/1.0/gmlcovAll.xsd" 
-gml:id="C001"> 
-<gml:boundedBy> 
-<gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" 
-uomLabels="deg deg" srsDimension="*2*"> 
-<gml:lowerCorner>1 1</gml:lowerCorner> 
-<gml:upperCorner>3 3</gml:upperCorner> 
-</gml:Envelope> 
-</gml:boundedBy>
-<gml:domainSet> 
-<gml:RectifiedGrid gml:id="RG001_C001" 
-srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long" 
-uomLabels="deg deg" dimension="2"> 
-<gml:limits> 
-<gml:GridEnvelope> 
-<gml:low>0 0</gml:low> 
-<gml:high>9999 9999</gml:high> 
-</gml:GridEnvelope> 
-</gml:limits> 
-<gml:axisLabels>Lat Long</gml:axisLabels> 
-<gml:origin> 
-<gml:Point gml:id="P001_C001" srsName="http://www.opengis.net/def/crs/EPSG/0/4326"> 
-<gml:pos>99. 99.9</gml:pos> 
-</gml:Point> 
-</gml:origin> 
-<gml:offsetVector>1 0</gml:offsetVector> 
-<gml:offsetVector>0 1</gml:offsetVector> 
-</gml:RectifiedGrid> 
-</gml:domainSet> 
-<rangeType>
-<swe:DataRecord> 
-<swe:field name="white"> 
-<swe:Quantity definition="http://opengis.net/def/property/OGC/0/Radiance"> 
-<gml:description>Panchromatic</gml:description> 
-<gml:name>White</gml:name> 
-<swe:nilValues> 
-<swe:nilValue reason="http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange"> 
-0 
-</swe:nilValue> 
-<swe:nilValue reason="http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange"> 
-255** 
-**</swe:nilValue> 
-</swe:nilValues> 
-<swe:uom code="W/cm2"/> 
-<swe:constraint> 
-<swe:AllowedValues> 
-<swe:interval>0 255</swe:interval> 
-<swe:significantFigures>3</swe:significantFigures> 
-</swe:AllowedValues> 
-</swe:constraint> 
-</swe:Quantity> 
-</swe:field>
-</swe:DataRecord> 
-</rangeType> 
-<gml:coverageFunction> 
-<gml:GridFunction> 
-<gml:sequenceRule axisOrder="1 2">Linear</gml:sequenceRule> 
-<gml:startPoint>0 0</gml:startPoint> 
-</gml:GridFunction> 
-</gml:coverageFunction> 
-<gml:rangeSet> 
-<DataBlock> 
-<rangeParameters/> 
-<tupleList> 
-1 2 3 4 5 
-6 7 8 9 10 
-11 12 13 14 15 
-</tupleList> 
-</DataBlock> 
-</gml:rangeSet> 
+    xmlns="http://www.w3.org/2001/XMLSchema" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    xmlns:gmlcov=”http://www.opengis.net/gmlcov/1.0”
+    xmlns:gml=”http://www.opengis.net/gml/3.2”
+    xsi:schemaLocation=
+        ”http://www.opengis.net/gmlcov/1.0 http://schemas.opengis.net/gmlcov/1.0/gmlcovAll.xsd"
+    gml:id="C001">
+    <gml:boundedBy>
+        <gml:Envelope srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long"
+            uomLabels="deg deg" srsDimension="2">
+            <gml:lowerCorner>1 1</gml:lowerCorner>
+            <gml:upperCorner>3 3</gml:upperCorner> 
+        </gml:Envelope>
+    </gml:boundedBy>
+    <gml:domainSet>
+        <gml:RectifiedGrid gml:id="RG001_C001"
+            srsName="http://www.opengis.net/def/crs/EPSG/0/4326" axisLabels="Lat Long"
+           uomLabels="deg deg" dimension="2">
+            <gml:limits>
+                <gml:GridEnvelope>
+                    <gml:low>0 0</gml:low> 
+                    <gml:high>9999 9999</gml:high> 
+                </gml:GridEnvelope>
+            </gml:limits>
+            <gml:axisLabels>Lat Long</gml:axisLabels> 
+            <gml:origin>
+                <gml:Point gml:id="P001_C001" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+                    <gml:pos>99. 99.9</gml:pos> 
+                </gml:Point>
+            </gml:origin>
+            <gml:offsetVector>1 0</gml:offsetVector> 
+            <gml:offsetVector>0 1</gml:offsetVector> 
+        </gml:RectifiedGrid>
+    </gml:domainSet>
+    <rangeType>
+       <swe:DataRecord>
+            <swe:field name="white">
+               <swe:Quantity definition="http://opengis.net/def/property/OGC/0/Radiance">
+                   <gml:description>Panchromatic</gml:description>
+                   <gml:name>White</gml:name>
+                   <swe:nilValues>
+                       <swe:nilValue reason="http://www.opengis.net/def/nil/OGC/0/BelowDetectionRange">
+                           0
+                       </swe:nilValue>
+                       <swe:nilValue reason="http://www.opengis.net/def/nil/OGC/0/AboveDetectionRange">
+                           255
+                       </swe:nilValue>
+                   </swe:nilValues>    
+                   <swe:uom code="W/cm2"/>
+                   <swe:constraint>
+                       <swe:AllowedValues>
+                           <swe:interval>0 255</swe:interval>
+                           <swe:significantFigures>3</swe:significantFigures>
+                       </swe:AllowedValues>
+                   </swe:constraint>
+               </swe:Quantity>
+            </swe:field>
+       </swe:DataRecord>
+    </rangeType>
+    <gml:coverageFunction>
+        <gml:GridFunction>
+            <gml:sequenceRule axisOrder="+1 +2">Linear</gml:sequenceRule> 
+            <gml:startPoint>0 0</gml:startPoint> 
+        </gml:GridFunction>
+    </gml:coverageFunction>
+    <gml:rangeSet>
+        <DataBlock>
+            <rangeParameters/>
+            <tupleList>
+                1  2  3  4  5
+                6  7  8  9  10
+                11 12 13 14 15
+            </tupleList>
+        </DataBlock>
+    </gml:rangeSet>
 </gmlcov:RectifiedGridCoverage>
+
 ----
 
 ====== Encoding rules used
@@ -5271,7 +5272,7 @@ The recommended relation between grid spacing of the DEM and its related RMSE~v~
 * Grid spacing not longer than (approximately) 20 times RMSE~v~ and not smaller than 3 times RMSE~v~, for flat and undulating terrain.
 * Grid spacing not longer than (approximately) 10 times RMSE~v~ and not smaller than 3 times RMSE~v~, for hilly and mountainous terrain.
 
-Table 7 - Recommended grid spacing in relation to vertical accuracy (RMSE~v~)
+*Table 7 - Recommended grid spacing in relation to vertical accuracy (RMSE~v~)*
 
 [cols=",",options="header",]
 |===
@@ -5339,33 +5340,33 @@ As a general rule for any map scale, the normal contour vertical interval in met
 
 *Table 8– Vertical interval of contour lines for different levels of detail (map scales)*
 
-[cols=",",options="header",]
+[cols=","]
 |===
-|*_Topographic map 1:10 000 (1:5 000)_* |
+2+|*_Topographic map 1:10 000 (1:5 000)_* 
 |1.25 m |terrain: flat (with slopes < 2 degrees) und undulating (with slopes 2 - 6 degrees)
 |2.5 m |terrain: hilly (with slopes 6 – 12 degrees)
 |5 m |terrain: mountainous (with slopes > 12 degrees)
-|*_Topographic map 1:25 000_* |
+2+|*_Topographic map 1:25 000_* 
 |1.25 m |terrain: flat (with slopes < 2 degrees)
 |2.5 m |terrain: undulating (with slopes 2 - 6 degrees)
 |5 m |terrain: hilly (with slopes 6 – 12 degrees)
 |10 m |terrain: mountainous (with slopes > 12 degrees)
-|*_Topographic map 1:50 000_* |
+2+|*_Topographic map 1:50 000_* 
 |2.5 m |terrain: flat (with slopes < 2 degrees)
 |5 m |terrain: undulating (with slopes 2 - 6 degrees)
 |10 m |terrain: hilly (with slopes 6 – 12 degrees)
 |20 m |terrain: mountainous (with slopes > 12 degrees)
-|*_Topographic map 1:100 000_* |
+2+|*_Topographic map 1:100 000_* 
 |10 m |terrain: flat (with slopes < 2 degrees)
 |20 m |terrain: undulating (with slopes 2 - 6 degrees)
 |20 m |terrain: hilly (with slopes 6 – 12 degrees)
-|40 m |terrain: mountainous (with slopes > 12 degrees)
-|*_Topographic map 1:200 000_* |
+2+|40 m |terrain: mountainous (with slopes > 12 degrees)
+|*_Topographic map 1:200 000_* 
 |20 m |terrain: flat (with slopes < 2 degrees)
 |20 m |terrain: undulating (with slopes 2 - 6 degrees)
 |40 m |terrain: hilly (with slopes 6 – 12 degrees)
 |40 m |terrain: mountainous (with slopes > 12 degrees)
-|*_Topographic map 1:500 000_* |
+2+|*_Topographic map 1:500 000_* 
 |20 m |terrain: flat (with slopes < 2 degrees)
 |50 m |terrain: undulating (with slopes 2 - 6 degrees)
 |100 m |terrain: hilly (with slopes 6 – 12 degrees)
@@ -5437,13 +5438,14 @@ _Article 14_
 *Portrayal*
 
 1. For the portrayal of spatial data sets using a view network service as specified in Commission Regulation No 976/2009 (footnote:[OJ L 274, 20.10.2009, p. 9.]), the following shall be available:
-
++
 (a) the layers specified in Annex II for the theme or themes the data set is related to;
 
 (b) for each layer at least a default portrayal style, with as a minimum an associated title and a unique identifier.
 
 2. For each layer, Annex II defines the following:
 
++
 (a) a human readable title of the layer to be used for display in user interface;
 
 (b) the spatial object type(s), or sub-set thereof, that constitute(s) the content of the layer.
