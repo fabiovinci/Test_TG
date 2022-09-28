@@ -5477,7 +5477,6 @@ In section 11.3, further styles can be specified that represent examples of styl
 *Recommendation 58*
 
 In addition, it is recommended that, where applicable, INSPIRE view services also support the styles defined in section 11.3.
-
 ====
 
 Where XML fragments are used in the following sections, the following namespace prefixes apply:
