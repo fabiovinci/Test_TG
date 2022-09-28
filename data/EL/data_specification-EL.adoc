@@ -3794,15 +3794,15 @@ data set / data set series
 |Example a|
 Example – Self-overlap of a contour line instance.
 
+image::./media/image716d.png[image, align=center]
+
 *Key*
-
 * Vertices [digitized order]
-
++
 *1* Illegal overlap (kickback)
 
 |Measure identifier a|
 This measure is explicitly defined in this data specification.
-
 It is derived from DQ measure 27 (ISO/DIS 19157:2012).
 |===
 
