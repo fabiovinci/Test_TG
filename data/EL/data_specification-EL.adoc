@@ -4024,10 +4024,9 @@ NOTE 1 Target results on positional accuracy measures are considered as the maxi
 
 NOTE 2 The following notation is used in Table 11:
 
-+
-E Denominator of the intended scale of mapping.
-V~int~ Normal contour line vertical interval.
-GSD Ground sample distance
+* E Denominator of the intended scale of mapping.
+* V~int~ Normal contour line vertical interval.
+* GSD Ground sample distance
 
 Elevation data provided through INSPIRE should have the best spatial, temporal and thematic accuracy available. Relevant use-cases like modelling and control of floods especially pose strict spatial accuracy requirements to measures in the vertical dimension, which are often fulfilled by using accurate data capture methods (e.g. LIDAR data).
 
