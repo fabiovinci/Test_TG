@@ -1,9 +1,9 @@
 // Admonition icons:
-// TG Requirement
+// IR Requirement
 :important-caption: 📕
-// TG Recommendation
+// TG Requirement
 :tip-caption: 📒
-// Conformance class
+// Recommendation
 :note-caption: 📘
 
 // TOC placement using macro (manual)
@@ -30,7 +30,7 @@ image:./media/image3.png[image,width=93,height=93, align=center] **INSPIRE** *In
 [discrete]
 = D2.8.I.1 Data Specification on Coordinate Reference Systems – Technical Guidelines
 
-[cols=",",]
+[width="100%",cols="17%,83%"]
 |===
 |*Title* |D2.8.I.1 Data Specification on _Coordinate Reference Systems_ – Technical Guidelines
 |*Creator* |INSPIRE Thematic Working Group Coordinate Reference Systems & Geographical Grid Systems
@@ -81,8 +81,8 @@ In order to distinguish the INSPIRE spatial data themes from the spatial object 
 
 Neither the European Commission nor any person acting on behalf of the Commission is responsible for the use which might be made of this publication.
 
-*Interoperability of Spatial Data Sets and Services – 
-General Executive Summary*
+[discrete]
+== Interoperability of Spatial Data Sets and Services – General Executive Summary
 
 The challenges regarding the lack of availability, quality, organisation, accessibility, and sharing of spatial information are common to a large number of policies and activities and are experienced across the various levels of public authority in Europe. In order to solve these problems it is necessary to take measures of coordination between the users and providers of spatial information. The Directive 2007/2/EC of the European Parliament and of the Council adopted on 14 March 2007 aims at establishing an Infrastructure for Spatial Information in the European Community (INSPIRE) for environmental policies, or policies and activities that have an impact on the environment.
 
@@ -115,7 +115,8 @@ By listing a number of requirements and making the necessary recommendations, th
 
 In addition to providing a basis for the interoperability of spatial data in INSPIRE, the data specification development framework and the thematic data specifications can be reused in other environments at local, regional, national and global level contributing to improvements in the coherence and interoperability of data in spatial data infrastructures.
 
-*Coordinate Reference Systems – Executive Summary*
+[discrete]
+== Coordinate Reference Systems – Executive Summary
 
 _Coordinate reference systems_ are included in Annex I, which means that they are considered as reference data, i.e. data that constitute the spatial frame for linking and/or pointing to other information that belong to specific thematic fields as defined in the INSPIRE Annexes II and III.
 
@@ -153,28 +154,26 @@ For the rendering of spatial information for INSPIRE View Services, and in case 
 
 This document contains also the identifiers for the different types of coordinate reference systems that shall be used.
 
-*Acknowledgements*
+[discrete]
+== Acknowledgements
 
 Many individuals and organisations have contributed to the development of these Guidelines.
 
 The Thematic Working Group Coordinate Reference Systems (TWG-RS) included:
-
 João Torres (TWG Facilitator), Vida Bitenc (TWG Editor), Alessandro Caporali, Paul Crudace, Lars Engberg, Bruno Garayt, Heinz Habrich (regular members), Gil Ross Leendert Dorst, Jordi Escriu (external experts). Freddy Fierens (European Commission contact point).
 
 Other contributors to the INSPIRE data specifications are the Drafting Team Data Specifications, the JRC Data Specifications Team and the INSPIRE stakeholders - Spatial Data Interested Communities (SDICs) and Legally Mandated Organisations (LMOs).
 
 *Contact information*
-
 Maria Vanda Nunes de Lima & Michael Lutz
 European Commission Joint Research Centre (JRC)
 Institute for Environment and Sustainability
 Unit H06: Digital Earth and Reference Data
-
 _http://inspire.ec.europa.eu/index.cfm/pageid/2_
 
 <<<
 [discrete]
-= Table of Contents
+== Table of Contents
 toc::[]
 
 <<<
@@ -208,7 +207,7 @@ This specification establishes:
 [loweralpha]
 . The geodetic datums and coordinate reference systems to be used when making spatial data sets available for INSPIRE, unless otherwise required for data of a specific theme.
 
-
++
 Particularly, the following ones are adopted:
 
 
