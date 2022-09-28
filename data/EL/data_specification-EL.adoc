@@ -7442,7 +7442,7 @@ Files in LAS-format
 |
 Documentation
 |
-|Data source: DTM 2 m grid |
+|*Data source: DTM 2 m grid* |
 |
 Description
 |
@@ -7550,7 +7550,7 @@ As additional information, in the development of this specification the followin
 
 INSPIRE Application Schema 'ElevationVectorElements'
 
-[cols=",",options="header",]
+[cols="",options="header",]
 |===
 |*Code List*
 |_BreakLineTypeValue_
@@ -7736,7 +7736,7 @@ _Annex II, Section 2.2.2_
 
 The geographical grid establishes multiple levels of resolution and follows a structure analogue to DTED, dividing the world into different zones in latitude, as shown in the following table:
 
-Table 12– Latitudinal zones for the common Grid_ETRS89-GRS80zn
+*Table 12– Latitudinal zones for the common Grid_ETRS89-GRS80zn*
 
 [cols=",,",options="header",]
 |===
@@ -7804,70 +7804,9 @@ _Annex II, Section 2.2.2_
 
 NOTE Table 13 in this document
 
-Table 13 - Common Grid_ETRS89-GRS80zn: Latitude spacing (resolution level) and longitude spacing for each zone
+*Table 13 - Common Grid_ETRS89-GRS80zn: Latitude spacing (resolution level) and longitude spacing for each zone*
 
-
-[cols=",,,,,,,",options="header",]
-|===
-|*Resolution Levels* a|
-*LATITUDE SPACING*
-
-(Arc seconds)
-
-|*LONGITUDE SPACING* (Arc seconds) |*Cell Size* | | | |
-| | a|
-*Zone 1*
-
-(Lat. 0°–50°)
-
-a|
-*Zone 2*
-
-(Lat. 50°–70°)
-
-a|
-*Zone 3*
-
-(Lat. 70°–75°)
-
-a|
-*Zone 4*
-
-(Lat. 75°–80°)
-
-a|
-*Zone 5*
-
-(Lat. 80°–90°)
-
-|
-|*LEVEL 0* |*3600* |*3600* |*7200* |*10800* |*14400* |*21600* |*1D*
-|*LEVEL 1* |*3000* |*3000* |*6000* |*9000* |*12000* |*18000* |*50M*
-|*LEVEL 2* |*1800* |*1800* |*3600* |*5400* |*7200* |*10800* |*30M*
-|*LEVEL 3* |*1200* |*1200* |*2400* |*3600* |*4800* |*7200* |*20M*
-|*LEVEL 4* |*600* |*600* |*1200* |*1800* |*2400* |*3600* |*10M*
-|*LEVEL 5* |*300* |*300* |*600* |*900* |*1200* |*1800* |*5M*
-|*LEVEL 6* |*120* |*120* |*240* |*360* |*480* |*720* |*2M*
-|*LEVEL 7* |*60* |*60* |*120* |*180* |*240* |*360* |*1M*
-|*LEVEL 8* |*30* |*30* |*60* |*90* |*120* |*180* |*30S*
-|*LEVEL 9* |*15* |*15* |*30* |*45* |*60* |*90* |*15S*
-|*LEVEL 10* |*5* |*5* |*10* |*15* |*20* |*30* |*5S*
-|*LEVEL 11* |*3* |*3* |*6* |*9* |*12* |*18* |*3S*
-|*LEVEL 12* |*1,5* |*1,5* |*3* |*4,5* |*6* |*9* |*1500MS*
-|*LEVEL 13* |*1* |*1* |*2* |*3* |*4* |*6* |*1000MS*
-|*LEVEL 14* |*0,75* |*0,75* |*1,5* |*2,25* |*3* |*4,5* |*750MS*
-|*LEVEL 15* |*0,5* |*0,5* |*1* |*1,5* |*2* |*3* |*500MS*
-|*LEVEL 16* |*0,3* |*0,3* |*0,6* |*0,9* |*1,2* |*1,8* |*300MS*
-|*LEVEL 17* |*0,15* |*0,15* |*0,3* |*0,45* |*0,6* |*0,9* |*150MS*
-|*LEVEL 18* |*0,1* |*0,1* |*0,2* |*0,3* |*0,4* |*0,6* |*100MS*
-|*LEVEL 19* |*0,075* |*0,075* |*0,15* |*0,225* |*0,3* |*0,45* |*75MS*
-|*LEVEL 20* |*0,03* |*0,03* |*0,06* |*0,09* |*0,12* |*0,18* |*30MS*
-|*LEVEL 21* |*0,015* |*0,015* |*0,03* |*0,045* |*0,06* |*0,09* |*15MS*
-|*LEVEL 22* |*0,01* |*0,01* |*0,02* |*0,03* |*0,04* |*0,06* |*10MS*
-|*LEVEL 23* |*0,0075* |*0,0075* |*0,015* |*0,0225* |*0,03* |*0,045* |*7500MMS*
-|*LEVEL 24* |*0,003* |*0,003* |*0,006* |*0,009* |*0,012* |*0,018* |*3000MMS*
-|*FACTOR* |*-* |*1* |*2* |*3* |*4* |*6* |*-*
-|===
+image::./media/table13.png[image,width=398,height=273, align=center]
 
 The table above shows the latitude spacing (each resolution level), as well as the longitude spacing obtained by applying the factor parameter to each latitudinal zone.
 
