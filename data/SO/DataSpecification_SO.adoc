@@ -2538,3 +2538,968 @@ a|
 !===
 
 |===
+====== OtherHorizonNotationType
+
+[width="100%",cols="100%",options="header",]
+|===
+|*OtherHorizonNotationType*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !other horizon notation type
+!  !Definition: !classification of a horizon according to a specific classification system.
+!  !Description: !A code system denoting horizons in which the same dominant soil forming processes have been active in the same way. This code summarizes many observations of the soil description and gives an impression about the genetic processes that have formed the soil under observation.
+!  !Stereotypes: !«dataType»
+!===
+
+a|
+*Attribute: horizonNotation*
+
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !horizon notation
+!  !Value type: !OtherHorizonNotationTypeValue
+!  !Definition: !notation characterizing the soil horizon according to a specified classification system.
+!  !Description: !NOTE This is also called horizon designation value, horizon designation or horizon symbol. 
+EXAMPLE "ss" connotes slickensides in Soil taxonomy (FAO uses "I" for this). 
+The notation in several classification systems can be the same as well: "Ap" is a A horizon which has been ploughed (according German Bodenkundliche Kartieranleitung, 5th ed).
+!  !Multiplicity: !1
+!===
+
+a|
+*Attribute: isOriginalClassification*
+
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !is original classification
+!  !Value type: !Boolean
+!  !Definition: !Boolean value to indicate whether the specified horizon notation system was the original notation system to describe the horizon.
+!  !Description: !This is to indicate whether the horizon notation has been determined in the field (or for derived soil profiles during the original derivation), or has been adapted, changed or assigned on the basis of the original horizon description later. This might be relevant for data quality information.
+!  !Multiplicity: !1
+!===
+
+|===
+
+====== OtherSoilNameType
+
+[width="100%",cols="100%",options="header",]
+|===
+|*OtherSoilNameType*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !other soil name type
+!  !Definition: !an identification of the soil profile according to a specific classification scheme.
+!  !Description: !EXAMPLE Fluventic Haploxerept, according to Soil Taxonomy (USDA 2006).
+!  !Stereotypes: !«dataType»
+!===
+
+a|
+*Attribute: soilName*
+
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !soil name
+!  !Value type: !OtherSoilNameTypeValue
+!  !Definition: !name of the soil profile according to a specific classification scheme.
+!  !Description: !EXAMPLE Fluventic Haploxerept, according to Soil Taxonomy (USDA 2006).
+!  !Multiplicity: !1
+!===
+
+a|
+*Attribute: isOriginalClassification*
+
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !is original classification
+!  !Value type: !Boolean
+!  !Definition: !Boolean value to indicate whether the specified classification scheme was the original classification scheme to describe the profile.
+!  !Description: !This is to indicate whether the soil assignation has been determined in the field (or for - derived soil profiles during the original derivation process), or has been adapted, changed or re-assigned on the basis of the original soil description or assignation later. This might be relevant for data quality information.
+!  !Multiplicity: !1
+!===
+
+|===
+
+====== ParticleSizeFractionType
+
+[width="100%",cols="100%",options="header",]
+|===
+|*ParticleSizeFractionType*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !particle size fraction type
+!  !Definition: !share of the soil that is composed of mineral soil particles of the size within the size range specified.
+!  !Description: !Mineral part of the soil, fractioned on the basis of size (diameter), limits of the particles. It is the fine earth fraction. That is, the portion of the soil that passes through a 2 mm diameter sieve opening. 
+The grain (or particle) size distribution characterizes the soil mineral material, based on the share of each equivalent diameter class of the individual particles. 
+ 
+SOURCE1 NRCS Natural Resources Conservation Service, Soil survey laboratory information manual, Soil survey investigation report n.45 version 1.0 May 1995 pag. 11 
+SOURCE2 GLOSSARY OF SOIL SCIENCE TERMS
+!  !Stereotypes: !«dataType»
+!===
+
+a|
+*Attribute: fractionContent*
+
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !fraction content
+!  !Value type: !Number
+!  !Definition: !Percentage of the defined fraction.
+!  !Description: !SOURCE NRCS Natural Resources Conservation Service, Soil survey laboratory information manual, Soil survey investigation report n.45 version 1.0 May 1995 pag. 11 
+NOTE sum of the percentages of all the fractions should be equal to 100 percentage 
+EXAMPLE percentage value (weight/weight)
+!  !Multiplicity: !1
+!===
+
+a|
+*Attribute: fractionParticleSizeRange*
+
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !fraction particle size range
+!  !Value type: !RangeType
+!  !Definition: !upper and lower limit of the particle size of the defined fraction (expressed in µm)
+!  !Description: !SOURCE NRCS Natural Resources Conservation Service, Soil survey laboratory information manual, Soil survey investigation report n.45 version 1.0 May 1995 pag. 11 
+EXAMPLE upper limit = 63µm , lower limit =20µm
+!  !Multiplicity: !1
+!===
+
+|===
+
+====== RangeType
+
+[width="100%",cols="100%",options="header",]
+|===
+|*RangeType*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !range type
+!  !Definition: !A range value defined by an upper limit and a lower limit.
+!  !Stereotypes: !«dataType»
+!===
+
+a|
+*Attribute: upperValue*
+
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !upper value
+!  !Value type: !Real
+!  !Definition: !value defining the upper limit of a specific property.
+!  !Multiplicity: !0..1
+!===
+
+a|
+*Attribute: lowerValue*
+
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !lower value
+!  !Value type: !Real
+!  !Definition: !value defining the lower limit of a specific property.
+!  !Multiplicity: !0..1
+!===
+
+a|
+*Attribute: uom*
+
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !unit of measure
+!  !Value type: !UnitOfMeasure
+!  !Definition: !The unit of measure that is used to express the values of the range.
+!  !Multiplicity: !0..1
+!===
+
+a|
+*Constraint: intervalConstraint*
+
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Natural language: !at least one of the values shall not be empty
+!  !OCL: !inv: self.upperValue->notEmpty() or self.lowerValue->notEmpty()
+!===
+
+|===
+
+====== SoilThemeDescriptiveParameterType
+
+[width="100%",cols="100%",options="header",]
+|===
+|*SoilThemeDescriptiveParameterType*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !soil theme descriptive parameter type
+!  !Definition: !data type providing a descriptive property for the soil-related property (soil theme) that is represented by its associated SoilThemeCoverage.
+!  !Description: !this datatype exists of a name and if needed a unit of measurement. 
+EXAMPLE confidence level for each value in the SoilThemeCoverage (pH in the topsoil)
+!  !Stereotypes: !«dataType»
+!===
+
+a|
+*Attribute: soilThemeDescriptiveParameterName*
+
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !soil theme descriptive parameter name
+!  !Value type: !CharacterString
+!  !Definition: !Name of the parameter to provide extra information on the values of the related SoilThemeCoverage.
+!  !Description: !EXAMPLE soilThemeDescriptiveParameterName = confidence level. SoilThemeCoverage = coverage representing the pH of the topsoil
+!  !Multiplicity: !1
+!===
+
+a|
+*Attribute: uom*
+
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !unit of measure
+!  !Value type: !UnitOfMeasure
+!  !Definition: !the unit of measure that is used to express the soilThemeDescriptiveParameter.
+!  !Multiplicity: !0..1
+!===
+
+|===
+
+====== SoilThemeParameterType
+
+[width="100%",cols="100%",options="header",]
+|===
+|*SoilThemeParameterType*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !soil theme parameter type
+!  !Definition: !A soil-related property (soil theme) that is represented by this coverage. It is composed of a parameter name coming from a codelist SoilDerivedObjectParameterNameValue and a Unit of Measure used for expressing that parameter.
+!  !Description: !EXAMPLE Land irrigation suitability, pH in the topsoil, etc
+!  !Stereotypes: !«dataType»
+!===
+
+a|
+*Attribute: soilThemeParameterName*
+
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !soil theme parameter name
+!  !Value type: !SoilDerivedObjectParameterNameValue
+!  !Definition: !name of the parameter represented by the soilThemeCoverage.
+!  !Multiplicity: !1
+!===
+
+a|
+*Attribute: uom*
+
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !unit of measure
+!  !Value type: !UnitOfMeasure
+!  !Definition: !the unit of measure that is used to express the soilThemeParameter.
+!  !Description: !EXAMPLE cm to express the soilThemeParameter "depth of the B-horizon"
+!  !Multiplicity: !0..1
+!===
+
+|===
+
+====== WRBQualifierGroupType
+
+[width="100%",cols="100%",options="header",]
+|===
+|*WRBQualifierGroupType*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !WRB qualifier group type
+!  !Definition: !A data type to define the group of a qualifier and its possible specifier(s), its place and position with regard to the World Reference Base (WRB) Reference Soil Group (RSG) it belongs to according to _World reference base for soil resources 2006,_ _first update 2007,_ World Soil Resources Reports No. 103, Food and Agriculture Organization of the United Nations, Rome, 2007.
+!  !Stereotypes: !«dataType»
+!===
+
+a|
+*Attribute: qualifierPlace*
+
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !qualifier place
+!  !Value type: !WRBQualifierPlaceValue
+!  !Definition: !attribute to indicate the placement of the Qualifier with regard to the WRB reference soil group (RSG). The placement can be in front of the RSG i.e. 'prefix' or it can be behind the RSG i.e. 'suffix'.
+!  !Multiplicity: !1
+!===
+
+a|
+*Attribute: qualifierPosition*
+
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !qualifier position
+!  !Value type: !Integer
+!  !Definition: !number to indicate the position of a qualifier with regard to the WRB reference soil group (RSG) it belongs to and with regard to its placement to that (RSG) i.e. as a prefix or a suffix.
+!  !Description: !If there are one or more prefix qualifiers: one of the qualifiers is in position 1, the other qualifiers are in position 2, 3, etc.; position 1 is the position closest to the RSG; position 2 is the position second closest to the RSG; etc 
+If there are one or more suffix qualifiers: one of the qualifiers is in position 1, the other qualifiers are in position 2, 3, etc.; position 1 is the position closest to the RSG; position 2 is the position second closest to the RSG; etc
+!  !Multiplicity: !1
+!===
+
+a|
+*Attribute: WRBqualifier*
+
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !WRB qualifier
+!  !Value type: !WRBQualifierValue
+!  !Definition: !name element of WRB, 2nd level of classification
+!  !Description: !SOURCE World reference base for soil resources 2006, first update 2007, World Soil Resources Reports No. 103, Food and Agriculture Organization of the United Nations, Rome, 2007.
+!  !Multiplicity: !1
+!===
+
+a|
+*Attribute: WRBspecifier*
+
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !WRB specifier
+!  !Value type: !WRBSpecifierValue
+!  !Definition: !code that indicates the degree of expression of a qualifier or the depth range of which the qualifier applies.
+!  !Description: !Specifiers may be used to indicate depth of occurrence, or to express the intensity of soil characteristics. 
+EXAMPLE Buried layers can be indicated by the specifier "Thapto". 
+ 
+NOTE 1 The specifier code is always added after the qualifier code. Exceptions are defined in the qualifier list of WRB. 
+ 
+NOTE 2 Some specifiers can be combined with each other for one qualifier. 
+ 
+SOURCE _World reference base for soil resources 2006,_ _first update 2007,_ World Soil Resources Reports No. 103, Food and Agriculture Organization of the United Nations, Rome, 2007.
+!  !Multiplicity: !0..2
+!===
+
+|===
+
+====== WRBSoilNameType
+
+[width="100%",cols="100%",options="header",]
+|===
+|*WRBSoilNameType*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !WRB soil name type
+!  !Definition: !an identification of the soil profile according to the profile to according to "World Reference Base for Soil Resources 2006, first update 2007", World Soil Resources Reports No. 103. FAO, Rome.
+!  !Description: !NOTE The structure of the WRBSoilNameType was based on the World reference base for _soil resources 2006,_ _first update 2007,_ World Soil Resources Reports No. 103, Food and Agriculture Organization of the United 
+Nations, Rome, 2007. 
+EXAMPLE Lixic Vertic Ferralsol (Ferric, Rhodic), WRB 2006, update 2007.
+!  !Stereotypes: !«dataType»
+!===
+
+a|
+*Attribute: WRBQualifierGroup*
+
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !WRB qualifier group
+!  !Value type: !WRBQualifierGroupType
+!  !Definition: !data type to define the a group of a qualifier and its possible specifier(s), its place and position with regard to the WRBReferenceSoilGroup it belongs to.
+!  !Multiplicity: !0..*
+!===
+
+a|
+*Attribute: WRBReferenceSoilGroup*
+
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !WRB reference soilgroup (RSG)
+!  !Value type: !WRBReferenceSoilGroupValue
+!  !Definition: !first level of classification of the World Reference Base for Soil Resources.
+!  !Description: !Reference Soil Groups are distinguished by the presence (or absence) of specific diagnostic _horizons, properties_ and/or _materials._ 
+NOTE The WRB soil classification system comprises 32 different RSGs. 
+SOURCE _World reference base for soil resources 2006,_ _first update 2007,_ World Soil Resources Reports No. 103, Food and Agriculture Organization of the United Nations, Rome, 2007.
+!  !Multiplicity: !1
+!===
+
+a|
+*Attribute: isOriginalClassification*
+
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !is original classification
+!  !Value type: !Boolean
+!  !Definition: !Boolean value to indicate whether the WRB classification system was the original classification system to describe the soil profile.
+!  !Description: !This is to indicate whether the soil assignation according to WRB has been determined in the field (or for - derived - profiles during the original derivation process), or has been adapted, changed or re-assigned on the basis of the original soil description or assignation later. This might be relevant data quality information.
+!  !Multiplicity: !1
+!===
+
+a|
+*Association role: over*
+
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Value type: !WRBSoilNameType
+!  !Definition: !An association to indicate that in the WRB classification a soil profile covers another developed, older soil.
+!  !Multiplicity: !0..1
+!===
+
+|===
+
+===== Code lists
+
+====== FAOHorizonMasterValue
+
+[width="100%",cols="100%",options="header",]
+|===
+|*FAOHorizonMasterValue*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !FAO horizon master value
+!  !Definition: !A code list of the master part of the horizon designation. The allowed values for this code list comprise only the values specified in _Guidelines for soil description, 4th edition_, Food and Agriculture Organization of the United Nations, Rome, 2006, pp. 67-77.
+!  !Extensibility: !none
+!  !Identifier: !http://inspire.ec.europa.eu/codelist/FAOHorizonMasterValue
+!  !Values: !The allowed values for this code list comprise only the values specified in "Guidelines for soil description, 4th edition, Food and Agriculture Organization of the United Nations, Rome, 2006, pp. 67-77" .
+!===
+
+|===
+
+====== FAOHorizonSubordinateValue
+
+[width="100%",cols="100%",options="header",]
+|===
+|*FAOHorizonSubordinateValue*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !FAO horizon subordinate value
+!  !Definition: !A code list of designations of subordinate distinctions and features within the master horizons and layers which are based on profile characteristics observable in the field and are applied during the description of the soil at the site. The allowed values for this code list comprise only the values specified in _Guidelines for soil description, 4th edition_, Food and Agriculture Organization of the United Nations, Rome, 2006, pp. 67-77.
+!  !Description: !Lower case letters are used as suffixes to designate specific kinds of master horizons and layers, and other features. 
+SOURCE Guidelines for _soil description, 4th edition_, Food and Agriculture Organization of the United Nations, Rome, 2006, pp. 67-77, table 85
+!  !Extensibility: !none
+!  !Identifier: !http://inspire.ec.europa.eu/codelist/FAOHorizonSubordinateValue
+!  !Values: !The allowed values for this code list comprise only the values specified in "Guidelines for soil description, 4th edition, Food and Agriculture Organization of the United Nations, Rome, 2006, pp. 67-77" .
+!===
+
+|===
+
+====== FAOPrimeValue
+
+[width="100%",cols="100%",options="header",]
+|===
+|*FAOPrimeValue*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !FAO prime value
+!  !Definition: !A prime and double prime may be used to connotate the master horizon __symbol of the lower of two (__prime) or three (double prime) horizons having identical Arabic-numeral prefixes and letter combinations. The allowed values for this code list comprise only the values specified in _Guidelines for soil description, 4th edition_, Food and Agriculture Organization of the United Nations, Rome, 2006, pp. 67-77.
+!  !Description: !Identical designations may be appropriate for two or more horizons or layers separated by at least one horizon or layer of a more different kind in the same pedon. The sequence A-E-Bt-E-Btx-C is an example - the soil has two E horizons. To make communication easier, a prime is used with the master horizon symbol of the lower of two horizons having identical letter designations: A-E-Bt-E'-Btx-C. The prime is applied to the capital letter designation, and any lower case symbol follows it: B't. The prime is not used unless all letters of the designations of two different layers are identical. Prime can be used for both minerals and organic soils.
+!  !Extensibility: !none
+!  !Identifier: !http://inspire.ec.europa.eu/codelist/FAOPrimeValue
+!  !Values: !The allowed values for this code list comprise only the values specified in "Guidelines for soil description, 4th edition, Food and Agriculture Organization of the United Nations, Rome, 2006, pp. 67-77" .
+!===
+
+|===
+
+====== LayerGenesisProcessStateValue
+
+[width="100%",cols="100%",options="header",]
+|===
+|*LayerGenesisProcessStateValue*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !layer genesis process state value
+!  !Definition: !an indication whether the process specified in layerGenesisProcess is ongoing or ceased in the past.
+!  !Description: !Process state gives an idea whether current non-pedogenic processes affect the soil or not. E.g. on current floodplains, input of sediments during seasonal flooding events is received, with comparatively young soil development in it, while in older fluvial sediments that are no longer under a regime of seasonal or irregular flooding, soil development might be more advanced.
+!  !Extensibility: !none
+!  !Identifier: !http://inspire.ec.europa.eu/codelist/LayerGenesisProcessStateValue
+!  !Values: !The allowed values for this code list comprise only the values specified in Annex C .
+!===
+
+|===
+
+====== LayerTypeValue
+
+[width="100%",cols="100%",options="header",]
+|===
+|*LayerTypeValue*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !layer type value
+!  !Definition: !classification of a layer according to the concept that fits the purpose.
+!  !Description: !EXAMPLE Topsoil: meaning the upper part of the natural soil that is generally dark coloured and has a higher content of organic matter and nutrients when compared to the (mineral ) horizons below excluding the humus layer.
+!  !Extensibility: !none
+!  !Identifier: !http://inspire-registry.jrc.ec.europa.eu/clr/LayerTypeValue
+!  !Values: !The allowed values for this code list comprise only the values specified in Annex C .
+!===
+
+|===
+
+====== OtherHorizonNotationTypeValue
+
+[width="100%",cols="100%",options="header",]
+|===
+|*OtherHorizonNotationTypeValue*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !other horizon notation type value
+!  !Definition: !a classification of a soil horizon according to a specific classification system. The allowed values for this coded list comprise the values defined by data providers.
+!  !Extensibility: !any
+!  !Identifier: !http://inspire.ec.europa.eu/codelist/OtherHorizonNotationTypeValue
+!  !Values: !The allowed values for this code list comprise any values defined by data providers.
+!===
+
+|===
+
+====== OtherSoilNameTypeValue
+
+[width="100%",cols="100%",options="header",]
+|===
+|*OtherSoilNameTypeValue*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !Other soil name type value
+!  !Definition: !an identification of the soil profile according to a specific classification scheme. The allowed values for this coded list comprise the values defined by data providers.
+!  !Extensibility: !any
+!  !Identifier: !http://inspire.ec.europa.eu/codelist/OtherSoilNameTypeValue
+!  !Values: !The allowed values for this code list comprise any values defined by data providers.
+!===
+
+|===
+
+====== ProfileElementParameterNameValue
+
+[width="100%",cols="100%",options="header",]
+|===
+|*ProfileElementParameterNameValue*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !profile element parameter name value
+!  !Definition: !list of properties that can be observed to characterize the profile element. The allowed values for this code list comprise a number of pre-defined values and narrower values defined by data providers. This code list is hierarchical.
+!  !Description: !
+!  !Extensibility: !narrower
+!  !Identifier: !http://inspire.ec.europa.eu/codelist/ProfileElementParameterNameValue
+!  !Values: !The allowed values for this code list comprise the values specified in Annex _C_ and narrower values defined by data providers.
+!===
+
+|===
+
+====== SoilDerivedObjectParameterNameValue
+
+[width="100%",cols="100%",options="header",]
+|===
+|*SoilDerivedObjectParameterNameValue*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !soil derived object parameter name value
+!  !Definition: !list of soil related properties that can be derived from soil and other data. The allowed values for this code list comprise a number of pre-defined values and narrower values defined by data providers. This code list is hierarchical.
+!  !Description: !
+!  !Extensibility: !narrower
+!  !Identifier: !http://inspire.ec.europa.eu/codelist/SoilDerivedObjectParameterNameValue
+!  !Values: !The allowed values for this code list comprise the values specified in Annex _C_ and narrower values defined by data providers.
+!===
+
+|===
+
+====== SoilInvestigationPurposeValue
+
+[width="100%",cols="100%",options="header",]
+|===
+|*SoilInvestigationPurposeValue*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !soil investigation purpose value
+!  !Definition: !list of terms indicating the reasons for conducting a survey.
+!  !Description: !For soil two main purposes are identified to carry out soil surveys. One is to classify the soil as a result of soil forming processes (generalSurvey) and the other one is to investigate soil for a specific reason (specificSurvey) like a possible contamination as a result of contaminating activities. This information gives the data user an idea about possible bias in the selection of the site and therefore representativeness of the data that were obtained for a special purpose.
+!  !Extensibility: !none
+!  !Identifier: !http://inspire.ec.europa.eu/codelist/SoilInvestigationPurposeValue
+!  !Values: !The allowed values for this code list comprise only the values specified in Annex _C_ .
+!===
+
+|===
+
+====== SoilPlotTypeValue
+
+[width="100%",cols="100%",options="header",]
+|===
+|*SoilPlotTypeValue*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !- Name -- soil plot type
+!  !Definition: !list of possible values that give information on what kind of plot the observation of the soil is made.
+!  !Description: !NOTE Trial pits, boreholes or samples can be seen as types of soil plots.
+!  !Extensibility: !none
+!  !Identifier: !http://inspire.ec.europa.eu/codelist/SoilPlotTypeValue
+!  !Values: !The allowed values for this code list comprise only the values specified in Annex _C_ .
+!===
+
+|===
+
+====== SoilProfileParameterNameValue
+
+[width="100%",cols="100%",options="header",]
+|===
+|*SoilProfileParameterNameValue*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !soil profile parameter name value
+!  !Definition: !list of properties that can be observed to characterize the soil profile. The allowed values for this code list comprise a number of pre-defined values and narrower values defined by data providers. This code list is hierarchical.
+!  !Description: !
+!  !Extensibility: !narrower
+!  !Identifier: !http://inspire.ec.europa.eu/codelist/SoilProfileParameterNameValue
+!  !Values: !The allowed values for this code list comprise the values specified in Annex _C_ and narrower values defined by data providers.
+!===
+
+|===
+
+====== SoilSiteParameterNameValue
+
+[width="100%",cols="100%",options="header",]
+|===
+|*SoilSiteParameterNameValue*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !soil site parameter name value
+!  !Definition: !List of properties that can be observed to characterize the soil site. The allowed values for this code list comprise a number of pre-defined values and narrower values defined by data providers.
+!  !Description: !
+!  !Extensibility: !narrower
+!  !Identifier: !http://inspire.ec.europa.eu/codelist/SoilSiteParameterNameValue
+!  !Values: !The allowed values for this code list comprise the values specified in Annex _C_ and narrower values defined by data providers.
+!===
+
+|===
+
+====== WRBQualifierPlaceValue
+
+[width="100%",cols="100%",options="header",]
+|===
+|*WRBQualifierPlaceValue*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !WRB Qualifier place value
+!  !Definition: !list of values to indicate the placement of the Qualifier with regard to the WRB reference soil group (RSG). The placement can be in front of the RSG i.e. 'prefix' or it can be behind the RSG i.e. 'suffix'. The allowed values for this code list comprise only the values "prefix" and "suffix", according to naming rules of the _World reference base for soil resources 2006,_ _first update 2007,_ World Soil Resources Reports No. 103, Food and Agriculture Organization of the United Nations, Rome, 2007.
+!  !Extensibility: !none
+!  !Identifier: !http://inspire.ec.europa.eu/codelist/WRBQualifierPlaceValue
+!  !Values: !The allowed values for this code list comprise only the values specified in "World reference base for soil resources 2006, first update 2007, World Soil Resources Reports No. 103, Food and Agriculture Organization of the United Nations, Rome, 2007" . Annex _C_ includes recommended values that may be used by data providers.
+!===
+
+|===
+
+====== WRBQualifierValue
+
+[width="100%",cols="100%",options="header",]
+|===
+|*WRBQualifierValue*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !WRB qualifiers
+!  !Definition: !list of possible qualifiers (i.e. prefix and suffix qualifiers of the World Reference Base for Soil Resources). The allowed values for this code list comprise only the values specified in "World reference base for soil resources 2006, first update 2007".
+!  !Description: !SOURCE World reference base for soil resources 2006, first update 2007, World Soil Resources Reports No. 103, Food and Agriculture Organization of the United Nations, Rome, 2007. 
+NOTE WRB restricts the use of qualifiers in different ways for the 32 reference soil groups.
+!  !Extensibility: !none
+!  !Identifier: !http://inspire.ec.europa.eu/codelist/WRBQualifierValue
+!  !Values: !The allowed values for this code list comprise only the values specified in "World reference base for soil resources 2006, first update 2007, World Soil Resources Reports No. 103, Food and Agriculture Organization of the United Nations, Rome, 2007" . Annex _C_ includes recommended values that may be used by data providers.
+!===
+
+|===
+
+====== WRBReferenceSoilGroupValue
+
+[width="100%",cols="100%",options="header",]
+|===
+|*WRBReferenceSoilGroupValue*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !WRB reference soil group (RSG)
+!  !Definition: !list of possible reference soil groups (i.e. first level of classification of the World Reference Base for Soil Resources). The allowed values for this code list comprise only the values specified in "World reference base for soil resources 2006, first update 2007".
+!  !Description: !Reference Soil Groups are distinguished by the presence (or absence) of specific diagnostic horizons, properties and/or materials. 
+NOTE The WRB soil classification system comprises 32 different RSGs. 
+SOURCE _World reference base for soil resources 2006,_ _first update 2007,_ World Soil Resources Reports No. 103, Food and Agriculture Organization of the United Nations, Rome, 2007.
+!  !Extensibility: !none
+!  !Identifier: !http://inspire.ec.europa.eu/codelist/WRBReferenceSoilGroupValue
+!  !Values: !The allowed values for this code list comprise only the values specified in "World reference base for soil resources 2006, first update 2007, World Soil Resources Reports No. 103, Food and Agriculture Organization of the United Nations, Rome, 2007" . Annex _C_ includes recommended values that may be used by data providers.
+!===
+
+|===
+
+====== WRBSpecifierValue
+
+[width="100%",cols="100%",options="header",]
+|===
+|*WRBSpecifierValue*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Name: !WRB specifiers
+!  !Definition: !list of possible specifiers. The allowed values for this code list comprise only the values specified in "World reference base for soil resources 2006, first update 2007".
+!  !Description: !SOURCE World reference base for soil resources 2006, first update 2007, World Soil Resources Reports No. 103, Food and Agriculture Organization of the United Nations, Rome, 2007. 
+Specifiers are name elements in WRB restricting the meaning of qualifiers.
+!  !Extensibility: !none
+!  !Identifier: !http://inspire.ec.europa.eu/codelist/WRBSpecifierValue
+!  !Values: !The allowed values for this code list comprise only the values specified in "World Soil Resources Reports No. 103, Food and Agriculture Organization of the United Nations, Rome, 2007" . Annex _C_ includes recommended values that may be used by data providers.
+!===
+
+|===
+
+===== Imported types (informative)
+
+This section lists definitions for feature types, data types and enumerations and code lists that are defined in other application schemas. The section is purely informative and should help the reader understand the feature catalogue presented in the previous sections. For the normative documentation of these types, see the given references.
+
+====== Boolean
+
+[width="100%",cols="100%",options="header",]
+|===
+|*Boolean*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Package: !Truth
+!  !Reference: !Geographic information -- Conceptual schema language [ISO/TS 19103:2005]
+!===
+
+|===
+
+====== CharacterString
+
+[width="100%",cols="100%",options="header",]
+|===
+|*CharacterString*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Package: !Text
+!  !Reference: !Geographic information -- Conceptual schema language [ISO/TS 19103:2005]
+!===
+
+|===
+
+====== Date
+
+[width="100%",cols="100%",options="header",]
+|===
+|*Date*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Package: !Date and Time
+!  !Reference: !Geographic information -- Conceptual schema language [ISO/TS 19103:2005]
+!===
+
+|===
+
+====== DateTime
+
+[width="100%",cols="100%",options="header",]
+|===
+|*DateTime*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Package: !Date and Time
+!  !Reference: !Geographic information -- Conceptual schema language [ISO/TS 19103:2005]
+!===
+
+|===
+
+====== EX_Extent
+
+[width="100%",cols="100%",options="header",]
+|===
+|*EX_Extent*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Package: !Extent information
+!  !Reference: !Geographic information -- Metadata [ISO 19115:2003/Cor 1:2006]
+!===
+
+|===
+
+====== EventEnvironmentValue
+
+[width="100%",cols="100%",options="header",]
+|===
+|*EventEnvironmentValue*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Package: !Geology
+!  !Reference: !INSPIRE Data specification on Geology [DS-D2.8.II.4]
+!  !Definition: !Terms for the geologic environments within which geologic events take _place._
+!===
+
+|===
+
+====== EventProcessValue
+
+[width="100%",cols="100%",options="header",]
+|===
+|*EventProcessValue*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Package: !Geology
+!  !Reference: !INSPIRE Data specification on Geology [DS-D2.8.II.4]
+!  !Definition: !Terms specifying the process or processes that occurred during an event.
+!  !Description: !_EXAMPLE: deposition,_ extrusion, intrusion, cooling.
+!===
+
+|===
+
+====== GM_MultiSurface
+
+[width="100%",cols="100%",options="header",]
+|===
+|*GM_MultiSurface*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Package: !Geometric aggregates
+!  !Reference: !Geographic information -- Spatial schema [ISO 19107:2003]
+!===
+
+|===
+
+====== GM_Object
+
+[width="100%",cols="100%",options="header",]
+|===
+|*GM_Object (abstract)*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Package: !Geometry root
+!  !Reference: !Geographic information -- Spatial schema [ISO 19107:2003]
+!===
+
+|===
+
+====== Identifier
+
+[width="100%",cols="100%",options="header",]
+|===
+|*Identifier*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Package: !Base Types
+!  !Reference: !INSPIRE Generic Conceptual Model, version 3.4 [DS-D2.5]
+!  !Definition: !External unique object identifier published by the responsible body, which may be used by external applications to reference the spatial object.
+!  !Description: !NOTE1 External object identifiers are distinct from thematic object identifiers. 
+ 
+NOTE 2 The voidable version identifier attribute is not part of the unique identifier of a spatial object and may be used to distinguish two versions of the same spatial object. 
+ 
+NOTE 3 The unique identifier will not change during the life-time of a spatial object.
+!===
+
+|===
+
+====== Integer
+
+[width="100%",cols="100%",options="header",]
+|===
+|*Integer*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Package: !Numerics
+!  !Reference: !Geographic information -- Conceptual schema language [ISO/TS 19103:2005]
+!===
+
+|===
+
+====== LithologyValue
+
+[width="100%",cols="100%",options="header",]
+|===
+|*LithologyValue*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Package: !Geology
+!  !Reference: !INSPIRE Data specification on Geology [DS-D2.8.II.4]
+!  !Definition: !Terms describing the lithology.
+!  !Description: !EXAMPLE: granite, sandstone, schist.
+!===
+
+|===
+
+====== Location
+
+[width="100%",cols="100%",options="header",]
+|===
+|*Location*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Package: !Background model
+!  !Reference: !INSPIRE Data specification on Population Distribution - Demography [DS-D2.8.III.10]
+!===
+
+|===
+
+====== Number
+
+[width="100%",cols="100%",options="header",]
+|===
+|*Number (abstract)*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Package: !Numerics
+!  !Reference: !Geographic information -- Conceptual schema language [ISO/TS 19103:2005]
+!===
+
+|===
+
+====== Real
+
+[width="100%",cols="100%",options="header",]
+|===
+|*Real*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Package: !Numerics
+!  !Reference: !Geographic information -- Conceptual schema language [ISO/TS 19103:2005]
+!===
+
+|===
+
+====== RectifiedGridCoverage
+
+[width="100%",cols="100%",options="header",]
+|===
+|*RectifiedGridCoverage*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Package: !Coverages (Domain and Range)
+!  !Reference: !INSPIRE Data Specifications – Base Models – Coverage Types, version 1.0 [DS-D2.10.2]
+!  !Definition: !Coverage whose domain consists of a rectified grid
+!  !Description: !A rectified grid is a grid for which there is an affine transformation between the grid coordinates and the coordinates of a coordinate reference system. 
+ 
+NOTE This type can be used for both discrete and continuous coverages.
+!===
+
+|===
+
+====== UnitOfMeasure
+
+[width="100%",cols="100%",options="header",]
+|===
+|*UnitOfMeasure (abstract)*
+a|
+[width="100%",cols="5%,17%,78%",options="header",]
+!===
+!  !Package: !Units of Measure
+!  !Reference: !Geographic information -- Conceptual schema language [ISO/TS 19103:2005]
+!===
+
+|===
