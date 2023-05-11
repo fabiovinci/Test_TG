@@ -3503,3 +3503,339 @@ a|
 !===
 
 |===
+
+==== Externally governed code lists
+
+The externally governed code lists included in this application schema are specified in the tables in this section and in Annex C.
+
+===== Governance and authoritative source
+
+[width="100%",cols="20%,17%,63%",options="header",]
+|===
+|*Code list* |*Governance* |*Authoritative Source 
+(incl. version*footnote:[If no version or publication date are specified, the "latest available version" shall be used.] *and relevant subset, where applicable)*
+|FAOHorizonMasterValue |Food and Agriculture Organization of the United Nations |_Guidelines for soil description, 4^th^ edition_, Food and Agriculture Organization of the United Nations, Rome, 2006, pp. 67-77.
+|FAOHorizonSubordinateValue |Food and Agriculture Organization of the United Nations |_Guidelines for soil description, 4^th^ edition_, Food and Agriculture Organization of the United Nations, Rome, 2006, pp. 67-77.
+|FAOPrimeValue |Food and Agriculture Organization of the United Nations |_Guidelines for soil description, 4^th^ edition_, Food and Agriculture Organization of the United Nations, Rome, 2006, pp. 67-77.
+|WRBQualifierPlaceValue |Food and Agriculture Organization of the United Nations |_World reference base for soil resources 2006_, _first update 2007_, World Soil Resources Reports No. 103, Food and Agriculture Organization of the United Nations, Rome, 2007.
+|WRBQualifierValue |Food and Agriculture Organization of the United Nations |_World reference base for soil resources 2006_, _first update 2007_, World Soil Resources Reports No. 103, Food and Agriculture Organization of the United Nations, Rome, 2007.
+|WRBReferenceSoilGroupValue |Food and Agriculture Organization of the United Nations |_World reference base for soil resources 2006_, _first update 2007_, World Soil Resources Reports No. 103, Food and Agriculture Organization of the United Nations, Rome, 2007.
+|WRBSpecifierValue |Food and Agriculture Organization of the United Nations |_World reference base for soil resources 2006_, _first update 2007_, World Soil Resources Reports No. 103, Food and Agriculture Organization of the United Nations, Rome, 2007.
+|===
+
+===== Availability
+
+[width="100%",cols="19%,67%,14%",options="header",]
+|===
+|*Code list* |*Availability* |*Format*
+|FAOHorizonMasterValue |_ftp://ftp.fao.org/agl/agll/docs/guidel_soil_descr.pdf_ (p. 67-71) |pdf
+|FAOHorizonSubordinateValue |_ftp://ftp.fao.org/agl/agll/docs/guidel_soil_descr.pdf_ (p. 72 Table 85) |pdf
+|FAOPrimeValue |_ftp://ftp.fao.org/agl/agll/docs/guidel_soil_descr.pdf_ (p. 77) |pdf
+|WRBQualifierPlaceValue |_http://www.fao.org/fileadmin/templates/nr/images/resources/pdf_documents/wrb2007_red.pdf_ (p. 51-66) |pdf
+|WRBQualifierValue |_http://www.fao.org/fileadmin/templates/nr/images/resources/pdf_documents/wrb2007_red.pdf_ (p. 97-107) |pdf
+|WRBReferenceSoilGroupValue |_http://www.fao.org/fileadmin/templates/nr/images/resources/pdf_documents/wrb2007_red.pdf_ (p. 51-66) |pdf
+|WRBSpecifierValue |_http://www.fao.org/fileadmin/templates/nr/images/resources/pdf_documents/wrb2007_red.pdf_ (p. 107) |pdf
+|===
+
+NOTE All the externally managed code lists and their values are presented in the Annex C of this document
+
+==  
+Reference systems, units of measure and grids
+
+=== Default reference systems, units of measure and grid
+
+The reference systems, units of measure and geographic grid systems included in this sub-section are the defaults to be used for all INSPIRE data sets, unless theme-specific exceptions and/or additional requirements are defined in section 6.2.
+
+==== Coordinate reference systems
+
+===== Datum
+
+[IMPORTANT]
+====
+*IR Requirement*
+
+_Annex II, Section 1.2_
+
+*Datum for three-dimensional and two-dimensional coordinate reference systems*
+
+For the three-dimensional and two-dimensional coordinate reference systems and the horizontal component of compound coordinate reference systems used for making spatial data sets available, the datum shall be the datum of the European Terrestrial Reference System 1989 (ETRS89) in areas within its geographical scope, or the datum of the International Terrestrial Reference System (ITRS) or other geodetic coordinate reference systems compliant with ITRS in areas that are outside the geographical scope of ETRS89. Compliant with the ITRS means that the system definition is based on the definition of the ITRS and there is a well documented relationship between both systems, according to EN ISO 19111.
+
+====
+
+===== Coordinate reference systems
+
+[IMPORTANT]
+====
+*IR Requirement*
+
+_Annex II, Section 1.3_
+
+*Coordinate Reference Systems*
+
+Spatial data sets shall be made available using at least one of the coordinate reference systems specified in sections 1.3.1, 1.3.2 and 1.3.3, unless one of the conditions specified in section 1.3.4 holds.
+
+*1.3.1. Three-dimensional Coordinate Reference Systems*
+
+====
+
+* Three-dimensional Cartesian coordinates based on a datum specified in 1.2 and using the parameters of the Geodetic Reference System 1980 (GRS80) ellipsoid.
+* Three-dimensional geodetic coordinates (latitude, longitude and ellipsoidal height) based on a datum specified in 1.2 and using the parameters of the GRS80 ellipsoid.
+
+*1.3.2. Two-dimensional Coordinate Reference Systems*
+* Two-dimensional geodetic coordinates (latitude and longitude) based on a datum specified in 1.2 and using the parameters of the GRS80 ellipsoid.
+* Plane coordinates using the ETRS89 Lambert Azimuthal Equal Area coordinate reference system.
+* Plane coordinates using the ETRS89 Lambert Conformal Conic coordinate reference system.
+* Plane coordinates using the ETRS89 Transverse Mercator coordinate reference system.
+
+*1.3.3. Compound Coordinate Reference Systems*
+
+{empty}1. For the horizontal component of the compound coordinate reference system, one of the coordinate reference systems specified in section 1.3.2 shall be used.
+
+{empty}2. For the vertical component, one of the following coordinate reference systems shall be used:
+* For the vertical component on land, the European Vertical Reference System (EVRS) shall be used to express gravity-related heights within its geographical scope. Other vertical reference systems related to the Earth gravity field shall be used to express gravity-related heights in areas that are outside the geographical scope of EVRS.
+* For the vertical component in the free atmosphere, barometric pressure, converted to height using ISO 2533:1975 International Standard Atmosphere, or other linear or parametric reference systems shall be used. Where other parametric reference systems are used, these shall be described in an accessible reference using EN ISO 19111-2:2012.
+* For the vertical component in marine areas where there is an appreciable tidal range (tidal waters), the Lowest Astronomical Tide (LAT) shall be used as the reference surface.
+* For the vertical component in marine areas without an appreciable tidal range, in open oceans and effectively in waters that are deeper than 200 meters, the Mean Sea Level (MSL) or a well-defined reference level close to the MSL shall be used as the reference surface.
+
+*1.3.4. Other Coordinate Reference Systems*
+
+Exceptions, where other coordinate reference systems than those listed in 1.3.1, 1.3.2 or 1.3.3 may be used, are:
+
+{empty}1. Other coordinate reference systems may be specified for specific spatial data themes in this Annex.
+
+{empty}2. For regions outside of continental Europe, Member States may define suitable coordinate reference systems.
+
+The geodetic codes and parameters needed to describe these coordinate reference systems and to allow conversion and transformation operations shall be documented and an identifier shall be created, according to EN ISO 19111 and ISO 19127.
+
+===== Display
+
+[IMPORTANT]
+====
+*IR Requirement*
+
+_Annex II, Section 1.4_
+
+*Coordinate Reference Systems used in the View Network Service*
+
+For the display of spatial data sets with the view network service as specified in Regulation No 976/2009, at least the coordinate reference systems for two-dimensional geodetic coordinates (latitude, longitude) shall be available.
+
+====
+
+===== Identifiers for coordinate reference systems
+
+[IMPORTANT]
+====
+*IR Requirement*
+
+_Annex II, Section 1.5_
+
+*Coordinate Reference System Identifiers*
+
+{empty}1. Coordinate reference system parameters and identifiers shall be managed in one or several common registers for coordinate reference systems.
+
+{empty}2. Only identifiers contained in a common register shall be used for referring to the coordinate reference systems listed in this Section.
+
+====
+
+These Technical Guidelines propose to use the http URIs provided by the Open Geospatial Consortium as coordinate reference system identifiers (see identifiers for the default CRSs below). These are based on and redirect to the definition in the EPSG Geodetic Parameter Registry (_http://www.epsg-registry.org/_).
+
+[TIP]
+====
+*TG Requirement 2*
+
+The identifiers listed in Table 2 shall be used for referring to the coordinate reference systems used in a data set.
+
+====
+
+NOTE CRS identifiers may be used e.g. in:
+
+* data encoding,
+* data set and service metadata, and
+* requests to INSPIRE network services.
+
+[.text-center]
+Table 2. http URIs for the default coordinate reference systems
+
+[align=center,width="100%",cols="37%,20%,43%",options="header",]
+|===
+|*Coordinate reference system* |*Short name* |*http URI identifier*
+|3D Cartesian in ETRS89 |ETRS89-XYZ |_http://www.opengis.net/def/crs/EPSG/0/4936_
+|3D geodetic in ETRS89 on GRS80 |ETRS89-GRS80h |_http://www.opengis.net/def/crs/EPSG/0/4937_
+|2D geodetic in ETRS89 on GRS80 |ETRS89-GRS80 |_http://www.opengis.net/def/crs/EPSG/0/4258_
+|2D LAEA projection in ETRS89 on GRS80 |ETRS89-LAEA |_http://www.opengis.net/def/crs/EPSG/0/3035_
+|2D LCC projection in ETRS89 on GRS80 |ETRS89-LCC |_http://www.opengis.net/def/crs/EPSG/0/3034_
+|2D TM projection in ETRS89 on GRS80, zone 26N (30°W to 24°W) |ETRS89-TM26N |_http://www.opengis.net/def/crs/EPSG/0/3038_
+|2D TM projection in ETRS89 on GRS80, zone 27N (24°W to 18°W) |ETRS89-TM27N |_http://www.opengis.net/def/crs/EPSG/0/3039_
+|2D TM projection in ETRS89 on GRS80, zone 28N (18°W to 12°W) |ETRS89-TM28N |_http://www.opengis.net/def/crs/EPSG/0/3040_
+|2D TM projection in ETRS89 on GRS80, zone 29N (12°W to 6°W) |ETRS89-TM29N |_http://www.opengis.net/def/crs/EPSG/0/3041_
+|2D TM projection in ETRS89 on GRS80, zone 30N (6°W to 0°) |ETRS89-TM30N |_http://www.opengis.net/def/crs/EPSG/0/3042_
+|2D TM projection in ETRS89 on GRS80, zone 31N (0° to 6°E) |ETRS89-TM31N |_http://www.opengis.net/def/crs/EPSG/0/3043_
+|2D TM projection in ETRS89 on GRS80, zone 32N (6°E to 12°E) |ETRS89-TM32N |_http://www.opengis.net/def/crs/EPSG/0/3044_
+|2D TM projection in ETRS89 on GRS80, zone 33N (12°E to 18°E) |ETRS89-TM33N |_http://www.opengis.net/def/crs/EPSG/0/3045_
+|2D TM projection in ETRS89 on GRS80, zone 34N (18°E to 24°E) |ETRS89-TM34N |_http://www.opengis.net/def/crs/EPSG/0/3046_
+|2D TM projection in ETRS89 on GRS80, zone 35N (24°E to 30°E) |ETRS89-TM35N |_http://www.opengis.net/def/crs/EPSG/0/3047_
+|2D TM projection in ETRS89 on GRS80, zone 36N (30°E to 36°E) |ETRS89-TM36N |_http://www.opengis.net/def/crs/EPSG/0/3048_
+|2D TM projection in ETRS89 on GRS80, zone 37N (36°E to 42°E) |ETRS89-TM37N |_http://www.opengis.net/def/crs/EPSG/0/3049_
+|2D TM projection in ETRS89 on GRS80, zone 38N (42°E to 48°E) |ETRS89-TM38N |_http://www.opengis.net/def/crs/EPSG/0/3050_
+|2D TM projection in ETRS89 on GRS80, zone 39N (48°E to 54°E) |ETRS89-TM39N |_http://www.opengis.net/def/crs/EPSG/0/3051_
+|Height in EVRS |EVRS |_http://www.opengis.net/def/crs/EPSG/0/5730_
+|3D compound: 2D geodetic in ETRS89 on GRS80, and EVRS height |ETRS89-GRS80-EVRS |_http://www.opengis.net/def/crs/EPSG/0/7409_
+|===
+
+==== Temporal reference system
+
+[IMPORTANT]
+====
+*IR Requirement*
+
+_Article 11_
+
+*Temporal Reference Systems*
+
+{empty}1. The default temporal reference system referred to in point 5 of part B of the Annex to Commission Regulation (EC) No 1205/2008 (footnote:[OJ L 326, 4.12.2008, p. 12.]) shall be used, unless other temporal reference systems are specified for a specific spatial data theme in Annex II.
+
+====
+
+NOTE 1 Point 5 of part B of the Annex to Commission Regulation (EC) No 1205/2008 (the INSPIRE Metadata IRs) states that the default reference system shall be the Gregorian calendar, with dates expressed in accordance with ISO 8601.
+
+NOTE 2 ISO 8601 _Data elements and interchange formats – Information interchange – Representation of dates and times_ is an international standard covering the exchange of date and time-related data. The purpose of this standard is to provide an unambiguous and well-defined method of representing dates and times, so as to avoid misinterpretation of numeric representations of dates and times, particularly when data is transferred between countries with different conventions for writing numeric dates and times. The standard organizes the data so the largest temporal term (the year) appears first in the data string and progresses to the smallest term (the second). It also provides for a standardized method of communicating time-based information across time zones by attaching an offset to Coordinated Universal Time (UTC).
+
+EXAMPLE 1997 (the year 1997), 1997-07-16 (16^th^ July 1997), 1997-07-16T19:20:3001:00 (16^th^ July 1997, 19h 20' 30'', time zone: UTC1)
+
+==== Units of measure
+
+[IMPORTANT]
+====
+*IR Requirement*
+
+_Article 12_
+
+*Other Requirements & Rules*
+
+(...)
+
+{empty}2. All measurement values shall be expressed using SI units or non-SI units accepted for use with the International System of Units, unless specified otherwise for a specific spatial data theme or type.
+
+====
+
+==== Grids
+
+[IMPORTANT]
+====
+*IR Requirement*
+
+_Annex II, Section 2.2_
+
+*Grids*
+
+Either of the grids with fixed and unambiguously defined locations defined in Sections 2.2.1 and 2.2.2 shall be used as a geo-referencing framework to make gridded data available in INSPIRE, unless one of the following conditions holds:
+
+{empty}(1) Other grids may be specified for specific spatial data themes in Annexes II-IV. In this case, data exchanged using such a theme-specific grid shall use standards in which the grid definition is either included with the data, or linked by reference.
+
+{empty}(2) For grid referencing in regions outside of continental Europe Member States may define their own grid based on a geodetic coordinate reference system compliant with ITRS and a Lambert Azimuthal Equal Area projection, following the same principles as laid down for the grid specified in Section 2.2.1. In this case, an identifier for the coordinate reference system shall be created.
+
+*2.2 Equal Area Grid*
+
+The grid is based on the ETRS89 Lambert Azimuthal Equal Area (ETRS89-LAEA) coordinate reference system with the centre of the projection at the point 52^o^ N, 10^o^ E and false easting: x~0~ = 4321000 m, false northing: y~0~ = 3210000 m.
+
+The origin of the grid coincides with the false origin of the ETRS89-LAEA coordinate reference system (x=0, y=0).
+
+Grid points of grids based on ETRS89-LAEA shall coincide with grid points of the grid.
+
+The grid is hierarchical, with resolutions of 1m, 10m, 100m, 1000m, 10000m and 100000m.
+
+The grid orientation is south-north, west-east.
+
+The grid is designated as Grid_ETRS89-LAEA. For identification of an individual resolution level the cell size in metres is appended.
+
+For the unambiguous referencing and identification of a grid cell, the cell code composed of the size of the cell and the coordinates of the lower left cell corner in ETRS89-LAEA shall be used. The cell size shall be denoted in metres ("m") for cell sizes up to 100m or kilometres ("km") for cell sizes of 1000m and above. Values for northing and easting shall be divided by 10^n^, where _n_ is the number of trailing zeros in the cell size value.
+
+====
+
+===  
+Theme-specific requirements and recommendations
+
+There are no theme-specific requirements or recommendations on reference systems and grids.
+
+==  
+Data quality
+
+This chapter includes a description of the data quality elements and sub-elements as well as the corresponding data quality measures that should be used to evaluate and document data quality for data sets related to the spatial data theme _Soil_ (section 7.1).
+
+It may also define requirements or recommendations about the targeted data quality results applicable for data sets related to the spatial data theme _Soil_ (sections 7.2 and 957.3).
+
+In particular, the data quality elements, sub-elements and measures specified in section 7.1 should be used for
+
+* {blank}
+
+====
+evaluating and documenting data quality properties and constraints of spatial objects, where such properties or constraints are defined as part of the application schema(s) (see section 5);
+====
+* {blank}
+
+====
+evaluating and documenting data quality metadata elements of spatial data sets (see section 8); and/or
+====
+* {blank}
+
+====
+specifying requirements or recommendations about the targeted data quality results applicable for data sets related to the spatial data theme _Soil_ (see sections 7.2 and 7.3).
+====
+
+The descriptions of the elements and measures are based on Annex D of ISO/DIS 19157 Geographic information – Data quality.
+
+=== Data quality elements
+
+[.text-center]
+Table 3 lists all data quality elements and sub-elements that are being used in this specification. Data quality information can be evaluated at level of spatial object, spatial object type, dataset or dataset series. The level at which the evaluation is performed is given in the "Evaluation Scope" column.
+
+The measures to be used for each of the listed data quality sub-elements are defined in the following sub-sections.
+
+Table 3 – Data quality elements used in the spatial data theme _Soil_
+
+[align=center,width="100%",cols="12%,19%,15%,36%,18%",options="header",]
+|===
+|*Section* |*Data quality element* |*Data quality sub-element* |*Definition* |*Evaluation Scope*
+|7.1.1 |Logical consistency |Conceptual consistency |adherence to rules of the conceptual schema |spatial object type; spatial object
+|7.1.2 |Logical consistency |Domain consistency |adherence of values to the value domains |spatial object type; spatial object
+|7.1.3 |Completeness |Omission |data absent from the dataset, as described by the scope |spatial object type; spatial object
+|===
+
+[NOTE]
+====
+*Recomendation 7*
+
+Where it is impossible to express the evaluation of a data quality element in a quantitative way, the evaluation of the element should be expressed with a textual statement as a data quality descriptive result.
+
+====
+
+==== Logical consistency – Conceptual consistency
+
+The Application Schema conformance class of the Abstract Test Suite in Annex I defines a number of tests to evaluate the conceptual consistency (tests A.1.1-A.1.11) of a data set. The tests of the IR Theme-specific Requirements related to risk zones are also included (A.1.4-A.1.7.)
+
+[NOTE]
+====
+*Recomendation 8*
+
+For the tests on conceptual consistency, it is recommended to use the _Logical consistency – Conceptual consistency_ data quality sub-element and the measure _Number of items not compliant with the rules of the conceptual schema_ as specified in the table below.
+
+====
+
+[width="100%",cols="34%,66%",]
+|===
+|*Name* |
+|Alternative name |-
+|Data quality element |logical consistency
+|Data quality sub-element |conceptual consistency
+|Data quality basic measure |error count
+|Definition |count of all items in the dataset that are not compliant with the rules of the conceptual schema
+|Description |If the conceptual schema explicitly or implicitly describes rules, these rules shall be followed. Violations against such rules can be, for example, invalid placement of features within a defined tolerance, duplication of features and invalid overlap of features.
+|Evaluation scope |spatial object / spatial object type
+|Reporting scope |data set
+|Parameter |-
+|Data quality value type |integer
+|Data quality value structure |-
+|Source reference |ISO/DIS 19157 Geographic information – Data quality
+|Example |
+|Measure identifier |10
+|===
