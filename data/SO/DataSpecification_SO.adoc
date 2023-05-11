@@ -12,9 +12,7 @@
 :toc: macro
 //:toc-placement!:
 
-ifdef::env-browser[]
-:toc: left
-endif::[]
+
 
 // Empty TOC title (the title is in the document)
 :toc-title:
