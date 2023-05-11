@@ -1202,3 +1202,1339 @@ image::./media/image14.jpeg[image,width=617,height=828, align=center]
 |WRBSoilNameType |Soil |«dataType»
 |WRBSpecifierValue |Soil |«codelist»
 |===
+
+===== Spatial object types
+
+====== DerivedProfilePresenceInSoilBody
+
+[width="100%",cols="100%"]
+|===
+|*DerivedProfilePresenceInSoilBody*
+a|
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !perived profile presence in soil body
+!  !Definition: !indicates the percentages (lower and upper boundary) that the derived profile takes part in the Soil body.
+!  !Description: !NOTE 1 A soil body is characterized by one or more derived soil profiles in a defined geographic area. When the soil body is characterized by more than one derived profiles, the distribution area of these derived soil profiles is not spatially defined, but their presence is indicated by a range of percentages.
+!  !Stereotypes: !«associationType»
+!===
+
+|===
+
+====== DerivedSoilProfile
+
+[width="100%",cols="100%"]
+|===
+|*DerivedSoilProfile*
+a|
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !derived soil profile
+!  !Subtype of: !SoilProfile
+!  !Definition: !non-point-located soil profile that serves as a reference profile for a specific soil type in a certain geographical area.
+!  !Description: !The characteristics of a derived soil profile are mostly derived (e.g. averaged) from one or several observed profiles of the same soil type in the area of interest, or are designed with expert knowledge about the same kind of landscape. 
+ 
+NOTE 1 The derived soil profile represents the average or typical profile that characterizes the so called soil typological unit, soil series.
+!  !Stereotypes: !«featureType»
+!===
+
+a|
+*Association role: isDerivedFrom*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Value type: !ObservedSoilProfile
+!  !Definition: !link to one or more observed soil profiles from which this profile has been derived.
+!  !Description: !A derived soil profile can be derived from one to many observed soil profiles. If no observed profiles are provided or have been used to produce the derivedSoilProfile, this association can be left empty.
+!  !Multiplicity: !0..*
+!  !Stereotypes: !«voidable»
+!===
+
+|===
+
+====== ObservedSoilProfile
+
+[width="100%",cols="100%"]
+|===
+|*ObservedSoilProfile*
+a|
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !observed soil profile
+!  !Subtype of: !SoilProfile
+!  !Definition: !a representation of a soil profile found on a specific location which is described on the basis of observations in a trial pit or with a borehole.
+!  !Description: !The observed soil profile corresponds to a set of data taken directly from a georeferenced soil profile, described in the field, and often sampled and analyzed in the laboratory.
+!  !Stereotypes: !«featureType»
+!===
+
+a|
+*Association role: location*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Value type: !SoilPlot
+!  !Definition: !the location of an observed profile is the soilplot.
+!  !Multiplicity: !1
+!===
+
+|===
+
+====== ProfileElement
+
+[width="100%",cols="100%"]
+|===
+|*ProfileElement (abstract)*
+a|
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !profile element
+!  !Definition: !An abstract spatial object type grouping soil layers and / or horizons for functional/operational aims.
+!  !Description: !Profile element is the general term for both horizons and layers.
+!  !Stereotypes: !«featureType»
+!===
+
+a|
+*Attribute: inspireId*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !inspire Id
+!  !Value type: !Identifier
+!  !Definition: !External object identifier of the profile element.
+!  !Description: !NOTE An external object identifier is a unique object identifier published by the responsible body, which may be used by external applications to reference the spatial object. The identifier is an identifier of the spatial object, not an identifier of the real-world phenomenon.
+!  !Multiplicity: !0..1
+!===
+
+a|
+*Attribute: particleSizeFraction*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !particle size fraction
+!  !Value type: !ParticleSizeFractionType
+!  !Definition: !Mineral part of the soil, fractioned on the basis of size (diameter), limits of the particles. It indicates how much of the mineral soil material is composed of soil particles of the specified size range.
+!  !Description: !SOURCE NRCS Natural Resources Conservation Service, Soil survey laboratory information manual, Soil survey investigation report n.45 version 1.0 May 1995 pag. 11
+!  !Multiplicity: !1..*
+!  !Stereotypes: !«voidable»
+!===
+
+a|
+*Attribute: profileElementDepthRange*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !profile element depth range
+!  !Value type: !RangeType
+!  !Definition: !Upper and lower depth of the profile element (layer or horizon) measured from the surface (0 cm) of a soil profile (in cm).
+!  !Description: !
+!  !Multiplicity: !1
+!===
+
+a|
+*Attribute: beginLifespanVersion*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !begin lifespan version
+!  !Value type: !DateTime
+!  !Definition: !Date and time at which this version of the spatial object was inserted or changed in the spatial data set.
+!  !Multiplicity: !1
+!  !Stereotypes: !«lifeCycleInfo,voidable»
+!===
+
+a|
+*Attribute: endLifespanVersion*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !end lifespan version
+!  !Value type: !DateTime
+!  !Definition: !Date and time at which this version of the spatial object was superseded or retired in the spatial data set.
+!  !Multiplicity: !0..1
+!  !Stereotypes: !«lifeCycleInfo,voidable»
+!===
+
+a|
+*Association role: isPartOf*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Value type: !SoilProfile
+!  !Definition: !link to the soil profile which the profile element constitutes.
+!  !Multiplicity: !1
+!===
+
+a|
+*Constraint: code list for profile element observations*
+
+[width="100%",cols="2%,9%,89%"]
+!===
+!  !Natural language: !The observedProperty of the profile element observation shall be specified using a value from the ProfileElementParameterNameValue code list.
+!  !OCL: !inv: self.profileElementParameter.observedProperty->oclIsKindOf(ProfileElementParameterNameValue)
+!===
+
+a|
+*Constraint: FoI of profile element observations*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Natural language: !To fill the featureOfInterest property of the profile element observations of a ProfileElement object, that same ProfileElement object shall be used.
+!  !OCL: !inv: self.profileElementObservation.featureOfInterest = self
+!===
+
+a|
+*Constraint: result of profile element observations*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Natural language: !The result of the profile element observation shall be of type Number, CharacterString or RangeType.
+!  !OCL: !inv: self.profileElementObservation.result->oclIsKindOf(Number) or self.profileElementObservation.result->oclIsKindOf(CharacterString) or self.profileElementObservation.result->oclIsKindOf(RangeType)
+!===
+
+|===
+
+====== SoilBody
+
+[width="100%",cols="100%"]
+|===
+|*SoilBody*
+a|
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !soil body
+!  !Definition: !Part of the soil cover that is delineated and that is homogeneous with regard to certain soil properties and/or spatial patterns.
+!  !Description: !The soils present in the soil body are characterized by one or more derived soil profiles that are found together in the area specified by the "geometry" attribute of the SoilBody. 
+ 
+NOTE 1 If several derived soil profiles are used to describe the soil body, the spatial distribution of the soil they describe within the soil body is not defined, but their presence is indicated by a range percentage of area. The underlying reason behind the fact of not delineating the different soils within a soil body is the target scale of the map or spatial dataset. This means that geographical accuracy and preciseness of soil characterization depend on and vary with the target scale, i.e. the soil body can be delineated differently among scales. 
+ 
+NOTE 2 The concept of soil body is a correlate of the concept soil mapping unit, and the soils of a soilbody might form e.g. a soil association, a soil complex, etc.
+!  !Stereotypes: !«featureType»
+!===
+
+a|
+*Attribute: inspireId*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !inspire Id
+!  !Value type: !Identifier
+!  !Definition: !External object identifier of the soil body.
+!  !Description: !NOTE An external object identifier is a unique object identifier published by the responsible body, which may be used by external applications to reference the spatial object. The identifier is an identifier of the spatial object, not an identifier of the real-world phenomenon.
+!  !Multiplicity: !0..1
+!===
+
+a|
+*Attribute: geometry*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !geometry
+!  !Value type: !GM_MultiSurface
+!  !Definition: !The geometry defining the boundary of the Soil Body.
+!  !Multiplicity: !1
+!===
+
+a|
+*Attribute: soilBodyLabel*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !soil body label
+!  !Value type: !CharacterString
+!  !Definition: !Label to identify the soil body according to the specified reference framework (metadata).
+!  !Description: !NOTE in traditional soil maps, this is the identifier for the explanatory text of the mapping unit of the legend.
+!  !Multiplicity: !1
+!  !Stereotypes: !«voidable»
+!===
+
+a|
+*Attribute: beginLifespanVersion*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !begin lifespan version
+!  !Value type: !DateTime
+!  !Definition: !Date and time at which this version of the spatial object was inserted or changed in the spatial data set.
+!  !Multiplicity: !1
+!  !Stereotypes: !«lifeCycleInfo,voidable»
+!===
+
+a|
+*Attribute: endLifespanVersion*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !end lifespan version
+!  !Value type: !DateTime
+!  !Definition: !Date and time at which this version of the spatial object was superseded or retired in the spatial data set.
+!  !Multiplicity: !0..1
+!  !Stereotypes: !«lifeCycleInfo,voidable»
+!===
+
+a|
+*Association role: isDescribedBy [the association has additional attributes - see association class DerivedProfilePresenceInSoilBody]*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Value type: !DerivedSoilProfile
+!  !Definition: !Link to a derived soil profile that characterizes the soil body, possibly in combination with other derived soil profiles. The association has additional properties as defined in the association class DerivedProfilePresenceInSoilBody.
+!  !Description: !This association constitutes the link to those derived soil profiles that inform about the internal structure and properties of the soil body.
+!  !Multiplicity: !1..*
+!  !Stereotypes: !«voidable»
+!===
+
+|===
+
+====== SoilDerivedObject
+
+[width="100%",cols="100%"]
+|===
+|*SoilDerivedObject*
+a|
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !soil derived object
+!  !Definition: !A spatial object type for representing spatial objects with soil-related property derived from one or more soil and possibly other non soil properties.
+!  !Description: !NOTE Soil thematic maps can be derived directly from the involved soil database (organic matter content, pH, texture, etc.) or they can be derived by using pedotransfer functions or pedotransfer rules (e.g. plant available water in the rooting depth). Derivation can be simple extraction from a single data field, or a complex combination of different kind of data and application of e.g. mathematical or expert knowledge-based procedures.
+!  !Stereotypes: !«featureType»
+!===
+
+a|
+*Attribute: inspireId*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !inspire Id
+!  !Value type: !Identifier
+!  !Definition: !External object identifier of the SoilDerivedObject.
+!  !Description: !NOTE An external object identifier is a unique object identifier published by the responsible body, which may be used by external applications to reference the spatial object. The identifier is an identifier of the spatial object, not an identifier of the real-world phenomenon.
+!  !Multiplicity: !0..1
+!===
+
+a|
+*Attribute: geometry*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !geometry
+!  !Value type: !GM_Object
+!  !Definition: !the geometry defining the soil derived object.
+!  !Description: !A spatial representation of soil information becomes spatially explicit by delineating areas with similar values according to the soil (or other) property that is represented.
+!  !Multiplicity: !1
+!===
+
+a|
+*Association role: isBasedOnSoilDerivedObject*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Value type: !SoilDerivedObject
+!  !Definition: !Link to a soil derived object on whose properties the derived value is based.
+!  !Description: !A soil derived object can be created based on the properties of one or more other soil derived objects. If this information shall not be included or does not apply, the association can be empty.
+!  !Multiplicity: !0..*
+!  !Stereotypes: !«voidable»
+!===
+
+a|
+*Association role: isBasedOnObservedSoilProfile*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Value type: !ObservedSoilProfile
+!  !Definition: !Link to an observed soil profile on whose properties the derived value is based.
+!  !Description: !A soil derived object can be created based on the soil properties of one or more observed soil profiles. If this information shall not be included or does not apply, the association can be empty.
+!  !Multiplicity: !0..*
+!  !Stereotypes: !«voidable»
+!===
+
+a|
+*Association role: isBasedOnSoilBody*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Value type: !SoilBody
+!  !Definition: !Link to a soil body on whose properties the derived value is based.
+!  !Description: !A soil derived object can be created based on the soil properties of one or more soil bodies. If this information shall not be included or does not apply, the association can be empty.
+!  !Multiplicity: !0..*
+!  !Stereotypes: !«voidable»
+!===
+
+a|
+*Constraint: code list for parameter of soil derived objects*
+
+[width="100%",cols="2%,8%,90%"]
+!===
+!  !Natural language: !The observedProperty of the soil derived object observation shall be specified using a value from the SoilDerivedObjectParameterNameValue code list.
+!  !OCL: !inv: self.soilDerivedObjectParameter.observedProperty->oclIsKindOf(SoilDerivedObjectParameterNameValue)
+!===
+
+a|
+*Constraint: FoI of Soil derived object observations*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Natural language: !To fill the featureOfInterest property of the soil derived object observation, the same SoilDerivedObject object shall be used.
+!  !OCL: !inv: self.soilDerivedObjectObservation.featureOfInterest = self
+!===
+
+a|
+*Constraint: results of soil derived object observations*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Natural language: !The result of the soil derived object observation shall be of type Number, CharacterString or RangeType.
+!  !OCL: !inv: self.soilDerivedObjectObservation.result->oclIsKindOf(Number) or self.soilDerivedObjectObservation.result->oclIsKindOf(CharacterString) or self.soilDerivedObjectObservation.result->oclIsKindOf(RangeType)
+!===
+
+|===
+
+====== SoilHorizon
+
+[width="100%",cols="100%"]
+|===
+|*SoilHorizon*
+a|
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !soil horizon
+!  !Subtype of: !ProfileElement
+!  !Definition: !Domain of a soil with a certain vertical extension, more or less parallel to the surface and homogeneous for most morphological and analytical characteristics, developed in a parent material layer through pedogenic processes or made up of in-situ sedimented organic residues of up-growing plants (peat).
+!  !Description: !SOURCE ISO/WD 28258, modified 
+NOTE Horizons may be part of a layer.
+!  !Stereotypes: !«featureType»
+!===
+
+a|
+*Attribute: FAOHorizonNotation*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !FAO horizon notation
+!  !Value type: !FAOHorizonNotationType
+!  !Definition: !designation of the soil horizon.
+!  !Description: !The FAO horizon notation is a code system characterizing horizons regarding the dominant soil forming processes that have been active during the horizon formation. This code summarizes many observations of the soil description and gives an impression about the genetic processes that have formed the soil under observation. 
+ 
+NOTE The horizon notation is a combination of several letter, number and symbols. 
+ 
+SOURCE Guidelines for soil description, 4th edition, Food and Agricultural Organization of the United Nations, Rome, 2006 
+ 
+EXAMPLE Bw: meaning B horizon with a development of colour and/or structure.
+!  !Multiplicity: !1
+!  !Stereotypes: !«voidable»
+!===
+
+a|
+*Attribute: otherHorizonNotation*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !other horizon notation
+!  !Value type: !OtherHorizonNotationType
+!  !Definition: !designation of the soil horizon according to a specific classification system.
+!  !Description: !A code system characterizing horizons regarding the dominant soil forming processes that have been active during the horizon formation. This code summarizes many observations of the soil description and gives information about the genetic processes that have formed the soil under observation.
+!  !Multiplicity: !0..*
+!  !Stereotypes: !«voidable»
+!===
+
+|===
+
+====== SoilLayer
+
+[width="100%",cols="100%"]
+|===
+|*SoilLayer*
+a|
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !Soil layer
+!  !Subtype of: !ProfileElement
+!  !Definition: !domain of a soil with a certain vertical extension developed through non-pedogenic processes, displaying a change in structure and/or composition to possibly over- or underlying adjacent domains, or a grouping of soil horizons or other sub-domains with a special purpose.
+!  !Description: !NOTE1 Different kinds of layer concepts are covered by this definition. 
+ 
+EXAMPLE 1 Geogenic layers: These are domains, resulting from e.g. sedimentation (as non-pedogenic) processes, that display an unconformity to possibly over- or underlying adjacent domains. 
+ 
+EXAMPLE 2 Topsoil and Subsoil: These can be domains that group different soil horizon types (e.g. A vs. B horizons), or a special case of fixed depths with only two depth ranges (e.g. 0-15 cm: topsoil and, 15-75 cm: subsoil). 
+ 
+EXAMPLE 3 Depth intervals: They are often used in soil monitoring, sampling of contaminated sites and in modelling and include: (i) depth increments (also called fixed depths) that are often used for sampling, e.g. 0-30cm, 30-60cm, and so on, (ii) a single depth range in which a soil sample ("specimen") is taken and for which the analytical result is valid, and (iii) soil slicing, that is, profile segmentation according to a specified vector, for instance, either regularly spaced intervals (1cm), or a user-defined vector of segment boundaries (i.e. 0-10, 10-25, 25-50, 50-100). Slicing is used in modelling to generate continuous depth functions for soil properties. 
+ 
+EXAMPLE 4: In the framework of soils deeply modified by human activity, artificial layers may be due to different kinds of deposits (concrete, bricks, ...). 
+SOURCE WD ISO28258, modified
+!  !Stereotypes: !«featureType»
+!===
+
+a|
+*Attribute: layerType*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !layer type
+!  !Value type: !LayerTypeValue
+!  !Definition: !assignation of a layer according to the concept that fits its kind.
+!  !Description: !EXAMPLE Topsoil: meaning the upper part of the natural mineral soil that is generally dark coloured and has a higher content of organic matter and nutrients when compared to the mineral horizons below.
+!  !Multiplicity: !1
+!===
+
+a|
+*Attribute: layerRockType*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !layer rock type
+!  !Value type: !LithologyValue
+!  !Definition: !type of the material in which the layer developed.
+!  !Description: !simplified list of terms to "classify" geologic units
+!  !Multiplicity: !0..*
+!  !Stereotypes: !«voidable»
+!===
+
+a|
+*Attribute: layerGenesisProcess*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !layer genesis process
+!  !Value type: !EventProcessValue
+!  !Definition: !last non-pedogenic process (geologic or anthropogenic) that coined the material composition and internal structure of the layer.
+!  !Multiplicity: !0..1
+!  !Stereotypes: !«voidable»
+!===
+
+a|
+*Attribute: layerGenesisEnvironment*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !layer genesis environment
+!  !Value type: !EventEnvironmentValue
+!  !Definition: !setting in which the last non-pedogenic process (geologic or anthropogenic) that coined the material composition and internal structure of the layer took place.
+!  !Description: !The material in which a soil develops is influenced by the environmental situation in which the processes of its formation took place, e.g. sedimentation from water results in quite differently structured layers when it has been deposited in running water than in a lake.
+!  !Multiplicity: !0..1
+!  !Stereotypes: !«voidable»
+!===
+
+a|
+*Attribute: layerGenesisProcessState*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !layer genesis process state
+!  !Value type: !LayerGenesisProcessStateValue
+!  !Definition: !indication whether the process specified in layerGenesisProcess is on-going or seized in the past.
+!  !Description: !Process state gives an idea whether current non-pedogenic processes affect the soil or not. E.g. on current floodplains, input of sediments during seasonal flooding events is received, with comparatively young soil development in it, while in older fluvial sediments that are no longer under a regime of seasonal or irregular flooding, soil development might be more advanced.
+!  !Multiplicity: !0..1
+!  !Stereotypes: !«voidable»
+!===
+
+a|
+*Constraint: geogenicConstraint*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Natural language: !The attributes layerGenesisProcess, layerGenesisEnvironment, layerGenesisProcessState and layerRockType are only needed when layerType is of the value 'geogenic'
+!  !OCL: !inv: self.layerType = LayerTypeValue::geogenic implies (self.layerGenisisEnvironment.isNotEmpty() and self.layerGenisisProcess.isNotEmpty() and self.layerRockType.isNotEmpty() and layerGenesisProcessState.isNotEmpty())
+!===
+
+|===
+
+====== SoilPlot
+
+[width="100%",cols="100%"]
+|===
+|*SoilPlot*
+a|
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !soil plot
+!  !Definition: !spot where a specific soil investigation is carried out.
+!  !Description: !NOTE 1: For observed soil profiles, a spot location has to be defined. It is the place on which the observation is made. The profile is an observation made on the plot. 
+ 
+NOTE 2: All types of plots only provide locality, but no soil information itself. 
+ 
+EXAMPLE A borehole is the location where you gather the information to abstract a profile information from. 
+ 
+SOURCE GS Soil
+!  !Stereotypes: !«featureType»
+!===
+
+a|
+*Attribute: inspireId*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !inspire Id
+!  !Value type: !Identifier
+!  !Definition: !External object identifier of the soil plot.
+!  !Description: !NOTE An external object identifier is a unique object identifier published by the responsible body, which may be used by external applications to reference the spatial object. The identifier is an identifier of the spatial object, not an identifier of the real-world phenomenon.
+!  !Multiplicity: !0..1
+!===
+
+a|
+*Attribute: soilPlotLocation*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !soil plot location
+!  !Value type: !Location
+!  !Definition: !a reference to a location on the earth; it can be a point location identified by coordinates or a description of the location using text or an identifier.
+!  !Description: !EXAMPLE reference to a place name, municipality or reference to an exact X,Y location
+!  !Multiplicity: !1
+!===
+
+a|
+*Attribute: soilPlotType*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !soil plot type
+!  !Value type: !SoilPlotTypeValue
+!  !Definition: !gives information on what kind of plot the observation of the soil is made on.
+!  !Description: !NOTE Trial pits, boreholes or samples can be seen as types of soil plots.
+!  !Multiplicity: !1
+!===
+
+a|
+*Attribute: beginLifespanVersion*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !begin lifespan version
+!  !Value type: !DateTime
+!  !Definition: !Date and time at which this version of the spatial object was inserted or changed in the spatial data set.
+!  !Multiplicity: !1
+!  !Stereotypes: !«lifeCycleInfo,voidable»
+!===
+
+a|
+*Attribute: endLifespanVersion*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !end lifespan version
+!  !Value type: !DateTime
+!  !Definition: !Date and time at which this version of the spatial object was superseded or retired in the spatial data set.
+!  !Multiplicity: !0..1
+!  !Stereotypes: !«lifeCycleInfo,voidable»
+!===
+
+a|
+*Association role: locatedOn*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Value type: !SoilSite
+!  !Definition: !link to the soil site on which the soil plot is located or to which the soil plot is belonging.
+!  !Description: !a soil plot (location of a soil observation) is located on maximum 1 soil site.
+!  !Multiplicity: !0..1
+!  !Stereotypes: !«voidable»
+!===
+
+a|
+*Association role: observedProfile*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Value type: !ObservedSoilProfile
+!  !Definition: !Link to the observed soil profile for which the soil plot provides location information.
+!  !Description: !the soil plot is the location at which the profile has been observed.
+!  !Multiplicity: !1
+!  !Stereotypes: !«voidable»
+!===
+
+|===
+
+====== SoilProfile
+
+[width="100%",cols="100%"]
+|===
+|*SoilProfile (abstract)*
+a|
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !soil profile
+!  !Definition: !description of the soil that is characterized by a vertical succession of profile elements.
+!  !Description: !NOTE The soil profile is abstracted from observations in a trial pit or a boring, or derived from expert knowledge using other soil profiles.
+!  !Stereotypes: !«featureType»
+!===
+
+a|
+*Attribute: inspireId*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !inspire Id
+!  !Value type: !Identifier
+!  !Definition: !External object identifier of the soil profile.
+!  !Description: !NOTE An external object identifier is a unique object identifier published by the responsible body, which may be used by external applications to reference the spatial object. The identifier is an identifier of the spatial object, not an identifier of the real-world phenomenon.
+!  !Multiplicity: !0..1
+!===
+
+a|
+*Attribute: localIdentifier*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !local identifier
+!  !Value type: !CharacterString
+!  !Definition: !unique identifier of the soil profile given by the data provider of the dataset.
+!  !Multiplicity: !0..1
+!  !Stereotypes: !«voidable»
+!===
+
+a|
+*Attribute: WRBSoilName*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !WRB soil name
+!  !Value type: !WRBSoilNameType
+!  !Definition: !identification of the soil profile.
+!  !Description: !NOTE The structure of the WRBSoilNameType was based on the World reference base for soil resources 2006, first update 2007. World Soil Resources Reports no 103. Food and Agriculture Organization of the United Nations, Rome 2007. 
+EXAMPLE Lixic Vertic Ferralsol (Ferric, Rhodic); WRB version 2006 (update 2007) or 2010.
+!  !Multiplicity: !1
+!  !Stereotypes: !«voidable»
+!===
+
+a|
+*Attribute: otherSoilName*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !other soil name
+!  !Value type: !OtherSoilNameType
+!  !Definition: !Identification of the soil profile according to a specific classification scheme.
+!  !Multiplicity: !0..*
+!  !Stereotypes: !«voidable»
+!===
+
+a|
+*Attribute: validFrom*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !valid from
+!  !Value type: !DateTime
+!  !Definition: !The time when the phenomenon started to exist in the real world.
+!  !Multiplicity: !1
+!  !Stereotypes: !«voidable»
+!===
+
+a|
+*Attribute: validTo*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !valid to
+!  !Value type: !DateTime
+!  !Definition: !The time from which the phenomenon no longer exists in the real world.
+!  !Multiplicity: !0..1
+!  !Stereotypes: !«voidable»
+!===
+
+a|
+*Attribute: beginLifespanVersion*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !begin lifespan version
+!  !Value type: !DateTime
+!  !Definition: !Date and time at which this version of the spatial object was inserted or changed in the spatial data set.
+!  !Multiplicity: !1
+!  !Stereotypes: !«lifeCycleInfo,voidable»
+!===
+
+a|
+*Attribute: endLifespanVersion*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !end lifespan version
+!  !Value type: !DateTime
+!  !Definition: !Date and time at which this version of the spatial object was superseded or retired in the spatial data set.
+!  !Multiplicity: !0..1
+!  !Stereotypes: !«lifeCycleInfo,voidable»
+!===
+
+a|
+*Association role: isDescribedBy*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Value type: !ProfileElement
+!  !Definition: !the profile elements (layers and/or horizons) constituting the soil profile.
+!  !Description: !A profile element is always part of a soil profile.
+!  !Multiplicity: !1..*
+!  !Stereotypes: !«voidable»
+!===
+
+a|
+*Constraint: code list for soil profile observations*
+
+[width="100%",cols="2%,10%,88%"]
+!===
+!  !Natural language: !The observedProperty of the soil profile observation shall be specified using a value from the SoilProfileParameterNameValue code list.
+!  !OCL: !inv: self.soilProfileParameter.observedProperty->oclIsKindOf(SoilProfileParameterNameValue)
+!===
+
+a|
+*Constraint: FoI of soil profile observations*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Natural language: !To fill the featureOfInterest property of the soil profile observations of a SoilProfile object, that same SoilProfile object shall be used.
+!  !OCL: !inv: self.soilProfileObservation.featureOfInterest = self
+!===
+
+a|
+*Constraint: result of soil profile observations*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Natural language: !The result of the soil profile observation shall be of type Number, CharacterString or RangeType.
+!  !OCL: !inv: self.soilProfileObservation.result->oclIsKindOf(Number) or self.soilProfileObservation.result->oclIsKindOf(CharacterString) or self.soilProfileObservation.result->oclIsKindOf(RangeType)
+!===
+
+|===
+
+====== SoilSite
+
+[width="100%",cols="100%"]
+|===
+|*SoilSite*
+a|
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !soil site
+!  !Definition: !area within a larger survey, study or monitored area, where a specific soil investigation is carried out.
+!  !Description: !Site provides the object to describe: 
+a.) the surroundings of the plot 
+ 
+and/or 
+ 
+b.) the larger piece of land that is directly linked to and described by all soil investigations on its one or more spots (SoilPlots). It thus provides the object to which soil data of different kind (or the same kind, but at different points in time, e.g. in soil monitoring) obtained on different plots is related as if it would have been collected at the very same place. This allows for: 
+ 
+1. combination of data that cannot be obtained on the very same place 
+EXAMPLE: a soil pit and investigations on earthworm abundance cannot be done in the same place, but possibly some metres apart from each other. Nonetheless shall the results of both investigations be combined to inform about the soil state. 
+or 
+2. comparison of soil condition after some time has elapsed. 
+EXAMPLE: Organic carbon stock has been investigated using data from two monitoring periods that had to be conducted on spatially slightly separated places because the sampling is destructive. Nonetheless are the results of both periods regarded as giving an idea how organic carbon stock has changed over the years at the same place. 
+ 
+The site is also the object to state the date and time information on validity, etc. 
+ 
+The soil site might have delineation, but can be located with a centre or reference point location only. Delineated soil sites - possibly in the form of cadastral parcels - are especially used in the inventory of contaminated areas. 
+ 
+NOTE Any plot can be linked to one specific site only, but several plots to one site. 
+ 
+SOURCE GS Soil, modified
+!  !Stereotypes: !«featureType»
+!===
+
+a|
+*Attribute: inspireId*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !inspire Id
+!  !Value type: !Identifier
+!  !Definition: !External object identifier of the soil site.
+!  !Description: !NOTE An external object identifier is a unique object identifier published by the responsible body, which may be used by external applications to reference the spatial object. The identifier is an identifier of the spatial object, not an identifier of the real-world phenomenon.
+!  !Multiplicity: !0..1
+!===
+
+a|
+*Attribute: geometry*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !geometry
+!  !Value type: !GM_Object
+!  !Definition: !The geometry defining the soil site.
+!  !Description: !This can be a polygon defining an area in which the survey was conducted, but it can also be a point location which is used as reference point according to which the soil plots are determined.
+!  !Multiplicity: !1
+!===
+
+a|
+*Attribute: soilInvestigationPurpose*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !soil investigation purpose
+!  !Value type: !SoilInvestigationPurposeValue
+!  !Definition: !indication why a survey was conducted.
+!  !Description: !For soil two main purposes are identified to carry out soil surveys. One is to classify the soil as a result of soil forming processes (generalSurvey) and the other one is to investigate soil for a specific reason (specificSurvey) like a possible contamination as a result of contaminating activities. This information gives the data user an idea about possible bias in the selection of the site and therefore representativeness of the data that were obtained for a special purpose.
+!  !Multiplicity: !1
+!===
+
+a|
+*Attribute: validFrom*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !valid from
+!  !Value type: !DateTime
+!  !Definition: !The time when the phenomenon started to exist in the real world.
+!  !Multiplicity: !1
+!  !Stereotypes: !«voidable»
+!===
+
+a|
+*Attribute: validTo*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !valid to
+!  !Value type: !DateTime
+!  !Definition: !The time from which the phenomenon no longer exists in the real world.
+!  !Multiplicity: !0..1
+!  !Stereotypes: !«voidable»
+!===
+
+a|
+*Attribute: beginLifespanVersion*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !begin lifespan version
+!  !Value type: !DateTime
+!  !Definition: !Date and time at which this version of the spatial object was inserted or changed in the spatial data set.
+!  !Multiplicity: !1
+!  !Stereotypes: !«lifeCycleInfo,voidable»
+!===
+
+a|
+*Attribute: endLifespanVersion*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !end lifespan version
+!  !Value type: !DateTime
+!  !Definition: !Date and time at which this version of the spatial object was superseded or retired in the spatial data set.
+!  !Multiplicity: !0..1
+!  !Stereotypes: !«lifeCycleInfo,voidable»
+!===
+
+a|
+*Association role: isObservedOnLocation*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Value type: !SoilPlot
+!  !Definition: !link to a location(s) where the soil site has been investigated.
+!  !Description: !A soil site with a specific investigation purpose can be observed on several locations (soil plots) inside that site area. If only a centre point location is provided, the set of links to soil plots state that the information from these plots can be combined in a meaningful way, i.e. the combination is valid.
+!  !Multiplicity: !1..*
+!  !Stereotypes: !«voidable»
+!===
+
+a|
+*Constraint: code list for soil site observations*
+
+[width="100%",cols="2%,10%,88%"]
+!===
+!  !Natural language: !The observedProperty of the soil site observation shall be specified using a value from the SoilSiteParameterNameValue code list.
+!  !OCL: !inv: self.soilSiteParameter.observedProperty->oclIsKindOf(SoilSiteParameterNameValue)
+!===
+
+a|
+*Constraint: FoI of soil site observations*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Natural language: !To fill the featureOfInterest property of the soil site observations of a SoilSite object, that same SoilSite object shall be used.
+!  !OCL: !inv: self.soilSiteObservation.featureOfInterest = self
+!===
+
+a|
+*Constraint: result of soil site observations*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Natural language: !The result of the soil site observation shall be of type Number, CharacterString or RangeType.
+!  !OCL: !inv: self.soilSiteObservation.result->oclIsKindOf(Number) or self.soilSiteObservation.result->oclIsKindOf(CharacterString) or self.soilSiteObservation.result->oclIsKindOf(RangeType)
+!===
+
+|===
+
+====== SoilThemeCoverage
+
+[width="100%",cols="100%"]
+|===
+|*SoilThemeCoverage*
+a|
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !soil theme coverage
+!  !Subtype of: !RectifiedGridCoverage
+!  !Definition: !a spatial object type that holds values for a property based on one or more soil and possibly non soil parameters within its spatial, temporal or spatiotemporal domain.
+!  !Description: !SOURCE Adapted from "Coverage" [ISO 19123:2005].
+!  !Stereotypes: !«featureType»
+!===
+
+a|
+*Attribute: beginLifespanVersion*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !begin life span version
+!  !Value type: !DateTime
+!  !Definition: !Date and time at which this version of the spatial object was inserted or changed in the spatial data set.
+!  !Multiplicity: !1
+!  !Stereotypes: !«lifeCycleInfo»
+!===
+
+a|
+*Attribute: endLifespanVersion*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !end life span version
+!  !Value type: !DateTime
+!  !Definition: !Date and time at which this version of the spatial object was superseded or retired in the spatial data set.
+!  !Multiplicity: !0..1
+!  !Stereotypes: !«lifeCycleInfo»
+!===
+
+a|
+*Attribute: domainExtent*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !Domain extent.
+!  !Value type: !EX_Extent
+!  !Definition: !The attribute domainExtent shall contain the extent of the spatiotemporal domain of the coverage. The data type EX_Extent, is defined in ISO 19103. Extents may be specified in both space and time.
+!  !Description: !SOURCE Adapted from [ISO 19123:2005].
+!  !Multiplicity: !1..*
+!===
+
+a|
+*Attribute: validTimeFrom*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !valid time from
+!  !Value type: !Date
+!  !Definition: !The ValidTime specifies the time window for which measurements have been captured to calculate the thematic soil property relevant for that period. The start time defines when the period began.
+!  !Multiplicity: !1
+!  !Stereotypes: !«voidable»
+!===
+
+a|
+*Attribute: validTimeTo*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !valid time to
+!  !Value type: !Date
+!  !Definition: !The ValidTime specifies the time window for which measurements have been captured to calculate the thematic soil property relevant for that period. The end time defines when the period stopped.
+!  !Multiplicity: !0..1
+!  !Stereotypes: !«voidable»
+!===
+
+a|
+*Attribute: soilThemeParameter*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !soil theme parameter
+!  !Value type: !SoilThemeParameterType
+!  !Definition: !A soil-related property (soil theme) that is represented by this coverage.
+!  !Description: !EXAMPLE Land irrigation suitability, pH in the topsoil, etc
+!  !Multiplicity: !1
+!===
+
+a|
+*Association role: isDescribedBy*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Value type: !SoilThemeDescriptiveCoverage
+!  !Definition: !this association allows for a certain SoilThemeCoverage to have a related Coverage which does not have a meaning without the base coverage.
+!  !Description: !EXAMPLE a coverage of the pH of the topsoil is associated with a coverage with exactly the same extent and domain reporting on the level of confidence of the pH values of the base coverage.
+!  !Multiplicity: !0..*
+!  !Stereotypes: !«voidable»
+!===
+
+a|
+*Constraint: rangeSetValuesConstraint*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Natural language: !rangeSet values shall be of type Number, CharacterString or RangeType.
+!  !OCL: !inv: rangeSet->oclIsKindOf(Number) or rangeSet->oclIsKindOf(Characterstring) or rangeSet->oclIsKindOf(RangeType)
+!===
+
+|===
+
+====== SoilThemeDescriptiveCoverage
+
+[width="100%",cols="100%"]
+|===
+|*SoilThemeDescriptiveCoverage*
+a|
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !soil theme descriptive coverage
+!  !Subtype of: !RectifiedGridCoverage
+!  !Definition: !a spatial object type that is associated to the soil theme coverage and holds additional information on values of a property of the soil theme coverage.
+!  !Description: !This coverage can only exist in relation to a base coverage SoilThemeCoverage, it has the same domain and spatial extent as the base coverage. And it gives extra information on the values of the base coverages 
+SOURCE Adapted from "Coverage" [ISO 19123:2005]. 
+EXAMPLE coverage indicating the confidence level of the pH values reported in the associated SoilThemeCoverage.
+!  !Stereotypes: !«featureType»
+!===
+
+a|
+*Attribute: beginLifespanVersion*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !begin life span version
+!  !Value type: !DateTime
+!  !Definition: !Date and time at which this version of the spatial object was inserted or changed in the spatial data set.
+!  !Multiplicity: !1
+!  !Stereotypes: !«lifeCycleInfo»
+!===
+
+a|
+*Attribute: endLifespanVersion*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !end life span version
+!  !Value type: !DateTime
+!  !Definition: !Date and time at which this version of the spatial object was superseded or retired in the spatial data set.
+!  !Multiplicity: !0..1
+!  !Stereotypes: !«lifeCycleInfo»
+!===
+
+a|
+*Attribute: domainExtent*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !Domain extent.
+!  !Value type: !EX_Extent
+!  !Definition: !The attribute domainExtent shall contain the extent of the spatiotemporal domain of the coverage. The data type EX_Extent, is defined in ISO 19103. Extents may be specified in both space and time.
+!  !Description: !SOURCE Adapted from [ISO 19123:2005].
+!  !Multiplicity: !1..*
+!===
+
+a|
+*Attribute: soilThemeDescriptiveParameter*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !soil theme descriptive parameter
+!  !Value type: !SoilThemeDescriptiveParameterType
+!  !Definition: !a descriptive property for the soil-related property (soil theme) that is represented by its associated SoilThemeCoverage.
+!  !Description: !EXAMPLE confidence level for each value in the SoilThemeCoverage (pH in the topsoil)
+!  !Multiplicity: !1
+!===
+
+a|
+*Association role: isDescribing*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Value type: !SoilThemeCoverage
+!  !Definition: !this association allows for a certain SoilThemeCoverage to have a related Coverage which does not have a meaning without the base coverage.
+!  !Description: !EXAMPLE a coverage of the pH of the topsoil is associated with a coverage with exactly the same extent and domain reporting on the level of confidence of the pH values of the base coverage.
+!  !Multiplicity: !1
+!  !Stereotypes: !«voidable»
+!===
+
+a|
+*Constraint: rangeSetValuesConstraint*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Natural language: !rangeSet values shall be of type Number, CharacterString or RangeType.
+!  !OCL: !inv: rangeSet->oclIsKindOf(Number) or rangeSet->oclIsKindOf(Characterstring) or rangeSet->oclIsKindOf(RangeType)
+!===
+
+|===
+
+===== Data types
+
+[[derivedprofilepresenceinsoilbody]]
+====== DerivedProfilePresenceInSoilBody
+
+[width="100%",cols="100%"]
+|===
+|*DerivedProfilePresenceInSoilBody (association class)*
+a|
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !derived profile presence in soil body
+!  !Definition: !indicates the percentages (lower and upper boundary) that the derived profile takes part in the Soil body.
+!  !Description: !NOTE 1 A soil body is characterized by one or more derived soil profiles in a defined geographic area. When the soil body is characterized by more than one derived profiles, the distribution area of these derived soil profiles is not spatially defined, but their presence is indicated by a range of percentages. 
+ 
+NOTE 2 The sum of lower boundary parts should not exceed 100%. 
+ 
+NOTE 3 If not a range, but a specific percentage is used then the lower and upper boundaries are equal.
+!===
+
+a|
+*Attribute: derivedProfilePercentageRange*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !derived profile percentage range.
+!  !Value type: !RangeType
+!  !Definition: !Interval that defines the minimum and maximum percentage of the area of the soil body represented by a specific derived soil profile.
+!  !Multiplicity: !1
+!  !Stereotypes: !«voidable»
+!===
+
+|===
+
+====== FAOHorizonNotationType
+
+[width="100%",cols="100%"]
+|===
+|*FAOHorizonNotationType*
+a|
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !FAO horizon notation type
+!  !Definition: !A classification of a horizon according to the Horizon classification system specified in _Guidelines for soil description, 4th edition_, Food and Agriculture Organization of the United Nations, Rome, 2006.
+!  !Description: !A code system that denotes horizons in which the same dominant soil forming processes has been active similarly. This code summarizes many observations of the soil description and gives an impression about the genetic processes that have formed the soil under observation. 
+ 
+NOTE The horizon notation according to FAO (2006) is a combination of several symbols: 
+· A number that gives information about discontinuities, i.e. the number of the material in which the soil has formed, counted up from the soil surface, but not for the first material. 
+· One or two capital letters that designate the type of master horizon (or transitional horizon), possibly separated by a slash 
+· Lower case letters that designate subordinate characteristics of the horizon. 
+· A number that designates horizontal subdivisions of otherwise similarly denoted horizon parts 
+· A prime that enables to distinguish two horizons that have the same naming, but formed in different cycles of pedogenesis. 
+ 
+EXAMPLE 2B' tg1 
+ 
+SOURCE 1 Page 67 - 77 of the _Guidelines for soil description, 4th edition_, Food and Agriculture Organization of the United Nations, Rome, 2006. (ISBN 92-5-105521-1)
+!  !Stereotypes: !«dataType»
+!===
+
+a|
+*Attribute: FAOHorizonDiscontinuity*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !FAO horizon discontinuity
+!  !Value type: !Integer
+!  !Definition: !number used to indicate a discontinuity in the horizon notation.
+!  !Description: !In mineral soils, Arabic numerals are used as prefixes to indicate discontinuities. Wherever needed, they are used preceding A, E, B, C and R. They are not used with I and W, although these symbols clearly indicate a discontinuity. These prefixes are distinct from Arabic numerals used as suffixes to denote vertical subdivisions. 
+A discontinuity is a significant change in particle-size distribution or mineralogy that indicates a difference in the material from which the horizons formed or a significant difference in age or both, unless that difference in age is indicated by the suffix b. Symbols to identify discontinuities are used only when they will contribute substantially to the reader's understanding of relationships among horizons. The stratification common in soils formed in alluvium is not designated as discontinuities unless particle-size distribution differs markedly from layer to layer even though genetic horizons have formed in the contrasting layers. 
+Where a soil has formed entirely in one kind of material, a prefix is omitted from the symbol; the whole profile is material 1. Similarly, the uppermost material in a profile having two or more contrasting materials is understood to be material 1, but the number is omitted. Numbering starts with the second layer of contrasting material, which is designated 2. Underlying contrasting layers are numbered consecutively. 
+ 
+SOURCE: _Guidelines for soil description, 4th edition_, Food and Agriculture Organization of the United Nations, Rome, 2006. 
+ 
+NOTE a discontinuity is a boundary between two geogenic layers.
+!  !Multiplicity: !0..1
+!===
+
+a|
+*Attribute: FAOHorizonMaster*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !FAO horizon master
+!  !Value type: !FAOHorizonMasterValue
+!  !Definition: !symbol of the master part of the horizon notation.
+!  !Description: !SOURCE Guidelines for soil description (4th ed.) FAO 2006 p. 67
+!  !Multiplicity: !1
+!===
+
+a|
+*Attribute: FAOPrime*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !FAO prime
+!  !Value type: !FAOPrimeValue
+!  !Definition: !A prime and double prime may be used to connotate master horizon symbol of the lower of two respectively three horizons having identical Arabic-numeral prefixes and letter combinations.
+!  !Description: !Identical designations may be appropriate for two or more horizons or layers separated by at least one horizon or layer of a different kind in the same pedon. The sequence A-E-Bt-E-Btx-C is an example - the soil has two E horizons. To make communication easier, a prime is used with the master horizon symbol of the lower of two horizons having identical letter designations: A-E-Bt-E'-Btx-C.The prime is applied to the capital letter designation, and any lower case symbol follows it: B't. The prime is not used unless all letters of the designations of two different layers are identical. Prime can be used for both minerals or organic soils. 
+ 
+SOURCE: _Guidelines for soil description, 4th edition_, Food and Agriculture Organization of the United Nations, Rome, 2006.
+!  !Multiplicity: !1
+!===
+
+a|
+*Attribute: FAOHorizonSubordinate*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !horizon subordinate
+!  !Value type: !FAOHorizonSubordinateValue
+!  !Definition: !Designations of subordinate distinctions and features within the master horizons and layers are based on profile characteristics observable in the field and are applied during the description of the soil at the site.
+!  !Description: !Lower case letters are used as suffixes to designate specific kinds of master horizons and layers, and other features. 
+ 
+SOURCE _Guidelines for soil description, 4th edition_, Food and Agriculture Organization of the United Nations, Rome, 2006. table 85
+!  !Multiplicity: !0..*
+!===
+
+a|
+*Attribute: FAOHorizonVertical*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !horizon vertical
+!  !Value type: !Integer
+!  !Definition: !Order number of the vertical subdivision in the horizon notation.
+!  !Description: !The number is used to designate the horizontal subdivision of a horizon identified by a single set of letter symbol on the basis of structure, texture, colour, etc. 
+The number 1 is used to designate the upper part of the horizon. The number 2 the part of the horizon situated below, etc. If there is no horizontal subdivision made, no number is given. 
+ 
+NOTE the use of the word vertical is misleading in the _Guidelines for soil description, 4th edition_, Food and Agriculture Organization of the United Nations, Rome, 2006., because the horizons are separated in two or several horizontal subdomains. Vertical denotes the order in vertical direction.
+!  !Multiplicity: !0..1
+!===
+
+a|
+*Attribute: isOriginalClassification*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !is original classification
+!  !Value type: !Boolean
+!  !Definition: !Boolean value to indicate whether the FAO horizon notation was the original notation to describe the horizon.
+!  !Description: !This is to indicate whether the horizon notation has been determined in the field (or for derived profiles during the original derivation), or has been adapted, changed or assigned on the basis of the original horizon description later. This might be relevant data quality information.
+!  !Multiplicity: !1
+!===
+
+|===
+
+====== OtherHorizonNotationType
+
+[width="100%",cols="100%"]
+|===
+|*OtherHorizonNotationType*
+a|
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !other horizon notation type
+!  !Definition: !classification of a horizon according to a specific classification system.
+!  !Description: !A code system denoting horizons in which the same dominant soil forming processes have been active in the same way. This code summarizes many observations of the soil description and gives an impression about the genetic processes that have formed the soil under observation.
+!  !Stereotypes: !«dataType»
+!===
+
+a|
+*Attribute: horizonNotation*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !horizon notation
+!  !Value type: !OtherHorizonNotationTypeValue
+!  !Definition: !notation characterizing the soil horizon according to a specified classification system.
+!  !Description: !NOTE This is also called horizon designation value, horizon designation or horizon symbol. 
+EXAMPLE "ss" connotes slickensides in Soil taxonomy (FAO uses "I" for this). 
+The notation in several classification systems can be the same as well: "Ap" is a A horizon which has been ploughed (according German Bodenkundliche Kartieranleitung, 5th ed).
+!  !Multiplicity: !1
+!===
+
+a|
+*Attribute: isOriginalClassification*
+
+[width="100%",cols="5%,17%,78%"]
+!===
+!  !Name: !is original classification
+!  !Value type: !Boolean
+!  !Definition: !Boolean value to indicate whether the specified horizon notation system was the original notation system to describe the horizon.
+!  !Description: !This is to indicate whether the horizon notation has been determined in the field (or for derived soil profiles during the original derivation), or has been adapted, changed or assigned on the basis of the original horizon description later. This might be relevant for data quality information.
+!  !Multiplicity: !1
+!===
+
+|===
