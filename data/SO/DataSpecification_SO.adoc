@@ -4765,7 +4765,7 @@ SoilPlot
 a|
 SO. <CodeListValue>
 
-where <CodeListValueis one entry from the codelist _SoilDerivedObjectParameterNameValue_
+where CodeListValueis one entry from the codelist _SoilDerivedObjectParameterNameValue_
 
 Example: SO. organicCarbonContent
 
@@ -4776,9 +4776,9 @@ Example: OrganicCarbonContent
 
 |SoilDerivedObject (basePhenomenon: SoilDerivedObjectParameterNameValue) |_Soil_ theme, soil property
 a|
-SO.<CodeListValueCoverage
+SO.CodeListValueCoverage
 
-where <CodeListValueis one entry from the codelist _SoilDerivedObjectParameterNameValue_
+where CodeListValueis one entry from the codelist _SoilDerivedObjectParameterNameValue_
 
 Example: SO. organicCarbonContentCoverage
 
@@ -4802,8 +4802,8 @@ _Article 14_
 (...)
 
 3. For spatial object types whose objects can be further classified using a code list-valued attribute, several layers may be defined. Each of these layers shall include the spatial objects corresponding to one specific code list value. In the definition of such sets of layers in Annexes II-IV,
-(a) the placeholder <CodeListValueshall represent the values of the relevant code list, with the first letter in upper case,
-(b) the placeholder <human-readable nameshall represent the human-readable name of the code list values;
+(a) the placeholder CodeListValueshall represent the values of the relevant code list, with the first letter in upper case,
+(b) the placeholder human-readable nameshall represent the human-readable name of the code list values;
 (c) the spatial object type shall include the relevant attribute and code list, in parentheses;
 (d) one example of a layer shall be given.
 
