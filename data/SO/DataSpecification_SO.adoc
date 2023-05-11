@@ -3839,3 +3839,1256 @@ For the tests on conceptual consistency, it is recommended to use the _Logical c
 |Example |
 |Measure identifier |10
 |===
+
+==== Logical consistency – Domain consistency
+
+The Application Schema conformance class of the Abstract Test Suite in Annex I defines a number of tests to evaluate the domain consistency (tests A1.10-A.1.12) of a data set.
+
+[NOTE]
+====
+*Recomendation 9*
+
+For the tests on domain consistency, it is recommended to use the _Logical consistency – Domain consistency_ data quality sub-element and the measure _Number of items not in conformance with their value domain_ as specified in the table below.
+
+====
+
+[width="100%",cols="34%,66%",]
+|===
+|*Name* |*Number of items not in conformance with their value domain*
+|Alternative name |-
+|Data quality element |logical consistency
+|Data quality sub-element |domain consistency
+|Data quality basic measure |error count
+|Definition |count of all items in the dataset that are not in conformance with their value domain
+|Description |
+|Evaluation scope |spatial object / spatial object type
+|Reporting scope |data set
+|Parameter |-
+|Data quality value type |integer
+|===
+
+==== Completeness – Omission
+
+[NOTE]
+====
+*Recomendation 10*
+
+Omission should be evaluated and documented using rate of missing items as specified in the tables below.
+
+====
+
+[width="100%",cols="34%,66%",options="header",]
+|===
+|*Name* |*Rate of missing items*
+|Alternative name |-
+|Data quality element |Completeness
+|Data quality sub-element |Omission
+|Data quality basic measure |Error rate
+|Definition |Number of missing items in the dataset in relation to the number of items that should have been present
+|Description a|
+[arabic, start=1]
+. Number of soil profiles without a WRB soil name as specified using the WRBSoilName parameter, divided by the number of soil profiles in the data set, as percentage.
+
+[arabic, start=2]
+. Number of soil profiles in which not all soil horizons have a FAO horizon notation as specified using the FAOHorizonNotation parameter, divided by the number of soil profiles in the data set, as percentage.
+
+|Evaluation scope |spatial object: Soil profile, parameters WRBSoilName, FAOHorizonNotation of soil horizons assigned to the soil profile
+|Reporting scope a|
+data set
+
+data set series
+
+|Parameter |-
+|Data quality value type |Real (percentage)
+|Data quality value structure |Single value
+|Source reference |ISO/DIS 19157 Geographic information – Data quality
+|Example |The data set contains 23 observed soil profiles. For 22 of them, a WRB name is provided. So the value for the rate of missing items is 1/23 multiplied by 100 percent, i.e. 4.35 %.
+|Measure identifier |7 (ISO/DIS 19157:2012)
+|===
+
+===  
+Minimum data quality requirements
+
+No minimum data quality requirements are defined for the spatial data theme _Soil_.
+
+=== Minimum data quality recommendations
+
+No minimum data quality recommendations are defined for the spatial data theme _Soil_.
+
+==  
+Dataset-level metadata
+
+This section specifies dataset-level metadata elements, which should be used for documenting metadata for a complete dataset or dataset series.
+
+NOTE Metadata can also be reported for each individual spatial object (spatial object-level metadata). Spatial object-level metadata is fully described in the application schema(s) (section 5).
+
+For some dataset-level metadata elements, in particular those for reporting data quality and maintenance, a more specific scope can be specified. This allows the definition of metadata at sub-dataset level, e.g. separately for each spatial object type (see instructions for the relevant metadata element).
+
+=== Metadata elements defined in INSPIRE Metadata Regulation
+
+[.text-center]
+Table 4 gives an overview of the metadata elements specified in Regulation 1205/2008/EC (implementing Directive 2007/2/EC of the European Parliament and of the Council as regards metadata).
+
+The table contains the following information:
+
+* The first column provides a reference to the relevant section in the Metadata Regulation, which contains a more detailed description.
+* The second column specifies the name of the metadata element.
+* The third column specifies the multiplicity.
+* The fourth column specifies the condition, under which the given element becomes mandatory.
+
+Table 4 – Metadata for spatial datasets and spatial dataset series specified in Regulation 1205/2008/EC
+
+[align=center,width="100%",cols="17%,28%,15%,40%",options="header",]
+|===
+|*Metadata Regulation Section* |*Metadata element* |*Multiplicity* |*Condition*
+|1.1 |Resource title |1 |
+|1.2 |Resource abstract |1 |
+|1.3 |Resource type |1 |
+|1.4 |Resource locator |0..* |Mandatory if a URL is available to obtain more information on the resource, and/or access related services.
+|1.5 |Unique resource identifier |1..* |
+|1.7 |Resource language |0..* |Mandatory if the resource includes textual information.
+|2.1 |Topic category |1..* |
+|3 |Keyword |1..* |
+|4.1 |Geographic bounding box |1..* |
+|5 |Temporal reference |1..* |
+|6.1 |Lineage |1 |
+|6.2 |Spatial resolution |0..* |Mandatory for data sets and data set series if an equivalent scale or a resolution distance can be specified.
+|7 |Conformity |1..* |
+|8.1 |Conditions for access and use |1..* |
+|8.2 |Limitations on public access |1..* |
+|9 |Responsible organisation |1..* |
+|10.1 |Metadata point of contact |1..* |
+|10.2 |Metadata date |1 |
+|10.3 |Metadata language |1 |
+|===
+
+Generic guidelines for implementing these elements using ISO 19115 and 19119 are available at _http://inspire.jrc.ec.europa.eu/index.cfm/pageid/101_. The following sections describe additional theme-specific recommendations and requirements for implementing these elements.
+
+==== Conformity
+
+The _Conformity_ metadata element defined in Regulation 1205/2008/EC requires to report the conformance with the Implementing Rule for interoperability of spatial data sets and services. In addition, it may be used also to document the conformance to another specification.
+
+[NOTE]
+====
+*Recomendation 11*
+
+Dataset metadata should include a statement on the overall conformance of the dataset with this data specification (i.e. conformance with all requirements).
+
+====
+
+[NOTE]
+====
+*Recomendation 12*
+
+The _Conformity_ metadata element should be used to document conformance with this data specification (as a whole), with a specific conformance class defined in the Abstract Test Suite in Annex A and/or with another specification.
+
+====
+
+The _Conformity_ element includes two sub-elements, the _Specification_ (a citation of the Implementing Rule for interoperability of spatial data sets and services or other specification), and the _Degree_ of conformity. The _Degree_ can be _Conformant_ (if the dataset is fully conformant with the cited specification), _Not Conformant_ (if the dataset does not conform to the cited specification) or _Not Evaluated_ (if the conformance has not been evaluated).
+
+[NOTE]
+====
+*Recomendation 13*
+
+If a dataset is not yet conformant with all requirements of this data specification, it is recommended to include information on the conformance with the individual conformance classes specified in the Abstract Test Suite in Annex A.
+
+====
+
+[NOTE]
+====
+*Recomendation 14*
+
+If a dataset is produced or transformed according to an external specification that includes specific quality assurance procedures, the conformity with this specification should be documented using the _Conformity_ metadata element.
+
+====
+
+[NOTE]
+====
+*Recomendation 15*
+
+If minimum data quality recommendations are defined then the statement on the conformity with these requirements should be included using the _Conformity_ metadata element and referring to the relevant data quality conformance class in the Abstract Test Suite.
+
+====
+
+NOTE Currently no minimum data quality requirements are included in the IRs. The recommendation above should be included as a requirement in the IRs if minimum data quality requirements are defined at some point in the future.
+
+[NOTE]
+====
+*Recomendation 16*
+
+When documenting conformance with this data specification or one of the conformance classes defined in the Abstract Test Suite, the _Specification_ sub-element should be given using the http URI identifier of the conformance class or using a citation including the following elements:
+
+- title: "INSPIRE Data Specification on _Soil_ – Draft Guidelines – <name of the conformance class>"
+
+- date:
+
+- dateType: publication
+
+- date: 2013-01-24
+
+====
+
+EXAMPLE 1: The XML snippets below show how to fill the _Specification_ sub-element for documenting conformance with the whole data specification on Addresses v3.0.1.
+
+<gmd:DQ_ConformanceResult>
+
+*<gmd:specification href="http://inspire.ec.europa.eu/conformanceClass/ad/3.0.1/tg" />*
+
+<gmd:explanation(...) </gmd:explanation>
+
+<gmd:pass(...) </gmd:pass>
+
+</gmd:DQ_ConformanceResult>
+
+or (using a citation):
+
+<gmd:DQ_ConformanceResult>
+
+*<gmd:specification>*
+
+<gmd:CI_Citation>
+
+*<gmd:title>*
+
+*<gco:CharacterString>INSPIRE Data Specification on Soil – Draft Guidelines</gco:CharacterString>*
+
+*</gmd:title>*
+
+<gmd:date>
+
+<gmd:date>
+
+*<gco:Date>2013-01-24</gco:Date>*
+
+</gmd:date>
+
+<gmd:dateType>
+
+*<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resou*
+
+*rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>*
+
+</gmd:dateType>
+
+</gmd:date>
+
+</gmd:CI_Citation>
+
+*</gmd:specification>*
+
+<gmd:explanation(...) </gmd:explanation>
+
+<gmd:pass(...) </gmd:pass>
+
+</gmd:DQ_ConformanceResult>
+
+EXAMPLE 2: The XML snippets below show how to fill the _Specification_ sub-element for documenting conformance with the CRS conformance class of the data specification on Addresses v3.0.1.
+
+<gmd:DQ_ConformanceResult>
+
+*<gmd:specification href="http://inspire.ec.europa.eu/conformanceClass/ad/3.0.1/crs" />*
+
+<gmd:explanation(...) </gmd:explanation>
+
+<gmd:pass(...) </gmd:pass>
+
+</gmd:DQ_ConformanceResult>
+
+or (using a citation):
+
+<gmd:DQ_ConformanceResult>
+
+*<gmd:specification>*
+
+<gmd:CI_Citation>
+
+*<gmd:title>*
+
+*<gco:CharacterString>INSPIRE Data Specification on Soil – Draft Guidelines – CRS</gco:CharacterString>*
+
+*</gmd:title>*
+
+<gmd:date>
+
+<gmd:date>
+
+*<gco:Date>2013-01-24</gco:Date>*
+
+</gmd:date>
+
+<gmd:dateType>
+
+*<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resou*
+
+*rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>*
+
+</gmd:dateType>
+
+</gmd:date>
+
+</gmd:CI_Citation>
+
+*</gmd:specification>*
+
+<gmd:explanation(...) </gmd:explanation>
+
+<gmd:pass(...) </gmd:pass>
+
+</gmd:DQ_ConformanceResult>
+
+==== Lineage
+
+[NOTE]
+====
+*Recomendation 17*
+
+Following the ISO/DIS 19157 Quality principles, if a data provider has a procedure for the quality management of their spatial data sets then the appropriate data quality elements and measures defined in ISO/DIS 19157 should be used to evaluate and report (in the metadata) the results. If not, the _Lineage_ metadata element (defined in Regulation 1205/2008/EC) should be used to describe the overall quality of a spatial data set.
+
+====
+
+According to Regulation 1205/2008/EC, lineage "is a statement on process history and/or overall quality of the spatial data set. Where appropriate it may include a statement whether the data set has been validated or quality assured, whether it is the official version (if multiple versions exist), and whether it has legal validity. The value domain of this metadata element is free text".
+
+The Metadata Technical Guidelines based on EN ISO 19115 and EN ISO 19119 specifies that the statement sub-element of LI_Lineage (EN ISO 19115) should be used to implement the lineage metadata element.
+
+[NOTE]
+====
+*Recomendation 18*
+
+To describe the transformation steps and related source data, it is recommended to use the following sub-elements of LI_Lineage:
+
+====
+
+- For the description of the transformation process of the local to the common INSPIRE data structures, the LI_ProcessStep sub-element should be used.
+
+- For the description of the source data the LI_Source sub-element should be used.
+
+NOTE 1 In order to improve the interoperability, domain templates and instructions for using these free text elements (descriptive statements) may be specified here and/or in an Annex of this data specification.
+
+===== Theme specific recommendation on the use of Lineage
+
+The Lineage metadata field should be used to
+
+* state which source data have been used to produce the current dataset;
+* resulting limitations to the use of the dataset, e.g. regarding scale, and
+* describe known errors or shortcomings of the dataset.
+
+If data on soil or other kinds of classification are included in the dataset, the classification systems should be stated or described as well.
+
+==== Temporal reference
+
+According to Regulation 1205/2008/EC, at least one of the following temporal reference metadata sub-elements shall be provided: temporal extent, date of publication, date of last revision, date of creation.
+
+[NOTE]
+====
+*Recomendation 19*
+
+It is recommended that at least the date of the last revision of a spatial data set should be reported using the _Date of last revision_ metadata sub-element.
+
+====
+
+===  
+Metadata elements for interoperability
+
+[IMPORTANT]
+====
+*IR Requirement*
+
+Article 13
+
+*Metadata required for Interoperability*
+
+The metadata describing a spatial data set shall include the following metadata elements required for interoperability:
+
+{empty}1. Coordinate Reference System: Description of the coordinate reference system(s) used in the data set.
+
+{empty}2. Temporal Reference System: Description of the temporal reference system(s) used in the data set.
+
+This element is mandatory only if the spatial data set contains temporal information that does not refer to the default temporal reference system.
+
+{empty}3. Encoding: Description of the computer language construct(s) specifying the representation of data objects in a record, file, message, storage device or transmission channel.
+
+{empty}4. Topological Consistency: Correctness of the explicitly encoded topological characteristics of the data set as described by the scope.
+
+This element is mandatory only if the data set includes types from the Generic Network Model and does not assure centreline topology (connectivity of centrelines) for the network.
+
+{empty}5. Character Encoding: The character encoding used in the data set.
+
+This element is mandatory only if an encoding is used that is not based on UTF-8.
+
+{empty}6. Spatial Representation Type: The method used to spatially represent geographic information.
+
+====
+
+These Technical Guidelines propose to implement the required metadata elements based on ISO 19115 and ISO/TS 19139.
+
+The following TG requirements need to be met in order to be conformant with the proposed encoding.
+
+[TIP]
+====
+*TG Requirement 3*
+
+Metadata instance (XML) documents shall validate without error against the used ISO 19139 XML schema.
+
+====
+
+NOTE Section 2.1.2 of the Metadata Technical Guidelines discusses the different ISO 19139 XML schemas that are currently available.
+
+[TIP]
+====
+*TG Requirement 4*
+
+Metadata instance (XML) documents shall contain the elements and meet the INSPIRE multiplicity specified in the sections below.
+
+====
+
+[TIP]
+====
+*TG Requirement 5*
+
+The elements specified below shall be available in the specified ISO/TS 19139 path.
+
+====
+
+[NOTE]
+====
+*Recomendation 20*
+
+The metadata elements for interoperability should be made available together with the metadata elements defined in the Metadata Regulation through an INSPIRE discovery service.
+
+====
+
+NOTE While this not explicitly required by any of the INSPIRE Implementing Rules, making all metadata of a data set available together and through one service simplifies implementation and usability.
+
+==== Coordinate Reference System
+
+[width="100%",cols="33%,67%",options="header",]
+|===
+|Metadata element name |*Coordinate Reference System*
+|Definition |Description of the coordinate reference system used in the dataset.
+|ISO 19115 number and name |13. referenceSystemInfo
+|ISO/TS 19139 path |referenceSystemInfo
+|INSPIRE obligation / condition |mandatory
+|INSPIRE multiplicity |1..*
+|Data type(and ISO 19115 no.) |186. MD_ReferenceSystem
+|Domain a|
+To identify the reference system, the referenceSystemIdentifier (RS_Identifier) shall be provided.
+
+NOTE More specific instructions, in particular on pre-defined values for filling the referenceSystemIdentifier attribute should be agreed among Member States during the implementation phase to support interoperability.
+
+|Implementing instructions |
+|Example a|
+referenceSystemIdentifier:
+
+code: ETRS_89
+
+codeSpace: INSPIRE RS registry
+
+|Example XML encoding a|
+<gmd:referenceSystemInfo>
+
+<gmd:MD_ReferenceSystem>
+
+<gmd:referenceSystemIdentifier>
+
+<gmd:RS_Identifier>
+
+<gmd:code>
+
+<gco:CharacterString>ETRS89 </gco:CharacterString>
+
+</gmd:code>
+
+<gmd:codeSpace>
+
+<gco:CharacterString>INSPIRE RS registry</gco:CharacterString>
+
+</gmd:codeSpace>
+
+</gmd:RS_Identifier>
+
+</gmd:referenceSystemIdentifier>
+
+</gmd:MD_ReferenceSystem>
+
+</gmd:referenceSystemInfo>
+
+|Comments |
+|===
+
+==== Temporal Reference System
+
+[width="100%",cols="33%,67%",options="header",]
+|===
+|Metadata element name |*Temporal Reference System*
+|Definition |Description of the temporal reference systems used in the dataset.
+|ISO 19115 number and name |13. referenceSystemInfo
+|ISO/TS 19139 path |referenceSystemInfo
+|INSPIRE obligation / condition |Mandatory, if the spatial data set or one of its feature types contains temporal information that does not refer to the Gregorian Calendar or the Coordinated Universal Time.
+|INSPIRE multiplicity |0..*
+|Data type(and ISO 19115 no.) |186. MD_ReferenceSystem
+|Domain a|
+No specific type is defined in ISO 19115 for temporal reference systems. Thus, the generic MD_ReferenceSystem element and its reference SystemIdentifier (RS_Identifier) property shall be provided.
+
+NOTE More specific instructions, in particular on pre-defined values for filling the referenceSystemIdentifier attribute should be agreed among Member States during the implementation phase to support interoperability.
+
+|Implementing instructions |
+|Example a|
+referenceSystemIdentifier:
+
+code: GregorianCalendar
+
+codeSpace: INSPIRE RS registry
+
+|Example XML encoding a|
+<gmd:referenceSystemInfo>
+
+<gmd:MD_ReferenceSystem>
+
+<gmd:referenceSystemIdentifier>
+
+<gmd:RS_Identifier>
+
+<gmd:code>
+
+<gco:CharacterString>GregorianCalendar </gco:CharacterString>
+
+</gmd:code>
+
+<gmd:codeSpace>
+
+<gco:CharacterString>INSPIRE RS registry</gco:CharacterString>
+
+</gmd:codeSpace>
+
+</gmd:RS_Identifier>
+
+</gmd:referenceSystemIdentifier>
+
+</gmd:MD_ReferenceSystem>
+
+</gmd:referenceSystemInfo>
+
+|Comments |
+|===
+
+==== Encoding
+
+[width="100%",cols="33%,67%",options="header",]
+|===
+|Metadata element name |*Encoding*
+|Definition |Description of the computer language construct that specifies the representation of data objects in a record, file, message, storage device or transmission channel
+|ISO 19115 number and name |271. distributionFormat
+|ISO/TS 19139 path |distributionInfo/MD_Distribution/distributionFormat
+|INSPIRE obligation / condition |mandatory
+|INSPIRE multiplicity |1..*
+|Data type (and ISO 19115 no.) |284. MD_Format
+|Domain |See B.2.10.4. The property values (name, version, specification) specified in section 5 shall be used to document the default and alternative encodings.
+|Implementing instructions |
+|Example a|
+name: <Application schema nameGML application schema
+
+version: version 3.0
+
+specification: D2.8.III.3 Data Specification on Soil – Technical Guidelines
+
+|Example XML encoding a|
+<gmd:MD_Format>
+
+<gmd:name>
+
+<gco:CharacterString>SomeApplicationSchema GML application schema</gco:CharacterString>
+
+</gmd:name>
+
+<gmd:version>
+
+<gco:CharacterString>3.0</gco:CharacterString>
+
+</gmd:version>
+
+<gmd:specification>
+
+<gco:CharacterString>D2.8.III.3 Data Specification on Soil – Technical Guidelines</gco:CharacterString>
+
+</gmd:specification>
+
+</gmd:MD_Format>
+
+|Comments |
+|===
+
+==== Character Encoding
+
+[width="100%",cols="33%,67%",options="header",]
+|===
+|Metadata element name |*Character Encoding*
+|Definition |The character encoding used in the data set.
+|ISO 19115 number and name |
+|ISO/TS 19139 path |
+|INSPIRE obligation / condition |Mandatory, if an encoding is used that is not based on UTF-8.
+|INSPIRE multiplicity |0..*
+|Data type (and ISO 19115 no.) |
+|Domain |
+|Implementing instructions |
+|Example |-
+|Example XML encoding a|
+<gmd:characterSet>
+
+<gmd:MD_CharacterSetCode codeListValue="8859part2" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CharacterSetCode">8859-2</gmd:MD_CharacterSetCode>
+
+</gmd:characterSet>
+
+|Comments |
+|===
+
+==== Spatial representation type
+
+[width="100%",cols="33%,67%",options="header",]
+|===
+|Metadata element name |*Spatial representation type*
+|Definition |The method used to spatially represent geographic information.
+|ISO 19115 number and name |37. spatialRepresentationType
+|ISO/TS 19139 path |
+|INSPIRE obligation / condition |Mandatory
+|INSPIRE multiplicity |1..*
+|Data type (and ISO 19115 no.) |B.5.26 MD_SpatialRepresentationTypeCode
+|Domain |
+|Implementing instructions a|
+Of the values included in the code list in ISO 19115 (vector, grid, textTable, tin, stereoModel, video), only vector, grid and tin should be used.
+
+NOTE Additional code list values may be defined based on feedback from implementation.
+
+|Example |-
+|Example XML encoding |
+|Comments |
+|===
+
+==== Data Quality – Logical Consistency – Topological Consistency
+
+See section 8.3.2 for instructions on how to implement metadata elements for reporting data quality.
+
+=== 
+
+===  
+Recommended theme-specific metadata elements
+
+[NOTE]
+====
+*Recomendation 21*
+
+The metadata describing a spatial data set or a spatial data set series related to the theme _Soil_ should comprise the theme-specific metadata elements specified in *Table 5*.
+
+====
+
+The table contains the following information:
+
+* The first column provides a reference to a more detailed description.
+* The second column specifies the name of the metadata element.
+* The third column specifies the multiplicity.
+
+*Table 5 – Optional theme-specific metadata elements for the theme Soil*
+
+[width="100%",cols="12%,73%,15%",options="header",]
+|===
+|*Section* |*Metadata element* |*Multiplicity*
+|8.3.1 |Maintenance Information |0..1
+|8.3.2 |Logical Consistency – Conceptual Consistency |0..*
+|8.3.2 |Logical Consistency – Domain Consistency |0..*
+|8.3.2 |Commission – Ommission |0..*
+|===
+
+[NOTE]
+====
+*Recomendation 22*
+
+For implementing the metadata elements included in this section using ISO 19115, ISO/DIS 19157 and ISO/TS 19139, the instructions included in the relevant sub-sections should be followed.
+
+====
+
+==== Maintenance Information
+
+[width="100%",cols="33%,67%",options="header",]
+|===
+|Metadata element name |*Maintenance information*
+|Definition |Information about the scope and frequency of updating
+|ISO 19115 number and name |30. resourceMaintenance
+|ISO/TS 19139 path |identificationInfo/MD_Identification/resourceMaintenance
+|INSPIRE obligation / condition |optional
+|INSPIRE multiplicity |0..1
+|Data type(and ISO 19115 no.) |142. MD_MaintenanceInformation
+|Domain a|
+This is a complex type (lines 143-148 from ISO 19115).
+
+At least the following elements should be used (the multiplicity according to ISO 19115 is shown in parentheses):
+
+* {blank}
+
+====
+maintenanceAndUpdateFrequency [1]: frequency with which changes and additions are made to the resource after the initial resource is completed / domain value: MD_MaintenanceFrequencyCode:
+====
+* {blank}
+
+====
+updateScope [0..*]: scope of data to which maintenance is applied / domain value: MD_ScopeCode
+====
+* {blank}
+
+====
+maintenanceNote [0..*]: information regarding specific requirements for maintaining the resource / domain value: free text
+====
+
+|Implementing instructions |
+|Example |
+|Example XML encoding |
+|Comments |
+|===
+
+==== Metadata elements for reporting data quality
+
+[NOTE]
+====
+*Recomendation 23*
+
+For reporting the results of the data quality evaluation, the data quality elements, sub-elements and (for quantitative evaluation) measures defined in chapter 7 should be used.
+
+====
+
+[NOTE]
+====
+*Recomendation 24*
+
+The metadata elements specified in the following sections should be used to report the results of the data quality evaluation. At least the information included in the row "Implementation instructions" should be provided.
+
+====
+
+The first section applies to reporting quantitative results (using the element DQ_QuantitativeResult), while the second section applies to reporting non-quantitative results (using the element DQ_DescriptiveResult).
+
+[NOTE]
+====
+*Recomendation 25*
+
+If a dataset does not pass the tests of the Application schema conformance class (defined in Annex A), the results of each test should be reported using one of the options described in sections 8.3.2.1 and 8.3.2.2.
+
+====
+
+NOTE 1 If using non-quantitative description, the results of several tests do not have to be reported separately, but may be combined into one descriptive statement.
+
+NOTE 2 The sections 8.3.2.1 and 8.3.2.2 may need to be updated once the XML schemas for ISO 19157 have been finalised.
+
+The scope for reporting may be different from the scope for evaluating data quality (see section 7). If data quality is reported at the data set or spatial object type level, the results are usually derived or aggregated.
+
+[NOTE]
+====
+*Recomendation 26*
+
+The scope element (of type DQ_Scope) of the DQ_DataQuality subtype should be used to encode the reporting scope.
+
+Only the following values should be used for the level element of DQ_Scope: Series, Dataset, featureType.
+
+If the level is featureType the levelDescription/MDScopeDescription/features element (of type Set< GF_FeatureType>) shall be used to list the feature type names.
+
+====
+
+NOTE In the level element of DQ_Scope, the value featureType is used to denote spatial object type.
+
+===== Guidelines for reporting quantitative results of the data quality evaluation
+
+[width="100%",cols="36%,64%",options="header",]
+|===
+|Metadata element name |*See chapter 7*
+|Definition |See chapter 7
+|ISO/DIS 19157 number and name |3. report
+|ISO/TS 19139 path |dataQualityInfo/*/report
+|INSPIRE obligation / condition |optional
+|INSPIRE multiplicity |0..*
+|Data type (and ISO/DIS 19157 no.) |Corresponding DQ_xxx subelement from ISO/DIS 19157, e.g. 12. DQ_CompletenessCommission
+|Domain a|
+Lines 7-9 from ISO/DIS 19157
+
+{empty}7. DQ_MeasureReference (C.2.1.3)
+
+{empty}8. DQ_EvaluationMethod (C.2.1.4.)
+
+{empty}9. DQ_Result (C2.1.5.)
+
+|Implementing instructions a|
+{empty}39. nameOfMeasure
+
+NOTE This should be the name as defined in Chapter 7.
+
+{empty}42. evaluationMethodType
+
+{empty}43. evaluationMethodDescription
+
+NOTE If the reported data quality results are derived or aggregated (i.e. the scope levels for evaluation and reporting are different), the derivation or aggregation should also be specified using this property.
+
+{empty}46. dateTime
+
+NOTE This should be data or range of dates on which the data quality measure was applied.
+
+{empty}63. DQ_QuantitativeResult / 64. value
+
+NOTE The DQ_Result type should be DQ_QuantitativeResult and the value(s) represent(s) the application of the data quality measure (39.) using the specified evaluation method (42-43.)
+
+|Example |See Table E.12 — Reporting commission as metadata (ISO/DIS 19157)
+|Example XML encoding |
+|===
+
+===== Guidelines for reporting descriptive results of the Data Quality evaluation
+
+[width="100%",cols="36%,64%",options="header",]
+|===
+|Metadata element name |*See chapter 7*
+|Definition |See chapter 7
+|ISO/DIS 19157 number and name |3. report
+|ISO/TS 19139 path |dataQualityInfo/*/report
+|INSPIRE obligation / condition |optional
+|INSPIRE multiplicity |0..*
+|Data type (and ISO/DIS 19157 no.) |Corresponding DQ_xxx subelement from ISO/DIS 19157, e.g. 12. DQ_CompletenessCommission
+|Domain a|
+Line 9 from ISO/DIS 19157
+
+{empty}9. DQ_Result (C2.1.5.)
+
+|Implementing instructions a|
+{empty}67. DQ_DescripitveResult / 68. statement
+
+NOTE The DQ_Result type should be DQ_DescriptiveResult and in the statement (68.) the evaluation of the selected DQ sub-element should be expressed in a narrative way.
+
+|Example |See Table E.15 — Reporting descriptive result as metadata (ISO/DIS 19157)
+|Example XML encoding |
+|===
+
+== Delivery
+
+=== Updates
+
+[IMPORTANT]
+====
+*IR Requirement*
+
+_Article 8_
+
+*Updates*
+
+{empty}1. Member States shall make available updates of data on a regular basis.
+
+{empty}2. All updates shall be made available at the latest 6 months after the change was applied in the source data set, unless a different period is specified for a specific spatial data theme in Annex II.
+
+====
+
+NOTE In this data specification, no exception is specified, so all updates shall be made available at the latest 6 months after the change was applied in the source data set.
+
+=== Delivery medium
+
+According to Article 11(1) of the INSPIRE Directive, Member States shall establish and operate a network of services for INSPIRE spatial data sets and services. The relevant network service types for making spatial data available are:
+
+* _view services_ making it possible, as a minimum, to display, navigate, zoom in/out, pan, or overlay viewable spatial data sets and to display legend information and any relevant content of metadata;
+* _download services_, enabling copies of spatial data sets, or parts of such sets, to be downloaded and, where practicable, accessed directly;
+* _transformation services_, enabling spatial data sets to be transformed with a view to achieving interoperability.
+
+NOTE For the relevant requirements and recommendations for network services, see the relevant Implementing Rules and Technical Guidelinesfootnote:[The Implementing Rules and Technical Guidelines on INSPIRE Network Services are available at http://inspire.jrc.ec.europa.eu/index.cfm/pageid/5].
+
+EXAMPLE 1 Through the Get Spatial Objects function, a download service can either download a pre-defined data set or pre-defined part of a data set (non-direct access download service), or give direct access to the spatial objects contained in the data set, and download selections of spatial objects based upon a query (direct access download service). To execute such a request, some of the following information might be required:
+
+* the list of spatial object types and/or predefined data sets that are offered by the download service (to be provided through the Get Download Service Metadata operation),
+* and the query capabilities section advertising the types of predicates that may be used to form a query expression (to be provided through the Get Download Service Metadata operation, where applicable),
+* a description of spatial object types offered by a download service instance (to be provided through the Describe Spatial Object Types operation).
+
+EXAMPLE 2 Through the Transform function, a transformation service carries out data content transformations from native data forms to the INSPIRE-compliant form and vice versa. If this operation is directly called by an application to transform source data (e.g. obtained through a download service) that is not yet conformant with this data specification, the following parameters are required:
+
+Input data (mandatory). The data set to be transformed.
+
+* Source model (mandatory, if cannot be determined from the input data). The model in which the input data is provided.
+* Target model (mandatory). The model in which the results are expected.
+* Model mapping (mandatory, unless a default exists). Detailed description of how the transformation is to be carried out.
+
+=== Encodings
+
+The IRs contain the following two requirements for the encoding to be used to make data available.
+
+[IMPORTANT]
+====
+*IR Requirement*
+
+_Article 7_
+
+*Encoding*
+
+{empty}1. Every encoding rule used to encode spatial data shall conform to EN ISO 19118. In particular, it shall specify schema conversion rules for all spatial object types and all attributes and association roles and the output data structure used.
+
+{empty}2. Every encoding rule used to encode spatial data shall be made available.
+
+====
+
+NOTE ISO 19118:2011 specifies the requirements for defining encoding rules used for interchange of geographic data within the set of International Standards known as the "ISO 19100 series". An encoding rule allows geographic information defined by application schemas and standardized schemas to be coded into a system-independent data structure suitable for transport and storage. The encoding rule specifies the types of data being coded and the syntax, structure and coding schemes used in the resulting data structure. Specifically, ISO 19118:2011 includes
+
+* requirements for creating encoding rules based on UML schemas,
+* requirements for creating encoding services, and
+* requirements for XML-based encoding rules for neutral interchange of data.
+
+While the IRs do not oblige the usage of a specific encoding, these Technical Guidelines propose to make data related to the spatial data theme _Soil_ available at least in the default encoding(s) specified in section 0. In this section, a number of TG requirements are listed that need to be met in order to be conformant with the default encoding(s).
+
+The proposed default encoding(s) meet the requirements in Article 7 of the IRs, i.e. they are conformant with ISO 19118 and (since they are included in this specification) publicly available.
+
+==== Default Encoding(s)
+
+===== Specific requirements for GML encoding
+
+This data specification proposes the use of GML as the default encoding, as recommended in sections 7.2 and 7.3 of [DS-D2.7]. GML is an XML encoding in compliance with ISO 19118, as required in Article 7(1). For details, see [ISO 19136], and in particular Annex E (UML-to-GML application schema encoding rules).
+
+The following TG requirements need to be met in order to be conformant with GML encodings.
+
+[TIP]
+====
+*TG Requirement 6*
+
+Data instance (XML) documents shall validate without error against the provided XML schema.
+
+====
+
+NOTE 1 Not all constraints defined in the application schemas can be mapped to XML. Therefore, the following requirement is necessary.
+
+NOTE 2 The obligation to use only the allowed code list values specified for attributes and most of the constraints defined in the application schemas cannot be mapped to the XML sch. They can therefore not be enforced through schema validation. It may be possible to express some of these constraints using other schema or rule languages (e.g. Schematron), in order to enable automatic validation.
+
+===== Default encoding(s) for application schema <application schema name>
+
+*Name: Soil GML Application Schema*
+
+Version: version 3.0,
+
+Specification: D2.8.III.3 Data Specification on _Soil_ – Technical Guidelines
+
+Character set: UTF-8
+
+The xml schema document is available from _http://inspire.ec.europa.eu/schemas/so/3.0/Soil.xsd_
+
+==== Recommended Encoding(s)
+
+[NOTE]
+====
+*Recomendation 27*
+
+It is recommended that also the encodings specified in this section be provided for the relevant application schemas.
+
+====
+
+NOTE In the Annex D the TWG has prepared the SoilContamination data model extension that includes the feature catalogue. It is recommended as a starting point for further development.
+
+=== Options for delivering coverage data
+
+For coverages, different encodings may be used for the domain and the range of the coverage. There are several options for packaging the domain and range encoding when delivering coverage data through a download service, as discussed belowfootnote:[Further details and examples will be included in a future version of the Guidelines for the encoding of spatial data [DS-D2.7].].
+
+*Multipart representation*
+
+For performance reasons, binary file formats are usually preferred to text-based formats such as XML for storing large amounts of coverage data. However, they cannot directly constitute an alternative to pure GML, since their own data structure might often not support all the ISO 19123 elements used to describe coverages in the conceptual model.
+
+The OGC standard GML Application Schema for coverages [OGC 09-146r2] offers a format encoding which combines these two approaches. The first part consists of a GML document representing all coverage components except the range set, which is contained in the second part in some other encoding format such as 'well known' binary formats'. Some information in the second part may be redundant with the GML content of the first part. In this case, consistency must be necessarily ensured, for example by defining a GML mapping of the additional encoding format.
+
+The advantage of this multipart representation is that coverage constituents are not handled individually but as a whole. This is not really the case with GML which also allows the encoding of the value side of the coverage in external binary files, but via references to remote locations.
+
+[TIP]
+====
+*TG Requirement 7*
+
+Coverage data encoded as multipart messages shall comply with the multipart representation conformance class defined in GML Application Schema for Coverages [OGC 09-146r2].
+
+====
+
+NOTE The GML Application Schema for Coverages establishes a one-to-one relationship between coverages and multipart document instances.
+
+*Reference to an external file*
+
+The range set can be encoded within the XML structure as an external binary file using the gml:File element. This has the benefit of efficiently storing the range set data within an external file that is of a well-known format type, for example TIFF or GeoTIFF. This method of encoding is of most use for the storage of large files.
+
+*Encoding the range inline*
+
+This option encodes the range set data within the XML inline. This is encoded as a DataBlock element. This encoding provides much greater visibility for the range set values, however, this comes at the cost of reduced efficiency. This method of encoding would therefore only be suitable for small datasets.
+
+*Encoding the domain inside a JPEG 2000 file*
+
+This option consists in packaging all the components of one or several coverages, including the domain expressed in GML, in a single JPEG 2000 file. It is based on the OGC standard GML in JPEG 2000 for Geographic Imagery [OGC 05-047r2], also known as GMLJP2, which specifies how to use GML within the XML boxes of JPEG 2000 files.
+
+[TIP]
+====
+*TG Requirement 8*
+
+Coverage data encoded in standalone JPEG 2000 files shall comply with the OGC standard GML in JPEG 2000 for Geographic Imagery [OGC 05-047r2].
+
+====
+
+TG Requirement 8 implies that all the encoding rules presented in GMLJP2 shall be strictly followed for including GML within JPEG 2000 data files correctly. For the sake of harmonization, the encoding rules adopted for the multipart message encoding should also apply to the GMLJP2 encoding.
+
+==== The encoding of coverage components in GMLJP2 within a JPEG 2000 file should conform to the rules specified in the Guidelines for the encoding of spatial data [DS-D2.7].optional encoding for the coverage part of the application schema Soil
+
+For _Soil_ Theme and associated _Soil_ Theme Descriptive sspatial object types that provide the possibility to exchange soil thematic maps information as coverages the following encodings are recommended:
+
+[NOTE]
+====
+*Recomendation 1*
+
+The recommended coverage encodings for SoilThemeCoverage, SoilThemeDescribtedCoverage spatial object types are: GeoTIFF and JPEG2000.
+
+====
+
+The encoding of coverage components in GMLJP2 within a JPEG 2000 file should conform to the rules specified in the Guidelines for the encoding of spatial data [DS-D2.7]
+
+==  
+Data Capture
+
+There is no specific guidance required with respect to data capture.
+
+==  
+Portrayal
+
+This clause defines the rules for layers and styles to be used for portrayal of the spatial object types defined for this theme. Portrayal is regulated in Article 14 of the IRs.
+
+[IMPORTANT]
+====
+*IR Requirement*
+
+_Article 14_
+
+*Portrayal*
+
+{empty}1. For the portrayal of spatial data sets using a view network service as specified in Commission Regulation No 976/2009 (footnote:[OJ L 274, 20.10.2009, p. 9.]), the following shall be available:
+
+{empty}(a) the layers specified in Annex II for the theme or themes the data set is related to;
+
+{empty}(b) for each layer at least a default portrayal style, with as a minimum an associated title and a unique identifier.
+
+{empty}2. For each layer, Annex II defines the following:
+
+{empty}(a) a human readable title of the layer to be used for display in user interface;
+
+{empty}(b) the spatial object type(s), or sub-set thereof, that constitute(s) the content of the layer.
+
+====
+
+In section 11.1, the _types_ of layers are defined that are to be used for the portrayal of the spatial object types defined in this specification. A view service may offer several layers of the same type, one for each dataset that it offers data on a specific topic.
+
+NOTE The layer specification in the IRs only contains the name, a human readable title and the (subset(s) of) spatial object type(s), that constitute(s) the content of the layer. In addition, these Technical Guidelines suggest keywords for describing the layer.
+
+[NOTE]
+====
+*Recomendation 28*
+
+It is recommended to use the keywords specified in section 11.1 in the _Layers Metadata parameters_ of the INSPIRE View service (see Annex III, Part A, section 2.2.4 in Commission Regulation (EC) No 976/2009).
+
+====
+
+Section 11.2 specifies one style for each of these layers. It is proposed that INSPIRE view services support this style as the default style required by Article 14(1b).
+
+[TIP]
+====
+*TG Requirement 9*
+
+For each layer specified in this section, the styles defined in section 11.2 shall be available.
+
+====
+
+NOTE The default style should be used for portrayal by the view network service if no user-defined style is specified in a portrayal request for a specific layer.
+
+In section 11.3, further styles can be specified that represent examples of styles typically used in a thematic domain. It is recommended that also these styles should be supported by INSPIRE view services, where applicable.
+
+[NOTE]
+====
+*Recomendation 29*
+
+In addition, it is recommended that, where applicable, INSPIRE view services also support the styles defined in section 11.3.
+
+====
+
+Where XML fragments are used in the following sections, the following namespace prefixes apply:
+
+* sld="http://www.opengis.net/sld" (WMS/SLD 1.1)
+* se="http://www.opengis.net/se" (SE 1.1)
+* ogc="http://www.opengis.net/ogc" (FE 1.1)
+
+=== Layers to be provided by INSPIRE view services
+
+[width="100%",cols="31%,19%,25%,25%",options="header",]
+|===
+|*Layer Name* |*Layer Title* |*Spatial object type(s)* |*Keywords*
+|_SO.SoilBody_ |Soils |SoilBody |soil body
+|_SO.ObservedSoilProfile_ |Observed Soil Profile a|
+ObservedSoilProfile,
+
+SoilPlot
+
+|soil plot, soil plot location, bore hole, boring, bore hole location, soil profile, profile, soil profile location, trial pit, trial pit location, soil pit
+|_SO.SoilSite_ |Soil Site |SoilSite |soil Site
+a|
+SO. <CodeListValue>
+
+where <CodeListValueis one entry from the codelist _SoilDerivedObjectParameterNameValue_
+
+Example: SO. organicCarbonContent
+
+a|
+<human readable name>
+
+Example: OrganicCarbonContent
+
+|SoilDerivedObject (basePhenomenon: SoilDerivedObjectParameterNameValue) |_Soil_ theme, soil property
+a|
+SO.<CodeListValueCoverage
+
+where <CodeListValueis one entry from the codelist _SoilDerivedObjectParameterNameValue_
+
+Example: SO. organicCarbonContentCoverage
+
+a|
+<human readable name>
+
+Example: OrganicCarbonContent Coverage
+
+|SoilThemeCoverage (soilThemeParameter/ soilThemeParameterName: SoilDerivedObjectParameterNameValue) |_Soil_ theme, soil property
+|===
+
+NOTE The table above contains several layers for the spatial object type(s) <spatial object type names>, which can be further classified using a code list-valued attribute. Such sets of layers are specified as described in Article 14(3) of the IRs.
+
+[IMPORTANT]
+====
+*IR Requirement*
+
+_Article 14_
+
+*Portrayal*
+
+(...)
+
+{empty}3. For spatial object types whose objects can be further classified using a code list-valued attribute, several layers may be defined. Each of these layers shall include the spatial objects corresponding to one specific code list value. In the definition of such sets of layers in Annexes II-IV,
+
+{empty}(a) the placeholder <CodeListValueshall represent the values of the relevant code list, with the first letter in upper case,
+
+{empty}(b) the placeholder <human-readable nameshall represent the human-readable name of the code list values;
+
+{empty}(c) the spatial object type shall include the relevant attribute and code list, in parentheses;
+
+{empty}(d) one example of a layer shall be given.
+
+====
+
+==== Layers organisation
+
+None.
+
+=== Styles required to be supported by INSPIRE view services
+
+==== Styles for the layer SO.SoilBody
+
+[width="100%",cols="19%,81%",options="header",]
+|===
+|*Style Name* |*SO.SoilBody.Default*
+|*Default Style* |Yes
+|*Style Title* |Soil Body Default Style
+|*Style Abstract* |This style is for visualising the boundaries of soil bodies (polygon geometry) using a solid *black* outline with a stroke width of 1 pixel. Each polygon can be labelled with a value that links it unambiguously to its soilBodyLabel (e.g. the value of the soilBodyLabel itself); the label should be in *black* colour using a halo to be readable on dark solid fills and only appears at a certain level of detail centred on the polygon centroid with a size of 10 pt. The same label should appear in the legend with the soilBodyLabel text. This style can be used when overlaying this layer *on light coloured backgrounds.*
+|*Symbology* a|
+[arabic, start=1]
+. The SLD still has to be created
+
+|*Minimum & maximum scales* |No scale limits
+|===
+
+==== Styles for the layer SO.ObservedSoilProfile
+
+[width="100%",cols="19%,81%",options="header",]
+|===
+|*Style Name* |*SO.SoilObservedProfile.Default*
+|*Default Style* |Yes
+|*Style Title* |Observed Soil Profile Default Style
+|*Style Abstract* |This style is for visualising the location associated to instances of the ObservedSoilProfile object, provided that the _soilPlotLocation_ attribute of the associated SoilPlot object is expressed in (X,Y) coordinates. Depending on the value of the attribute soilPlotType, the object is to be displayed differently: a solid *red* circle when the value is _borehole_, a solid *blue* circle when the value is _trialPit_, a solid *green* circle when the value is _sample_.
+|*Symbology* a|
+[arabic, start=2]
+. The SLD still has to be created
+
+|*Minimum & maximum scales* |No scale limits
+|===
+
+==== Styles for the layer SO.SoilSite
+
+[width="100%",cols="19%,81%",options="header",]
+|===
+|*Style Name* |*SO.SoilSite.Default*
+|*Default Style* |Yes
+|*Style Title* |Soil Site Default Style
+|*Style Abstract* |This style is for visualising the boundaries of soil sites (polygon geometry) using a solid blue outline with a stroke width of 1 pixel.
+|*Symbology* a|
+[arabic, start=3]
+. The SLD still has to be created
+
+|*Minimum & maximum scales* |No scale limits
+|===
+
+=== Other recommended styles 
+
+==== Styles for the layer SO.SoilBody
+
+[width="100%",cols="17%,83%",options="header",]
+|===
+|*Style Name* |*SO.SoilBody.WRB*
+|*Style Title* |Soil Body WRB style
+|*Style Abstract* a|
+In the data specifications for SOIL, any instance of the SoilBody object 'is described by' one or more instances of the DerivedSoilProfile object. If the _WRBSoilName_ attribute of these instances hold valid values (i.e. values of the type WRBSoilNameType), one could derive (through an algorithm) a WRB Reference Soil Group value to be associated with the instance of the SoilBody object.
+
+The style SO.SoilBody.WRB is for filling the polygons defined by the _geometry_ attribute with a colour associated with the computed WRB Reference Soil Group. This SO.SoilBody.WRB style additionally outlines the polygons as defined in the SO.SoilBody.Default style.
+
+There is one colour defined for each of the 32 WRB Reference Soil Groups (RSG):
+
+[width="100%",cols="13%,26%,37%,24%",]
+!===
+! ! ! !
+!AC !Acrisol !(247, 152, 4) !#F79804
+!AB !Albeluvisol !(254, 194, 194) !#FEC2C2
+!AL !Alisol !(255, 255, 190) !#FFFFBE
+!AN !Andosol !(254, 0, 0) !#FE0000
+!AT !Anthrosol !(207, 152, 4) !#CF9804
+!AR !Arenosol !(245, 212, 161) !#F5D4A1
+!CL !Calcisol !(254, 244, 0) !#FEF400
+!CM !Cambisol !(254, 190, 0) !#FEBE00
+!CH !Chernozem !(145, 77, 53) !#914D35
+!CR !Cryosol !(75, 61, 172) !#4B3DAC
+!DU !Durisol !(239, 228, 190) !#EFE4BE
+!FR !Ferralsol !(255, 135, 33) !#FF8721
+!FL !Fluvisol !(0, 254, 253) !#00FEFD
+!GL !Gleysol !(128, 131, 217) !#8083D9
+!GY !Gypsisol !(254, 246, 164) !#FEF6A4
+!HS !Histosol !(112, 107, 102) !#706B66
+!KS !Kastanozem !(202, 147, 127) !#CA937F
+!LP !Leptosol !(209, 209, 209) !#D1D1D1
+!LX !Lixisol !(255, 190, 190) !#FFBEBE
+!LV !Luvisol !(250, 132, 132) !#FA8484
+!NT !Nitisol !(255, 167, 127) !#FFA77F
+!PH !Phaeozem !(189, 100, 70) !#BD6446
+!PL !Planosol !(247, 125, 58) !#F77D3A
+!PT !Plinthosol !(115, 0, 0) !#730000
+!PZ !Podzol !(12, 217, 0) !#0CD900
+!RG !Regosol !(254, 227, 164) !#FEE3A4
+!SC !Solonchak !(254, 0, 250) !#FE00FA
+!SN !Solonetz !(249, 194, 254) !#F9C2FE
+!ST !Stagnosols !(64, 192, 233) !#40C0E9
+!TC !Technosols !(145, 0, 157) !#91009D
+!UM !Umbrisol !(115, 142, 127) !#738E7F
+!VR !Vertisol !(197, 0, 255) !#C500FF
+!===
+
+|*Symbology* a|
+[arabic, start=4]
+. The style has to be transformed to a proper SLD
+
+|*Minimum & maximum scales* |No scale limits
+|===
+
+[width="100%",cols="19%,81%",options="header",]
+|===
+|*Style Name* |*SO.SoilBody.Alternative*
+|*Default Style* |Yes
+|*Style Title* |Soil Body Alternative Style
+|*Style Abstract* |This style is for visualising the boundaries of soil bodies (polygon geometry) using a solid *yellow* outline with a stroke width of 1 pixel. Each polygon can be labelled with a value that links it unambiguously to its soilBodyLabel (e.g. the value of the soilBodyLabel itself); the label should be in *yellow* colour using a halo to be readable on dark solid fills and only appears at a certain level of detail centred on the polygon centroid with a size of 10 pt. The same label should appear in the legend with the soilBodyLabel text. This style can be used when overlaying this layer *on dark coloured backgrounds.*
+|*Symbology* a|
+[arabic, start=5]
+. The SLD still has to be created
+
+|*Minimum & maximum scales* |No scale limits
+|===
