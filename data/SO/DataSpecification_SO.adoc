@@ -857,7 +857,7 @@ NOTE Where practicable, the INSPIRE code list register could also provide http U
 
 ===== Vocabulary
 
-For each code list, a tagged value called "vocabulary" is specified to define a URI identifying the values of the code list. For INSPIRE-governed code lists and externally governed code lists that do not have a persistent identifier, the URI is constructed following the pattern _http://inspire.ec.europa.eu/codelist/<UpperCamelCaseName>_.
+For each code list, a tagged value called "vocabulary" is specified to define a URI identifying the values of the code list. For INSPIRE-governed code lists and externally governed code lists that do not have a persistent identifier, the URI is constructed following the pattern _http://inspire.ec.europa.eu/codelist/<UpperCamelCaseName_.
 
 If the value is missing or empty, this indicates an empty code list. If no sub-classes are defined for this empty code list, this means that any code list may be used that meets the given definition.
 
@@ -3965,7 +3965,7 @@ NOTE Currently no minimum data quality requirements are included in the IRs. The
 
 When documenting conformance with this data specification or one of the conformance classes defined in the Abstract Test Suite, the _Specification_ sub-element should be given using the http URI identifier of the conformance class or using a citation including the following elements:
 
-* title: "INSPIRE Data Specification on _Soil_ – Draft Guidelines – <name of the conformance class>"
+* title: "INSPIRE Data Specification on _Soil_ – Draft Guidelines – name of the conformance class>"
 * date:
 ** dateType: publication
 ** date: 2013-01-24
@@ -3975,74 +3975,74 @@ EXAMPLE 1: The XML snippets below show how to fill the _Specification_ sub-eleme
 
 [source,xml,subs="+quotes"]
 ----
-<gmd:DQ_ConformanceResult>
-	<gmd:specification href="http://inspire.ec.europa.eu/conformanceClass/ad/3.0.1/tg" />
-	<gmd:explanation> (...) </gmd:explanation>
-	<gmd:pass> (...) </gmd:pass>
-</gmd:DQ_ConformanceResult>
+gmd:DQ_ConformanceResult
+	gmd:specification href="http://inspire.ec.europa.eu/conformanceClass/ad/3.0.1/tg" />
+	gmd:explanation (...) </gmd:explanation
+	gmd:pass (...) </gmd:pass
+</gmd:DQ_ConformanceResult
 ----
 
 or (using a citation):
 
 [source,xml,subs="+quotes"]
 ----
-<gmd:DQ_ConformanceResult>
-	<gmd:specification>
-		<gmd:CI_Citation>
-			<gmd:title>
-				<gco:CharacterString>INSPIRE Data Specification on Soil – Draft Guidelines</gco:CharacterString>
-			</gmd:title>
-			<gmd:date>
-				<gmd:date>
-					<gco:Date>2013-01-24</gco:Date>
-				</gmd:date>
-				<gmd:dateType>
-					<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resou
-rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
-				</gmd:dateType>
-			</gmd:date>
-		</gmd:CI_Citation>
-	</gmd:specification>
-	<gmd:explanation> (...) </gmd:explanation>
-	<gmd:pass> (...) </gmd:pass>
-</gmd:DQ_ConformanceResult>
+gmd:DQ_ConformanceResult
+	gmd:specification
+		gmd:CI_Citation
+			gmd:title
+				gco:CharacterStringINSPIRE Data Specification on Soil – Draft Guidelines</gco:CharacterString
+			</gmd:title
+			gmd:date
+				gmd:date
+					gco:Date2013-01-24</gco:Date
+				</gmd:date
+				gmd:dateType
+					gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resou
+rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode
+				</gmd:dateType
+			</gmd:date
+		</gmd:CI_Citation
+	</gmd:specification
+	gmd:explanation (...) </gmd:explanation
+	gmd:pass (...) </gmd:pass
+</gmd:DQ_ConformanceResult
 ----
 
 EXAMPLE 2: The XML snippets below show how to fill the _Specification_ sub-element for documenting conformance with the CRS conformance class of the data specification on Addresses v3.0.1.
 
 [source,xml,subs="+quotes"]
 ----
-<gmd:DQ_ConformanceResult>
-	<gmd:specification href="http://inspire.ec.europa.eu/conformanceClass/ad/3.0.1/crs" />
-	<gmd:explanation> (...) </gmd:explanation>
-	<gmd:pass> (...) </gmd:pass>
-</gmd:DQ_ConformanceResult>
+gmd:DQ_ConformanceResult
+	gmd:specification href="http://inspire.ec.europa.eu/conformanceClass/ad/3.0.1/crs" />
+	gmd:explanation (...) </gmd:explanation
+	gmd:pass (...) </gmd:pass
+</gmd:DQ_ConformanceResult
 ----
 
 or (using a citation):
 
 [source,xml,subs="+quotes"]
 ----
-<gmd:DQ_ConformanceResult>
-	<gmd:specification>
-		<gmd:CI_Citation>
-			<gmd:title>
-				<gco:CharacterString>INSPIRE Data Specification on Soil – Draft Guidelines – CRS</gco:CharacterString>
-			</gmd:title>
-			<gmd:date>
-				<gmd:date>
-					<gco:Date>2013-01-24</gco:Date>
-				</gmd:date>
-				<gmd:dateType>
-					<gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resou
-rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
-				</gmd:dateType>
-			</gmd:date>
-		</gmd:CI_Citation>
-	</gmd:specification>
-	<gmd:explanation> (...) </gmd:explanation>
-	<gmd:pass> (...) </gmd:pass>
-</gmd:DQ_ConformanceResult>
+gmd:DQ_ConformanceResult
+	gmd:specification
+		gmd:CI_Citation
+			gmd:title
+				gco:CharacterStringINSPIRE Data Specification on Soil – Draft Guidelines – CRS</gco:CharacterString
+			</gmd:title
+			gmd:date
+				gmd:date
+					gco:Date2013-01-24</gco:Date
+				</gmd:date
+				gmd:dateType
+					gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resou
+rces/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode
+				</gmd:dateType
+			</gmd:date
+		</gmd:CI_Citation
+	</gmd:specification
+	gmd:explanation (...) </gmd:explanation
+	gmd:pass (...) </gmd:pass
+</gmd:DQ_ConformanceResult
 ----
 
 ==== Lineage
@@ -4191,20 +4191,20 @@ referenceSystemIdentifier:
 |Example XML encoding a|
 [source,xml,subs="+quotes"]
 ----
-<gmd:referenceSystemInfo>
-		<gmd:MD_ReferenceSystem>
-			<gmd:referenceSystemIdentifier>
-				<gmd:RS_Identifier>
-					<gmd:code>
-						<gco:CharacterString>ETRS89 </gco:CharacterString>
-					</gmd:code>
-					<gmd:codeSpace>
-						<gco:CharacterString>INSPIRE RS registry</gco:CharacterString>
-					</gmd:codeSpace>
-				</gmd:RS_Identifier>
-			</gmd:referenceSystemIdentifier>
-		</gmd:MD_ReferenceSystem>
-</gmd:referenceSystemInfo>
+gmd:referenceSystemInfo
+		gmd:MD_ReferenceSystem
+			gmd:referenceSystemIdentifier
+				gmd:RS_Identifier
+					gmd:code
+						gco:CharacterStringETRS89 </gco:CharacterString
+					</gmd:code
+					gmd:codeSpace
+						gco:CharacterStringINSPIRE RS registry</gco:CharacterString
+					</gmd:codeSpace
+				</gmd:RS_Identifier
+			</gmd:referenceSystemIdentifier
+		</gmd:MD_ReferenceSystem
+</gmd:referenceSystemInfo
 ----
 |Comments |
 |===
@@ -4234,20 +4234,20 @@ referenceSystemIdentifier:
 |Example XML encoding a|
 [source,xml,subs="+quotes"]
 ----
-<gmd:referenceSystemInfo>
-		<gmd:MD_ReferenceSystem>
-			<gmd:referenceSystemIdentifier>
-				<gmd:RS_Identifier>
-					<gmd:code>
-						<gco:CharacterString>ETRS89 </gco:CharacterString>
-					</gmd:code>
-					<gmd:codeSpace>
-						<gco:CharacterString>INSPIRE RS registry</gco:CharacterString>
-					</gmd:codeSpace>
-				</gmd:RS_Identifier>
-			</gmd:referenceSystemIdentifier>
-		</gmd:MD_ReferenceSystem>
-</gmd:referenceSystemInfo>
+gmd:referenceSystemInfo
+		gmd:MD_ReferenceSystem
+			gmd:referenceSystemIdentifier
+				gmd:RS_Identifier
+					gmd:code
+						gco:CharacterStringETRS89 </gco:CharacterString
+					</gmd:code
+					gmd:codeSpace
+						gco:CharacterStringINSPIRE RS registry</gco:CharacterString
+					</gmd:codeSpace
+				</gmd:RS_Identifier
+			</gmd:referenceSystemIdentifier
+		</gmd:MD_ReferenceSystem
+</gmd:referenceSystemInfo
 ----
 |Comments |
 |===
@@ -4266,24 +4266,24 @@ referenceSystemIdentifier:
 |Domain |See B.2.10.4. The property values (name, version, specification) specified in section 5 shall be used to document the default and alternative encodings.
 |Implementing instructions |
 |Example a|
-name: <Application schema nameGML application schema
+name: Application schema nameGML application schema
 version: version 3.0
 specification: D2.8.III.3 Data Specification on Soil – Technical Guidelines
 
 |Example XML encoding a|
 [source,xml,subs="+quotes"]
 ----
-<gmd:MD_Format>
-	<gmd:name>
-		<gco:CharacterString>SomeApplicationSchema GML application schema</gco:CharacterString>
-	</gmd:name>
-	<gmd:version>
-		<gco:CharacterString>3.0</gco:CharacterString>
-	</gmd:version>
-	<gmd:specification>
-		<gco:CharacterString>D2.8.III.3 Data Specification on Soil – Technical Guidelines</gco:CharacterString>
-	</gmd:specification>
-</gmd:MD_Format>
+gmd:MD_Format
+	gmd:name
+		gco:CharacterStringSomeApplicationSchema GML application schema</gco:CharacterString
+	</gmd:name
+	gmd:version
+		gco:CharacterString3.0</gco:CharacterString
+	</gmd:version
+	gmd:specification
+		gco:CharacterStringD2.8.III.3 Data Specification on Soil – Technical Guidelines</gco:CharacterString
+	</gmd:specification
+</gmd:MD_Format
 ----
 |Comments |
 |===
@@ -4305,9 +4305,9 @@ specification: D2.8.III.3 Data Specification on Soil – Technical Guidelines
 |Example XML encoding a|
 [source,xml,subs="+quotes"]
 ----
-<gmd:characterSet>
-	<gmd:MD_CharacterSetCode codeListValue="8859part2" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CharacterSetCode">8859-2</gmd:MD_CharacterSetCode>
-</gmd:characterSet>
+gmd:characterSet
+	gmd:MD_CharacterSetCode codeListValue="8859part2" codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/ML_gmxCodelists.xml#CharacterSetCode">8859-2</gmd:MD_CharacterSetCode
+</gmd:characterSet
 ----
 
 |Comments |
@@ -4443,7 +4443,7 @@ The scope element (of type DQ_Scope) of the DQ_DataQuality subtype should be use
 
 Only the following values should be used for the level element of DQ_Scope: Series, Dataset, featureType.
 
-If the level is featureType the levelDescription/MDScopeDescription/features element (of type Set< GF_FeatureType>) shall be used to list the feature type names.
+If the level is featureType the levelDescription/MDScopeDescription/features element (of type Set GF_FeatureType>) shall be used to list the feature type names.
 
 ====
 
@@ -4604,7 +4604,7 @@ NOTE 1 Not all constraints defined in the application schemas can be mapped to X
 
 NOTE 2 The obligation to use only the allowed code list values specified for attributes and most of the constraints defined in the application schemas cannot be mapped to the XML sch. They can therefore not be enforced through schema validation. It may be possible to express some of these constraints using other schema or rule languages (e.g. Schematron), in order to enable automatic validation.
 
-===== Default encoding(s) for application schema <application schema name>
+===== Default encoding(s) for application schema application schema name
 
 *Name: Soil GML Application Schema*
 
@@ -4763,14 +4763,14 @@ SoilPlot
 |soil plot, soil plot location, bore hole, boring, bore hole location, soil profile, profile, soil profile location, trial pit, trial pit location, soil pit
 |_SO.SoilSite_ |Soil Site |SoilSite |soil Site
 a|
-SO. <CodeListValue>
+SO. CodeListValue
 
 where CodeListValueis one entry from the codelist _SoilDerivedObjectParameterNameValue_
 
 Example: SO. organicCarbonContent
 
 a|
-<human readable name>
+human readable name
 
 Example: OrganicCarbonContent
 
@@ -4783,14 +4783,14 @@ where CodeListValueis one entry from the codelist _SoilDerivedObjectParameterNam
 Example: SO. organicCarbonContentCoverage
 
 a|
-<human readable name>
+human readable name
 
 Example: OrganicCarbonContent Coverage
 
 |SoilThemeCoverage (soilThemeParameter/ soilThemeParameterName: SoilDerivedObjectParameterNameValue) |_Soil_ theme, soil property
 |===
 
-NOTE The table above contains several layers for the spatial object type(s) <spatial object type names>, which can be further classified using a code list-valued attribute. Such sets of layers are specified as described in Article 14(3) of the IRs.
+NOTE The table above contains several layers for the spatial object type(s) spatial object type names>, which can be further classified using a code list-valued attribute. Such sets of layers are specified as described in Article 14(3) of the IRs.
 
 [IMPORTANT]
 ====
@@ -4981,7 +4981,7 @@ The *ATS is applicable to the data sets that* *have been transformed* to be made
 
 The requirements to be tested are grouped in several _conformance classes_. Each of these classes covers a specific aspect: one conformance class contains tests reflecting the requirements on the application schema, another on the reference systems, etc. *Each conformance class is identified by a URI* (uniform resource identifier) according to the following pattern:
 
-http://inspire.ec.europa.eu/conformance-class/ir/so/<conformance class identifier>
+http://inspire.ec.europa.eu/conformance-class/ir/so/<conformance class identifier
 
 EXAMPLE 1 The URI _http://inspire.ec.europa.eu/conformance-class/ir/ef/rs_ identifies the Reference Systems ISDSS conformance class of the Environmental Monitoring Facilities (EF) data theme.
 
@@ -4990,7 +4990,7 @@ The results of the tests should be published referring to the relevant conforman
 When an INSPIRE data specification contains *more than one application schema,* the requirements tested in a conformance class may differ depending on the application schema used as a target for the transformation of the data set. This will always be the case for the application schema conformance class. However, also other conformance classes could have different requirements for different application schemas. In such cases, a separate conformance class is defined for each application schema, and they are distinguished by specific URIs according to the following pattern:
 
 http://inspire.ec.europa.eu/conformance-class/ir/so/<conformance class identifier>/ 
-<application schema namespace prefix>
+application schema namespace prefix
 
 EXAMPLE 2 The URI _http://inspire.ec.europa.eu/conformance-class/ir/el/as/el-vec_ identifies the conformity with the application schema (_as_) conformance class for the Elevation Vector Elements (_el-vec_) application schema.
 
@@ -5500,9 +5500,9 @@ c) [underline]#Test Method#: Check whether data is made available for the view n
 |SO.SoilBody
 |SO.ObservedSoilProfile
 |SO.SoilSite
-|SO. <CodeListValue>footnote:[One layer shall be made available for each code list value, in accordance with Art. 14(3).]
+|SO. CodeListValuefootnote:[One layer shall be made available for each code list value, in accordance with Art. 14(3).]
 Example: SO.OrganicCarbonContent
-|SO.<CodeListValue>Coveragefootnote:[One layer shall be made available for each code list value, in accordance with Art. 14(3).]
+|SO.<CodeListValueCoveragefootnote:[One layer shall be made available for each code list value, in accordance with Art. 14(3).]
 Example: SO.OrganicCarbonContentCoverage
 |===
 
