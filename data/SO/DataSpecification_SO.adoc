@@ -6390,10 +6390,7 @@ Calibration of the sensor (EMISS) to convert the apparent soil electrical conduc
 Obtaining calibration equations at each selected SCU for assigning soil salinity phases to the EMISS readings:
 Four soil salinity classes can be established according to the maximum ECe measured in the soil profiles:
 
-* Non-saline zones (NS, ECe 4 < dS m^-1^)
-* Slightly saline zones (SS, 4 ≤ ECe ≤ 8 dS m^-1^)
-* Moderately saline zones (MS, 8 < CEe < 16 dS m^-1^)
-* Strongly saline zones (StS, ECe ≥ 16 dS m^-1^)
+
 
 |*Step 5* |Assigning soil salinity phases to EMISS readings for selected SCU: EMISS readings (ECa) must be converted into soil salinity classes according to the calibration equation and to the threshold ECa values equivalent to ECe values of 4, 8 and 16 dS m^-1^.
 |*Post-condition* |
@@ -6512,10 +6509,7 @@ Repetition of the methodology for several years and analysis of the persistence 
 |*Description* |The map contains information about the salt-affected areas in the pilot areas at a scale of 1:25.000.
 |*Dataset(s)* a|
 The map of the salt-affected areas has information about four soil salinity classes established from the maximum electrical conductivity of the soil saturation extract (ECe, dS/m) measured in the soil profiles: The four soil salinity classes are:
-* Non-saline zones (NS, ECe 4 < dS m^-1^)
-* Slightly saline zones (SS, 4 ≤ ECe ≤ 8 dS m^-1^)
-* Moderately saline zones (MS, 8 < CEe < 16 dS m^-1^)
-* Strongly saline zones (StS, ECe ≥ 16 dS m^-1^)
+
 ====
 
 |*Data provider* |Government of Navarra, Tracasa, Government of Aragón, Centro de Investigación y Tecnología Agroalimentaria de Aragón (CITA).
