@@ -7,12 +7,7 @@
 :note-caption: 📘
 
 // TOC placement using macro (manual)
-//:toc: macro
-
 :toc: macro
-//:toc-placement!:
-
-
 
 // Empty TOC title (the title is in the document)
 :toc-title:
