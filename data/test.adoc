@@ -1,0 +1,30 @@
+[%autowidth.stretch]
+|===
+|*AggregatedMosaicElement*
+a|
+[%autowidth.stretch]
+!===
+!Name: !aggregated mosaic element
+!Subtype of: !MosaicElement
+!Definition: !Mosaic element relating to several input images that share the same acquisition time at a given level of definition (e.g. day, month).
+!Description: !NOTE The geometry of an aggregated mosaic element corresponds to the union of the contributing areas, in the mosaic, of several input images.
+!Stereotypes: !«featureType»
+!===
+
+|===
+
+
+[cols="",options="header",]
+|===
+|*AggregatedMosaicElement*
+a|
+[cols=","]
+!===
+!Name: !aggregated mosaic element
+!Subtype of: !MosaicElement
+!Definition: !Mosaic element relating to several input images that share the same acquisition time at a given level of definition (e.g. day, month).
+!Description: !NOTE The geometry of an aggregated mosaic element corresponds to the union of the contributing areas, in the mosaic, of several input images.
+!Stereotypes: !«featureType»
+!===
+
+|===
