@@ -28,3 +28,34 @@ a|
 !===
 
 |===
+
+
+[cols=",",options="header",]
+|===
+|*Metadata element name* |*Coordinate Reference System*
+|Definition |Description of the coordinate reference system used in the dataset.
+|ISO 19115 number and name |13. referenceSystemInfo
+|ISO/TS 19139 path |referenceSystemInfo
+|INSPIRE obligation / condition |mandatory
+|INSPIRE multiplicity |1..*
+|===
+
+[width="100%",cols="33%,67%"]
+|===
+|*Metadata element name* |*Coordinate Reference System*
+|Definition |Description of the coordinate reference system used in the dataset.
+|ISO 19115 number and name |13. referenceSystemInfo
+|ISO/TS 19139 path |referenceSystemInfo
+|INSPIRE obligation / condition |mandatory
+|INSPIRE multiplicity |1..*
+|===
+
+[%autowidth]
+|===
+|*Metadata element name* |*Coordinate Reference System*
+|Definition |Description of the coordinate reference system used in the dataset.
+|ISO 19115 number and name |13. referenceSystemInfo
+|ISO/TS 19139 path |referenceSystemInfo
+|INSPIRE obligation / condition |mandatory
+|INSPIRE multiplicity |1..*
+|===
