@@ -14,11 +14,9 @@ a|
 |===
 
 
-[cols="",options="header",]
 |===
 |*AggregatedMosaicElement*
 a|
-[cols=","]
 !===
 !Name: !aggregated mosaic element
 !Subtype of: !MosaicElement
