@@ -2034,6 +2034,15 @@ a|
 !Stereotypes: !«voidable»
 !===
 
+a|
+*Constraint: AreaStatisticalUnitsGeometryConstraint*
+
+[cols=","]
+!===
+!Natural language: !The reference geometry of an area statistical units should be a _GM_MultiSurface_.
+!OCL: !
+!===
+
 |===
 
 ====== _Evolution_
